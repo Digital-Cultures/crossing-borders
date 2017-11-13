@@ -3,5 +3,10 @@
   <h1>
     Welcome to {{title}}!
   </h1>
+
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [styles]="styles">
+   <!--  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker> -->
+  </agm-map>
+
   <app-d3graph></app-d3graph>
 

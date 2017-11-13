@@ -1,17 +1,4 @@
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  title: string = 'Crossing Borders';
-  titleMap: string = 'Google Maps Addeed Successfully';
-  lat: number = 51.5074;
-  lng: number = 0.1278;
-  zoom: number = 4;
-  styles = [
+[
   {
     "elementType": "geometry",
     "stylers": [
@@ -303,4 +290,3 @@ export class AppComponent {
     ]
   }
 ]
-}
