@@ -14,20 +14,33 @@ import {
   Transition
 } from 'd3-ng2-service';
 
+import * as Timeline from 'd3-timelines';
+
+declare var Timeline: any;
+
 
 @Component({
   selector: 'app-d3graph',
-  template: '<svg width="200" height="200"></svg>'
+  template: ''
 })
 export class D3graphComponent implements OnInit {
   private d3: D3;
   private parentNativeElement: any;
   private d3Svg: Selection<SVGSVGElement, any, null, undefined>;
 
-  constructor(element: ElementRef, private ngZone: NgZone, d3Service: D3Service, private jsondataService: JsondataService ) {
+  constructor(element: ElementRef, private ngZone: NgZone, d3Service: D3Service, private jsondataService: JsondataService) {
     this.d3 = d3Service.getD3();
     this.parentNativeElement = element.nativeElement;
   }
+
+  width: number = 100;
+  height: number = 350;
+  testData = [{label: "The Prophecies of Merlin (Prose Version)", times: [
+        {"color":"rgba(47,89,97,0.2)", "starting_time": 1355752800000, "ending_time": 1355766900000},
+        {"color":"rgba(47,89,97,0.2)", "starting_time": 1355759900000, "ending_time": 1355774400000}]},
+        {label: "person b", times: [{"starting_time": 1355759910000, "ending_time": 1355761900000}]},
+        {label: "person c", times: [{"starting_time": 1355761910000, "ending_time": 1355763910000}]}
+    ];
 
   ngOnInit() {
             let self = this;
@@ -39,8 +52,6 @@ export class D3graphComponent implements OnInit {
             let colors: any = [];
             let data: {name: string, yVal: number}[] = [];
             let padding: number = 25;
-            let width: number = 500;
-            let height: number = 150;
             let xScale: any;
             let yScale: any;
             let xColor: any;
@@ -56,64 +67,39 @@ export class D3graphComponent implements OnInit {
     if (this.parentNativeElement !== null) {
       svg = d3.select(this.parentNativeElement)
           .append('svg')        // create an <svg> element
-          .attr('width', width) // set its dimensions
-          .attr('height', height);
+          .attr('width', '100%') // set its dimensions
+          .attr('height', this.height);
 
-      colors = ['red', 'yellow', 'green', 'blue'];
-
-      data = [
-          {name : 'A', yVal : 1},
-          {name : 'B', yVal : 4},
-          {name : 'C', yVal : 2},
-          {name : 'D', yVal : 3}
-      ];
-
-      xScale = d3.scaleBand()
-          .domain(data.map(function(d){ return d.name; }))
-          .range([0, 200]);
-
-      yScale = d3.scaleLinear()
-          .domain([0,d3.max(data, function(d) {return d.yVal})])
-          .range([100, 0]);
-
-      xAxis = d3.axisBottom(xScale) // d3.js v.4
-          .ticks(5)
-          .scale(xScale);
-
-      yAxis = d3.axisLeft(xScale) // d3.js v.4
-          .scale(yScale)
-          .ticks(7);
-
-        svg.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(" + (padding) + "," + padding + ")")
-        .call(yAxis);
-
-	       svg.append('g')            // create a <g> element
-         .attr('class', 'axis')   // specify classes
-	       .attr("transform", "translate(" + padding + "," + (height - padding) + ")")
-         .call(xAxis);            // let the axis do its thing
-
-      var rects = svg.selectAll('rect')
-          .data(data);
-          rects.size();
-
-      var newRects = rects.enter();
-
-      newRects.append('rect')
-          .attr('x', function(d,i) {
-            return xScale(d.name );
+     var chart = Timeline.timelines()
+          .relativeTime()
+          .stack()
+          .tickFormat({
+            format: function(d) { return d3.timeFormat("%M")(d) },
+            tickTime: d3.timeMinutes,
+            tickInterval: 15,
+            tickSize: 15,
           })
-          .attr('y', function(d) {
-              return yScale(d.yVal);
-            })
-	        .attr("transform","translate(" + (padding -5  + 25) + "," + (padding - 5) + ")")
-          .attr('height', function(d) {
-              return height - yScale(d.yVal) - (2*padding) + 5})
-          .attr('width', 10)
-          .attr('fill', function(d, i) {
-            return colors[i];
+          .margin({left:70, right:30, top:0, bottom:0})
+          .hover(function (d, i, datum) {
+          // d is the current rendering object
+          // i is the index during d3 rendering
+          // datum is the id object
+            // var div = $('#hoverRes');
+            // var colors = chart.colors();
+            // div.find('.coloredDiv').css('background-color', colors(i))
+            // div.find('#name').text(datum.name);
+          })
+          .click(function (d, i, datum, selectedLabel, selectedRect, xVal) {
+            console.log("timelineHover", datum.name);
+            console.log("point", xVal)
+            // $("#assays").append("<div>\
+            // <label>Assay Type:</label><select><option value=\"dnase\">DNAseSeq</option><option value=\"rnase\">RNASeq</option></select> \
+            // <label>Assay Timepoint:</label><span>"+ Math.round(xVal) + "</span> \
+            // </div>");
           });
+        
+        svg = svg.datum(this.testData).call(chart);
+   
      }
    }
  }
