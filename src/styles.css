@@ -5,3 +5,33 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+
+/*D3 styling (gets missed out by angular so adding it at root)*/
+
+.timeline-label {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+#timeline2 .axis {
+  transform: translate(0px,40px);
+  -ms-transform: translate(0px,40px); /* IE 9 */
+  -webkit-transform: translate(0px,40px); /* Safari and Chrome */
+  -o-transform: translate(0px,40px); /* Opera */
+  -moz-transform: translate(0px,40px); /* Firefox */
+}
+
+.coloredDiv {
+  height:20px; width:20px; float:left;
+}
