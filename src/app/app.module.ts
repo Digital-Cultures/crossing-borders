@@ -7,9 +7,10 @@ import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { D3graphComponent } from './d3graph/d3graph.component';
-
 import { D3Service } from 'd3-ng2-service';
 import { MapComponent } from './map/map.component';
+import { JsondataService } from './services/jsondata.service'
+
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { MapComponent } from './map/map.component';
  
     })
   ],
-  providers: [D3Service],
+  providers: [D3Service, JsondataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

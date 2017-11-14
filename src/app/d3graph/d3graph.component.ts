@@ -1,4 +1,5 @@
 import { Component, ElementRef, NgZone, OnDestroy, OnInit } from '@angular/core';
+import { JsondataService } from '../services/jsondata.service';
 
 import {
   D3Service,
@@ -23,7 +24,7 @@ export class D3graphComponent implements OnInit {
   private parentNativeElement: any;
   private d3Svg: Selection<SVGSVGElement, any, null, undefined>;
 
-  constructor(element: ElementRef, private ngZone: NgZone, d3Service: D3Service) {
+  constructor(element: ElementRef, private ngZone: NgZone, d3Service: D3Service, private jsondataService: JsondataService ) {
     this.d3 = d3Service.getD3();
     this.parentNativeElement = element.nativeElement;
   }
@@ -45,6 +46,12 @@ export class D3graphComponent implements OnInit {
             let xColor: any;
             let xAxis: any;
             let yAxis: any;
+
+
+            this.jsondataService.getData().subscribe((data) => {
+                console.log("what is in the data ", data);
+                //this.myjsondata = data;
+              });
 
     if (this.parentNativeElement !== null) {
       svg = d3.select(this.parentNativeElement)
