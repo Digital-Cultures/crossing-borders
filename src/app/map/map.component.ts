@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AgmCoreModule } from '@agm/core';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+import { JsondataService } from '../services/jsondata.service';
 
 @Component({
   selector: 'app-map',
@@ -13,6 +15,7 @@ import { AgmCoreModule } from '@agm/core';
 })
 
 export class MapComponent implements OnInit {
+	private mapData = [];
 
   titleMap: string = 'Google Maps Addeed Successfully';
   lat: number = 51.5074;
@@ -42,11 +45,38 @@ export class MapComponent implements OnInit {
                 "lightness": 0
             }
         ]
-    }
-]
-  constructor() { }
+    }];
+
+    markers = [];
+
+  constructor(private jsondataService: JsondataService) { }
 
   ngOnInit() {
+   	this.jsondataService.getData().subscribe((data) => {       
+	    this.prepareData(data);
+	  });
+
   }
 
+  private prepareData(data){
+
+      for(var i = 0; i < data.length-1; i++) {
+          
+          // var exists = false;
+          // var start:Date = new Date(data[i].start);
+          // var end:Date = new Date(data[i].end);
+
+
+      	if('geometry' in data[i]){
+      		var lat = data[i].geometry.coordinates[0];
+      		var lng = data[i].geometry.coordinates[1];
+      		this.markers.push({
+      			lat: lat,
+				lng: lng,
+				label: 'A',
+				draggable: true
+			});
+      	}
+      }
+  }
 }

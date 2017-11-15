@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 
 
 import { AppComponent } from './app.component';
@@ -26,7 +27,8 @@ import { JsondataService } from './services/jsondata.service'
  
       apiKey: 'AIzaSyCjq8QyaUNCdB21vTLiPC5IwmjvRzD9f80'
  
-    })
+    }),
+    AgmSnazzyInfoWindowModule
   ],
   providers: [D3Service, JsondataService],
   bootstrap: [AppComponent]

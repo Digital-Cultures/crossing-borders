@@ -29,17 +29,18 @@ export class D3graphComponent implements OnInit {
   private d3: D3;
   private parentNativeElement: any;
   private d3Svg: Selection<SVGSVGElement, any, null, undefined>;
+  private width: number = 100;
+  private height: number = 350;
+
+  private timelineData = [];
+  private svg: any;
 
   constructor(element: ElementRef, private ngZone: NgZone, d3Service: D3Service, private jsondataService: JsondataService) {
     this.d3 = d3Service.getD3();
     this.parentNativeElement = element.nativeElement;
   }
 
-  width: number = 100;
-  height: number = 350;
-
-  testData = [];
-  svg: any;
+ 
 
   ngOnInit() {
     let self = this;
@@ -75,16 +76,16 @@ export class D3graphComponent implements OnInit {
           var start:Date = new Date(data[i].start);
           var end:Date = new Date(data[i].end);
 
-          for(var k = 0; k < this.testData.length; k++) {
+          for(var k = 0; k < this.timelineData.length; k++) {
 
-            if (this.testData[k].label === data[i].name) {
-                this.testData[k].times.push({"color":"rgba(89,58,47,0.2)",  "starting_time": start, "ending_time": end})
+            if (this.timelineData[k].label === data[i].name) {
+                this.timelineData[k].times.push({"color":"rgba(89,58,47,0.2)",  "starting_time": start, "ending_time": end})
                 exists = true; // stop searching
             } 
           };
 
           if (!exists){
-            this.testData.push({label: data[i].name, times: [{"color":"rgba(89,58,47,0.2)",  "starting_time": start, "ending_time": end}]})
+            this.timelineData.push({label: data[i].name, times: [{"color":"rgba(89,58,47,0.2)",  "starting_time": start, "ending_time": end}]})
           }
       }
    }
@@ -121,7 +122,7 @@ export class D3graphComponent implements OnInit {
             console.log("timelineHover", datum.label);
           });
         
-        this.svg = this.svg.datum(this.testData).call(chart);
+        this.svg = this.svg.datum(this.timelineData).call(chart);
    
      }
    }
