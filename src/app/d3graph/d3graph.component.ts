@@ -37,48 +37,72 @@ export class D3graphComponent implements OnInit {
 
   width: number = 100;
   height: number = 350;
-  testData = [{label: "The Prophecies of Merlin (Prose Version)", times: [
-        {"color":"rgba(47,89,97,0.2)", "starting_time": -17990208000000, "ending_time": -16990208000000},
-        {"color":"rgba(47,89,97,0.2)", "starting_time": -17359142400000, "ending_time": -14834534400000}]},
-        {label: "person b", times: [{"color":"rgba(47,64,89,0.2)", "starting_time": -17359142400000, "ending_time": -16990208000000}]},
-        {label: "person c", times: [{"color":"rgba(89,58,47,0.2)",  "starting_time": -17990208000000, "ending_time": -14834534400000}]}
-    ];
+
+  testData = [];
+  svg: any;
 
   ngOnInit() {
-            let self = this;
-            let d3 = this.d3;
-            let d3ParentElement: any;
-            let svg: any;
-            let name: string;
-            let yVal: number;
-            let colors: any = ["rgba(47,89,97,0.2)","rgba(47,64,89,0.2)","rgba(89,58,47,0.2)"];
-            let data: {name: string, yVal: number}[] = [];
-            let padding: number = 25;
-            let xScale: any;
-            let yScale: any;
-            let xColor: any;
-            let xAxis: any;
-            let yAxis: any;
+    let self = this;
+    let d3 = this.d3;
+    let d3ParentElement: any;
+    //let svg: any;
+    let name: string;
+    let yVal: number;
+    let colors: any = ["rgba(47,89,97,0.2)","rgba(47,64,89,0.2)","rgba(89,58,47,0.2)"];
+    let data: {name: string, yVal: number}[] = [];
+    let padding: number = 25;
+    let xScale: any;
+    let yScale: any;
+    let xColor: any;
+    let xAxis: any;
+    let yAxis: any;
 
 
-            this.jsondataService.getData().subscribe((data) => {
-                console.log("what is in the data ", data);
-                //this.myjsondata = data;
-              });
+    this.jsondataService.getData().subscribe((data) => {
+        
+        this.prepareData(data);
+        this.plotData();
+        //this.myjsondata = data;
+      });
 
-    if (this.parentNativeElement !== null) {
-      svg = d3.select(this.parentNativeElement)
+   }
+
+   private prepareData(data){
+
+      for(var i = 0; i < data.length-1; i++) {
+          
+          var exists = false;
+          var start:Date = new Date(data[i].start);
+          var end:Date = new Date(data[i].end);
+
+          for(var k = 0; k < this.testData.length; k++) {
+
+            if (this.testData[k].label === data[i].name) {
+                this.testData[k].times.push({"color":"rgba(89,58,47,0.2)",  "starting_time": start, "ending_time": end})
+                exists = true; // stop searching
+            } 
+          };
+
+          if (!exists){
+            this.testData.push({label: data[i].name, times: [{"color":"rgba(89,58,47,0.2)",  "starting_time": start, "ending_time": end}]})
+          }
+      }
+   }
+
+   private plotData() {
+     if (this.parentNativeElement !== null) {
+      this.svg = this.d3.select(this.parentNativeElement)
           .append('svg')        // create an <svg> element
           .attr('width', '90%') // set its dimensions
           .attr('height', this.height);
 
      var chart = Timeline.timelines()
           .stack()
-          .beginning(-18834534400000)
-          .ending(-13834534400000)
+          .beginning(new Date("1300"))
+          .ending(new Date("1600"))
           .tickFormat({
-            format:  d3.timeFormat("%Y") ,
-            tickTime: d3.timeYears,
+            format:  this.d3.timeFormat("%Y") ,
+            tickTime: this.d3.timeYears,
             tickInterval: 15,
             tickSize: 15,
           })
@@ -97,7 +121,7 @@ export class D3graphComponent implements OnInit {
             console.log("timelineHover", datum.label);
           });
         
-        svg = svg.datum(this.testData).call(chart);
+        this.svg = this.svg.datum(this.testData).call(chart);
    
      }
    }

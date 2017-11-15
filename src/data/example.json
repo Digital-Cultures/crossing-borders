@@ -1,630 +1,827 @@
-{
-  "type": "text_date_language",
-  "texts": [
-  {
-   "name": "Y Broffwydoliath Fer",
-   "language": "Welsh",
-   "start": "1375",
-   "end": "1425"
-   },{
-   "name": "Darogan y Chwe Brenin",
-   "language": "Welsh",
-   "start": "1425",
-   "end": "1456"
-   },{
-   "name": "Prophecy of the Six Kings (Second Revised Couplet Version])",
-   "language": "English",
-   "start": "1450",
-   "end": "1461"
-   },{
-   "name": "Prophecy of the Six Kings (Second Revised Couplet Version])",
-   "language": "English",
-   "start": "1566",
-   "end": "1599"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1325",
-   "end": "1349"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1325",
-   "end": "1349"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1307",
-   "end": "1349"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1375",
-   "end": "1425"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1333",
-   "end": "1365"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1300",
-   "end": "1349"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1333",
-   "end": "1365"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1333",
-   "end": "1365"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1300",
-   "end": "1349"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1325",
-   "end": "1349"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1333",
-   "end": "1365"
-   },{
-   "name": "The Prophecies of Merlin (Prose Version) ",
-   "language": "Anglo-Norman",
-   "start": "1375",
-   "end": "1399"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1366",
-   "end": "1399"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1375",
-   "end": "1425"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1350",
-   "end": "1399"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1375",
-   "end": "1425"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1366",
-   "end": "1399"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1400",
-   "end": "1499"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1333",
-   "end": "1365"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1333",
-   "end": "1365"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1350",
-   "end": "1399"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1375",
-   "end": "1425"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1400",
-   "end": "1499"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1300",
-   "end": "1349"
-   },{
-   "name": "The Prophecies of Merlin (Revised Prose Version)",
-   "language": "Anglo-Norman",
-   "start": "1400",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1400"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1466",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1400"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1375",
-   "end": "1450"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1424"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1606",
-   "end": "1606"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1424"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1424"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1474"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1377",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1483"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1467",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1474"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1475",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1474"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1471"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1440",
-   "end": "1440"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1433",
-   "end": "1461"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1474"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1500",
-   "end": "1599"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1400",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1480"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1474"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1525"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1450"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1449"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1430",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1475",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1420",
-   "end": "1430"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1475",
-   "end": "1533"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1450"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1425",
-   "end": "1466"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1450",
-   "end": "1474"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1419",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1466",
-   "end": "1499"
-   },{
-   "name": "Prophecy of the Six Kings to Follow John",
-   "language": "English",
-   "start": "1434",
-   "end": "1466"
-   }]
+{  
+   "type":"text_date_language",
+   "texts":[  
+      {  
+         "name":"Y Broffwydoliath Fer",
+         "language":"Welsh",
+         "start":"1375",
+         "end":"1425"
+      },
+      {  
+         "name":"Darogan y Chwe Brenin",
+         "language":"Welsh",
+         "start":"1425",
+         "end":"1456",
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               {  
+                  "type":"Point",
+                  "coordinates":[  
+                     51.660601,
+                     -3.826191
+                  ]
+               }
+            ]
+         }
+      },
+      {  
+         "name":"Prophecy of the Six Kings (Second Revised Couplet Version])",
+         "language":"English",
+         "start":"1450",
+         "end":"1461",
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               {  
+                  "type":"Point",
+                  "coordinates":[  
+                     52.857097,
+                     -3.058083
+                  ]
+               }
+            ]
+         }
+      },
+      {  
+         "name":"Prophecy of the Six Kings (Second Revised Couplet Version])",
+         "language":"English",
+         "start":"1566",
+         "end":"1599"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1325",
+         "end":"1349"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1325",
+         "end":"1349"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1307",
+         "end":"1349"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1375",
+         "end":"1425"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1333",
+         "end":"1365"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1300",
+         "end":"1349"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1333",
+         "end":"1365"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1333",
+         "end":"1365"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1300",
+         "end":"1349"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1325",
+         "end":"1349"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1333",
+         "end":"1365"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1375",
+         "end":"1399"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1366",
+         "end":"1399"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1375",
+         "end":"1425"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1350",
+         "end":"1399"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1375",
+         "end":"1425"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1366",
+         "end":"1399"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1400",
+         "end":"1499"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1333",
+         "end":"1365"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1333",
+         "end":"1365"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1350",
+         "end":"1399"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1375",
+         "end":"1425"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1400",
+         "end":"1499"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1300",
+         "end":"1349"
+      },
+      {  
+         "name":"The Prophecies of Merlin (Revised Prose Version)",
+         "language":"Anglo-Norman",
+         "start":"1400",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1400"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1466",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1400"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1375",
+         "end":"1450"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1424"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1606",
+         "end":"1606"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1424"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1424"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1474"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1377",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1483"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1467",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1474"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1475",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1474"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1471",
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               {  
+                  "type":"Point",
+                  "coordinates":[  
+                     51.518805,
+                     -0.099641
+                  ]
+               }
+            ]
+         }
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1440",
+         "end":"1440"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1433",
+         "end":"1461"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1474"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1500",
+         "end":"1599"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499",
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               {  
+                  "type":"Point",
+                  "coordinates":[  
+                     51.450278,
+                     0.266998
+                  ]
+               }
+            ]
+         }
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1480"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1474"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1525",
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               {  
+                  "type":"Point",
+                  "coordinates":[  
+                     52.056736,
+                     1.14822
+                  ]
+               }
+            ]
+         }
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1450",
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               {  
+                  "type":"Point",
+                  "coordinates":[  
+                     50.91512,
+                     0.486128
+                  ]
+               }
+            ]
+         }
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1430",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1475",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1420",
+         "end":"1430"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1475",
+         "end":"1533"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1450"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1466"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1474"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1466",
+         "end":"1499"
+      },
+      {  
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466"
+      }
+   ]
 }
