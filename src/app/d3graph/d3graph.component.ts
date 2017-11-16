@@ -1,5 +1,6 @@
 import { Component, ElementRef, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { JsondataService } from '../services/jsondata.service';
+import { ColorsService } from '../services/colors.service';
 
 import {
   D3Service,
@@ -35,7 +36,7 @@ export class D3graphComponent implements OnInit {
   private timelineData = [];
   private svg: any;
 
-  constructor(element: ElementRef, private ngZone: NgZone, d3Service: D3Service, private jsondataService: JsondataService) {
+  constructor(element: ElementRef, private ngZone: NgZone, d3Service: D3Service, private jsondataService: JsondataService, private colorsService: ColorsService ) {
     this.d3 = d3Service.getD3();
     this.parentNativeElement = element.nativeElement;
   }
@@ -79,13 +80,15 @@ export class D3graphComponent implements OnInit {
           for(var k = 0; k < this.timelineData.length; k++) {
 
             if (this.timelineData[k].label === data[i].name) {
-                this.timelineData[k].times.push({"color":"rgba(89,58,47,0.2)",  "starting_time": start, "ending_time": end})
+                console.log("color ",this.colorsService.getColor(k));
+                this.timelineData[k].times.push({"color":this.colorsService.getColor(k),  "starting_time": start, "ending_time": end})
                 exists = true; // stop searching
             } 
           };
 
+          //add new series
           if (!exists){
-            this.timelineData.push({label: data[i].name, times: [{"color":"rgba(89,58,47,0.2)",  "starting_time": start, "ending_time": end}]})
+            this.timelineData.push({label: data[i].name, times: [{"color":this.colorsService.getColor(this.timelineData.length),  "starting_time": start, "ending_time": end}]})
           }
       }
    }
@@ -99,10 +102,10 @@ export class D3graphComponent implements OnInit {
 
      var chart = Timeline.timelines()
           .stack()
-          .beginning(new Date("1300"))
+          .beginning(new Date("1280"))
           .ending(new Date("1600"))
           .tickFormat({
-            format:  this.d3.timeFormat("%Y") ,
+            format:  this.d3.timeFormat("%Y"),
             tickTime: this.d3.timeYears,
             tickInterval: 15,
             tickSize: 15,
