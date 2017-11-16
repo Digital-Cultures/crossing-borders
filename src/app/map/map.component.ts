@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { JsondataService } from '../services/jsondata.service';
+import { ColorsService } from '../services/colors.service';
 
 @Component({
   selector: 'app-map',
@@ -49,7 +50,7 @@ export class MapComponent implements OnInit {
 
     markers = [];
 
-  constructor(private jsondataService: JsondataService) { }
+  constructor(private jsondataService: JsondataService,  private colorsService: ColorsService) { }
 
   ngOnInit() {
    	this.jsondataService.getData().subscribe((data) => {       
@@ -74,7 +75,8 @@ export class MapComponent implements OnInit {
       			lat: lat,
 				lng: lng,
 				label: 'A',
-				draggable: true
+				draggable: true,
+        icon: this.colorsService.getMapMarker(i)
 			});
       	}
       }

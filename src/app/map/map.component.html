@@ -11,7 +11,8 @@
     			[latitude]="m.lat" 
     			[longitude]="m.lng"
     			(markerClick)="clickedMarker(m.label, i)"
-    			[label]="m.label">
+    			[label]="m.label"
+          [iconUrl]="m.icon">
     	<agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
 	      <ng-template>
 	        My first Snazzy Info Window!
