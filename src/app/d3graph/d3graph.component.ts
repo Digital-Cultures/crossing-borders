@@ -80,15 +80,14 @@ export class D3graphComponent implements OnInit {
           for(var k = 0; k < this.timelineData.length; k++) {
 
             if (this.timelineData[k].label === data[i].name) {
-                console.log("color ",this.colorsService.getColor(k));
-                this.timelineData[k].times.push({"color":this.colorsService.getColor(k),  "starting_time": start, "ending_time": end})
+                this.timelineData[k].times.push({"color":this.colorsService.getColorByLabel(data[i].name),  "starting_time": start, "ending_time": end})
                 exists = true; // stop searching
             } 
           };
 
           //add new series
           if (!exists){
-            this.timelineData.push({label: data[i].name, times: [{"color":this.colorsService.getColor(this.timelineData.length),  "starting_time": start, "ending_time": end}]})
+            this.timelineData.push({label: data[i].name, times: [{"color":this.colorsService.getColorByLabel(data[i].name),  "starting_time": start, "ending_time": end}]})
           }
       }
    }

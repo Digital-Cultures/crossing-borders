@@ -74,9 +74,9 @@ export class MapComponent implements OnInit {
       		this.markers.push({
       			lat: lat,
 				lng: lng,
-				label: 'A',
+				label: data[i].name,
 				draggable: true,
-        icon: this.colorsService.getMapMarker(i)
+        icon: this.colorsService.getMarkerByLabel(data[i].name)
 			});
       	}
       }
