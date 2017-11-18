@@ -29,7 +29,10 @@
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14",
     "jquery": "^3.0.0",
-    "snazzy-info-window": "1.1.0"
+    "snazzy-info-window": "1.1.0",
+    "ng2-ya-table": "0.4.3",
+    "bootstrap": "3.3.7"
+
   },
   "devDependencies": {
     "@angular/cli": "1.4.5",

@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+import { Ng2YaTableModule } from 'ng2-ya-table';
 
 
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { MapComponent } from './map/map.component';
 import { JsondataService } from './services/jsondata.service';
 import { ColorsService } from './services/colors.service';
 import { DbformComponent } from './dbform/dbform.component';
+import { DataSourceService } from './dbform/data-source.service';
 import { VisulisationComponent } from './visulisation/visulisation.component';
 
 const appRoutes: Routes = [
@@ -42,9 +44,10 @@ const appRoutes: Routes = [
       apiKey: 'AIzaSyCjq8QyaUNCdB21vTLiPC5IwmjvRzD9f80'
  
     }),
-    AgmSnazzyInfoWindowModule
+    AgmSnazzyInfoWindowModule,
+    Ng2YaTableModule.forRoot()
   ],
-  providers: [D3Service, JsondataService, ColorsService],
+  providers: [D3Service, JsondataService, ColorsService, DataSourceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
