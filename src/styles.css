@@ -35,3 +35,11 @@ body {
 .coloredDiv {
   height:20px; width:20px; float:left;
 }
+
+.ng2-ya-table{
+  font-size: 13px;
+  font-weight: 300;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f7efe7;
+}

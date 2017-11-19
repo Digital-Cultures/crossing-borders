@@ -45,8 +45,8 @@ export class DbformComponent {
         } 
     },
     { 
-        title: 'Username', 
-        name: 'username', 
+        title: 'Language', 
+        name: 'language', 
         sort: true, 
         filter: {
             type: 'default', 
@@ -57,8 +57,8 @@ export class DbformComponent {
         } 
     },
     { 
-        title: 'Email', 
-        name: 'email', 
+        title: 'Start', 
+        name: 'start', 
         sort: true, 
         filter: {
             type: 'default', 
