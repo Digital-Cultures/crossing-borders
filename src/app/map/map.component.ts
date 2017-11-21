@@ -77,7 +77,7 @@ export class MapComponent implements OnInit {
 				    label: data[i].name,
 				    draggable: true,
             data: data[i],
-            icon: this.colorsService.getMarkerByLabel(data[i].name)
+            icon: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i].name)
 			});
       	}
       }

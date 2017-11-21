@@ -8,7 +8,7 @@ export class DataSourceService {
   constructor(private http: Http) { }
 
   getUsersDataSource(request:any): Observable<any> {
-    let url = 'http://localhost:4200/data/example.json?';
+    let url = window.location.protocol + '//' + window.location.host + window.location.pathname.slice(0, -2) + 'data/example.json?';
     return this.getDataSource(url, request);
   }
   
