@@ -3,6 +3,7 @@ nav {
     z-index: 2;
     display: inline-flex;
     width: 100%;
+    pointer-events: none;
 }
 
 a, select {
@@ -11,6 +12,7 @@ a, select {
 	margin: 2px;
 	border-radius: 2px;
 	border: 1px solid #CCC;
+	pointer-events:auto;
 }
 
 select {
