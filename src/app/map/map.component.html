@@ -11,11 +11,15 @@
     			[latitude]="m.lat" 
     			[longitude]="m.lng"
     			(markerClick)="clickedMarker(m.label, i)"
-    			[label]="m.label"
           [iconUrl]="m.icon">
     	<agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
-	      <ng-template>
-	        My first Snazzy Info Window!
+	      <ng-template >
+          <h3>{{m.label}}</h3> 
+          <p>{{m.data.language}} {{m.data.compilationDate}}</p>
+          <p>{{m.data.compilationPlace}}</p>
+          <p>{{m.data.overview}}</p>
+          <hr>
+          <em>{{m.data.shelfmark}}</em>
 	      </ng-template>
 	    </agm-snazzy-info-window>
     </agm-marker>

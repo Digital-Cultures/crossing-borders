@@ -1,797 +1,1297 @@
-{  
+{
    "type":"text_date_language",
-   "texts":[  
-      {  
+   "texts":[
+      {
          "name":"Y Broffwydoliath Fer",
          "language":"Welsh",
          "start":"1375",
-         "end":"1425"
+         "end":"1425",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, NLW, Peniarth MS 54, Part 1, pp. 186-90",
+         "overview":"Poetry (cywyddau), including prophetic material",
+         "compilationDate":"s. XIV/XV"
       },
-      {  
+      {
          "name":"Darogan y Chwe Brenin",
          "language":"Welsh",
          "start":"1425",
          "end":"1456",
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                51.660601,
                -3.826191
             ]
-         }
+         },
+         "compilationPlace":"Neath Abbey, Glamorgan",
+         "shelfmark":"Aberystwyth, NLW, Peniarth MS 50, pp. 8-12",
+         "overview":"Collection of English and Welsh language prophecies - contains other translated materials. Content with Yorkist sympathies, but also relating to the Revolt of Owain Glyn Dwr.",
+         "compilationDate":"c. 1425-1456"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings (Second Revised Couplet Version])",
          "language":"English",
          "start":"1450",
          "end":"1461",
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                52.857097,
                -3.058083
             ]
-         }
+         },
+         "compilationPlace":"Oswestry",
+         "shelfmark":"Aberystwyth, NLW, Peniarth MS 26, pp. 113-16",
+         "overview":"Collection of English and Welsh language prophecies - contains other translated materials. Content with Yorkist sympathies, including notice of accession of Edward IV",
+         "compilationDate":"c. 1450-61"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings (Second Revised Couplet Version])",
          "language":"English",
          "start":"1566",
-         "end":"1599"
+         "end":"1599",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, NLW, Peniarth MS 94, pp. 259-61",
+         "overview":"Prophecies and poetry in commonplace book",
+         "compilationDate":"s. XVI ex"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1325",
-         "end":"1349"
+         "end":"1349",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge, Corpus Christi College, MS 405, fol. 8-12",
+         "overview":"Charters, Letters, Bulls, Liturgical Texts, Anglo-Norman Texts etc. Prophecies immeidately followed by: 'Observations on the Six Ages in Anglo-Norman', list of kings, charms, the perilous days; and an Anglo-Norman text 'On the Interpretation of Dreams'.",
+         "compilationDate":"s. XIV 2/4"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1325",
-         "end":"1349"
+         "end":"1349",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge, Sidney Sussex College, MS 43 (?.2.21), fols. 183b-185b",
+         "overview":"",
+         "compilationDate":"s. XIV 2/4"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1307",
-         "end":"1349"
+         "end":"1349",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge University Library MS Gg.1.1, fol. 120b-121c",
+         "overview":"",
+         "compilationDate":"s. XIV 2/4 (after 1307)"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
-         "end":"1425"
+         "end":"1425",
+         "compilationPlace":"England",
+         "shelfmark":"Dublin, Trinity College, MS 517 (E.4.12), fols. 137a-138b",
+         "overview":"",
+         "compilationDate":"s. XIV/XV"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
-         "end":"1365"
+         "end":"1365",
+         "compilationPlace":"England",
+         "shelfmark":"Leeds, University Library, MS Brotherton 29, fols. 11b-17b",
+         "overview":"",
+         "compilationDate":"s. XIV med."
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1300",
-         "end":"1349"
+         "end":"1349",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Add. 59839, fols. 191b-195b",
+         "overview":"",
+         "compilationDate":"s. XIV 1"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
-         "end":"1365"
+         "end":"1365",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Arundel 57, fols. 8b-10b",
+         "overview":"",
+         "compilationDate":"s. XIV med."
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
-         "end":"1365"
+         "end":"1365",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Cotton Julius A.V, fols. 177b-179a",
+         "overview":"",
+         "compilationDate":"s. XIV med."
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1300",
-         "end":"1349"
+         "end":"1349",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Harley 756, fols. 1b-3a",
+         "overview":"",
+         "compilationDate":"s. XIV 1"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1325",
-         "end":"1349"
+         "end":"1349",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Royal 20 A.XI, fols. 137b-139a",
+         "overview":"",
+         "compilationDate":"s. XIV 2/4"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
-         "end":"1365"
+         "end":"1365",
+         "compilationPlace":"England",
+         "shelfmark":"London Public Record Office E.164/1, first fly leaf",
+         "overview":"",
+         "compilationDate":"s. XIV med."
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
-         "end":"1399"
+         "end":"1399",
+         "compilationPlace":"England",
+         "shelfmark":"Paris, BN, MS franc. 12154, fols. 39a-40a.",
+         "overview":"",
+         "compilationDate":"s. XIV 4/4"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1366",
-         "end":"1399"
+         "end":"1399",
+         "compilationPlace":"England",
+         "shelfmark":"Aberystwyth, NLW, 5028C, fol. 10a-119b",
+         "overview":"Des Grantz Geanz (short prose version); Long Version of the Prose Brut (including a copy of 'Tables', a fourteenth-century game in numbers set by King Arthur, as a chapter); the Gospel of Nicodemus; Letter of Pilate to Claudius; La vengeance nostre seigneur; L'image du monde by Gossuin of Metz.",
+         "compilationDate":"s. XIV ex"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
-         "end":"1425"
+         "end":"1425",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge University Library MS Ii.6.8, fol. 1a-166b",
+         "overview":"Des Grantz Geanz (short prose version); Long Version of the Prose Brut (including a copy of 'Tables', a fourteenth-century game in numbers set by King Arthur, as a chapter).",
+         "compilationDate":"s. XIV/XV"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1350",
-         "end":"1399"
+         "end":"1399",
+         "compilationPlace":"England",
+         "shelfmark":"Leeds, University Library, MS Brotherton 29, fols. 36a-271a",
+         "overview":"",
+         "compilationDate":"s. XIV 2"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
-         "end":"1425"
+         "end":"1425",
+         "compilationPlace":"England",
+         "shelfmark":"London, British Library, MS Add. 18462a, fol. 16a-101b",
+         "overview":"",
+         "compilationDate":"s. XIV/XV"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1366",
-         "end":"1399"
+         "end":"1399",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Cotton Cleopatra D.III, fol. 75b-192d",
+         "overview":"",
+         "compilationDate":"s. XIV ex"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1400",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"France",
+         "shelfmark":"BL MS Royal 19 C.IX, fol. 10c-155b",
+         "overview":"",
+         "compilationDate":"s. XV"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
-         "end":"1365"
+         "end":"1365",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Royal 20 A.III, fol. 122b-236a",
+         "overview":"",
+         "compilationDate":"s. XIV med."
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
-         "end":"1365"
+         "end":"1365",
+         "compilationPlace":"",
+         "shelfmark":"London, Lincoln's Inn, MS Hale 88, fol. 8a-75d",
+         "overview":"",
+         "compilationDate":"s. XIV med. Chronicle ends in 1326"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1350",
-         "end":"1399"
+         "end":"1399",
+         "compilationPlace":"England",
+         "shelfmark":"Yale University, Beinecke Library, MS 405, fol. 1a-74b",
+         "overview":"",
+         "compilationDate":"s. XIV 2"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
-         "end":"1425"
+         "end":"1425",
+         "compilationPlace":"England",
+         "shelfmark":"Oxford, Bodleian Library, MS Ashmole 1804, fol. 49c-104d",
+         "overview":"",
+         "compilationDate":"s. XIV/XV"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1400",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"France",
+         "shelfmark":"Paris, BN, MS franc. 12155, fol. 13b-233b",
+         "overview":"",
+         "compilationDate":"s. XV"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1300",
-         "end":"1349"
+         "end":"1349",
+         "compilationPlace":"England",
+         "shelfmark":"Paris, Bibl. Mazarine, MS 1860, fol. 2c-108a",
+         "overview":"",
+         "compilationDate":"s. XIV 1"
       },
-      {  
+      {
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1400",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"France",
+         "shelfmark":"Paris, Bibl. Ste. Genevieve, MS 935, fol. 12a-208a",
+         "overview":"",
+         "compilationDate":"s. XV"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1400"
+         "end":"1400",
+         "compilationPlace":"South west Herefordshire",
+         "shelfmark":"Bodleian MS Rawlinson B.171 (1)",
+         "overview":"English Prose Brut chronicle. NB: Bodleian MS Rawlinson B.171 (2): the second scribe begins on fol. 171r, i.e. long after the prophecies.",
+         "compilationDate":"c. 1400"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1466",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Bodleian MS Douce 323",
+         "overview":"English Prose Brut chronicle, William Langland's Piers Plowman, Charter of the Abbey of the Holy Ghost, Iptis (ends imperfectly)",
+         "compilationDate":"s. XV ex"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1400"
+         "end":"1400",
+         "compilationPlace":"England",
+         "shelfmark":"Mrs J. D. Gordan MS 63",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"c. 1400"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1375",
-         "end":"1450"
+         "end":"1450",
+         "compilationPlace":"England",
+         "shelfmark":"Rylands MS Eng. 103 (1)",
+         "overview":"List of Anglo-Saxon kings and Archbishops of Canterbury (16th C) on flyleaves, English Prose Brut chronicle. All of this is followed by Rylands MS Eng. 103 (2): English Prose Brut to 1377, in which the scribe picks up on fol. 126v where the previous scribe (of Rylands MS Eng. 103) left off",
+         "compilationDate":"s. XV  (Tyson dates to early 15th C, Ker to mid-15th, and Matheson to late 14th)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1424"
+         "end":"1424",
+         "compilationPlace":"Suffolk or Chelmsford, England",
+         "shelfmark":"Yale University, Beincecke MS 494",
+         "overview":"Unfinished obituary calendar of a Dominican convent, English Prose Brut chronicle",
+         "compilationDate":"s. XV  1/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Society of Antiquaries  MS 93",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV 1"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1606",
-         "end":"1606"
+         "end":"1606",
+         "compilationPlace":"England",
+         "shelfmark":"Bodleian MS Rawlinson C.155",
+         "overview":"",
+         "compilationDate":"1606"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Harley 3945",
+         "overview":"",
+         "compilationDate":"s. XV"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Rylands MS Eng. 206",
+         "overview":"Binding leaves (indexes from two theological works), English Prose Brut chronicle, medical recipe",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"NLW Peniarth 398D",
+         "overview":"",
+         "compilationDate":"s. XV"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1424"
+         "end":"1424",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge, Corpus Christi College, MS 174",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV 1/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Rylands MS Eng. 102",
+         "overview":"",
+         "compilationDate":"s. XV"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Free Library of Philadelphia MS Lewis 238",
+         "overview":"English Prose Brut chronicle, Memorandum recording betrayal of Calais to the French in 1557, extract from an unidentified Latin text (poss. 15th C, rear flyleaf)",
+         "compilationDate":"s. XV (poss. 1st to 2nd quarter)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Harley 2279",
+         "overview":"English Prose Brut chronicle (imperfect)",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Stowe 68",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"Lambeth Palace Library MS 491",
+         "overview":"English Prose Brut chronicle, Siege of Jerusalem, Three Kings of Cologne, Awntyrs off Arthure, a poem on hunting. Part 2 of the MS includes miscellaneous religious texts.",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
-         "end":"1424"
+         "end":"1424",
+         "compilationPlace":"England",
+         "shelfmark":"Staats- Universitatsbibliothek Hamburg MS 98 in scrin (sic)",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV 1/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
-         "end":"1474"
+         "end":"1474",
+         "compilationPlace":"England",
+         "shelfmark":"Princeton Unviersity Library, Taylor Medieval MS 3 (1)",
+         "overview":"Sidrak and Bokkus, English Prose Brut chronicle",
+         "compilationDate":"s. XV 3/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"National Library of Scotland MS 6128",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1377",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"University of Chicago MS 253",
+         "overview":"",
+         "compilationDate":"s. XV (after 1377)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
-         "end":"1483"
+         "end":"1483",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge, Peterhouse, MS 190 (1)",
+         "overview":"Composite English Prose Brut chronicle, Warkworth's Chronicle",
+         "compilationDate":"s. XV (poss. 3rd quarter; continuation c. 1483)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Sion College, MS L40.2/3 42",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Columbia University Library MS Plimpton 262",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Takamiya MS 29",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1467",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Lambeth Palace Library MS 264 (1)",
+         "overview":"English Prose Brut chronicle, copies of five fourteenth- and fifteenth-century land deeds",
+         "compilationDate":"s. XV (late)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
-         "end":"1474"
+         "end":"1474",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Stowe 69",
+         "overview":"Fourteenth-century work on canon law (flyleaves), English Prose Brut chronicle, historical notes 'in typical London chronicle form' (Matheson, Prose Brut, p. 105), Lydgate's 'Verses on the Kings of England'",
+         "compilationDate":"s. XV 3/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"West Hereforedshire, Welsh border",
+         "shelfmark":"Bodleian MS Rawlinson B.173(1)",
+         "overview":"English Prose Brut chronicle, London chronicle continuation (to 1431), medical recipes, note on oxen (Herefordshire), note on the foundation of the monastery of Dore, charms against sickness, lists of kings.",
+         "compilationDate":"s. XV (after 1419, and possibly 2nd quarter of the 15th century, c. 1431)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"Staffordshire",
+         "shelfmark":"Bodleian MS Rawlinson B.166",
+         "overview":"English Prose Brut chronicle (begins imperfectly)",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"Northamptonshire, West Midlands",
+         "shelfmark":"Pennsylvania State University MS PS V-3A(1)",
+         "overview":"English Prose Brut chronicle, London continuation to 1422 (continues without a break from Brut chronicle)",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1475",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Lambeth Palace Library MS 738",
+         "overview":"English Prose Brut chronicle, 'Deposition of King Richard', a serious of scribblings of names, verses, and other writing.",
+         "compilationDate":"s. XV 4/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Add. 33242",
+         "overview":"English Prose Brut chronicle (imperfect)",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"Central Herefordshire",
+         "shelfmark":"Cambridge University Library MS Kk.1.12",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV mid"
       },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1419",
-         "end":"1499"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1425",
-         "end":"1449"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1450",
-         "end":"1474"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1450",
-         "end":"1471",
-         "geometry":{  
-            "type":"Point",
-            "coordinates":[  
-               51.518805,
-               -0.099641
-            ]
-         }
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1440",
-         "end":"1440"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1419",
-         "end":"1499"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1433",
-         "end":"1461"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1425",
-         "end":"1449"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1434",
-         "end":"1466"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1434",
-         "end":"1466"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1419",
-         "end":"1499"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1419",
-         "end":"1499"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1450",
-         "end":"1474"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1434",
-         "end":"1466"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1500",
-         "end":"1599"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1434",
-         "end":"1466"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1419",
-         "end":"1499"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1425",
-         "end":"1466"
-      },
-      {  
-         "name":"Prophecy of the Six Kings to Follow John",
-         "language":"English",
-         "start":"1400",
-         "end":"1466"
-      },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
          "end":"1499",
-         "geometry":{  
+         "compilationPlace":"England",
+         "shelfmark":"Longleat House MS 183A",
+         "overview":"The Battle Abbey Roll, English Prose Brut chronicle",
+         "compilationDate":"s. XV (after 1419)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge, Trinity College, MS O.10.34",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV 2/4"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1474",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Harley 2248",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV mid (poss. 3rd quarter)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1471",
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
+               51.518805,
+               -0.099641
+            ]
+         },
+         "compilationPlace":"Augustinian Proiry of St Bartholomew, Smithfield, London",
+         "shelfmark":"BL MS Royal 17.D.xxi",
+         "overview":"English Prose Brut chronicle, list of kings from William the Conqueror to Edward IV",
+         "compilationDate":"s. XV (poss. 3rd quarter, before 1471)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1440",
+         "end":"1440",
+         "compilationPlace":"England",
+         "shelfmark":"Yale University, Beinecke MS 323",
+         "overview":"Roundels with kings from Henry III to Edward III with notes on the Clare family, genealogical roundels centring on Edward IV's claim to the French and English thrones, English Prose Brut chronicle",
+         "compilationDate":"c. 1440"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Fitzwilliam Museum MS McClean 186",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (after 1419)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1433",
+         "end":"1461",
+         "compilationPlace":"England",
+         "shelfmark":"College of Arms MS Vincent 421",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV mid (and before 1461)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Bodleian MS Rawlinson B.216",
+         "overview":"English Prose Brut chronicle, Treaty of Troyes (in English), Mandeville's Travels, 'Proverb of Solomon', Lydgate's Life of St Edmund.",
+         "compilationDate":"s. XV 2/4"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"University of Glasgow, MS Hunterian 228 (1)",
+         "overview":"English Prose Brut chronicle, continuation from a text of the Common Version to 1461, ends imperfectly",
+         "compilationDate":"s. XV mid"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"Harvard University MS Eng. 587",
+         "overview":"English Prose Brut chronicle, Latin colophon (textura) below the end of the text",
+         "compilationDate":"s. XV mid"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Takamiya MS 67",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (after 1419)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Bodleian MS Bodley 231",
+         "overview":"",
+         "compilationDate":"s. XV (after 1419)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1450",
+         "end":"1474",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Royal 18.B.iii",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV 3/4"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"University of California at Berkeley MS 152",
+         "overview":"English Prose Brut chronicle (imperfect)",
+         "compilationDate":"s. XV mid"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1500",
+         "end":"1599",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Add. 26746",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XVI "
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1434",
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"University of Glasgow, MS Hunterian 61",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV mid"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Rylands MS Eng. 104",
+         "overview":"English Prose Brut chronicle (imperfect)",
+         "compilationDate":"s. XV (after 1419)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1425",
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"Bibliotheque Royale MS IV.461",
+         "overview":"English Prose Brut chronicle (imperfect)",
+         "compilationDate":"s. XV (2nd quarter to mid)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1400",
+         "end":"1466",
+         "compilationPlace":"Essex",
+         "shelfmark":"Bodleian MS Bodley 840",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (poss. 1st quarter and (continued) 2nd quarter to mid)"
+      },
+      {
+         "name":"Prophecy of the Six Kings to Follow John",
+         "language":"English",
+         "start":"1419",
+         "end":"1499",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
                51.450278,
                0.266998
             ]
-         }
+         },
+         "compilationPlace":"Dominican Priory of the Virgin Mary, St Margaret at Dartford, Kent",
+         "shelfmark":"Dublin, Trinity College, MS 490",
+         "overview":"English Prose Brut chronicle, fol. 179v has  a sixteenth century lyric (5 stanzas of 4 lines)",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1480"
+         "end":"1480",
+         "compilationPlace":"England",
+         "shelfmark":"Chapel Hill, Heyneman MS",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (2nd quarter; 1460-80)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Harley 1568",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Folger Shakespeare Library MS V.b.106 (725.2)",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV mid (poss. 2nd quarter)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Huntington MS HM 136 (1)",
+         "overview":"Epitome of English history from William I to Henry VI, four short Latin texts (historical), English Prose Brut chronicle, John Bridlington's Prophecy (penned in the margins on fols. 83v-86r, 102v-130r), medical recipes.",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Bodleian MS Rawlinson B.205",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV mid (poss. 2nd quarter)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
-         "end":"1474"
+         "end":"1474",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge University Library MS Ee.4.32",
+         "overview":"Two booklets: (1) Three Kings of Cologne (poss. 2nd quarter of the 15th C), (2) English Prose Brut chronicle (poss. 3rd quarter of the 15th C)",
+         "compilationDate":"s. XV 3/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge, Trinity College, MS R.5.43, Part II",
+         "overview":"Two booklets, both possibly x. XV mid: (1) Three Kings of Cologne, (2) English Prose Brut chronicle.",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"University of Leicester MS 47",
+         "overview":"English Prose Brut chronicle (imperfect)",
+         "compilationDate":"s. XV 2"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"University of Sydney, MS Nicholson 13",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
          "end":"1525",
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                52.056736,
                1.14822
             ]
-         }
+         },
+         "compilationPlace":"Essex and Southeast Suffolk (Ipswich area) ",
+         "shelfmark":"University of Glawgow MS Hunterian 74 (1)",
+         "overview":"English Prose Brut chronicle (Scribe D writes a continuation taken from a Common Version text to 1461, possibly a print of Caxton's Chronicles of England",
+         "compilationDate":"s. XV (poss. 2nd quarter, except for Scribe D, late 15th or early 16th C)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Bodleian MS Rawlinson B.196",
+         "overview":"English Prose Brut chronicle, Royal declaration/commission in English (against the maintenance of criminals), 'Revelation of Ezra', alphabet of moral advice, 'Prophesie Eldegaris' ('a prophecy in Latin and English, somewhat in the mould of Merlin's prophecies [...and applied here] to the year 1456, when it is said that England/Britain will be conquered by the kings of France, Spain, Scotland and Ireland before one of the kings conquers all the others' (http://www.qub.ac.uk/imagining-history/resources/short/results.php?record=70)",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"Lambeth Palace Library MS 259",
+         "overview":"Sarum liturgical calendar, table of solar and lunar eclipses (1384-1462), table of solar and lunar eclipses (1393-1462), English Prose Brut chronicle",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Harley 4930",
+         "overview":"Fragment from a Latin scholastic treatise, English Prose Brut chronicle",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
          "end":"1450",
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                50.91512,
                0.486128
             ]
-         }
+         },
+         "compilationPlace":"Battle Abbey",
+         "shelfmark":"University of Chicago MS 254 (1)",
+         "overview":"English Prose Brut chronicle (imperfect)",
+         "compilationDate":"s. 1450"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Cotton Galba E.viii",
+         "overview":"Lydgate's 'Verses on the Kings of England', The Three Kings of Cologne, English Prose Brut chronicle (with John Page's poem)",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1449"
+         "end":"1449",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Harley 2256",
+         "overview":"English Prose Brut chronicle (with John Page's poem)",
+         "compilationDate":"s. XV 2/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Harley 753",
+         "overview":"English Prose Brut chronicle (with John Page's poem)",
+         "compilationDate":"s. XV (poss. 2nd quarter or mid)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1430",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Lambeth Palace Library MS 331",
+         "overview":"This MS has two parts: (1)English Prose Brut chronicle (with John Page's poem, ends imperfectly); (2) contents from the late 13th or early 14th cnetury, (a) Gospel of St Thomas in Latin, and (b) Aelred of Riveaulx's Life of Edward the Confessor (lacks prologue, ends imperfectly)",
+         "compilationDate":"s. XV (after 1430)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1475",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Add. 10099",
+         "overview":"Several items: Table of contents for Brut chronicle; historical notes in Latin; Latin notes and mnemonic verse on the kings of England to Henry VII; English Prose Brut chronicle; notes on the accession of monarchs from Edward IV to Elizabeth I; notes on the kings of England from William I to Henry III; notes on Edward IV's claim to the crowns of England, France, 'castel legiouns', and Normandy; provisions from the treaty of Picquigny; Lydgate's Dietary; extracts from the Polychronicon; copy of a charter from Edward Balliol (grants Edward I overlordship); copy of a letter from Edward I to Pope Boniface VIII; notes on the accession of English monarchs from Richard II to Elizabeth I; alphabetical index to the Polychronicon.",
+         "compilationDate":"s. XV 4/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Ryland MS Eng 105",
+         "overview":"",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1420",
-         "end":"1430"
+         "end":"1430",
+         "compilationPlace":"England",
+         "shelfmark":"Harvard University MS Richardson 35",
+         "overview":"A table lettered a-g on one side, containing various symbols; English Prose Brut chronicle (imperfect); a series of heraldic arms for various English knights",
+         "compilationDate":"s. XV (poss. c. 1420-30, potentially produced in the last years of King Henry VI's reign or the early years of Henry VI)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Harley 24",
+         "overview":"",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Add. 12030",
+         "overview":"English Prose Brut chronicle (imperfect)",
+         "compilationDate":"s. XV 2"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Rawlinson B.187",
+         "overview":"",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Takamiya MS 12",
+         "overview":"",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Bodleian MS Tanner 188",
+         "overview":"English Prose Brut chronicle (begins and ends imperfectly)",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"BL Harley MS 4827",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (2nd quarter to mid)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"BL Harley ms 2182",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (2nd quarter to mid)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"Edinburgh University Library MS 183",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1475",
-         "end":"1533"
+         "end":"1533",
+         "compilationPlace":"Nottinghamshire and Derbyshire, England",
+         "shelfmark":"University of Glasgow, MS Hunterian 230",
+         "overview":"English Prose Brut chronicle (begins imperfectly)",
+         "compilationDate":"s. XV (poss. last quarter to early 2nd quarter)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge University Library MS Add. 2775",
+         "overview":"English Prose Brut chronicle (begins imperfectly)",
+         "compilationDate":"s. XV (2nd quarter to mid)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"Central Midland literary standard",
+         "shelfmark":"Cambridge University Library MS Ff.2.26",
+         "overview":"English Prose Brut chronicle (begins and ends imperfectly)",
+         "compilationDate":"s. XV mid"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Oxford, Trinity College, MS 5",
+         "overview":"",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"BL MS Add. 24859",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1450"
+         "end":"1450",
+         "compilationPlace":"England",
+         "shelfmark":"University of Virginia MS 38-173",
+         "overview":"English Prose Brut chronicle (begins and ends imperfectly)",
+         "compilationDate":"s. XV (poss. 2nd quarter; c. 1450 according to Faye and Bond)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"NLW MS Add. 442D",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (2nd quarter to mid)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Bodleian MS Rawlinson poet. 32(1)",
+         "overview":"Latin and English verse by John Lydgate (Graunte Cato); Lydgate's Stans Puer ad mensam; Lydgate's A Prayer of the Cross; Whanne lyfe is most louyd; Lydgate, The Marchaunt of Baldok; The Prouerbis of Wysdom; The x Comandements; a table of kings from Brutus to 1461; English Prose Brut chronicel; the xv Oois; The Libel of English Policy, a Prcess of Philosophers.",
+         "compilationDate":"s. XV 2"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge, Corpus Christi College, MS 182",
+         "overview":"English Prose Brut chronicle, with a 16th C colophon in textura",
+         "compilationDate":"s. XV (poss. 2nd quarter to mid)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
-         "end":"1474"
+         "end":"1474",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge, Trinity College, MS O.9.1(1)",
+         "overview":"Notes on the seasons, pardons, Aue uerum corpus in Latin; Life of St Katherine (English prose); Life of St James the Apostle (English prose); Life of the Virgin, Annunciation of our Lord, Assumption of our Lady (all English prose); English Prose Brut chronicle; notes on provinces of Ireland and their wonders, and administrative divisions in England; extract from a London Chronicle for mayor John Olney; the sayings of various church fathers on the holy sacrament; beginning of pardon of Corpus Christi; copy of an indenture dated 26 Dec 17 Edweard IV (1477) between Walter Lokington and John Cokerych, wradens of the Fraternity or Guild of the Assumption of Our Lady in St Margaret's Church, in the close of St Peter's, Westminster, and James Fytt, citizen and tailor of London.",
+         "compilationDate":"s. XV 3/4"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Bodleian ms Laud Misc 571",
+         "overview":"English Prose Brut chronicle, imperfect (fols. 1r-5v indicate an index, added in the sixteenth century, to chapters and relating them to the king list in the Notary's Chronicle)",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Princeton University Library, MS Garrett 150",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"University of Illinois MS 116 (1)",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV (after 1419)"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1466",
-         "end":"1499"
+         "end":"1499",
+         "compilationPlace":"England",
+         "shelfmark":"Society of Antiquaries  MS 223",
+         "overview":"English Prose Brut chronicle",
+         "compilationDate":"s. XV ex"
       },
-      {  
+      {
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
-         "end":"1466"
+         "end":"1466",
+         "compilationPlace":"England",
+         "shelfmark":"Huntington MS HM 133",
+         "overview":"leaf from a large missal (former pastedown), leaf from the Legenda Aurea, English Prose Brut chronicle (ends imperfectly)",
+         "compilationDate":"s. XV mid"
       }
    ]
 }

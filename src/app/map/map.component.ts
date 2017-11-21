@@ -73,12 +73,17 @@ export class MapComponent implements OnInit {
       		var lng = data[i].geometry.coordinates[1];
       		this.markers.push({
       			lat: lat,
-				lng: lng,
-				label: data[i].name,
-				draggable: true,
-        icon: this.colorsService.getMarkerByLabel(data[i].name)
+				    lng: lng,
+				    label: data[i].name,
+				    draggable: true,
+            data: data[i],
+            icon: this.colorsService.getMarkerByLabel(data[i].name)
 			});
       	}
       }
+  }
+
+  clickedMarker (label:string, i:number){
+    console.log(label);
   }
 }
