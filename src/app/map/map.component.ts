@@ -40,7 +40,7 @@ export class MapComponent implements OnInit {
                 "visibility": "on"
  			},
  			{
-	        	"color": "#b9d3c2"
+	        	"color": "#7e99ab"
             },
             {
                 "lightness": 0
