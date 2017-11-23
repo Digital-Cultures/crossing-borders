@@ -2,6 +2,7 @@
    "type":"text_date_language",
    "texts":[
       {
+         "id":"1",
          "name":"Y Broffwydoliath Fer",
          "language":"Welsh",
          "start":"1375",
@@ -12,6 +13,7 @@
          "compilationDate":"s. XIV/XV"
       },
       {
+         "id":"2",
          "name":"Darogan y Chwe Brenin",
          "language":"Welsh",
          "start":"1425",
@@ -29,6 +31,7 @@
          "compilationDate":"c. 1425-1456"
       },
       {
+         "id":"3",
          "name":"Prophecy of the Six Kings (Second Revised Couplet Version])",
          "language":"English",
          "start":"1450",
@@ -46,6 +49,7 @@
          "compilationDate":"c. 1450-61"
       },
       {
+         "id":"4",
          "name":"Prophecy of the Six Kings (Second Revised Couplet Version])",
          "language":"English",
          "start":"1566",
@@ -56,6 +60,7 @@
          "compilationDate":"s. XVI ex"
       },
       {
+         "id":"5",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1325",
@@ -66,6 +71,7 @@
          "compilationDate":"s. XIV 2/4"
       },
       {
+         "id":"6",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1325",
@@ -76,6 +82,7 @@
          "compilationDate":"s. XIV 2/4"
       },
       {
+         "id":"7",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1307",
@@ -86,6 +93,7 @@
          "compilationDate":"s. XIV 2/4 (after 1307)"
       },
       {
+         "id":"8",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
@@ -96,6 +104,7 @@
          "compilationDate":"s. XIV/XV"
       },
       {
+         "id":"9",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
@@ -106,6 +115,7 @@
          "compilationDate":"s. XIV med."
       },
       {
+         "id":"10",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1300",
@@ -116,6 +126,7 @@
          "compilationDate":"s. XIV 1"
       },
       {
+         "id":"11",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
@@ -126,6 +137,7 @@
          "compilationDate":"s. XIV med."
       },
       {
+         "id":"12",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
@@ -136,6 +148,7 @@
          "compilationDate":"s. XIV med."
       },
       {
+         "id":"13",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1300",
@@ -146,6 +159,7 @@
          "compilationDate":"s. XIV 1"
       },
       {
+         "id":"14",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1325",
@@ -156,6 +170,7 @@
          "compilationDate":"s. XIV 2/4"
       },
       {
+         "id":"15",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
@@ -166,6 +181,7 @@
          "compilationDate":"s. XIV med."
       },
       {
+         "id":"16",
          "name":"The Prophecies of Merlin (Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
@@ -176,6 +192,7 @@
          "compilationDate":"s. XIV 4/4"
       },
       {
+         "id":"17",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1366",
@@ -186,6 +203,7 @@
          "compilationDate":"s. XIV ex"
       },
       {
+         "id":"18",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
@@ -196,6 +214,7 @@
          "compilationDate":"s. XIV/XV"
       },
       {
+         "id":"19",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1350",
@@ -206,6 +225,7 @@
          "compilationDate":"s. XIV 2"
       },
       {
+         "id":"20",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
@@ -216,6 +236,7 @@
          "compilationDate":"s. XIV/XV"
       },
       {
+         "id":"21",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1366",
@@ -226,6 +247,7 @@
          "compilationDate":"s. XIV ex"
       },
       {
+         "id":"22",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1400",
@@ -236,6 +258,7 @@
          "compilationDate":"s. XV"
       },
       {
+         "id":"23",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
@@ -246,6 +269,7 @@
          "compilationDate":"s. XIV med."
       },
       {
+         "id":"24",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1333",
@@ -256,6 +280,7 @@
          "compilationDate":"s. XIV med. Chronicle ends in 1326"
       },
       {
+         "id":"25",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1350",
@@ -266,6 +291,7 @@
          "compilationDate":"s. XIV 2"
       },
       {
+         "id":"26",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1375",
@@ -276,6 +302,7 @@
          "compilationDate":"s. XIV/XV"
       },
       {
+         "id":"27",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1400",
@@ -286,6 +313,7 @@
          "compilationDate":"s. XV"
       },
       {
+         "id":"28",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1300",
@@ -296,6 +324,7 @@
          "compilationDate":"s. XIV 1"
       },
       {
+         "id":"29",
          "name":"The Prophecies of Merlin (Revised Prose Version)",
          "language":"Anglo-Norman",
          "start":"1400",
@@ -306,6 +335,7 @@
          "compilationDate":"s. XV"
       },
       {
+         "id":"30",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -316,6 +346,7 @@
          "compilationDate":"c. 1400"
       },
       {
+         "id":"31",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1466",
@@ -326,6 +357,7 @@
          "compilationDate":"s. XV ex"
       },
       {
+         "id":"32",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -336,6 +368,7 @@
          "compilationDate":"c. 1400"
       },
       {
+         "id":"33",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1375",
@@ -346,6 +379,7 @@
          "compilationDate":"s. XV  (Tyson dates to early 15th C, Ker to mid-15th, and Matheson to late 14th)"
       },
       {
+         "id":"34",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -356,6 +390,7 @@
          "compilationDate":"s. XV  1/4"
       },
       {
+         "id":"35",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -366,6 +401,7 @@
          "compilationDate":"s. XV 1"
       },
       {
+         "id":"36",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1606",
@@ -376,6 +412,7 @@
          "compilationDate":"1606"
       },
       {
+         "id":"37",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -386,6 +423,7 @@
          "compilationDate":"s. XV"
       },
       {
+         "id":"38",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -396,6 +434,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"39",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -406,6 +445,7 @@
          "compilationDate":"s. XV"
       },
       {
+         "id":"40",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -416,6 +456,7 @@
          "compilationDate":"s. XV 1/4"
       },
       {
+         "id":"41",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -426,6 +467,7 @@
          "compilationDate":"s. XV"
       },
       {
+         "id":"42",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -436,6 +478,7 @@
          "compilationDate":"s. XV (poss. 1st to 2nd quarter)"
       },
       {
+         "id":"43",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -446,6 +489,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"44",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -456,6 +500,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"45",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -466,6 +511,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"46",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -476,6 +522,7 @@
          "compilationDate":"s. XV 1/4"
       },
       {
+         "id":"47",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -486,6 +533,7 @@
          "compilationDate":"s. XV 3/4"
       },
       {
+         "id":"48",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -496,6 +544,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"49",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1377",
@@ -506,6 +555,7 @@
          "compilationDate":"s. XV (after 1377)"
       },
       {
+         "id":"50",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -516,6 +566,7 @@
          "compilationDate":"s. XV (poss. 3rd quarter; continuation c. 1483)"
       },
       {
+         "id":"51",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -526,6 +577,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"52",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -536,6 +588,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"53",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -546,6 +599,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"54",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1467",
@@ -556,6 +610,7 @@
          "compilationDate":"s. XV (late)"
       },
       {
+         "id":"55",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -566,6 +621,7 @@
          "compilationDate":"s. XV 3/4"
       },
       {
+         "id":"56",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -576,6 +632,7 @@
          "compilationDate":"s. XV (after 1419, and possibly 2nd quarter of the 15th century, c. 1431)"
       },
       {
+         "id":"57",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -586,6 +643,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"58",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -596,6 +654,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"59",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1475",
@@ -606,6 +665,7 @@
          "compilationDate":"s. XV 4/4"
       },
       {
+         "id":"60",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -616,6 +676,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"61",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -626,6 +687,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"62",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -636,6 +698,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"63",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -646,6 +709,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"64",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -656,6 +720,7 @@
          "compilationDate":"s. XV mid (poss. 3rd quarter)"
       },
       {
+         "id":"65",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -673,6 +738,7 @@
          "compilationDate":"s. XV (poss. 3rd quarter, before 1471)"
       },
       {
+         "id":"66",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1440",
@@ -683,6 +749,7 @@
          "compilationDate":"c. 1440"
       },
       {
+         "id":"67",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -693,6 +760,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"68",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1433",
@@ -703,6 +771,7 @@
          "compilationDate":"s. XV mid (and before 1461)"
       },
       {
+         "id":"69",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -713,6 +782,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"70",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -723,6 +793,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"71",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -733,6 +804,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"72",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -743,6 +815,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"73",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -753,6 +826,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"74",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -763,6 +837,7 @@
          "compilationDate":"s. XV 3/4"
       },
       {
+         "id":"75",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -773,6 +848,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"76",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1500",
@@ -783,6 +859,7 @@
          "compilationDate":"s. XVI "
       },
       {
+         "id":"77",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -793,6 +870,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"78",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -803,6 +881,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"79",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -813,6 +892,7 @@
          "compilationDate":"s. XV (2nd quarter to mid)"
       },
       {
+         "id":"80",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1400",
@@ -823,6 +903,7 @@
          "compilationDate":"s. XV (poss. 1st quarter and (continued) 2nd quarter to mid)"
       },
       {
+         "id":"81",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -840,6 +921,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"82",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -850,6 +932,7 @@
          "compilationDate":"s. XV (2nd quarter; 1460-80)"
       },
       {
+         "id":"83",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -860,6 +943,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"84",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -870,6 +954,7 @@
          "compilationDate":"s. XV mid (poss. 2nd quarter)"
       },
       {
+         "id":"85",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -880,6 +965,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"86",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -890,6 +976,7 @@
          "compilationDate":"s. XV mid (poss. 2nd quarter)"
       },
       {
+         "id":"87",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -900,6 +987,7 @@
          "compilationDate":"s. XV 3/4"
       },
       {
+         "id":"88",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -910,6 +998,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"89",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -920,6 +1009,7 @@
          "compilationDate":"s. XV 2"
       },
       {
+         "id":"90",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -930,6 +1020,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"91",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -947,6 +1038,7 @@
          "compilationDate":"s. XV (poss. 2nd quarter, except for Scribe D, late 15th or early 16th C)"
       },
       {
+         "id":"92",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -957,6 +1049,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"93",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -967,6 +1060,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"94",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -977,6 +1071,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"95",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -994,6 +1089,7 @@
          "compilationDate":"s. 1450"
       },
       {
+         "id":"96",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -1004,6 +1100,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"97",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -1014,6 +1111,7 @@
          "compilationDate":"s. XV 2/4"
       },
       {
+         "id":"98",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -1024,6 +1122,7 @@
          "compilationDate":"s. XV (poss. 2nd quarter or mid)"
       },
       {
+         "id":"99",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1430",
@@ -1034,6 +1133,7 @@
          "compilationDate":"s. XV (after 1430)"
       },
       {
+         "id":"100",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1475",
@@ -1044,6 +1144,7 @@
          "compilationDate":"s. XV 4/4"
       },
       {
+         "id":"101",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1054,6 +1155,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"102",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1420",
@@ -1064,6 +1166,7 @@
          "compilationDate":"s. XV (poss. c. 1420-30, potentially produced in the last years of King Henry VI's reign or the early years of Henry VI)"
       },
       {
+         "id":"103",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1074,6 +1177,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"104",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -1084,6 +1188,7 @@
          "compilationDate":"s. XV 2"
       },
       {
+         "id":"105",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1094,6 +1199,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"106",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1104,6 +1210,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"107",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1114,6 +1221,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"108",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -1124,6 +1232,7 @@
          "compilationDate":"s. XV (2nd quarter to mid)"
       },
       {
+         "id":"109",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -1134,6 +1243,7 @@
          "compilationDate":"s. XV (2nd quarter to mid)"
       },
       {
+         "id":"110",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -1144,6 +1254,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"111",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1475",
@@ -1154,6 +1265,7 @@
          "compilationDate":"s. XV (poss. last quarter to early 2nd quarter)"
       },
       {
+         "id":"112",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -1164,6 +1276,7 @@
          "compilationDate":"s. XV (2nd quarter to mid)"
       },
       {
+         "id":"113",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",
@@ -1174,6 +1287,7 @@
          "compilationDate":"s. XV mid"
       },
       {
+         "id":"114",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1184,6 +1298,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"115",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1194,6 +1309,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"116",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -1204,6 +1320,7 @@
          "compilationDate":"s. XV (poss. 2nd quarter; c. 1450 according to Faye and Bond)"
       },
       {
+         "id":"117",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -1214,6 +1331,7 @@
          "compilationDate":"s. XV (2nd quarter to mid)"
       },
       {
+         "id":"118",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -1224,6 +1342,7 @@
          "compilationDate":"s. XV 2"
       },
       {
+         "id":"119",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1425",
@@ -1234,6 +1353,7 @@
          "compilationDate":"s. XV (poss. 2nd quarter to mid)"
       },
       {
+         "id":"120",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1450",
@@ -1244,6 +1364,7 @@
          "compilationDate":"s. XV 3/4"
       },
       {
+         "id":"121",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1254,6 +1375,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"122",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1264,6 +1386,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"123",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1419",
@@ -1274,6 +1397,7 @@
          "compilationDate":"s. XV (after 1419)"
       },
       {
+         "id":"124",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1466",
@@ -1284,6 +1408,7 @@
          "compilationDate":"s. XV ex"
       },
       {
+         "id":"125",
          "name":"Prophecy of the Six Kings to Follow John",
          "language":"English",
          "start":"1434",

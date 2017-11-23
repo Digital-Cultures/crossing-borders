@@ -1,6 +1,7 @@
 import { Component, ElementRef, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { JsondataService } from '../services/jsondata.service';
 import { ColorsService } from '../services/colors.service';
+import { UidataService } from '../services/uidata.service';
 import 'rxjs/Rx';
 import { D3Service, D3, Selection } from 'd3-ng2-service';
 import * as $ from 'jquery';
@@ -31,13 +32,12 @@ export class D3graphComponent implements OnInit {
     private ngZone: NgZone, 
     private d3Service: D3Service, 
     private jsondataService: JsondataService, 
-    private colorsService: ColorsService ) 
+    private colorsService: ColorsService,
+    private uidataService: UidataService ) 
   {
     this.d3 = d3Service.getD3(); // <-- obtain the d3 object from the D3 Service
     this.parentNativeElement = element.nativeElement;
   }
-
- 
 
   ngOnInit() {
     let self = this;
@@ -59,7 +59,7 @@ export class D3graphComponent implements OnInit {
 
 
     this.jsondataService.getData().subscribe((data) => {     
-        this.prepareData(data);
+        this.timelineData = this.uidataService.prepareGraphData(data);
 
         if (this.parentNativeElement !== null) {
  
@@ -94,7 +94,8 @@ export class D3graphComponent implements OnInit {
                   .attr("x1", xy[0])   
                   .attr("y1", 10)      
                   .attr("x2", xy[0])     
-                  .attr("y2", 180);
+                  .attr("y2", 180)
+                  .style("pointer-events","none");
 
                 svg.append("rect")
                   .attr("class", "marker")
@@ -134,11 +135,23 @@ export class D3graphComponent implements OnInit {
               div.find('#name').text(datum.label);
             })
 
-            .click(function (d, i, datum, selectedLabel, selectedRect, xVal) {
-              console.log("timelineHover", datum.label, selectedRect);
-            });
+            // .click(function (d, i, datum, selectedLabel, selectedRect, xVal) {
+            //   console.log("timelineHover", datum.label, selectedRect);
+            // });
          
           svg = svg.datum(this.timelineData).call(chart);
+
+          var elements = this.parentNativeElement.querySelectorAll("[id^='timelineItem']");
+          for(var e in elements){
+            if(elements[e].id){
+              console.log(elements[e].id);
+                elements[e].addEventListener('click', (e) => {
+                //function here 
+                console.log('your result');
+                this.displayFullDescription(e);
+             });
+            }
+          }
         }
       })
    }
@@ -147,25 +160,20 @@ export class D3graphComponent implements OnInit {
      console.log("here");
    }
 
-   prepareData(data){
-
-      for(var i = 0; i < data.length-1; i++) {
-          
-          var exists = false;
-          var start:Date = new Date(data[i].start);
-          var end:Date = new Date(data[i].end);
-
-          for(var k = 0; k < this.timelineData.length; k++) {
-            if (this.timelineData[k].label === data[i].name) {
-                this.timelineData[k].times.push({"color":this.colorsService.getColorByLabel(data[i].name),  "starting_time": start, "ending_time": end})
-                exists = true; // stop searching
-            } 
-          };
-
-          //add new series
-          if (!exists){
-            this.timelineData.push({label: data[i].name, times: [{"color":this.colorsService.getColorByLabel(data[i].name),  "starting_time": start, "ending_time": end}]})
-          }
-      }
+   displayFullDescription(e){
+     console.log(e);
+     var item = document.elementFromPoint(e.clientX, e.clientY);
+     var stack = [];
+     for (var i=0; i<20; i++) {
+       if(item.id.startsWith('timelineItem')){
+         console.log(item.id);
+         this.uidataService.selectItem(item.id);
+        this.d3.select(item).style('pointer-events','none').attr('class', 'hover');
+        // // stack.push(item);
+        item = document.elementFromPoint(e.clientX, e.clientY);
+       }else{
+         break;
+       }
+    }
    }
  }

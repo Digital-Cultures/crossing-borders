@@ -8,6 +8,7 @@ import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { JsondataService } from '../services/jsondata.service';
 import { ColorsService } from '../services/colors.service';
+import { UidataService } from '../services/uidata.service';
 
 @Component({
   selector: 'app-map',
@@ -16,7 +17,8 @@ import { ColorsService } from '../services/colors.service';
 })
 
 export class MapComponent implements OnInit {
-	private mapData = [];
+	mapData = [];
+  markers = [];
 
   titleMap: string = 'Google Maps Addeed Successfully';
   lat: number = 51.5074;
@@ -48,39 +50,19 @@ export class MapComponent implements OnInit {
         ]
     }];
 
-    markers = [];
+    
 
-  constructor(private jsondataService: JsondataService,  private colorsService: ColorsService) { }
+  constructor(
+    private jsondataService: JsondataService,  
+    private colorsService: ColorsService,
+    private uidataService: UidataService
+    ) { }
 
   ngOnInit() {
    	this.jsondataService.getData().subscribe((data) => {       
-	    this.prepareData(data);
+	    this.markers = this.uidataService.prepareMapData(data);
 	  });
 
-  }
-
-  private prepareData(data){
-
-      for(var i = 0; i < data.length-1; i++) {
-          
-          // var exists = false;
-          // var start:Date = new Date(data[i].start);
-          // var end:Date = new Date(data[i].end);
-
-
-      	if('geometry' in data[i]){
-      		var lat = data[i].geometry.coordinates[0];
-      		var lng = data[i].geometry.coordinates[1];
-      		this.markers.push({
-      			lat: lat,
-				    lng: lng,
-				    label: data[i].name,
-				    draggable: true,
-            data: data[i],
-            icon: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i].name)
-			});
-      	}
-      }
   }
 
   clickedMarker (label:string, i:number){

@@ -13,7 +13,9 @@ import { D3graphComponent } from './d3graph/d3graph.component';
 import { D3Service } from 'd3-ng2-service';
 import { MapComponent } from './map/map.component';
 import { JsondataService } from './services/jsondata.service';
+import { UidataService } from './services/uidata.service';
 import { ColorsService } from './services/colors.service';
+
 import { DbformComponent } from './dbform/dbform.component';
 import { DataSourceService } from './dbform/data-source.service';
 import { VisulisationComponent } from './visulisation/visulisation.component';
@@ -47,7 +49,7 @@ const appRoutes: Routes = [
     AgmSnazzyInfoWindowModule,
     Ng2YaTableModule.forRoot()
   ],
-  providers: [D3Service, JsondataService, ColorsService, DataSourceService],
+  providers: [D3Service, JsondataService, UidataService, ColorsService, DataSourceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
