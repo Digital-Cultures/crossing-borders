@@ -7,7 +7,7 @@
           [label]="m.label"
           [markerDraggable]="m.draggable"
           (dragEnd)="markerDragEnd(m, $event)"> -->
-    <agm-marker *ngFor="let m of markers; let i = index" 
+    <agm-marker *ngFor="let m of markers$; let i = index" 
     			[latitude]="m.lat" 
     			[longitude]="m.lng"
     			(markerClick)="clickedMarker(m.label, i)"

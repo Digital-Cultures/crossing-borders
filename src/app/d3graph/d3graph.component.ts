@@ -16,14 +16,12 @@ declare var Timeline: any;
 })
 export class D3graphComponent implements OnInit {
   d3: D3;
-  x:number;
-  y:number;
-  beginning: string = "1250";
-  ending: string = "1600";
+  beginning: string = "1250"; // CALL FROM UI SERVICE
+  ending: string = "1600"; // CALL FROM UI SERVICE
 
   private parentNativeElement: any;
   private width: number = 100;
-  private height: number = 350;
+  private height: number = 240;
   private timelineData = [];
   private svg: any;
 
@@ -59,7 +57,7 @@ export class D3graphComponent implements OnInit {
 
 
     this.jsondataService.getData().subscribe((data) => {     
-        this.timelineData = this.uidataService.prepareGraphData(data);
+        this.timelineData = this.uidataService.setGraphData(data);
 
         if (this.parentNativeElement !== null) {
  
@@ -72,48 +70,6 @@ export class D3graphComponent implements OnInit {
             .attr('height', this.height)
             .on('click', function(ev){
             });
-
-          svg.on("mousemove", function(){
-            var bb = svg.select(".container").node().getBBox();
-            var axisbb = svg.select(".domain").node().getBBox();
-            var xy = d3.mouse(this);
-            self.x = xy[0]; 
-            self.y = xy[1];
-
-            svg.selectAll(".marker").remove();
-
-            if (xy[0]>axisbb.x&&xy[0]<(axisbb.x+axisbb.width)&&xy[1]>bb.y&&xy[1]<(bb.y+bb.height)){
-
-                var srr2 = d3.scaleLinear()
-                   .domain([axisbb.x,(axisbb.x+axisbb.width)])  
-                   .rangeRound([1250,1600]);
-                  
-                svg.append("line")         
-                  .attr("class", "marker")
-                  .style("stroke", "black")
-                  .attr("x1", xy[0])   
-                  .attr("y1", 10)      
-                  .attr("x2", xy[0])     
-                  .attr("y2", 180)
-                  .style("pointer-events","none");
-
-                svg.append("rect")
-                  .attr("class", "marker")
-                  .attr("width", 30)
-                  .attr("height", 20)
-                  .attr("x", xy[0]-15)
-                  .attr("y", 0);
-
-                svg.append("text")
-                  .attr("class", "marker")
-                  .attr("x", xy[0]-11)
-                  .attr("y", 10)
-                  .attr("dy", ".35em")
-                  .style("fill","white")
-                  .attr("font-size", "10px")
-                  .text(srr2(xy[0]));
-            }
-          });
 
 
           var chart = Timeline.timelines()
@@ -141,24 +97,85 @@ export class D3graphComponent implements OnInit {
          
           svg = svg.datum(this.timelineData).call(chart);
 
+          /** Add chart click event **/
           var elements = this.parentNativeElement.querySelectorAll("[id^='timelineItem']");
           for(var e in elements){
             if(elements[e].id){
-              console.log(elements[e].id);
-                elements[e].addEventListener('click', (e) => {
-                //function here 
-                console.log('your result');
+              elements[e].addEventListener('click', (e) => {
                 this.displayFullDescription(e);
              });
             }
           }
+
+          /** Add hover event **/
+          var graphContainer = this.parentNativeElement.querySelector("svg")
+                .addEventListener('mousemove', (e) => {
+                  var x = e.offsetX;
+                  var y = e.offsetY;
+                  this.drawLines(x,y);
+             });
         }
       })
    }
 
-   draw_lines() {
-     console.log("here");
+   positionToYear(x:number) :number{
+     //drawLines();
+     var axisbb = this.svg.select(".domain").node().getBBox();
+     var scale = this.d3.scaleLinear()
+             .domain([axisbb.x,(axisbb.x+axisbb.width)])  
+             .rangeRound([parseInt(this.beginning),parseInt(this.ending)]);
+      var year = scale(x)
+      this.uidataService.setDate(year);
+      return year;
    }
+
+   // yearToPosition(year:number) :number {
+
+   // }
+
+   drawLines(x:number,y:number) {
+      this.svg = this.d3.select("svg"); //SHOULD BE MODULISED
+      var bb = this.svg.select(".container").node().getBBox();
+      var axisbb = this.svg.select(".domain").node().getBBox();
+      //var xy = this.d3.mouse(this);
+
+      this.svg.selectAll(".marker").remove();
+
+      if (x>axisbb.x&&x<(axisbb.x+axisbb.width)){
+        if(y>bb.y&&y<(bb.y+bb.height)){
+
+          // var srr2 = this.d3.scaleLinear()
+          //    .domain([axisbb.x,(axisbb.x+axisbb.width)])  
+          //    .rangeRound([parseInt(this.beginning),parseInt(this.ending)]);
+            
+          this.svg.append("line")         
+            .attr("class", "marker")
+            .style("stroke", "black")
+            .attr("x1", x)   
+            .attr("y1", 10)      
+            .attr("x2", x)     
+            .attr("y2", 180)
+            .style("pointer-events","none");
+
+          this.svg.append("rect")
+            .attr("class", "marker")
+            .attr("width", 30)
+            .attr("height", 20)
+            .attr("x", x-15)
+            .attr("y", 0);
+
+          this.svg.append("text")
+            .attr("class", "marker")
+            .attr("x", x-11)
+            .attr("y", 10)
+            .attr("dy", ".35em")
+            .style("fill","white")
+            .attr("font-size", "10px")
+            .text(this.positionToYear(x));
+        }
+      }
+   }
+
 
    displayFullDescription(e){
      console.log(e);
@@ -168,9 +185,9 @@ export class D3graphComponent implements OnInit {
        if(item.id.startsWith('timelineItem')){
          console.log(item.id);
          this.uidataService.selectItem(item.id);
-        this.d3.select(item).style('pointer-events','none').attr('class', 'hover');
-        // // stack.push(item);
-        item = document.elementFromPoint(e.clientX, e.clientY);
+         this.d3.select(item).style('pointer-events','none').attr('class', 'hover');
+         // // stack.push(item);
+         item = document.elementFromPoint(e.clientX, e.clientY);
        }else{
          break;
        }

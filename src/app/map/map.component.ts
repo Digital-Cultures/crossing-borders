@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Observable } from 'rxjs/Observable';
 
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
@@ -18,7 +19,7 @@ import { UidataService } from '../services/uidata.service';
 
 export class MapComponent implements OnInit {
 	mapData = [];
-  markers = [];
+  public markers$ : Observable<any>;
 
   titleMap: string = 'Google Maps Addeed Successfully';
   lat: number = 51.5074;
@@ -60,7 +61,7 @@ export class MapComponent implements OnInit {
 
   ngOnInit() {
    	this.jsondataService.getData().subscribe((data) => {       
-	    this.markers = this.uidataService.prepareMapData(data);
+	    this.markers$ = this.uidataService.setMapData(data);
 	  });
 
   }

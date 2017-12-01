@@ -19,6 +19,7 @@ import { ColorsService } from './services/colors.service';
 import { DbformComponent } from './dbform/dbform.component';
 import { DataSourceService } from './dbform/data-source.service';
 import { VisulisationComponent } from './visulisation/visulisation.component';
+import { PlayheadComponent } from './playhead/playhead.component';
 
 const appRoutes: Routes = [
   { path: '',   component: VisulisationComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     D3graphComponent,
     MapComponent,
     DbformComponent,
-    VisulisationComponent
+    VisulisationComponent,
+    PlayheadComponent
   ],
   imports: [
     RouterModule.forRoot(
