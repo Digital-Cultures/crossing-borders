@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Observable } from 'rxjs/Observable';
+import {Observable} from "rxjs"
+import 'rxjs/Rx';
 
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
@@ -57,11 +58,15 @@ export class MapComponent implements OnInit {
     private jsondataService: JsondataService,  
     private colorsService: ColorsService,
     private uidataService: UidataService
-    ) { }
+    ) { 
+      this.uidataService.currentMapMarkers.subscribe(markers => {
+        this.markers$ = markers;
+      })
+    }
 
   ngOnInit() {
    	this.jsondataService.getData().subscribe((data) => {       
-	    this.markers$ = this.uidataService.setMapData(data);
+	    this.uidataService.setMapData(data);
 	  });
 
   }

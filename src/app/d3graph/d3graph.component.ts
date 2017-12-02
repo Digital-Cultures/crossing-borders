@@ -2,6 +2,7 @@ import { Component, ElementRef, NgZone, OnDestroy, OnInit } from '@angular/core'
 import { JsondataService } from '../services/jsondata.service';
 import { ColorsService } from '../services/colors.service';
 import { UidataService } from '../services/uidata.service';
+import {Observable} from "rxjs"
 import 'rxjs/Rx';
 import { D3Service, D3, Selection } from 'd3-ng2-service';
 import * as $ from 'jquery';
@@ -15,15 +16,15 @@ declare var Timeline: any;
   styleUrls: ['./d3graph.component.css']
 })
 export class D3graphComponent implements OnInit {
+  
   d3: D3;
-  beginning: string = "1250"; // CALL FROM UI SERVICE
-  ending: string = "1600"; // CALL FROM UI SERVICE
-
   private parentNativeElement: any;
   private width: number = 100;
   private height: number = 240;
   private timelineData = [];
   private svg: any;
+  date:number;
+
 
   constructor(
     private element: ElementRef, 
@@ -35,6 +36,11 @@ export class D3graphComponent implements OnInit {
   {
     this.d3 = d3Service.getD3(); // <-- obtain the d3 object from the D3 Service
     this.parentNativeElement = element.nativeElement;
+    
+    this.uidataService.currentDate.subscribe(date => {
+      this.date = date;
+      this.drawLines(this.date);
+    })
   }
 
   ngOnInit() {
@@ -42,18 +48,8 @@ export class D3graphComponent implements OnInit {
     let d3 = this.d3;
     let d3ParentElement: any;
     let svg: any;
-    let name: string;
-    let yVal: number;
-    let colors: any = ["rgba(47,89,97,0.2)","rgba(47,64,89,0.2)","rgba(89,58,47,0.2)"];
-    let data: {name: string, yVal: number}[] = [];
-    let padding: number = 25;
-    let xScale: any;
-    let yScale: any;
-    let xColor: any;
-    let xAxis: any;
-    let yAxis: any;
-    let beginning = this.beginning;
-    let ending = this.ending;
+    let beginning = this.uidataService.getBegining();
+    let ending = this.uidataService.getEnding();
 
 
     this.jsondataService.getData().subscribe((data) => {     
@@ -71,11 +67,10 @@ export class D3graphComponent implements OnInit {
             .on('click', function(ev){
             });
 
-
           var chart = Timeline.timelines()
             .stack()
-            .beginning(new Date(this.beginning))
-            .ending(new Date(this.ending))
+            .beginning(new Date(beginning))
+            .ending(new Date(ending))
             .tickFormat({
               format:  this.d3.timeFormat("%Y"),
               tickTime: this.d3.timeYears,
@@ -90,10 +85,6 @@ export class D3graphComponent implements OnInit {
               div.find('.coloredDiv').css('background-color', colors(i))
               div.find('#name').text(datum.label);
             })
-
-            // .click(function (d, i, datum, selectedLabel, selectedRect, xVal) {
-            //   console.log("timelineHover", datum.label, selectedRect);
-            // });
          
           svg = svg.datum(this.timelineData).call(chart);
 
@@ -112,7 +103,8 @@ export class D3graphComponent implements OnInit {
                 .addEventListener('mousemove', (e) => {
                   var x = e.offsetX;
                   var y = e.offsetY;
-                  this.drawLines(x,y);
+
+                  this.uidataService.changeDate(this.positionToYear(x));
              });
         }
       })
@@ -120,59 +112,65 @@ export class D3graphComponent implements OnInit {
 
    positionToYear(x:number) :number{
      //drawLines();
-     var axisbb = this.svg.select(".domain").node().getBBox();
-     var scale = this.d3.scaleLinear()
-             .domain([axisbb.x,(axisbb.x+axisbb.width)])  
-             .rangeRound([parseInt(this.beginning),parseInt(this.ending)]);
-      var year = scale(x)
-      this.uidataService.setDate(year);
-      return year;
+      this.svg = this.d3.select("svg"); //SHOULD BE MODULISED
+      if (this.svg.select(".domain").node()){
+        var axisbb = this.svg.select(".domain").node().getBBox();
+        var scale = this.d3.scaleLinear()
+               .domain([axisbb.x,(axisbb.x+axisbb.width)])  
+               .rangeRound([parseInt(this.uidataService.getBegining()),parseInt(this.uidataService.getEnding())]);
+        var year = scale(x)
+        return year;
+      }else{
+        return -1;
+      }
    }
 
-   // yearToPosition(year:number) :number {
-
-   // }
-
-   drawLines(x:number,y:number) {
+   yearToPosition(year:number) :number {
       this.svg = this.d3.select("svg"); //SHOULD BE MODULISED
-      var bb = this.svg.select(".container").node().getBBox();
-      var axisbb = this.svg.select(".domain").node().getBBox();
-      //var xy = this.d3.mouse(this);
+      if (this.svg.select(".domain").node()){
+        var axisbb = this.svg.select(".domain").node().getBBox();
+        var scale = this.d3.scaleLinear()
+             .domain([parseInt(this.uidataService.getBegining()),parseInt(this.uidataService.getEnding())])  
+             .rangeRound([axisbb.x,(axisbb.x+axisbb.width)]);
+        var xPos = scale(year)
+        return xPos;
+      }else{
+        return -1;
+      }
+      
+   }
 
+   drawLines(year:number) {
+      this.svg = this.d3.select("svg"); //SHOULD BE MODULISED
       this.svg.selectAll(".marker").remove();
 
-      if (x>axisbb.x&&x<(axisbb.x+axisbb.width)){
-        if(y>bb.y&&y<(bb.y+bb.height)){
+      if(year>=parseInt(this.uidataService.getBegining())&&year<=parseInt(this.uidataService.getEnding())){
+        var x = this.yearToPosition(year);
 
-          // var srr2 = this.d3.scaleLinear()
-          //    .domain([axisbb.x,(axisbb.x+axisbb.width)])  
-          //    .rangeRound([parseInt(this.beginning),parseInt(this.ending)]);
-            
-          this.svg.append("line")         
-            .attr("class", "marker")
-            .style("stroke", "black")
-            .attr("x1", x)   
-            .attr("y1", 10)      
-            .attr("x2", x)     
-            .attr("y2", 180)
-            .style("pointer-events","none");
+      this.svg.append("line")         
+        .attr("class", "marker")
+        .style("stroke", "black")
+        .attr("x1", x)   
+        .attr("y1", 10)      
+        .attr("x2", x)     
+        .attr("y2", 180)
+        .style("pointer-events","none");
 
-          this.svg.append("rect")
-            .attr("class", "marker")
-            .attr("width", 30)
-            .attr("height", 20)
-            .attr("x", x-15)
-            .attr("y", 0);
+      this.svg.append("rect")
+        .attr("class", "marker")
+        .attr("width", 30)
+        .attr("height", 20)
+        .attr("x", x-15)
+        .attr("y", 0);
 
-          this.svg.append("text")
-            .attr("class", "marker")
-            .attr("x", x-11)
-            .attr("y", 10)
-            .attr("dy", ".35em")
-            .style("fill","white")
-            .attr("font-size", "10px")
-            .text(this.positionToYear(x));
-        }
+      this.svg.append("text")
+        .attr("class", "marker")
+        .attr("x", x-11)
+        .attr("y", 10)
+        .attr("dy", ".35em")
+        .style("fill","white")
+        .attr("font-size", "10px")
+        .text(this.positionToYear(x));
       }
    }
 
