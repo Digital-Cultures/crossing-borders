@@ -77,7 +77,7 @@ private _ending: string = "1600"; // CALL FROM UI SERVICE
   changeDate(date: number) {
     this.dateSource.next(date)
     this.mapMarkersSource.next(this.mapMarkers.filter(
-          mapMarker => parseInt(mapMarker.data.start) <= date  && parseInt(mapMarker.data.end) >= date));
+          mapMarker => (parseInt(mapMarker.data.start) <= date  && parseInt(mapMarker.data.end) >= date) || -1 == date));
     console.log(this.mapMarkersSource);
   }
 
