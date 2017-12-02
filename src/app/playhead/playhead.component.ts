@@ -35,7 +35,7 @@ export class PlayheadComponent implements OnInit {
     this.asyncObservable()
       .takeWhile(() => this.playing)
       .subscribe(data=>{
-      if(this.date>=parseInt(this.uidataService.getEnding())){
+      if(this.date >= parseInt(this.uidataService.getEnding()) || this.date == -1){
         this.uidataService.changeDate(parseInt(this.uidataService.getBegining()));
       }else{
         var nextDate = this.date+1

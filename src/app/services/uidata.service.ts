@@ -5,19 +5,20 @@ import { ColorsService } from '../services/colors.service';
 
 @Injectable()
 export class UidataService {
-private timelineData = [];  //CREATE INTERFACE
 
-private mapMarkers:any = [];
-private mapMarkersSource = new BehaviorSubject<any>([]); //CREATE INTERFACE
-currentMapMarkers = this.mapMarkersSource.asObservable();
+  private timelineData = [];  //CREATE INTERFACE
 
-private selectedDate:number;
+  private mapMarkers:any = [];
+  private mapMarkersSource = new BehaviorSubject<any>([]); //CREATE INTERFACE
+  currentMapMarkers = this.mapMarkersSource.asObservable();
 
-private dateSource = new BehaviorSubject<number>(1300);
-currentDate = this.dateSource.asObservable();
+  private selectedDate:number;
 
-private _beginning: string = "1250"; // CALL FROM UI SERVICE
-private _ending: string = "1600"; // CALL FROM UI SERVICE
+  private dateSource = new BehaviorSubject<number>(1300);
+  currentDate = this.dateSource.asObservable();
+
+  private _beginning: string = "1300"; // CALL FROM UI SERVICE
+  private _ending: string = "1600"; // CALL FROM UI SERVICE
 
   constructor(
      private colorsService: ColorsService,
@@ -30,8 +31,8 @@ private _ending: string = "1600"; // CALL FROM UI SERVICE
     console.log(this.timelineData[parseInt(idCode[1])].ids[parseInt(idCode[2])]);
   }
 
-  setGraphData(data:any[]) :any[]{
-    
+  setGraphData(data:any[], yAxis:string) :any[]{
+     this.timelineData = [];
       for(var i = 0; i < data.length-1; i++) {
           
           var exists = false;
@@ -39,8 +40,8 @@ private _ending: string = "1600"; // CALL FROM UI SERVICE
           var end:Date = new Date(data[i].end);
 
           for(var k = 0; k < this.timelineData.length; k++) {
-            if (this.timelineData[k].label === data[i].name) {
-                this.timelineData[k].times.push({"color":this.colorsService.getColorByLabel(data[i].name),  "starting_time": start, "ending_time": end})
+            if (this.timelineData[k].label === data[i][yAxis]) {
+                this.timelineData[k].times.push({"color":this.colorsService.getColorByLabel(data[i][yAxis]),  "starting_time": start, "ending_time": end})
                 this.timelineData[k].ids.push(data[i].id);
                 exists = true; // stop searching
             } 
@@ -48,7 +49,7 @@ private _ending: string = "1600"; // CALL FROM UI SERVICE
 
           //add new series
           if (!exists){
-            this.timelineData.push({label: data[i].name, ids: [data[i].id], times: [{"color":this.colorsService.getColorByLabel(data[i].name),  "starting_time": start, "ending_time": end}]})
+            this.timelineData.push({label: data[i][yAxis], ids: [data[i].id], times: [{"color":this.colorsService.getColorByLabel(data[i][yAxis]),  "starting_time": start, "ending_time": end}]})
           }
       }
       return this.timelineData;
@@ -89,11 +90,4 @@ private _ending: string = "1600"; // CALL FROM UI SERVICE
     return this._ending;
   }
 
-  playPlayhead() {
-          
-  }
-
-  stopPlayhead() {
-    
-  }
 }

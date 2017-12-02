@@ -1,0 +1,23 @@
+span {
+	padding: 5px;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 200;
+}
+
+.selected{
+	font-weight: 500;
+}
+
+.coloredDiv {
+  height:20px; width:20px; float:left;
+}
+
+#yAsis{
+	float:left;
+}
+
+#name{
+	float: left;
+	padding-left: 10px;
+}

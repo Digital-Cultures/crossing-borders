@@ -22,6 +22,7 @@ export class D3graphComponent implements OnInit {
   private width: number = 100;
   private height: number = 240;
   private timelineData = [];
+  timelinesYaxis = 'language';
   private svg: any;
   date:number;
 
@@ -44,18 +45,24 @@ export class D3graphComponent implements OnInit {
   }
 
   ngOnInit() {
-    let self = this;
-    let d3 = this.d3;
-    let d3ParentElement: any;
-    let svg: any;
+    
     let beginning = this.uidataService.getBegining();
     let ending = this.uidataService.getEnding();
 
-
     this.jsondataService.getData().subscribe((data) => {     
-        this.timelineData = this.uidataService.setGraphData(data);
+        this.timelineData = this.uidataService.setGraphData(data, this.timelinesYaxis);
+        this.drawGraph();
+      })
+   }
 
-        if (this.parentNativeElement !== null) {
+   drawGraph(){
+
+     let self = this;
+     let d3 = this.d3;
+     let d3ParentElement: any;
+     let svg: any;
+     if (this.parentNativeElement !== null) {
+          $("svg").remove();
  
           d3ParentElement = d3.select(this.parentNativeElement); // <-- use the D3 select method 
      
@@ -69,8 +76,8 @@ export class D3graphComponent implements OnInit {
 
           var chart = Timeline.timelines()
             .stack()
-            .beginning(new Date(beginning))
-            .ending(new Date(ending))
+            .beginning(new Date(this.uidataService.getBegining()))
+            .ending(new Date(this.uidataService.getEnding()))
             .tickFormat({
               format:  this.d3.timeFormat("%Y"),
               tickTime: this.d3.timeYears,
@@ -106,8 +113,13 @@ export class D3graphComponent implements OnInit {
 
                   this.uidataService.changeDate(this.positionToYear(x));
              });
+
+          /** Add out event **/
+          var graphContainer = this.parentNativeElement.querySelector("svg")
+                .addEventListener('mouseout', (e) => {
+                  this.uidataService.changeDate(-1);
+             });
         }
-      })
    }
 
    positionToYear(x:number) :number{
@@ -153,7 +165,7 @@ export class D3graphComponent implements OnInit {
         .attr("x1", x)   
         .attr("y1", 10)      
         .attr("x2", x)     
-        .attr("y2", 180)
+        .attr("y2", this.timelineData.length*25+30)
         .style("pointer-events","none");
 
       this.svg.append("rect")
@@ -190,5 +202,22 @@ export class D3graphComponent implements OnInit {
          break;
        }
     }
+   }
+
+   clickName(e){
+     this.timelinesYaxis = "name";
+     this.jsondataService.getData().subscribe((data) => {     
+        this.timelineData = this.uidataService.setGraphData(data, this.timelinesYaxis);
+        this.drawGraph();
+      })
+
+   }
+
+   clickLanguage(e){
+     this.timelinesYaxis = "language";
+     this.jsondataService.getData().subscribe((data) => {     
+        this.timelineData = this.uidataService.setGraphData(data, this.timelinesYaxis);
+        this.drawGraph();
+      })
    }
  }
