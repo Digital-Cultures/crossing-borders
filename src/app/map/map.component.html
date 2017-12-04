@@ -1,29 +1,10 @@
   <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [styles]="styles">
-  <!-- 	<agm-google-map-marker 
-          *ngFor="let m of markers; let i = index"
-          (markerClick)="clickedMarker(m.label, i)"
-          [latitude]="m.lat"
-          [longitude]="m.lng"
-          [label]="m.label"
-          [markerDraggable]="m.draggable"
-          (dragEnd)="markerDragEnd(m, $event)"> -->
     <agm-marker *ngFor="let m of markers$; let i = index" 
     			[latitude]="m.lat" 
     			[longitude]="m.lng"
-    			(markerClick)="clickedMarker(m.id, i)"
+    			(markerClick)="clickedMarker(m.data, i)"
           (mouseOver)="overMarker(m.id, i)"
           (mouseOut)="outMarker(m.id, i)"
           [iconUrl]="m.icon">
-    	<!-- <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
-	      <ng-template >
-          <h3>{{m.label}}</h3> 
-          <p>{{m.data.language}} {{m.data.compilationDate}}</p>
-          <p>{{m.data.compilationPlace}}</p>
-          <p>{{m.data.overview}}</p>
-          <hr>
-          <em>{{m.data.shelfmark}}</em>
-	      </ng-template>
-	    </agm-snazzy-info-window> -->
     </agm-marker>
-
   </agm-map>

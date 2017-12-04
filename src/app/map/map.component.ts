@@ -7,7 +7,6 @@ import {Observable} from "rxjs"
 import 'rxjs/Rx';
 
 import { AgmCoreModule } from '@agm/core';
-//import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import { JsondataService } from '../services/jsondata.service';
 import { ColorsService } from '../services/colors.service';
@@ -17,13 +16,17 @@ import { UidataService } from '../services/uidata.service';
   selector: 'ngbd-modal-content',
   template: `
     <div class="modal-header">
-      <h4 class="modal-title">Hi there!</h4>
       <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
     <div class="modal-body">
-      <p>Hello, {{name}}!</p>
+      <h3>{{name}}</h3> 
+      <p>{{language}} {{compilationDate}}</p>
+      <p>{{compilationPlace}}</p>
+      <p>{{overview}}</p>
+      <hr>
+      <em>{{shelfmark}}</em>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
@@ -99,8 +102,8 @@ export class MapComponent implements OnInit {
 
   }
 
-  clickedMarker (id:string, i:number){
-    this.open(this.uidataService.getInfoFromID(parseInt(id)));
+  clickedMarker (data:any, i:number){
+    this.open(data);
   }
 
   overMarker(id:string, i:number){
@@ -113,9 +116,14 @@ export class MapComponent implements OnInit {
     console.log(label);
   }
 
-  open(content) {
+  open(data:any) {
     const modalRef = this.modalService.open(NgbdModalContent);
-    modalRef.componentInstance.name = 'World';
+    modalRef.componentInstance.name = data.name;
+    modalRef.componentInstance.language = data.language;
+    modalRef.componentInstance.compilationDate = data.compilationDate;
+    modalRef.componentInstance.compilationPlace = data.compilationPlace;
+    modalRef.componentInstance.overview = data.overview;
+    modalRef.componentInstance.shelfmark = data.shelfmark;
 
     // this.modalService.open(content).result.then((result) => {
     //   console.log("here");
