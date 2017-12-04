@@ -1,8 +1,8 @@
 <div id="hoverRes">
-  <div class="coloredDiv"></div>
+  <app-playhead></app-playhead>
   <div id="yAsis">
   	<span (click)="clickName($event)" [ngClass]="{'selected': timelinesYaxis == 'name'}">Name</span>/
-  	<span (click)="clickLanguage($event)" [ngClass]="{'selected': timelinesYaxis == 'language'}">Language</span>: </div>
+  	<span (click)="clickLanguage($event)" [ngClass]="{'selected': timelinesYaxis == 'language'}">Language</span>
+  </div>
   <div id="name"></div>
-  <div id="scrolled_date"></div>
 </div>

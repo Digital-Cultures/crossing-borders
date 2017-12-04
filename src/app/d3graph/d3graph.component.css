@@ -5,6 +5,9 @@ span {
 	font-weight: 200;
 }
 
+app-playhead{
+	float: left;
+}
 .selected{
 	font-weight: 500;
 }
@@ -14,10 +17,11 @@ span {
 }
 
 #yAsis{
-	float:left;
+	margin-left: -40px;
 }
 
 #name{
-	float: left;
+	//float: left;
 	padding-left: 10px;
+	height: 20px;
 }

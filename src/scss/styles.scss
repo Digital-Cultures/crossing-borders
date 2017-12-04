@@ -28,7 +28,8 @@ body {
 
 .timeline-label {
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 12px;
+  pointer-events: none;
 }
 .axis path,
 .axis line {
@@ -108,4 +109,7 @@ body {
 .si-content-wrapper{
   padding-top: 30px;
 }
-
+.modal-content{
+  border: 1px solid rgba(0,0,0,1);
+  border-radius: 1px;
+}

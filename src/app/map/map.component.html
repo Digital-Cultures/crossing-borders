@@ -10,9 +10,11 @@
     <agm-marker *ngFor="let m of markers$; let i = index" 
     			[latitude]="m.lat" 
     			[longitude]="m.lng"
-    			(markerClick)="clickedMarker(m.label, i)"
+    			(markerClick)="clickedMarker(m.id, i)"
+          (mouseOver)="overMarker(m.id, i)"
+          (mouseOut)="outMarker(m.id, i)"
           [iconUrl]="m.icon">
-    	<agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
+    	<!-- <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
 	      <ng-template >
           <h3>{{m.label}}</h3> 
           <p>{{m.data.language}} {{m.data.compilationDate}}</p>
@@ -21,7 +23,7 @@
           <hr>
           <em>{{m.data.shelfmark}}</em>
 	      </ng-template>
-	    </agm-snazzy-info-window>
+	    </agm-snazzy-info-window> -->
     </agm-marker>
 
   </agm-map>

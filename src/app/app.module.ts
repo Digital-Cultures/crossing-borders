@@ -6,12 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { Ng2YaTableModule } from 'ng2-ya-table';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
 import { D3graphComponent } from './d3graph/d3graph.component';
 import { D3Service } from 'd3-ng2-service';
-import { MapComponent } from './map/map.component';
+import { MapComponent, NgbdModalContent } from './map/map.component';
 import { JsondataService } from './services/jsondata.service';
 import { UidataService } from './services/uidata.service';
 import { ColorsService } from './services/colors.service';
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
     AppComponent,
     D3graphComponent,
     MapComponent,
+    NgbdModalContent,
     DbformComponent,
     VisulisationComponent,
     PlayheadComponent
@@ -49,9 +51,11 @@ const appRoutes: Routes = [
  
     }),
     AgmSnazzyInfoWindowModule,
-    Ng2YaTableModule.forRoot()
+    Ng2YaTableModule.forRoot(),
+    NgbModule.forRoot()
   ],
   providers: [D3Service, JsondataService, UidataService, ColorsService, DataSourceService],
+  entryComponents: [NgbdModalContent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

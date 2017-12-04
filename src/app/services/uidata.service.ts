@@ -17,8 +17,11 @@ export class UidataService {
   private dateSource = new BehaviorSubject<number>(1300);
   currentDate = this.dateSource.asObservable();
 
-  private _beginning: string = "1300"; // CALL FROM UI SERVICE
+  private _beginning: string = "1250"; // CALL FROM UI SERVICE
   private _ending: string = "1600"; // CALL FROM UI SERVICE
+
+  private selectedTextID = new BehaviorSubject<number>(-1);
+  currentTextID = this.selectedTextID.asObservable();
 
   constructor(
      private colorsService: ColorsService,
@@ -68,8 +71,9 @@ export class UidataService {
             label: data[i].name,
             draggable: true,
             data: data[i],
+            id: data[i].id,
             icon: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i].name)
-      });
+          });
         }
       }
       return this.mapMarkers;
@@ -79,7 +83,10 @@ export class UidataService {
     this.dateSource.next(date)
     this.mapMarkersSource.next(this.mapMarkers.filter(
           mapMarker => (parseInt(mapMarker.data.start) <= date  && parseInt(mapMarker.data.end) >= date) || -1 == date));
-    console.log(this.mapMarkersSource);
+  }
+
+  setSelectedTextID(id: number) {
+    this.selectedTextID.next(id)
   }
 
   getBegining() : string {
@@ -88,6 +95,21 @@ export class UidataService {
 
   getEnding() : string {
     return this._ending;
+  }
+
+  getInfoFromID(id:number) : string {
+    return '<div class="modal-header">'+
+        '<h4 class="modal-title">Modal title</h4>'+
+    '<button type="button" class="close" aria-label="Close" (click)="d(\'Cross click\')">'+
+      '<span aria-hidden="true">&times;</span>'+
+    '</button>'+
+ ' </div>'+
+  '<div class="modal-body">'+
+   ' <p>One fine body&hellip;</p>'+
+ ' </div>'+
+  '<div class="modal-footer">'+
+   ' <button type="button" class="btn btn-outline-dark" (click)="c(\'Close click\')">Close</button>'+
+ ' </div>';
   }
 
 }

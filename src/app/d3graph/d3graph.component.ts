@@ -1,8 +1,9 @@
 import { Component, ElementRef, NgZone, OnDestroy, OnInit } from '@angular/core';
+import { NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import { JsondataService } from '../services/jsondata.service';
 import { ColorsService } from '../services/colors.service';
 import { UidataService } from '../services/uidata.service';
-import {Observable} from "rxjs"
+import { Observable } from "rxjs"
 import 'rxjs/Rx';
 import { D3Service, D3, Selection } from 'd3-ng2-service';
 import * as $ from 'jquery';
@@ -25,6 +26,8 @@ export class D3graphComponent implements OnInit {
   timelinesYaxis = 'language';
   private svg: any;
   date:number;
+  selectedID: number;
+  closeResult: string;
 
 
   constructor(
@@ -33,7 +36,8 @@ export class D3graphComponent implements OnInit {
     private d3Service: D3Service, 
     private jsondataService: JsondataService, 
     private colorsService: ColorsService,
-    private uidataService: UidataService ) 
+    private uidataService: UidataService,
+    private modalService: NgbModal ) 
   {
     this.d3 = d3Service.getD3(); // <-- obtain the d3 object from the D3 Service
     this.parentNativeElement = element.nativeElement;
@@ -41,6 +45,11 @@ export class D3graphComponent implements OnInit {
     this.uidataService.currentDate.subscribe(date => {
       this.date = date;
       this.drawLines(this.date);
+    })
+
+    this.uidataService.currentTextID.subscribe(selectedID => {
+      this.selectedID = selectedID;
+      this.hilightBar(this.selectedID);
     })
   }
 
@@ -69,8 +78,8 @@ export class D3graphComponent implements OnInit {
           // Do more D3 things 
           svg = this.d3.select(this.parentNativeElement)
             .append('svg')        // create an <svg> element
-            .attr('width', '90%') // set its dimensions
-            .attr('height', this.height)
+            .attr('width', '100%') // set its dimensions
+            .attr('height', this.timelineData.length*25+50)
             .on('click', function(ev){
             });
 
@@ -84,12 +93,10 @@ export class D3graphComponent implements OnInit {
               tickInterval: 15,
               tickSize: 15,
             })
-            .margin({left:200, right:30, top:0, bottom:0})
+            .margin({left:10, right:10, top:-10, bottom:0})
 
             .hover(function (d, i, datum) {
               var div = $('#hoverRes');
-              var colors = chart.colors();
-              div.find('.coloredDiv').css('background-color', colors(i))
               div.find('#name').text(datum.label);
             })
          
@@ -100,7 +107,8 @@ export class D3graphComponent implements OnInit {
           for(var e in elements){
             if(elements[e].id){
               elements[e].addEventListener('click', (e) => {
-                this.displayFullDescription(e);
+                this.open(this.displayFullDescription(e));
+                //this.displayFullDescription(e);
              });
             }
           }
@@ -110,7 +118,6 @@ export class D3graphComponent implements OnInit {
                 .addEventListener('mousemove', (e) => {
                   var x = e.offsetX;
                   var y = e.offsetY;
-
                   this.uidataService.changeDate(this.positionToYear(x));
              });
 
@@ -119,6 +126,8 @@ export class D3graphComponent implements OnInit {
                 .addEventListener('mouseout', (e) => {
                   this.uidataService.changeDate(-1);
              });
+
+          d3.selectAll("svg .timeline-label").attr('dx', 15)
         }
    }
 
@@ -172,36 +181,53 @@ export class D3graphComponent implements OnInit {
         .attr("class", "marker")
         .attr("width", 30)
         .attr("height", 20)
+        .style("pointer-events","none")
         .attr("x", x-15)
-        .attr("y", 0);
+        .attr("y", this.timelineData.length*25+25);
 
       this.svg.append("text")
         .attr("class", "marker")
         .attr("x", x-11)
-        .attr("y", 10)
+        .attr("y", this.timelineData.length*25+35)
         .attr("dy", ".35em")
         .style("fill","white")
+        .style("pointer-events","none")
         .attr("font-size", "10px")
         .text(this.positionToYear(x));
       }
    }
 
+   hilightBar(id:number){
+     for (var i = this.timelineData.length - 1; i >= 0; i--) {
+        for (var k = this.timelineData[i].ids.length - 1; k >= 0; k--) {
+          if (parseInt(this.timelineData[i].ids[k]) == id ){
+            this.timelineData[i].times[k] = {"color":this.timelineData[i].times[k].color.replace(/[^,]+(?=\))/, '1'),  "starting_time": this.timelineData[i].times[k].starting_time, "ending_time": this.timelineData[i].times[k].ending_time};
+          }else if ( -1 == id){
+            this.timelineData[i].times[k] = {"color":this.timelineData[i].times[k].color.replace(/[^,]+(?=\))/, '0.2'),  "starting_time": this.timelineData[i].times[k].starting_time, "ending_time": this.timelineData[i].times[k].ending_time};
+          }else{
+            this.timelineData[i].times[k] = {"color":this.timelineData[i].times[k].color.replace(/[^,]+(?=\))/, '0.01'),  "starting_time": this.timelineData[i].times[k].starting_time, "ending_time": this.timelineData[i].times[k].ending_time};
+          }
+        }
+     }
+     this.drawGraph();
+   }
 
-   displayFullDescription(e){
+   displayFullDescription(e):string {
      console.log(e);
      var item = document.elementFromPoint(e.clientX, e.clientY);
      var stack = [];
+
+     var items = "";
      for (var i=0; i<20; i++) {
        if(item.id.startsWith('timelineItem')){
-         console.log(item.id);
+         items += item.id+" ";
          this.uidataService.selectItem(item.id);
          this.d3.select(item).style('pointer-events','none').attr('class', 'hover');
          // // stack.push(item);
          item = document.elementFromPoint(e.clientX, e.clientY);
-       }else{
-         break;
        }
     }
+    return items;
    }
 
    clickName(e){
@@ -220,4 +246,24 @@ export class D3graphComponent implements OnInit {
         this.drawGraph();
       })
    }
+
+   open(content) {
+    this.modalService.open(content).result.then((result) => {
+      console.log("here");
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      console.log("here2");
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return  `with: ${reason}`;
+    }
+  }
  }
