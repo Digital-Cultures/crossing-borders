@@ -109,7 +109,13 @@ body {
 .si-content-wrapper{
   padding-top: 30px;
 }
-.modal-content{
+.modal-content {
   border: 1px solid rgba(0,0,0,1);
   border-radius: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+.modal-content p {
+  margin-bottom: 8px;
 }

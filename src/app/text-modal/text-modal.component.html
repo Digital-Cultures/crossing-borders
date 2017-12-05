@@ -1,0 +1,14 @@
+<div class="modal-body">
+	<div *ngFor="let d of data"> 
+	  <h5>{{d.name}}</h5> 
+	  <p>{{d.language}} {{d.compilationDate}}</p>
+	  <p>{{d.compilationPlace}}</p>
+	  <p>{{d.overview}}</p>
+	  <hr>
+	  <em>{{d.shelfmark}}</em>
+	  <hr>
+	</div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>

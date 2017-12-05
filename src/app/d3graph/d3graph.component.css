@@ -1,7 +1,7 @@
 span {
 	padding: 5px;
 	cursor: pointer;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 200;
 }
 
@@ -10,6 +10,7 @@ app-playhead{
 }
 .selected{
 	font-weight: 500;
+	text-decoration: underline;
 }
 
 .coloredDiv {

@@ -6,6 +6,7 @@ import { ColorsService } from '../services/colors.service';
 @Injectable()
 export class UidataService {
 
+  private rawData = [];
   private timelineData = [];  //CREATE INTERFACE
 
   private mapMarkers:any = [];
@@ -28,13 +29,23 @@ export class UidataService {
      private jsondataService: JsondataService
      ) { }
 
-  selectItem(id:string){
-    var idCode = id.split("_");
+  getItemFromChart(elementId:string):any{
+    var idCode = elementId.split("_");
     console.log(this.timelineData[parseInt(idCode[1])].label);
     console.log(this.timelineData[parseInt(idCode[1])].ids[parseInt(idCode[2])]);
+
+    var id = this.timelineData[parseInt(idCode[1])].ids[parseInt(idCode[2])];
+
+    for(var i = 0; i < this.rawData.length-1; i++) {
+      if (this.rawData[i].id == id){
+        return this.rawData[i];
+      }
+    }
+    return false;
   }
 
   setGraphData(data:any[], yAxis:string) :any[]{
+    this.rawData = data;
      this.timelineData = [];
       for(var i = 0; i < data.length-1; i++) {
           

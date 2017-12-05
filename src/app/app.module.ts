@@ -12,7 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { D3graphComponent } from './d3graph/d3graph.component';
 import { D3Service } from 'd3-ng2-service';
-import { MapComponent, NgbdModalContent } from './map/map.component';
+import { MapComponent } from './map/map.component';
 import { JsondataService } from './services/jsondata.service';
 import { UidataService } from './services/uidata.service';
 import { ColorsService } from './services/colors.service';
@@ -21,6 +21,7 @@ import { DbformComponent } from './dbform/dbform.component';
 import { DataSourceService } from './dbform/data-source.service';
 import { VisulisationComponent } from './visulisation/visulisation.component';
 import { PlayheadComponent } from './playhead/playhead.component';
+import { TextModalComponent } from './text-modal/text-modal.component';
 
 const appRoutes: Routes = [
   { path: '',   component: VisulisationComponent },
@@ -32,10 +33,11 @@ const appRoutes: Routes = [
     AppComponent,
     D3graphComponent,
     MapComponent,
-    NgbdModalContent,
+    TextModalComponent,
     DbformComponent,
     VisulisationComponent,
-    PlayheadComponent
+    PlayheadComponent,
+    TextModalComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -55,7 +57,7 @@ const appRoutes: Routes = [
     NgbModule.forRoot()
   ],
   providers: [D3Service, JsondataService, UidataService, ColorsService, DataSourceService],
-  entryComponents: [NgbdModalContent],
+  entryComponents: [TextModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

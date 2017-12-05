@@ -5,39 +5,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {Observable} from "rxjs"
 import 'rxjs/Rx';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { AgmCoreModule } from '@agm/core';
-import { NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+
 import { JsondataService } from '../services/jsondata.service';
 import { ColorsService } from '../services/colors.service';
 import { UidataService } from '../services/uidata.service';
-
-@Component({
-  selector: 'ngbd-modal-content',
-  template: `
-    <div class="modal-header">
-      <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <h3>{{name}}</h3> 
-      <p>{{language}} {{compilationDate}}</p>
-      <p>{{compilationPlace}}</p>
-      <p>{{overview}}</p>
-      <hr>
-      <em>{{shelfmark}}</em>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
-    </div>
-  `
-})
-export class NgbdModalContent {
-  @Input() name;
-
-  constructor(public activeModal: NgbActiveModal) {}
-}
+import { TextModalComponent } from '../text-modal/text-modal.component';
 
 
 @Component({
@@ -54,7 +29,6 @@ export class MapComponent implements OnInit {
   lat: number = 51.5074;
   lng: number = 0.1278;
   zoom: number = 6;
-  closeResult: string;
 
   styles = [
     {
@@ -117,32 +91,8 @@ export class MapComponent implements OnInit {
   }
 
   open(data:any) {
-    const modalRef = this.modalService.open(NgbdModalContent);
-    modalRef.componentInstance.name = data.name;
-    modalRef.componentInstance.language = data.language;
-    modalRef.componentInstance.compilationDate = data.compilationDate;
-    modalRef.componentInstance.compilationPlace = data.compilationPlace;
-    modalRef.componentInstance.overview = data.overview;
-    modalRef.componentInstance.shelfmark = data.shelfmark;
-
-    // this.modalService.open(content).result.then((result) => {
-    //   console.log("here");
-    //   this.closeResult = `Closed with: ${result}`;
-    // }, (reason) => {
-    //   console.log("here2");
-    //   this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    
-
-    // });
+    const modalRef = this.modalService.open(TextModalComponent);
+    modalRef.componentInstance.data = [data];
   }
 
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return  `with: ${reason}`;
-    }
-  }
 }

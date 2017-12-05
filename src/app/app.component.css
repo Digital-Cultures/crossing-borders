@@ -13,6 +13,8 @@ a, select {
 	border-radius: 2px;
 	border: 1px solid #CCC;
 	pointer-events:auto;
+	font-size: 14px;
+	color: #000;
 }
 
 select {

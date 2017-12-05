@@ -1,8 +1,9 @@
 import { Component, ElementRef, NgZone, OnDestroy, OnInit } from '@angular/core';
-import { NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { JsondataService } from '../services/jsondata.service';
 import { ColorsService } from '../services/colors.service';
 import { UidataService } from '../services/uidata.service';
+import { TextModalComponent } from '../text-modal/text-modal.component';
 import { Observable } from "rxjs"
 import 'rxjs/Rx';
 import { D3Service, D3, Selection } from 'd3-ng2-service';
@@ -20,14 +21,11 @@ export class D3graphComponent implements OnInit {
   
   d3: D3;
   private parentNativeElement: any;
-  private width: number = 100;
-  private height: number = 240;
   private timelineData = [];
   timelinesYaxis = 'language';
   private svg: any;
   date:number;
   selectedID: number;
-  closeResult: string;
 
 
   constructor(
@@ -108,7 +106,6 @@ export class D3graphComponent implements OnInit {
             if(elements[e].id){
               elements[e].addEventListener('click', (e) => {
                 this.open(this.displayFullDescription(e));
-                //this.displayFullDescription(e);
              });
             }
           }
@@ -212,22 +209,22 @@ export class D3graphComponent implements OnInit {
      this.drawGraph();
    }
 
-   displayFullDescription(e):string {
+   displayFullDescription(e):any {
      console.log(e);
      var item = document.elementFromPoint(e.clientX, e.clientY);
      var stack = [];
 
-     var items = "";
+     // var items = "";
      for (var i=0; i<20; i++) {
        if(item.id.startsWith('timelineItem')){
-         items += item.id+" ";
-         this.uidataService.selectItem(item.id);
+         // items += item.id+" ";
+         stack.push(this.uidataService.getItemFromChart(item.id));
          this.d3.select(item).style('pointer-events','none').attr('class', 'hover');
          // // stack.push(item);
          item = document.elementFromPoint(e.clientX, e.clientY);
        }
     }
-    return items;
+    return stack;
    }
 
    clickName(e){
@@ -247,23 +244,22 @@ export class D3graphComponent implements OnInit {
       })
    }
 
-   open(content) {
-    this.modalService.open(content).result.then((result) => {
-      console.log("here");
-      this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
-      console.log("here2");
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
+   open(data:any) {
+     const modalRef = this.modalService.open(TextModalComponent);
+     modalRef.componentInstance.data = data;
+    // modalRef.componentInstance.name = data.name;
+    // modalRef.componentInstance.language = data.language;
+    // modalRef.componentInstance.compilationDate = data.compilationDate;
+    // modalRef.componentInstance.compilationPlace = data.compilationPlace;
+    // modalRef.componentInstance.overview = data.overview;
+    // modalRef.componentInstance.shelfmark = data.shelfmark;
+    // this.modalService.open(content).result.then((result) => {
+    //   console.log("here");
+    //   this.closeResult = `Closed with: ${result}`;
+    // }, (reason) => {
+    //   console.log("here2");
+    //   this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    // });
   }
 
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return  `with: ${reason}`;
-    }
-  }
  }
