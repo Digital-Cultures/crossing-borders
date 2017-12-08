@@ -22,8 +22,8 @@ import { TextModalComponent } from '../text-modal/text-modal.component';
 })
 
 export class MapComponent implements OnInit {
-	mapData = [];
-  public markers$ : Observable<any>;
+  mapData = [];
+  public markers$: Observable<any>;
 
   titleMap: string = 'Google Maps Addeed Successfully';
   lat: number = 51.5074;
@@ -32,65 +32,69 @@ export class MapComponent implements OnInit {
 
   styles = [
     {
-        "featureType": "all",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
+      "featureType": "all",
+      "elementType": "all",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
     },
     {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
- 			},
- 			{
-	        	"color": "#7e99ab"
-            },
-            {
-                "lightness": 0
-            }
-        ]
+      "featureType": "water",
+      "elementType": "all",
+      "stylers": [
+        {
+          "visibility": "on"
+        },
+        {
+          "color": "#7e99ab"
+        },
+        {
+          "lightness": 0
+        }
+      ]
     }];
 
 
   constructor(
-    private jsondataService: JsondataService,  
+    private jsondataService: JsondataService,
     private colorsService: ColorsService,
     private uidataService: UidataService,
     private modalService: NgbModal
-    ) { 
-      this.uidataService.currentMapMarkers.subscribe(markers => {
-        this.markers$ = markers;
-      })
-    }
-
-  ngOnInit() {
-   	this.jsondataService.currentRawData.subscribe((data) => {       
-	    this.uidataService.setMapData(data);
-      this.uidataService.changeDate(-1);
-	  });
-
+  ) {
+    this.uidataService.currentMapMarkers.subscribe(markers => {
+      this.markers$ = markers;
+    })
   }
 
-  clickedMarker (data:any, i:number){
+  ngOnInit() {
+    this.jsondataService.currentRawData.subscribe((data) => {
+      this.uidataService.setMapData(data, this.jsondataService.getTimelinesYaxi());
+      this.uidataService.changeDate(-1);
+    });
+
+    this.jsondataService.currentTimelinesYaxis.subscribe((yAxis: string) => {
+      this.uidataService.setMapData(this.jsondataService.getRawData(), yAxis);
+      this.uidataService.changeDate(-1);
+    })
+  }
+
+  clickedMarker(data: any, i: number) {
     this.open(data);
   }
 
-  overMarker(id:string, i:number){
+  overMarker(id: string, i: number) {
     this.uidataService.setSelectedTextID(parseInt(id));
     console.log(id);
   }
 
-  outMarker(label:string, i:number){
+  outMarker(label: string, i: number) {
     this.uidataService.setSelectedTextID(-1);
     console.log(label);
   }
 
-  open(data:any) {
+  open(data: any) {
     const modalRef = this.modalService.open(TextModalComponent);
     modalRef.componentInstance.data = [data];
   }

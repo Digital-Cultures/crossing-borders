@@ -69,7 +69,7 @@ export class UidataService {
     return this.timelineData;
   }
 
-  setMapData(data): Observable<any> {
+  setMapData(data: any[], yAxis: string): Observable<any> {
 
     this.mapMarkers = [];
 
@@ -85,7 +85,7 @@ export class UidataService {
           draggable: true,
           data: data[i],
           id: data[i].id,
-          icon: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i].name)
+      icon: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i][yAxis])
         });
       }
     }
