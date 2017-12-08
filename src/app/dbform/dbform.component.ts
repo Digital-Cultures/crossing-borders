@@ -100,7 +100,7 @@ export class DbformComponent {
         name: 'geometry',
         render: (data: any): string => {
             return "<div class='text-center'>" +
-                "<button type='button' class='btn btn-sm btn-primary'><span class='glyphicon glyphicon-info-sign'></span></button> " +
+                "<button type='button' class='btn btn-sm btn-primary'><span class='fa fa-info-circle'></span></button> " +
                 "</div>";
         },
         action: (data: any): any => {

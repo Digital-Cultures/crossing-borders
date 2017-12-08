@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import {Observable} from "rxjs"
+import { Observable } from "rxjs"
 import 'rxjs/Rx';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -69,7 +69,7 @@ export class MapComponent implements OnInit {
     }
 
   ngOnInit() {
-   	this.jsondataService.getData().subscribe((data) => {       
+   	this.jsondataService.currentRawData.subscribe((data) => {       
 	    this.uidataService.setMapData(data);
       this.uidataService.changeDate(-1);
 	  });

@@ -1,17 +1,17 @@
 <nav>
 
 	<div class="form-group">
-	  <select class="form-control" id="sel1">
-	    <option>Six Kings</option>
-	    <option>2</option>
+	  <select (change)="changeData($event)" class="form-control" id="sel1">
+	    <option value="prophecy_of_the_six_kings">Six Kings</option>
+	    <option value="life_of_st_edward">Life of St Edward</option>
 	    <option>3</option>
 	    <option>4</option>
 	  </select>
 	</div>
 
 	<div class="menuItem">
-		<a routerLink="" routerLinkActive="active">Visulisation</a>
-		<a routerLink="/db" routerLinkActive="active">DB</a>
+		<a routerLink="" routerLinkActive="active">Visualisation</a>
+		<a routerLink="/db" routerLinkActive="active">Database</a>
 	</div>
     
 </nav>

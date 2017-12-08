@@ -49,7 +49,7 @@ export class DataSourceService {
       request.filters.forEach((filter) => {
         if (filter.value) {
           data = data.filter(function(i) {
-            return typeof i[filter.name] == 'string' && i[filter.name].indexOf(filter.value) > -1;  
+            return typeof i[filter.name] == 'string' && i[filter.name].toLowerCase().indexOf(filter.value.toLowerCase()) > -1;  
           });
         }
       });

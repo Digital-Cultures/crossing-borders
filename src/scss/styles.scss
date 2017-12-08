@@ -15,7 +15,6 @@ $si-close-font-size:        25px;
 $si-close-opacity:          0.7;
 $si-close-hover-opacity:    1;
 
-@import "../../node_modules/snazzy-info-window/dist/snazzy-info-window.scss";
 
 body {
   margin: 0;
@@ -56,6 +55,11 @@ body {
 }
 .ng2-ya-table_filter{
   display: none;
+}
+.ng2-ya-table_length{
+  width: 100vh;
+  display: flex;
+  font-size: 13px;
 }
 .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: #f7efe7;
@@ -118,4 +122,23 @@ body {
 }
 .modal-content p {
   margin-bottom: 8px;
+}
+
+.form-control{
+  font-size: 13px;
+}
+
+table .sorting:after {
+    content: "\f160" !important;
+    font: normal normal normal 14px/1 FontAwesome !important;
+}
+
+table .sorting_asc:after {
+    content: "\f160" !important;
+    opacity: 0.5 !important;
+}
+
+table .sorting_desc:after {
+    content: "\f161" !important;
+     opacity: 0.5 !important;
 }

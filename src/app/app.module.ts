@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
-import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { Ng2YaTableModule } from 'ng2-ya-table';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -52,7 +51,6 @@ const appRoutes: Routes = [
       apiKey: 'AIzaSyCjq8QyaUNCdB21vTLiPC5IwmjvRzD9f80'
  
     }),
-    AgmSnazzyInfoWindowModule,
     Ng2YaTableModule.forRoot(),
     NgbModule.forRoot()
   ],

@@ -1,0 +1,204 @@
+{
+   "type":"text_date_language",
+   "texts":[
+      {
+         "id":"1",
+         "name":"La Vie d'Edouard le Confesseur",
+         "language":"Anglo-Norman",
+         "start":"1266",
+         "end":"1233",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               52.1523,
+               1.404434
+            ]
+         },
+         "compilationPlace":"Campsey, Suffolk",
+         "shelfmark":"London, British Library, Additional MS. 70513, ff. 55v-85v",
+         "overview":"Saints' lives (Anglo-Norman)",
+         "compilationDate":"ex. s.xiii/in. s.xiv"
+      },
+      {
+         "id":"2",
+         "name":"La Vie d'Edouard le Confesseur",
+         "language":"Anglo-Norman",
+         "start":"1266",
+         "end":"1299",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.537081,
+               0.075
+            ]
+         },
+         "compilationPlace":"Barking Abbey",
+         "shelfmark":"Rome, Biblioteca Apostolica Vaticana, MS. Reg. Lat. 489, ff.1-35",
+         "overview":"A composite manuscript; this section also contains a Latin verse Life based on Aelred's Vita (Latin)",
+         "compilationDate":"ex. s.xiii"
+      },
+      {
+         "id":"3",
+         "name":"La Vie d'Edouard le Confesseur",
+         "language":"Anglo-Norman",
+         "start":"1292",
+         "end":"1292",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               49.663613,
+               2.528073
+            ]
+         },
+         "compilationPlace":"Picardy",
+         "shelfmark":"Paris, Bibliotheque Nationale, fr. 1416, ff.157-181",
+         "overview":"Le Roman d'Eneas and Wace's Brut (French)",
+         "compilationDate":"c.1292"
+      },
+      {
+         "id":"4",
+         "name":"De saint Edouart",
+         "language":"Anglo-Norman",
+         "start":"1300",
+         "end":"1350",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               48.856614,
+               2.352222
+            ]
+         },
+         "compilationPlace":"Paris",
+         "shelfmark":"London, British Library, Egerton MS. 745, ff.91-129v",
+         "overview":"Saints' lives and moral treatises (French)",
+         "compilationDate":"c.1300-50"
+      },
+      {
+         "id":"5",
+         "name":"La Estoire de Seint Aedward le Rei",
+         "language":"Anglo-Norman",
+         "start":"1250",
+         "end":"1260",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.497495,
+               -0.135658
+            ]
+         },
+         "compilationPlace":"London or Westminster",
+         "shelfmark":"Cambridge, University Library, MS Ee.3.59 ",
+         "overview":"Only this item (Anglo-Norman), with illustrations",
+         "compilationDate":"c.1250-60"
+      },
+      {
+         "id":"6",
+         "name":"Life of Edward the Confessor",
+         "language":"English",
+         "start":"1300",
+         "end":"1330",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.867323,
+               -2.246704
+            ]
+         },
+         "compilationPlace":"Gloucestershire",
+         "shelfmark":"Oxford, Bodleian Library, Ashmole 43 (SC 6924), ff.260-269v",
+         "overview":"The South English Legendary collection of saints' lives (English)",
+         "compilationDate":"c.1300-30"
+      },
+      {
+         "id":"7",
+         "name":"Life of Edward the Confessor",
+         "language":"English",
+         "start":"1400",
+         "end":"1433",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.867323,
+               -2.246705
+            ]
+         },
+         "compilationPlace":"Gloucestershire",
+         "shelfmark":"London, British Library, Cotton Julius D. IX",
+         "overview":"The South English Legendary collection of saints' lives (English)",
+         "compilationDate":"in. s.xv"
+      },
+      {
+         "id":"8",
+         "name":"Life of Edward the Confessor",
+         "language":"English",
+         "start":"1450",
+         "end":"1250",
+         "compilationPlace":"unknown",
+         "shelfmark":"Oxford, Bodleian Library, Bodley 779 (SC 2567), ff.273-279v",
+         "overview":"The South English Legendary collection of saints' lives (English)",
+         "compilationDate":"c.1450"
+      },
+      {
+         "id":"9",
+         "name":"Life of Edward the Confessor",
+         "language":"English",
+         "start":"1467",
+         "end":"1499",
+         "compilationPlace":"unknown",
+         "shelfmark":"British Library, Additional MS. 35298, ff.48-53",
+         "overview":"The Gilte Legende collection of saints' lives (English)",
+         "compilationDate":"ex. s. xv"
+      },
+      {
+         "id":"10",
+         "name":"Life of Edward the Confessor",
+         "language":"English",
+         "start":"1400",
+         "end":"1499",
+         "compilationPlace":"unknown",
+         "shelfmark":"Oxford, Trinity College MS. 11",
+         "overview":"Only this item (English)",
+         "compilationDate":"s.xv"
+      },
+      {
+         "id":"11",
+         "name":"Jatvaroar saga",
+         "language":"Old Norse",
+         "start":"1387",
+         "end":"1349",
+         "compilationPlace":"Iceland",
+         "shelfmark":"Reykjavik, Arnamagnaean Institute, GkS 1005 fol., ff.212r-213r (Flateyjarbok)",
+         "overview":"Kings' sagas, romances, saints' lives, and other historical material (Old Norse)",
+         "compilationDate":"1387-1394"
+      },
+      {
+         "id":"12",
+         "name":"Jatvaroar saga",
+         "language":"Old Norse",
+         "start":"1350",
+         "end":"1360",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               63.743115,
+               -20.6087
+            ]
+         },
+         "compilationPlace":"pykkvibaer, Iceland",
+         "shelfmark":"Stockholm, National Library of Sweden, Perg. fol. no. 5, ff.68v-71r",
+         "overview":"Sagas of bishops (Old Norse)",
+         "compilationDate":"c.1350-1360"
+      },
+      {
+         "id":"13",
+         "name":"Jatvaroar saga",
+         "language":"Old Norse",
+         "start":"1450",
+         "end":"1500",
+         "compilationPlace":"Iceland",
+         "shelfmark":"Copenhagen, Arnamagnaean Institute, AM 238 fol. XVI",
+         "overview":"Jatvaroar saga and Egidius saga (Old Norse)",
+         "compilationDate":"c.1450-1500"
+      }
+   ]
+}
