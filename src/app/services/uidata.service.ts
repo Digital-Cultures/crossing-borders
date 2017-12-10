@@ -18,8 +18,8 @@ export class UidataService {
   private dateSource = new BehaviorSubject<number>(1300);
   currentDate = this.dateSource.asObservable();
 
-  private _beginning: string = "1200"; // CALL FROM UI SERVICE
-  private _ending: string = "1600"; // CALL FROM UI SERVICE
+  private _beginning: string = "1500"; // CALL FROM UI SERVICE
+  private _ending: string = "1500"; // CALL FROM UI SERVICE
 
   private selectedTextID = new BehaviorSubject<number>(-1);
   currentTextID = this.selectedTextID.asObservable();
@@ -61,6 +61,14 @@ export class UidataService {
         }
       };
 
+      if (new Date(start) < new Date(this._beginning)) {
+        this._beginning = data[i].start;
+      }
+
+      if (new Date(end) > new Date(this._ending)) {
+           this._ending = data[i].end;
+      }
+
       //add new series
       if (!exists) {
         this.timelineData.push({ label: data[i][yAxis], ids: [data[i].id], times: [{ "color": this.colorsService.getColorByLabel(data[i][yAxis]), "starting_time": start, "ending_time": end }] })
@@ -85,7 +93,7 @@ export class UidataService {
           draggable: true,
           data: data[i],
           id: data[i].id,
-      icon: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i][yAxis])
+          icon: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i][yAxis])
         });
       }
     }
