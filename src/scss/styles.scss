@@ -1,19 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 
 
-$si-content-padding:        10px;
-$si-border-width:           2px;
-$si-border-color:           #333;
-$si-font-size:              14px;
-$si-shadow-h:             20px;
-$si-shadow-v:             20px;
-$si-shadow-blur:          0;
-$si-shadow-spread:          0;
-$si-shadow-opacity:         0.3;
-$si-close-font-size:        25px;
-$si-close-opacity:          0.7;
-$si-close-hover-opacity:    1;
+$si-content-padding : 10px;
+$si-border-width : 2px;
+$si-border-color : #333;
+$si-font-size : 14px;
+$si-shadow-h : 20px;
+$si-shadow-v : 20px;
+$si-shadow-blur : 0;
+$si-shadow-spread : 0;
+$si-shadow-opacity : 0.3;
+$si-close-font-size : 25px;
+$si-close-opacity : 0.7;
+$si-close-hover-opacity : 1;
 
 
 body {
@@ -23,50 +24,63 @@ body {
 }
 
 
+
 /*D3 styling (gets missed out by angular so adding it at root)*/
 
 .timeline-label {
   font-family: sans-serif;
   font-size: 12px;
   pointer-events: none;
+  stroke: black;
+  stroke-opacity: 0.5;
+  stroke-width: 0.5;
 }
+
 .axis path,
 .axis line {
   fill: none;
   stroke: black;
   shape-rendering: crispEdges;
 }
+
 .axis text {
   font-family: sans-serif;
   font-size: 10px;
 }
 
-.timeline-xAxis{
+.timeline-xAxis {
   fill: #efece8;
 }
 
 #timeline2 .axis {
-  transform: translate(0px,40px);
-  -ms-transform: translate(0px,40px); /* IE 9 */
-  -webkit-transform: translate(0px,40px); /* Safari and Chrome */
-  -o-transform: translate(0px,40px); /* Opera */
-  -moz-transform: translate(0px,40px); /* Firefox */
+  transform: translate(0px, 40px);
+  -ms-transform: translate(0px, 40px);
+  /* IE 9 */
+  -webkit-transform: translate(0px, 40px);
+  /* Safari and Chrome */
+  -o-transform: translate(0px, 40px);
+  /* Opera */
+  -moz-transform: translate(0px, 40px);
+  /* Firefox */
 }
 
-.ng2-ya-table{
+.ng2-ya-table {
   font-size: 13px;
   font-weight: 300;
 }
-.ng2-ya-table_filter{
+
+.ng2-ya-table_filter {
   display: none;
 }
-.ng2-ya-table_length{
+
+.ng2-ya-table_length {
   width: 100vh;
   display: flex;
   font-size: 13px;
 }
+
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #f7efe7;
+  background-color: #f7efe7;
 }
 
 .sebm-google-map-container-inner {
@@ -76,22 +90,19 @@ body {
 /////////////////////////////
 // Custom Snazzy Info Window CSS
 //////////////////////////////
-
 // Adjust the Snazzy Info Window styles using
 // the existing classes. Check the Readme for
 // the full markup and available classes.
-
 .si-wrapper-top {
-    width: 300px;
+  width: 300px;
 
-    @media (min-width: 600px) {
-        width: 400px;
-    }
+  @media (min-width: 600px) {
+    width: 400px;
+  }
 
-    @media (min-width: 992px) {
-        width: 500px;
-    }
-
+  @media (min-width: 992px) {
+    width: 500px;
+  }
 }
 
 .si-content {
@@ -103,46 +114,46 @@ body {
 //     @media (max-width: 991px) {
 //         padding: 50px;
 //     }
-
 //     @media (max-width: 599px) {
 //         padding: 40px;
 //     }
 // }
-
 .si-close-button {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
-.si-content-wrapper{
+.si-content-wrapper {
   padding-top: 30px;
 }
+
 .modal-content {
-  border: 1px solid rgba(0,0,0,1);
+  border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 1px;
   font-size: 12px;
   font-weight: 400;
   text-align: center;
 }
+
 .modal-content p {
   margin-bottom: 8px;
 }
 
-.form-control{
+.form-control {
   font-size: 13px;
 }
 
 table .sorting:after {
-    content: "\f160" !important;
-    font: normal normal normal 14px/1 FontAwesome !important;
+  content: "\f160" !important;
+  font: normal normal normal 14px/1 FontAwesome !important;
 }
 
 table .sorting_asc:after {
-    content: "\f160" !important;
-    opacity: 0.5 !important;
+  content: "\f160" !important;
+  opacity: 0.5 !important;
 }
 
 table .sorting_desc:after {
-    content: "\f161" !important;
-     opacity: 0.5 !important;
+  content: "\f161" !important;
+  opacity: 0.5 !important;
 }

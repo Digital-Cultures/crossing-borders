@@ -96,7 +96,7 @@ export class D3graphComponent implements OnInit {
           tickInterval: 15,
           tickSize: 15,
         })
-        .margin({ left: 10, right: 10, top: -10, bottom: 0 })
+        .margin({ left: 40, right: 40, top: -10, bottom: 0 })
 
         .hover(function(d, i, datum) {
           var div = $('#hoverRes');
@@ -129,7 +129,14 @@ export class D3graphComponent implements OnInit {
           this.uidataService.changeDate(-1);
         });
 
-      d3.selectAll("svg .timeline-label").attr('dx', 15)
+      /** Colour lables **/
+      console.log(d3.selectAll("svg .timeline-label").size());
+      for (var i = 1; i< d3.selectAll("svg .timeline-label").size()+1; i++) {
+        console.log(d3.select("svg .timeline-label:nth-of-type("+i+")").text());
+        d3.selectAll("svg .timeline-label:nth-of-type("+i+")")
+          .attr('fill', this.colorsService.getColorByLabel(d3.select("svg .timeline-label:nth-of-type(" + i + ")").text()).replace(/[^,]+(?=\))/, '1'))
+          .attr('dx', 15);
+      }
     }
   }
 
