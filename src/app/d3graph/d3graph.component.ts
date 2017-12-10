@@ -55,6 +55,7 @@ export class D3graphComponent implements OnInit {
     this.jsondataService.currentRawData.subscribe((rawData: any) => {
       this.timelineData = this.uidataService.setGraphData(rawData, this.jsondataService.getTimelinesYaxi());
       this.drawGraph();
+      this.addTimeSelector();
     })
 
     this.jsondataService.currentTimelinesYaxis.subscribe((yAxis: string) => {
@@ -63,7 +64,6 @@ export class D3graphComponent implements OnInit {
       this.drawGraph();
     })
   }
-
 
   ngOnInit() { }
 
@@ -170,8 +170,20 @@ export class D3graphComponent implements OnInit {
 
   }
 
+  addTimeSelector(){
+    var x = this.yearToPosition(parseInt(this.uidataService.getBegining()));
+    this.svg = this.d3.select("svg"); 
+    this.svg.append("rect")
+      .attr("class", "marker")
+      .attr("width", 300)
+      .attr("height", 20)
+      .style("pointer-events", "none")
+      .attr("x", x - 15)
+      .attr("y", this.timelineData.length * 25 + 5);
+  }
+
   drawLines(year: number) {
-    this.svg = this.d3.select("svg"); //SHOULD BE MODULISED
+    this.svg = this.d3.select("svg");
     this.svg.selectAll(".marker").remove();
 
     if (year >= parseInt(this.uidataService.getBegining()) && year <= parseInt(this.uidataService.getEnding())) {
@@ -210,7 +222,9 @@ export class D3graphComponent implements OnInit {
     for (var i = this.timelineData.length - 1; i >= 0; i--) {
       for (var k = this.timelineData[i].ids.length - 1; k >= 0; k--) {
         if (parseInt(this.timelineData[i].ids[k]) == id) {
-          this.timelineData[i].times[k] = { "color": this.timelineData[i].times[k].color.replace(/[^,]+(?=\))/, '1'), "starting_time": this.timelineData[i].times[k].starting_time, "ending_time": this.timelineData[i].times[k].ending_time };
+          this.timelineData[i].times[k] = { "color": this.timelineData[i].times[k].color.replace(/[^,]+(?=\))/, '1'), 
+                                            "starting_time": this.timelineData[i].times[k].starting_time, 
+                                            "ending_time": this.timelineData[i].times[k].ending_time };
         } else if (-1 == id) {
           this.timelineData[i].times[k] = { "color": this.timelineData[i].times[k].color.replace(/[^,]+(?=\))/, '0.2'), "starting_time": this.timelineData[i].times[k].starting_time, "ending_time": this.timelineData[i].times[k].ending_time };
         } else {
