@@ -14,10 +14,6 @@ export class ColorsService {
     return this.color;
   }
 
-  getColorByID(id: number) {
-    return this.color[id];
-  }
-
   getColorByLabel(name: string) {
     var exists = false;
     var col;
@@ -37,33 +33,20 @@ export class ColorsService {
       var i = this.label.length - 1;
       var j = Math.floor(this.label.length / this.color.length)
       var k = i - (j * (this.color.length - 1));
-      col = this.color[k];
-      this.labelColor.push(col);
+      this.labelColor.push(this.color[k]);
+      this.labelMapMarker.push(this.mapMarker[k])
       return this.labelColor[this.label.length - 1];
     }
-  }
-
-  getMapMarkerByID(id: number) {
-    return this.mapMarker[id];
   }
 
   getMarkerByLabel(name: string) {
     var exists = false;
 
-
     for (var k = 0; k < this.label.length; k++) {
-
       if (this.label[k] === name) {
-        return this.mapMarker[k];
+        return this.labelMapMarker[k];
       }
     };
-
-    //add new series
-    if (!exists) {
-      this.label.push(name);
-      var i = Math.floor(this.label.length - 1 / this.color.length - 1);
-      return this.mapMarker[this.label.length - 1];
-    }
   }
 
 }
