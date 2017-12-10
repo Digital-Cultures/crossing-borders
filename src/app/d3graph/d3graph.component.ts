@@ -116,7 +116,7 @@ export class D3graphComponent implements OnInit {
       }
 
       /** Add hover event **/
-      var graphContainer = this.parentNativeElement.querySelector("svg")
+    var graphContainer = this.parentNativeElement.querySelector(".timeline-xAxis")
         .addEventListener('mousemove', (e) => {
           var x = e.offsetX;
           var y = e.offsetY;
@@ -124,7 +124,7 @@ export class D3graphComponent implements OnInit {
         });
 
       /** Add out event **/
-      var graphContainer = this.parentNativeElement.querySelector("svg")
+    var graphContainer = this.parentNativeElement.querySelector(".timeline-xAxis")
         .addEventListener('mouseout', (e) => {
           this.uidataService.changeDate(-1);
         });
