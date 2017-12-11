@@ -13,10 +13,15 @@ export class UidataService {
   private mapMarkersSource = new BehaviorSubject<any>([]); //CREATE INTERFACE
   currentMapMarkers = this.mapMarkersSource.asObservable();
 
-  private selectedDate: number;
 
   private dateSource = new BehaviorSubject<number>(1300);
   currentDate = this.dateSource.asObservable();
+
+  private selectedStartDateSource = new BehaviorSubject<number>(1300);
+  currentStartDate = this.selectedStartDateSource.asObservable();
+
+  private selectedEndDateSource = new BehaviorSubject<number>(1500);
+  currentEndDate = this.selectedEndDateSource.asObservable();
 
   private _beginning: string = "1500"; // CALL FROM UI SERVICE
   private _ending: string = "1500"; // CALL FROM UI SERVICE
@@ -100,10 +105,40 @@ export class UidataService {
     return this.mapMarkers;
   }
 
-  changeDate(date: number) {
-    this.dateSource.next(date)
-    this.mapMarkersSource.next(this.mapMarkers.filter(
-      mapMarker => (parseInt(mapMarker.data.start) <= date && parseInt(mapMarker.data.end) >= date) || -1 == date));
+  changeDate(date: number, position?: string) {
+    switch (position) { 
+      case "start": { 
+        this.selectedStartDateSource.next(date)
+        console.log("FilterSatrt")
+        this.mapMarkersSource.next(this.mapMarkers.filter(
+          mapMarker => (
+              parseInt(mapMarker.data.start) <= this.selectedEndDateSource.getValue() && 
+              parseInt(mapMarker.data.end) >= this.selectedStartDateSource.getValue()) 
+          ));
+
+        break;
+      }
+      case "end": {
+        this.selectedEndDateSource.next(date)
+        this.mapMarkersSource.next(this.mapMarkers.filter(
+          mapMarker => (
+            parseInt(mapMarker.data.start) <= this.selectedEndDateSource.getValue() &&
+            parseInt(mapMarker.data.end) >= this.selectedStartDateSource.getValue()) 
+          ));
+
+        break;
+      }
+      default: {
+        this.dateSource.next(date)
+        this.mapMarkersSource.next(this.mapMarkers.filter(
+          mapMarker => (parseInt(mapMarker.data.start) <= date && parseInt(mapMarker.data.end) >= date) || 
+          (-1 == date &&
+              parseInt(mapMarker.data.start) <= this.selectedEndDateSource.getValue() &&
+              parseInt(mapMarker.data.end) >= this.selectedStartDateSource.getValue())
+          ));
+        break;
+      } 
+    }    
   }
 
   setSelectedTextID(id: number) {
@@ -118,8 +153,8 @@ export class UidataService {
     return this._ending;
   }
 
-  getInfoFromID(id: number): string {
-    return "NAME TEST";
-  }
+  // getInfoFromID(id: number): string {
+  //   return "NAME TEST";
+  // }
 
 }

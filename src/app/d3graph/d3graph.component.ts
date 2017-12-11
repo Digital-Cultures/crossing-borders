@@ -25,7 +25,12 @@ export class D3graphComponent implements OnInit {
   private timelinesYaxis: string;
   private svg: any;
   date: number;
+  startDate: number;
+  endDate: number;
   selectedID: number;
+  dragging: boolean = false;
+  end: string;
+  position: number[];
 
 
   constructor(
@@ -36,7 +41,7 @@ export class D3graphComponent implements OnInit {
     private modalService: NgbModal,
     private ngZone: NgZone,
     private uidataService: UidataService
-    ) {
+  ) {
     this.d3 = d3Service.getD3(); // <-- obtain the d3 object from the D3 Service
     this.parentNativeElement = element.nativeElement;
     let beginning = this.uidataService.getBegining();
@@ -47,6 +52,16 @@ export class D3graphComponent implements OnInit {
       this.drawLines(this.date);
     })
 
+    this.uidataService.currentStartDate.subscribe(startDate => {
+      this.startDate = startDate;
+      this.updateTimelineSelector();
+    })
+
+    this.uidataService.currentEndDate.subscribe(endDate => {
+      this.endDate = endDate;
+      this.updateTimelineSelector();
+    })
+
     this.uidataService.currentTextID.subscribe(selectedID => {
       this.selectedID = selectedID;
       this.hilightBar(this.selectedID);
@@ -55,7 +70,6 @@ export class D3graphComponent implements OnInit {
     this.jsondataService.currentRawData.subscribe((rawData: any) => {
       this.timelineData = this.uidataService.setGraphData(rawData, this.jsondataService.getTimelinesYaxi());
       this.drawGraph();
-      this.addTimeSelector();
     })
 
     this.jsondataService.currentTimelinesYaxis.subscribe((yAxis: string) => {
@@ -82,9 +96,7 @@ export class D3graphComponent implements OnInit {
       svg = this.d3.select(this.parentNativeElement)
         .append('svg')        // create an <svg> element
         .attr('width', '100%') // set its dimensions
-        .attr('height', this.timelineData.length * 25 + 50)
-        .on('click', function(ev) {
-        });
+        .attr('height', this.timelineData.length * 25 + 50);
 
       var chart = Timeline.timelines()
         .stack()
@@ -116,27 +128,29 @@ export class D3graphComponent implements OnInit {
       }
 
       /** Add hover event **/
-    var graphContainer = this.parentNativeElement.querySelector(".timeline-xAxis")
+      this.parentNativeElement.querySelector(".timeline-xAxis")
         .addEventListener('mousemove', (e) => {
           var x = e.offsetX;
-          var y = e.offsetY;
+          //var y = e.offsetY;
           this.uidataService.changeDate(this.positionToYear(x));
         });
 
       /** Add out event **/
-    var graphContainer = this.parentNativeElement.querySelector(".timeline-xAxis")
+      this.parentNativeElement.querySelector(".timeline-xAxis")
         .addEventListener('mouseout', (e) => {
           this.uidataService.changeDate(-1);
         });
 
       /** Colour lables **/
-      console.log(d3.selectAll("svg .timeline-label").size());
-      for (var i = 1; i< d3.selectAll("svg .timeline-label").size()+1; i++) {
-        console.log(d3.select("svg .timeline-label:nth-of-type("+i+")").text());
-        d3.selectAll("svg .timeline-label:nth-of-type("+i+")")
+      //console.log(d3.selectAll("svg .timeline-label").size());
+      for (var i = 1; i < d3.selectAll("svg .timeline-label").size() + 1; i++) {
+        console.log(d3.select("svg .timeline-label:nth-of-type(" + i + ")").text());
+        d3.selectAll("svg .timeline-label:nth-of-type(" + i + ")")
           .attr('fill', this.colorsService.getColorByLabel(d3.select("svg .timeline-label:nth-of-type(" + i + ")").text()).replace(/[^,]+(?=\))/, '1'))
           .attr('dx', 15);
       }
+
+      this.addTimeSelector();
     }
   }
 
@@ -170,16 +184,119 @@ export class D3graphComponent implements OnInit {
 
   }
 
-  addTimeSelector(){
+  addTimeSelector() {
+
     var x = this.yearToPosition(parseInt(this.uidataService.getBegining()));
-    this.svg = this.d3.select("svg"); 
+    var width = this.yearToPosition(this.endDate)
+    this.svg = this.d3.select("svg");
     this.svg.append("rect")
-      .attr("class", "marker")
-      .attr("width", 300)
-      .attr("height", 20)
-      .style("pointer-events", "none")
-      .attr("x", x - 15)
-      .attr("y", this.timelineData.length * 25 + 5);
+      .attr("class", "time-selector")
+      .attr("width", width)
+      .attr("height", this.timelineData.length * 25 + 5)
+      .style("opacity", 0.2)
+      .attr("x", x)
+      .attr("y", 10);
+
+    this.svg.append("line")
+      .attr("class", "time-selector")
+      .attr("class", "time-selector-start")
+      .style("stroke", "black")
+      .style("stroke-width", 2)
+      .style("cursor", "pointer")
+      .attr("x1", x)
+      .attr("y1", 10)
+      .attr("x2", x)
+      .attr("y2", this.timelineData.length * 25 + 15);
+      //.on("mousedown", this.dragstarted);
+
+    this.svg.append("line")
+      .attr("class", "time-selector")
+      .attr("class", "time-selector-end")
+      .style("stroke", "black")
+      .style("stroke-width", 2)
+      .style("cursor", "pointer")
+      .attr("x1", x + width)
+      .attr("y1", 10)
+      .attr("x2", x + width)
+      .attr("y2", this.timelineData.length * 25 + 15)
+      //.drag();
+
+    var container = this.parentNativeElement.querySelector(".container");
+    if (container != null) {
+      container.addEventListener('mousemove', (e) => {
+        var x = e.offsetX;
+        if(this.dragging){
+          this.uidataService.changeDate(this.positionToYear(x), this.end);
+        }
+      });
+
+
+      container.addEventListener('mouseup', (e) => {
+        this.dragging = false;
+      });
+    }
+
+    var timeSelector = this.parentNativeElement.querySelector(".time-selector");
+    if (timeSelector != null) {
+      timeSelector.addEventListener('mousemove', (e) => {
+        var x = e.offsetX;
+        if (this.dragging) {
+          this.uidataService.changeDate(this.positionToYear(x), this.end);
+        }
+      });
+
+      timeSelector.addEventListener('mouseup', (e) => {
+        this.dragging = false;
+      });
+    }
+
+    var timeSelectorEnd = this.parentNativeElement.querySelector(".time-selector-end");
+    if (timeSelectorEnd != null) {
+      
+      timeSelectorEnd.addEventListener('mousedown', (e) => {
+         this.dragging = true;
+        this.end = "end";
+      }); 
+
+      timeSelectorEnd.addEventListener('mouseup', (e) => {
+        this.dragging = false;
+      });
+    }
+
+    var timeSelectorStart = this.parentNativeElement.querySelector(".time-selector-start");
+    if (timeSelectorStart != null) {
+
+      timeSelectorStart.addEventListener('mousedown', (e) => {
+        this.dragging = true;
+        this.end = "start";
+      });
+
+      timeSelectorStart.addEventListener('mouseup', (e) => {
+        this.dragging = false;
+      });
+    }
+  }
+
+  updateTimelineSelector(){
+    var x = this.yearToPosition(this.startDate);
+    var width = this.yearToPosition(this.endDate) - x;
+
+    this.d3.select(".time-selector")
+      .attr("width", width)
+      .attr("height", this.timelineData.length * 25 + 5)
+      .attr("x", x)
+
+    this.d3.select(".time-selector-start")
+      .attr("x1", x)
+      .attr("x2", x)
+      .attr("y2", this.timelineData.length * 25 + 15);
+    //.on("mousedown", this.dragstarted);
+
+    this.d3.select(".time-selector-end")
+      .attr("x1", x + width)
+      .attr("x2", x + width)
+      .attr("y2", this.timelineData.length * 25 + 15)
+      //.drag();
   }
 
   drawLines(year: number) {
@@ -222,9 +339,11 @@ export class D3graphComponent implements OnInit {
     for (var i = this.timelineData.length - 1; i >= 0; i--) {
       for (var k = this.timelineData[i].ids.length - 1; k >= 0; k--) {
         if (parseInt(this.timelineData[i].ids[k]) == id) {
-          this.timelineData[i].times[k] = { "color": this.timelineData[i].times[k].color.replace(/[^,]+(?=\))/, '1'), 
-                                            "starting_time": this.timelineData[i].times[k].starting_time, 
-                                            "ending_time": this.timelineData[i].times[k].ending_time };
+          this.timelineData[i].times[k] = {
+            "color": this.timelineData[i].times[k].color.replace(/[^,]+(?=\))/, '1'),
+            "starting_time": this.timelineData[i].times[k].starting_time,
+            "ending_time": this.timelineData[i].times[k].ending_time
+          };
         } else if (-1 == id) {
           this.timelineData[i].times[k] = { "color": this.timelineData[i].times[k].color.replace(/[^,]+(?=\))/, '0.2'), "starting_time": this.timelineData[i].times[k].starting_time, "ending_time": this.timelineData[i].times[k].ending_time };
         } else {
