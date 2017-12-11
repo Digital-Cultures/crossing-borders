@@ -17,7 +17,6 @@ import { UidataService } from './services/uidata.service';
 import { ColorsService } from './services/colors.service';
 
 import { DbformComponent } from './dbform/dbform.component';
-import { DataSourceService } from './dbform/data-source.service';
 import { VisulisationComponent } from './visulisation/visulisation.component';
 import { PlayheadComponent } from './playhead/playhead.component';
 import { TextModalComponent } from './text-modal/text-modal.component';
@@ -54,7 +53,7 @@ const appRoutes: Routes = [
     Ng2YaTableModule.forRoot(),
     NgbModule.forRoot()
   ],
-  providers: [D3Service, JsondataService, UidataService, ColorsService, DataSourceService],
+  providers: [D3Service, JsondataService, UidataService, ColorsService],
   entryComponents: [TextModalComponent],
   bootstrap: [AppComponent]
 })

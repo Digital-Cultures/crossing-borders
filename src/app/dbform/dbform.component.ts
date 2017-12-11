@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { DataSourceRequest, DataSourceResultOfUser, User } from "../../../api/api.module";
-import { DataSourceService } from './data-source.service';
 import { Observable } from 'rxjs/Observable';
+
+import { JsondataService } from '../services/jsondata.service';
 
 @Component({
   selector: 'app-dbform',
@@ -9,7 +10,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./dbform.component.css']
 })
 export class DbformComponent {
-  constructor(private service: DataSourceService) { }
+    constructor(private jsondataService: JsondataService) { }
 
   public options:any = {
       orderMulti: false,
@@ -21,7 +22,7 @@ export class DbformComponent {
     // if(environment.apiBaseUrl){
     //     return this.client.get(DataSourceRequest.fromJS(request));
     // }
-    return this.service.getUsersDataSource(request);
+      return this.jsondataService.getData(request);
   }
 
   public paging: any = {
