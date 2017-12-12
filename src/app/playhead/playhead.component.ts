@@ -8,43 +8,58 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./playhead.component.scss']
 })
 export class PlayheadComponent implements OnInit {
-  date:number;
-  playing:boolean = true;
+  date: number;
+  startDate: number;
+  endDate: number;
+  playing: boolean = true;
 
   constructor(
     private uidataService: UidataService
-    ) {
+  ) {
     this.uidataService.currentDate.subscribe(date => {
       this.date = date;
-    }) 
+    })
+
+    this.uidataService.currentStartDate.subscribe(startDate => {
+      this.startDate = startDate;
+    })
+
+    this.uidataService.currentEndDate.subscribe(endDate => {
+      this.endDate = endDate;
+    })
   }
 
   ngOnInit() {
   }
 
   asyncObservable() {
-      return new Observable(observer => {
-        setInterval(() => {
-          observer.next("Hi");
-        }, 100)
-      })
+    return new Observable(observer => {
+      setInterval(() => {
+        observer.next("Hi");
+      }, 100)
+    })
   }
 
-  clickPlay(event){
+  clickPlay(event) {
     this.playing = true;
     this.asyncObservable()
       .takeWhile(() => this.playing)
-      .subscribe(data=>{
-      if(this.date >= parseInt(this.uidataService.getEnding()) || this.date == -1){
-        this.uidataService.changeDate(parseInt(this.uidataService.getBegining()));
-      }else{
-        var nextDate = this.date+1
-        this.uidataService.changeDate(nextDate);
-      }
-    });
+      .subscribe(data => {
+        if (this.endDate >= parseInt(this.uidataService.getEnding())) {
+          var ending = this.endDate - this.startDate;
+          this.uidataService.changeDate(parseInt(this.uidataService.getBegining()),"start");
+          this.uidataService.changeDate(parseInt(this.uidataService.getBegining()) + ending, "end");
+        } else {
+          // var nextDate = this.date + 1
+          // this.uidataService.changeDate(nextDate);
+
+          this.uidataService.changeDate(this.startDate+1, "start");
+          this.uidataService.changeDate(this.endDate+1, "end");
+        }
+      });
   }
 
-  clickStop(event){
+  clickStop(event) {
     this.playing = false;
   }
 }

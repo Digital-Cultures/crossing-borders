@@ -194,8 +194,9 @@ export class D3graphComponent implements OnInit {
 
   addTimeSelector() {
 
-    var x = this.yearToPosition(parseInt(this.uidataService.getBegining()));
-    var width = this.yearToPosition(this.endDate)
+    var x = this.yearToPosition(this.startDate);
+    var width = this.yearToPosition(this.endDate) - x;
+
     this.svg = this.d3.select("svg");
     this.svg.append("rect")
       .attr("class", "time-selector")
