@@ -50,9 +50,6 @@ export class PlayheadComponent implements OnInit {
           this.uidataService.changeDate(parseInt(this.uidataService.getBegining()),"start");
           this.uidataService.changeDate(parseInt(this.uidataService.getBegining()) + ending, "end");
         } else {
-          // var nextDate = this.date + 1
-          // this.uidataService.changeDate(nextDate);
-
           this.uidataService.changeDate(this.startDate+1, "start");
           this.uidataService.changeDate(this.endDate+1, "end");
         }

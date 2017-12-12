@@ -47,10 +47,10 @@ export class D3graphComponent implements OnInit {
     let beginning = this.uidataService.getBegining();
     let ending = this.uidataService.getEnding();
 
-    this.uidataService.currentDate.subscribe(date => {
-      this.date = date;
-      this.drawLines(this.date);
-    })
+    // this.uidataService.currentDate.subscribe(date => {
+    //   this.date = date;
+    //   this.drawLines(this.date);
+    // })
 
     this.uidataService.currentStartDate.subscribe(startDate => {
       this.startDate = startDate;
@@ -217,7 +217,26 @@ export class D3graphComponent implements OnInit {
       .attr("x1", x)
       .attr("y1", 10)
       .attr("x2", x)
-      .attr("y2", this.timelineData.length * 25 + 15);
+      .attr("y2", this.timelineData.length * 25 + 25);
+
+    this.svg.append("rect")
+      .attr("class", "time-selector-start-bg")
+      .attr("width", 30)
+      .attr("height", 20)
+      .style("pointer-events", "none")
+      .attr("x", x - 15)
+      .attr("y", this.timelineData.length * 25 + 25);
+
+    this.svg.append("text")
+      .attr("class", "time-selector-start-label")
+      .attr("x", x - 11)
+      .attr("y", this.timelineData.length * 25 + 35)
+      .attr("dy", ".35em")
+      .style("fill", "white")
+      .style("pointer-events", "none")
+      .attr("font-size", "10px")
+      .text(this.positionToYear(x));
+
     //.on("mousedown", this.dragstarted);
 
     this.svg.append("line")
@@ -229,7 +248,25 @@ export class D3graphComponent implements OnInit {
       .attr("x1", x + width)
       .attr("y1", 10)
       .attr("x2", x + width)
-      .attr("y2", this.timelineData.length * 25 + 15);
+      .attr("y2", this.timelineData.length * 25 + 25);
+
+    this.svg.append("rect")
+      .attr("class", "time-selector-end-bg")
+      .attr("width", 30)
+      .attr("height", 20)
+      .style("pointer-events", "none")
+      .attr("x", x + width - 15)
+      .attr("y", this.timelineData.length * 25 + 25);
+
+    this.svg.append("text")
+      .attr("class", "time-selector-end-label")
+      .attr("x", x + width - 11)
+      .attr("y", this.timelineData.length * 25 + 35)
+      .attr("dy", ".35em")
+      .style("fill", "white")
+      .style("pointer-events", "none")
+      .attr("font-size", "10px")
+      .text(this.positionToYear(x + width));
 
     this.svg.append("line")
       .attr("class", "time-selector")
@@ -347,13 +384,31 @@ export class D3graphComponent implements OnInit {
     this.d3.select(".time-selector-start")
       .attr("x1", x)
       .attr("x2", x)
-      .attr("y2", this.timelineData.length * 25 + 15);
+      .attr("y2", this.timelineData.length * 25 + 25);
+
+    this.d3.select(".time-selector-start-bg")
+      .attr("x", x - 15)
+      .attr("y", this.timelineData.length * 25 + 25);
+
+    this.d3.select(".time-selector-start-label")
+      .attr("x", x - 11)
+      .attr("y", this.timelineData.length * 25 + 35)
+      .text(this.positionToYear(x));
     //.on("mousedown", this.dragstarted);
 
     this.d3.select(".time-selector-end")
       .attr("x1", x + width)
       .attr("x2", x + width)
-      .attr("y2", this.timelineData.length * 25 + 15)
+      .attr("y2", this.timelineData.length * 25 + 25)
+
+    this.d3.select(".time-selector-end-bg")
+      .attr("x", x + width - 15)
+      .attr("y", this.timelineData.length * 25 + 25);
+
+    this.d3.select(".time-selector-end-label")
+      .attr("x", x + width - 11)
+      .attr("y", this.timelineData.length * 25 + 35)
+      .text(this.positionToYear(x + width));
 
     this.d3.select(".time-selector-dragger")
       .attr("x1", x)
