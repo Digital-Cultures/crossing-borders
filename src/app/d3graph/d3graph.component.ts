@@ -30,7 +30,7 @@ export class D3graphComponent implements OnInit {
   selectedID: number;
   dragging: boolean = false;
   end: string;
-  position: number[];
+  position: number = -1;
 
 
   constructor(
@@ -117,6 +117,14 @@ export class D3graphComponent implements OnInit {
 
       svg = svg.datum(this.timelineData).call(chart);
 
+      svg.select(".container").insert("rect", ":first-child")
+        .attr("class", "time-selector-backdrop")
+        .attr("width", 1000)
+        .attr("height", this.timelineData.length * 25 + 15)
+        .style("fill", "rgba(239,236,232,0.2)")
+        .attr("x", 0)
+        .attr("y", 0);
+
       /** Add chart click event **/
       var elements = this.parentNativeElement.querySelectorAll("[id^='timelineItem']");
       for (var e in elements) {
@@ -191,9 +199,11 @@ export class D3graphComponent implements OnInit {
     this.svg = this.d3.select("svg");
     this.svg.append("rect")
       .attr("class", "time-selector")
+      .style("pointer-events", "none")
       .attr("width", width)
       .attr("height", this.timelineData.length * 25 + 5)
-      .style("opacity", 0.2)
+      .style("opacity", 0.1)
+      .style("fill", "#")
       .attr("x", x)
       .attr("y", 10);
 
@@ -207,7 +217,7 @@ export class D3graphComponent implements OnInit {
       .attr("y1", 10)
       .attr("x2", x)
       .attr("y2", this.timelineData.length * 25 + 15);
-      //.on("mousedown", this.dragstarted);
+    //.on("mousedown", this.dragstarted);
 
     this.svg.append("line")
       .attr("class", "time-selector")
@@ -218,45 +228,57 @@ export class D3graphComponent implements OnInit {
       .attr("x1", x + width)
       .attr("y1", 10)
       .attr("x2", x + width)
-      .attr("y2", this.timelineData.length * 25 + 15)
-      //.drag();
+      .attr("y2", this.timelineData.length * 25 + 15);
+
+    this.svg.append("line")
+      .attr("class", "time-selector")
+      .attr("class", "time-selector-dragger")
+      .style("stroke", "black")
+      .style("stroke-width", 2)
+      .style("cursor", "pointer")
+      .attr("x1", x)
+      .attr("y1", 10)
+      .attr("x2", x + width)
+      .attr("y2", 10);
+    //.drag();
 
     var container = this.parentNativeElement.querySelector(".container");
     if (container != null) {
       container.addEventListener('mousemove', (e) => {
         var x = e.offsetX;
-        if(this.dragging){
-          this.uidataService.changeDate(this.positionToYear(x), this.end);
+        if (this.dragging) {
+          if (this.end == "drag") {
+            if (this.position != -1){
+              var change = x - this.position;
+
+              var newStart = this.yearToPosition(this.startDate) + change;
+              this.uidataService.changeDate(this.positionToYear(newStart), "start");
+
+              var newEnd= this.yearToPosition(this.endDate) + change;
+              this.uidataService.changeDate(this.positionToYear(newEnd), "end");
+
+            }
+            this.position = x;
+          }else{
+            this.uidataService.changeDate(this.positionToYear(x), this.end);
+          }
         }
       });
-
 
       container.addEventListener('mouseup', (e) => {
         this.dragging = false;
+        this.position = -1;
       });
     }
 
-    var timeSelector = this.parentNativeElement.querySelector(".time-selector");
-    if (timeSelector != null) {
-      timeSelector.addEventListener('mousemove', (e) => {
-        var x = e.offsetX;
-        if (this.dragging) {
-          this.uidataService.changeDate(this.positionToYear(x), this.end);
-        }
-      });
-
-      timeSelector.addEventListener('mouseup', (e) => {
-        this.dragging = false;
-      });
-    }
 
     var timeSelectorEnd = this.parentNativeElement.querySelector(".time-selector-end");
     if (timeSelectorEnd != null) {
-      
+
       timeSelectorEnd.addEventListener('mousedown', (e) => {
-         this.dragging = true;
+        this.dragging = true;
         this.end = "end";
-      }); 
+      });
 
       timeSelectorEnd.addEventListener('mouseup', (e) => {
         this.dragging = false;
@@ -275,9 +297,44 @@ export class D3graphComponent implements OnInit {
         this.dragging = false;
       });
     }
+
+    var timeSelectorDragger = this.parentNativeElement.querySelector(".time-selector-dragger");
+    if (timeSelectorDragger != null) {
+
+      timeSelectorDragger.addEventListener('mousedown', (e) => {
+        this.dragging = true;
+        this.end = "drag";
+      });
+
+      timeSelectorDragger.addEventListener('mousemove', (e) => {
+        var x = e.offsetX;
+        if (this.dragging) {
+          if (this.end == "drag") {
+            if (this.position != -1) {
+              var change = x - this.position;
+
+              var newStart = this.yearToPosition(this.startDate) + change;
+              this.uidataService.changeDate(this.positionToYear(newStart), "start");
+
+              var newEnd = this.yearToPosition(this.endDate) + change;
+              this.uidataService.changeDate(this.positionToYear(newEnd), "end");
+
+            }
+            this.position = x;
+          } else {
+            this.uidataService.changeDate(this.positionToYear(x), this.end);
+          }
+        }
+      });
+
+      timeSelectorDragger.addEventListener('mouseup', (e) => {
+        this.dragging = false;
+        this.position = -1;
+      });
+    }
   }
 
-  updateTimelineSelector(){
+  updateTimelineSelector() {
     var x = this.yearToPosition(this.startDate);
     var width = this.yearToPosition(this.endDate) - x;
 
@@ -296,7 +353,10 @@ export class D3graphComponent implements OnInit {
       .attr("x1", x + width)
       .attr("x2", x + width)
       .attr("y2", this.timelineData.length * 25 + 15)
-      //.drag();
+
+    this.d3.select(".time-selector-dragger")
+      .attr("x1", x)
+      .attr("x2", x + width)
   }
 
   drawLines(year: number) {

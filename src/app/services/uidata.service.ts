@@ -108,6 +108,14 @@ export class UidataService {
   changeDate(date: number, position?: string) {
     switch (position) { 
       case "start": { 
+        if (date < parseInt(this._beginning)){
+          date = parseInt(this._beginning);
+        }
+
+        if (date > this.selectedEndDateSource.getValue()) {
+          date = this.selectedEndDateSource.getValue();
+        }
+
         this.selectedStartDateSource.next(date)
         console.log("FilterSatrt")
         this.mapMarkersSource.next(this.mapMarkers.filter(
@@ -119,6 +127,15 @@ export class UidataService {
         break;
       }
       case "end": {
+        if (date > parseInt(this._ending)) {
+          date = parseInt(this._ending);
+        }
+
+        if (date < this.selectedStartDateSource.getValue()) {
+          date = this.selectedStartDateSource.getValue();
+        }
+
+
         this.selectedEndDateSource.next(date)
         this.mapMarkersSource.next(this.mapMarkers.filter(
           mapMarker => (
