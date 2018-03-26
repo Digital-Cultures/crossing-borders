@@ -1,10 +1,31 @@
 # CrossingBorders
 
-following the doc [here](http://www.shanegibney.com/shanegibney/?p=631).
+## Dates
+
+Turn of the century ('s. x/xi’) = +- 25 years?
+
+Half century with superscript:
+‘1’ = XX00 to XX49
+Second half ‘2’ = XX50 to XX99
+
+Thirds of the century:
+early ('in.’) = XX00 - XX33
+middle ('med.’) = XX34 - XX66
+late ('ex.’,) = XX67 - XX99
+
+Quarter-centuries with superscript: 
+'1/4’ = XX00 - XX24
+‘2/4’ = XX25 - XX49
+'3/4'. = XX50 - XX74
+‘4/4'. = XX75 - XX99
+
+## Dev
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
 
 ## Development server
+
+At present the DB files are just exported as json files to make the dev setup easier.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -14,15 +35,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng build -w` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Further help
 

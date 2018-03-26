@@ -1,9 +1,10 @@
 nav {
 	position: fixed;
-    z-index: 2;
+    z-index: 3;
     display: inline-flex;
-    width: 100%;
+    width: 98%;
     pointer-events: none;
+    margin-left: 10px;
 }
 
 a, select {

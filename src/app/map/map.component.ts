@@ -26,7 +26,7 @@ export class MapComponent implements OnInit {
   public markers$: Observable<any>;
 
   titleMap: string = 'Google Maps Addeed Successfully';
-  lat: number = 51.5074;
+  lat: number = 53;
   lng: number = 0.1278;
   zoom: number = 6;
 
@@ -85,13 +85,13 @@ export class MapComponent implements OnInit {
   }
 
   overMarker(id: string, i: number) {
-    this.uidataService.setSelectedTextID(parseInt(id));
     console.log(id);
+    this.uidataService.setSelectedTextID(parseInt(id));
   }
 
   outMarker(label: string, i: number) {
-    this.uidataService.setSelectedTextID(-1);
     console.log(label);
+    this.uidataService.setSelectedTextID(-1);
   }
 
   open(data: any) {

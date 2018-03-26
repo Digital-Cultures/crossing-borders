@@ -27,12 +27,12 @@
     "core-js": "^2.4.1",
     "d3-ng2-service": "^1.22.1",
     "d3-timelines": "1.3.1",
+    "font-awesome": "4.7.0",
     "jquery": "^3.0.0",
     "ng2-ya-table": "0.4.3",
     "rxjs": "^5.4.2",
     "snazzy-info-window": "1.1.0",
-    "zone.js": "^0.8.14",
-    "font-awesome": "4.7.0"
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/cli": "1.4.5",

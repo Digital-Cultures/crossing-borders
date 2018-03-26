@@ -80,7 +80,11 @@ body {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-  background-color: #f7efe7;
+  background-color: #fbfbfb;
+}
+
+.row {
+  width: 100%;
 }
 
 .sebm-google-map-container-inner {

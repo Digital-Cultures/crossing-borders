@@ -117,7 +117,7 @@ export class UidataService {
         }
 
         this.selectedStartDateSource.next(date)
-        console.log("FilterSatrt")
+ 
         this.mapMarkersSource.next(this.mapMarkers.filter(
           mapMarker => (
               parseInt(mapMarker.data.start) <= this.selectedEndDateSource.getValue() && 

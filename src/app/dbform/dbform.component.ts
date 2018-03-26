@@ -59,8 +59,8 @@ export class DbformComponent {
     },
     { 
         title: 'Date of Compilation (Start)', 
-        name: 'start', 
-        sort: true, 
+        name: 'compilationDate', 
+        sort: false, 
         filter: {
             type: 'default', 
             controlType: 'default',
@@ -68,19 +68,31 @@ export class DbformComponent {
                 placeholder: 'Filter by date'
             }
         } 
-    },
-    { 
-        title: 'Date of Compilation (End)', 
-        name: 'end', 
-        sort: true, 
-        filter: {
-            type: 'default', 
-            controlType: 'default',
-            config: {
-                placeholder: 'Filter by date'
-            }
-        } 
-    },
+    }//,
+    // { 
+    //     title: 'Date of Compilation (Start)', 
+    //     name: 'start', 
+    //     sort: true, 
+    //     filter: {
+    //         type: 'default', 
+    //         controlType: 'default',
+    //         config: {
+    //             placeholder: 'Filter by date'
+    //         }
+    //     } 
+    // },
+    // { 
+    //     title: 'Date of Compilation (End)', 
+    //     name: 'end', 
+    //     sort: true, 
+    //     filter: {
+    //         type: 'default', 
+    //         controlType: 'default',
+    //         config: {
+    //             placeholder: 'Filter by date'
+    //         }
+    //     } 
+    // },
     // { 
     //     sort: false, 
     //     title: '', 
@@ -95,20 +107,20 @@ export class DbformComponent {
     //     },
     //     width: "10px"
     // },
-    { 
-        sort: false, 
-        title: '', 
-        name: 'geometry',
-        render: (data: any): string => {
-            return "<div class='text-center'>" +
-                "<button type='button' class='btn btn-sm btn-primary'><span class='fa fa-info-circle'></span></button> " +
-                "</div>";
-        },
-        action: (data: any): any => {
-        	var temp = data;
-          alert("Modal popup with more info"+data);
-        },
-        width: "10px"
-    }
+    // { 
+    //     sort: false, 
+    //     title: '', 
+    //     name: 'geometry',
+    //     render: (data: any): string => {
+    //         return "<div class='text-center'>" +
+    //             "<button type='button' class='btn btn-sm btn-primary'><span class='fa fa-info-circle'></span></button> " +
+    //             "</div>";
+    //     },
+    //     action: (data: any): any => {
+    //     	var temp = data;
+    //       alert("Modal popup with more info"+data);
+    //     },
+    //     width: "10px"
+    // }
   ];
 }

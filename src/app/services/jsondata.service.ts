@@ -54,9 +54,9 @@ export class JsondataService {
     getData(request?: any ): Observable<any> {
         var fullUrl: string;
 
-        if (window.location.pathname.slice(-2) == "db") {
+        if (window.location.href.slice(-2) == "db") {
 
-            fullUrl = window.location.protocol + '//' + window.location.host + window.location.pathname.slice(0, -2) + 'data/' + this.dataSet + '.json?';
+            fullUrl = window.location.href.slice(0, -4) + 'data/' + this.dataSet + '.json?';
             
             
             return this.http.get(fullUrl).map(res => {
