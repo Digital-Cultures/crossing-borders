@@ -30,6 +30,7 @@
     "font-awesome": "4.7.0",
     "jquery": "^3.0.0",
     "ng2-ya-table": "0.4.3",
+    "ngx-disqus": "2.2.1",
     "rxjs": "^5.4.2",
     "snazzy-info-window": "1.1.0",
     "zone.js": "^0.8.14"

@@ -130,25 +130,26 @@ export class D3graphComponent implements OnInit {
         var elements = this.parentNativeElement.querySelectorAll("[id^='timelineItem']");
         for (var e in elements) {
           if (elements[e].id) {
-            elements[e].addEventListener('click', (e) => {
+            var timelineBar = elements[e];
+            timelineBar.addEventListener('click', (e) => {
               this.open(this.displayFullDescription(e));
-            });
+            }, false);
           }
         }
 
-        /** Add hover event **/
-        this.parentNativeElement.querySelector(".timeline-xAxis")
-          .addEventListener('mousemove', (e) => {
-            var x = e.offsetX;
-            //var y = e.offsetY;
-            this.uidataService.changeDate(this.positionToYear(x));
-          });
+        // /** Add hover event **/
+        // this.parentNativeElement.querySelector(".timeline-xAxis")
+        //   .addEventListener('mousemove', (e) => {
+        //     var x = e.offsetX;
+        //     //var y = e.offsetY;
+        //     this.uidataService.changeDate(this.positionToYear(x));
+        //   });
 
-        /** Add out event **/
-        this.parentNativeElement.querySelector(".timeline-xAxis")
-          .addEventListener('mouseout', (e) => {
-            this.uidataService.changeDate(-1);
-          });
+        // /** Add out event **/
+        // this.parentNativeElement.querySelector(".timeline-xAxis")
+        //   .addEventListener('mouseout', (e) => {
+        //     this.uidataService.changeDate(-1);
+        //   });
 
         /** Colour lables **/
         //console.log(d3.selectAll("svg .timeline-label").size());

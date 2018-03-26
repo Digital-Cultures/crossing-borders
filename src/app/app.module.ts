@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 import { Ng2YaTableModule } from 'ng2-ya-table';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DisqusModule } from 'ngx-disqus';
 
 
 import { AppComponent } from './app.component';
@@ -51,7 +52,8 @@ const appRoutes: Routes = [
  
     }),
     Ng2YaTableModule.forRoot(),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    DisqusModule.forRoot('crossingborders2')
   ],
   providers: [D3Service, JsondataService, UidataService, ColorsService],
   entryComponents: [TextModalComponent],

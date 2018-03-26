@@ -8,6 +8,8 @@
 	  <em>{{d.shelfmark}}</em>
 	  <hr class="end">
 	</div>
+
+	<disqus [identifier]="'test-'+data[0].id" [url]="'http://example.com/hello-world/#!'+data[0].id" [title]="'test'+data[0].id"></disqus>
 </div>
 <div class="modal-footer">
   <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
