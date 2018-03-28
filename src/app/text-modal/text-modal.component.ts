@@ -7,10 +7,39 @@ import { NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-b
   styleUrls: ['./text-modal.component.scss']
 })
 export class TextModalComponent implements OnInit {
+  
+  status: string = "";
 
   @Input() name;
 
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(public activeModal: NgbActiveModal) {
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+  	
+  }
+
+  clicked(d, event) {
+  	console.log(d.name);
+  	this.status = d.id;      
+  	var disqus_shortname = 'crossingborders2'; // Replace this value with *your* username.
+
+	  // ajax request to load the disqus javascript
+	  // $.ajax({
+	  //         type: "GET",
+	  //         url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+	  //         dataType: "script",
+	  //         cache: true
+	  // });
+	  // // hide the button once comments load
+	  // $(this).fadeOut();
+
+ //  	DISQUS.reset({
+	//   reload: true,
+	//   config: function () {  
+	//     this.page.identifier = "newidentifier";  
+	//     this.page.url = "http://example.com/#!newthread";
+	//   }
+	// });
+  }
 }
