@@ -130,9 +130,9 @@ export class D3graphComponent implements OnInit {
         for (var e in elements) {
           if (elements[e].id) {
             var timelineBar = elements[e];
-            timelineBar.addEventListener('click', (e) => {
+            timelineBar.addEventListener('pointerdown', (e) => {
               this.open(this.displayFullDescription(e));
-            }, true);
+            });
           }
         }
 
@@ -314,12 +314,12 @@ export class D3graphComponent implements OnInit {
         this.dragging = true;
         console.log(e.type+" dragging = "+this.dragging);
         this.end = "end";
-      }, true);
+      });
 
       timeSelectorEnd.addEventListener('pointerup', (e) => {
         this.dragging = false;
         console.log(e.type+" dragging = "+this.dragging);
-      }, true);
+      });
     }
 
     var timeSelectorStart = this.parentNativeElement.querySelector(".time-selector-start-drag");
@@ -478,17 +478,26 @@ export class D3graphComponent implements OnInit {
     console.log(e);
     var item = document.elementFromPoint(e.clientX, e.clientY);
     var stack = [];
+    var ids = [];
 
-    // var items = "";
+    //click down through layers (max 20 layers)
     for (var i = 0; i < 20; i++) {
       if (item.id.startsWith('timelineItem')) {
         // items += item.id+" ";
         stack.push(this.uidataService.getItemFromChart(item.id));
+        ids.push(item);
         this.d3.select(item).style('pointer-events', 'none').attr('class', 'hover');
         // // stack.push(item);
         item = document.elementFromPoint(e.clientX, e.clientY);
       }
     }
+
+    //put back click interaction
+     for (var k = 0; k < ids.length; k++) {
+      console.log(ids[k].id)
+      this.d3.select(ids[k]).style('pointer-events', 'inherit').attr('class', '');
+    }
+
     return stack;
   }
 
