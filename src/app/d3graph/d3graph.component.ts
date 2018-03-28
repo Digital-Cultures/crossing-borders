@@ -10,7 +10,6 @@ import { D3Service, D3, Selection } from 'd3-ng2-service';
 import * as $ from 'jquery';
 import * as Timeline from 'd3-timelines';
 
-declare var Timeline: any;
 
 @Component({
   selector: 'app-d3graph',
@@ -32,6 +31,7 @@ export class D3graphComponent implements OnInit {
   dragging: boolean = false;
   end: string;
   position: number = -1;
+  Timeline: any;
 
 
 

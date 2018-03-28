@@ -6,10 +6,10 @@
 //----------------------
 import 'rxjs/Rx'; 
 import { Observable } from 'rxjs/Observable';
-import { Injectable, Inject, Optional, OpaqueToken } from '@angular/core';
+import { Injectable, Inject, Optional } from '@angular/core';
 import { Http, Headers, Response } from '@angular/http';
 
-export const API_BASE_URL = new OpaqueToken('API_BASE_URL');
+//export const API_BASE_URL = new OpaqueToken('API_BASE_URL');
 
 @Injectable()
 export class DemoClient {
@@ -17,9 +17,9 @@ export class DemoClient {
     private baseUrl: string = undefined; 
     protected jsonParseReviver: (key: string, value: any) => any = undefined;
 
-    constructor(@Inject(Http) http: Http, @Optional() @Inject(API_BASE_URL) baseUrl?: string) {
+    constructor(@Inject(Http) http: Http) {
         this.http = http; 
-        this.baseUrl = baseUrl ? baseUrl : "http://localhost:5000"; 
+        this.baseUrl = "http://localhost:5000"; 
     }
 
     get(parameters: DataSourceRequest): Observable<DataSourceResultOfUser> {
