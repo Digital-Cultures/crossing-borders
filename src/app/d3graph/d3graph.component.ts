@@ -34,7 +34,6 @@ export class D3graphComponent implements OnInit {
   Timeline: any;
 
 
-
   constructor(
     private colorsService: ColorsService,
     private d3Service: D3Service,
@@ -133,31 +132,17 @@ export class D3graphComponent implements OnInit {
             var timelineBar = elements[e];
             timelineBar.addEventListener('click', (e) => {
               this.open(this.displayFullDescription(e));
-            }, false);
+            }, true);
           }
         }
-
-        // /** Add hover event **/
-        // this.parentNativeElement.querySelector(".timeline-xAxis")
-        //   .addEventListener('mousemove', (e) => {
-        //     var x = e.offsetX;
-        //     //var y = e.offsetY;
-        //     this.uidataService.changeDate(this.positionToYear(x));
-        //   });
-
-        // /** Add out event **/
-        // this.parentNativeElement.querySelector(".timeline-xAxis")
-        //   .addEventListener('mouseout', (e) => {
-        //     this.uidataService.changeDate(-1);
-        //   });
 
         /** Colour lables **/
         //console.log(d3.selectAll("svg .timeline-label").size());
         for (var i = 1; i < d3.selectAll("svg .timeline-label").size() + 1; i++) {
           console.log(d3.select("svg .timeline-label:nth-of-type(" + i + ")").text());
           d3.selectAll("svg .timeline-label:nth-of-type(" + i + ")")
-            .attr('fill', this.colorsService.getColorByLabel(d3.select("svg .timeline-label:nth-of-type(" + i + ")").text()).replace(/[^,]+(?=\))/, '1'))
-            .attr('dx', 15);
+            //.attr('fill', this.colorsService.getColorByLabel(d3.select("svg .timeline-label:nth-of-type(" + i + ")").text()).replace(/[^,]+(?=\))/, '1'))
+            .attr('dx', 45);
         }
 
         this.addTimeSelector();
@@ -291,7 +276,8 @@ export class D3graphComponent implements OnInit {
 
     var container = document.getElementsByTagName('svg');//this.parentNativeElement.querySelector(".container");
     if (container[0] != undefined) {
-      container[0].addEventListener('mousemove', (e) => {
+      container[0].addEventListener('pointermove', (e) => {
+        console.log(e.type+" dragging = "+this.dragging);
         if (this.dragging) {
           var x = e.offsetX;
           if (this.end == "drag") {
@@ -310,76 +296,84 @@ export class D3graphComponent implements OnInit {
             this.uidataService.changeDate(this.positionToYear(x), this.end);
           }
         }
-      });
+      });     
+    }
 
-      //var body = this.parentNativeElement.querySelector("body");
-      document.body.addEventListener('mouseup', (e) => {
+     //var body = this.parentNativeElement.querySelector("body");
+      document.body.addEventListener('pointerup', (e) => {
         this.dragging = false;
         this.position = -1;
+        console.log(e.type+" dragging = "+this.dragging);
       });
-    }
 
 
     var timeSelectorEnd = this.parentNativeElement.querySelector(".time-selector-end-drag");
     if (timeSelectorEnd != null) {
 
-      timeSelectorEnd.addEventListener('mousedown', (e) => {
+      timeSelectorEnd.addEventListener('pointerdown', (e) => {
         this.dragging = true;
+        console.log(e.type+" dragging = "+this.dragging);
         this.end = "end";
-      });
+      }, true);
 
-      timeSelectorEnd.addEventListener('mouseup', (e) => {
+      timeSelectorEnd.addEventListener('pointerup', (e) => {
         this.dragging = false;
-      });
+        console.log(e.type+" dragging = "+this.dragging);
+      }, true);
     }
 
     var timeSelectorStart = this.parentNativeElement.querySelector(".time-selector-start-drag");
     if (timeSelectorStart != null) {
 
-      timeSelectorStart.addEventListener('mousedown', (e) => {
+      timeSelectorStart.addEventListener('pointerdown', (e) => {
         this.dragging = true;
+        console.log(e.type+" dragging = "+this.dragging);
         this.end = "start";
       });
 
-      timeSelectorStart.addEventListener('mouseup', (e) => {
+      timeSelectorStart.addEventListener('pointerup', (e) => {
+        console.log(e.type+" dragging = "+this.dragging);
         this.dragging = false;
       });
     }
 
-    var timeSelectorDragger = this.parentNativeElement.querySelector(".time-selector-dragger");
-    if (timeSelectorDragger != null) {
+    // var timeSelectorDragger = this.parentNativeElement.querySelector(".time-selector-dragger");
+    // if (timeSelectorDragger != null) {
 
-      timeSelectorDragger.addEventListener('mousedown', (e) => {
-        this.dragging = true;
-        this.end = "drag";
-      });
+    //   timeSelectorDragger.addEventListener('pointerdown', (e) => {
+    //     console.log(e.type+" dragging = "+this.dragging);
+    //     this.dragging = true;
+    //     this.end = "drag";
+    //   });
 
-      timeSelectorDragger.addEventListener('mousemove', (e) => {
-        var x = e.offsetX;
-        if (this.dragging) {
-          if (this.end == "drag") {
-            if (this.position != -1) {
-              var change = x - this.position;
+      // timeSelectorDragger.addEventListener('mousemove', (e) => {
+      //   console.log(e.type+" dragging = "+this.dragging);
+      //   var x = e.offsetX;
+      //   if (this.dragging) {
+      //     if (this.end == "drag") {
+      //       if (this.position != -1) {
+      //         var change = x - this.position;
 
-              var newStart = this.yearToPosition(this.startDate) + change;
-              this.uidataService.changeDate(this.positionToYear(newStart), "start");
+      //         var newStart = this.yearToPosition(this.startDate) + change;
+      //         this.uidataService.changeDate(this.positionToYear(newStart), "start");
 
-              var newEnd = this.yearToPosition(this.endDate) + change;
-              this.uidataService.changeDate(this.positionToYear(newEnd), "end");
+      //         var newEnd = this.yearToPosition(this.endDate) + change;
+      //         this.uidataService.changeDate(this.positionToYear(newEnd), "end");
 
-            }
-            this.position = x;
-          } else {
-            this.uidataService.changeDate(this.positionToYear(x), this.end);
-          }
-        }
-      });
+      //       }
+      //       this.position = x;
+      //     } else {
+      //       this.uidataService.changeDate(this.positionToYear(x), this.end);
+      //     }
+      //   }
+      // });
 
-      timeSelectorDragger.addEventListener('mouseup', (e) => {
-        this.dragging = false;
-        this.position = -1;
-      });
-    }
+  //     timeSelectorDragger.addEventListener('mouseup', (e) => {
+  //       console.log(e.type+" dragging = "+this.dragging);
+  //       this.dragging = false;
+  //       this.position = -1;
+  //     });
+  //   }
   }
 
   updateTimelineSelector() {
