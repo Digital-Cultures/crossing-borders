@@ -336,44 +336,6 @@ export class D3graphComponent implements OnInit {
         this.dragging = false;
       });
     }
-
-    // var timeSelectorDragger = this.parentNativeElement.querySelector(".time-selector-dragger");
-    // if (timeSelectorDragger != null) {
-
-    //   timeSelectorDragger.addEventListener('pointerdown', (e) => {
-    //     console.log(e.type+" dragging = "+this.dragging);
-    //     this.dragging = true;
-    //     this.end = "drag";
-    //   });
-
-      // timeSelectorDragger.addEventListener('mousemove', (e) => {
-      //   console.log(e.type+" dragging = "+this.dragging);
-      //   var x = e.offsetX;
-      //   if (this.dragging) {
-      //     if (this.end == "drag") {
-      //       if (this.position != -1) {
-      //         var change = x - this.position;
-
-      //         var newStart = this.yearToPosition(this.startDate) + change;
-      //         this.uidataService.changeDate(this.positionToYear(newStart), "start");
-
-      //         var newEnd = this.yearToPosition(this.endDate) + change;
-      //         this.uidataService.changeDate(this.positionToYear(newEnd), "end");
-
-      //       }
-      //       this.position = x;
-      //     } else {
-      //       this.uidataService.changeDate(this.positionToYear(x), this.end);
-      //     }
-      //   }
-      // });
-
-  //     timeSelectorDragger.addEventListener('mouseup', (e) => {
-  //       console.log(e.type+" dragging = "+this.dragging);
-  //       this.dragging = false;
-  //       this.position = -1;
-  //     });
-  //   }
   }
 
   updateTimelineSelector() {
@@ -480,8 +442,8 @@ export class D3graphComponent implements OnInit {
     var stack = [];
     var ids = [];
 
-    //click down through layers (max 20 layers)
-    for (var i = 0; i < 20; i++) {
+    //click down through layers (max 100 layers)
+    for (var i = 0; i < 100; i++) {
       if (item.id.startsWith('timelineItem')) {
         // items += item.id+" ";
         stack.push(this.uidataService.getItemFromChart(item.id));

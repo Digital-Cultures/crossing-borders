@@ -1,19 +1,21 @@
 <div class="modal-body">
-	<div *ngFor="let d of data"> 
-	  <h5>{{d.name}}</h5> 
-	  <p>{{d.language}} {{d.compilationDate}}</p>
-	  <p>{{d.compilationPlace}}</p>
-	  <p>{{d.overview}}</p>
-	  <hr>
-	  <em>{{d.shelfmark}}</em>
-	  <button (click)="clicked(d, $event)">Show Comments</button>
-	  <div [ngClass]="(status == d.id) ? 'hidden' : 'showing'" id="disqus_thread"></div>
-	 <!--  <disqus class="hidden" [identifier]="'test-'+data[0].id" [url]="'http://example.com/hello-world/#!'+data[0].id" [title]="'test'+data[0].id"></disqus> -->
-	  <hr class="end">
-	</div>
+	<h6>{{selectedData.name}}</h6>
 
-	<!-- <disqus [identifier]="'test-'+data[0].id" [url]="'http://example.com/hello-world/#!'+data[0].id" [title]="'test'+data[0].id"></disqus> -->
+	<div *ngIf="(data.length>1)">
+		<h6>{{this.selected+1}} of {{data.length}} manuscripts selected:</h6>
+		<button (click)="prev(d, $event)" class="btn btn-outline-dark"> &#8592; Previous </button>
+		<button (click)="next(d, $event)" class="btn btn-outline-dark">Next &#8594;</button>
+		<hr class="end">
+	</div>
+	<div>
+		<p>{{selectedData.language}} {{selectedData.compilationDate}}</p>
+		<p>{{selectedData.compilationPlace}}</p>
+		<p>{{selectedData.overview}}</p>
+		<em><b>Shelf Mark: </b> {{selectedData.shelfmark}}</em>
+		<disqus style="padding:15px" [identifier]="'test-'+selectedData.id" [url]="'http://example.com/hello-world/#!'+selectedData.id"
+		 [title]="'test'+selectedData.id"></disqus>
+	</div>
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+	<button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
 </div>

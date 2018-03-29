@@ -1,45 +1,45 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, Input, Injectable } from '@angular/core';
+import { NgbModal, ModalDismissReasons, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClient } from '@angular/common/http';
+import { DisqusModule } from 'ngx-disqus';
+
 
 @Component({
-  selector: 'app-text-modal',
-  templateUrl: './text-modal.component.html',
-  styleUrls: ['./text-modal.component.scss']
+	selector: 'app-text-modal',
+	templateUrl: './text-modal.component.html',
+	styleUrls: ['./text-modal.component.scss']
 })
+
+@Injectable()
 export class TextModalComponent implements OnInit {
-  
-  status: string = "";
 
-  @Input() name;
+	status: string = "";
+	disqus_shortname = 'crossingborders2';
+	data: any;
+	selected: number = 0;
+	selectedData: any;
 
-  constructor(public activeModal: NgbActiveModal) {
-  }
+	@Input() name;
 
-  ngOnInit() {
-  	
-  }
+	constructor(
+		public activeModal: NgbActiveModal,
+		private http: HttpClient) {
+	}
 
-  clicked(d, event) {
-  	console.log(d.name);
-  	this.status = d.id;      
-  	var disqus_shortname = 'crossingborders2'; // Replace this value with *your* username.
+	ngOnInit() {
+		this.selectedData = this.data[this.selected];
+	}
 
-	  // ajax request to load the disqus javascript
-	  // $.ajax({
-	  //         type: "GET",
-	  //         url: "http://" + disqus_shortname + ".disqus.com/embed.js",
-	  //         dataType: "script",
-	  //         cache: true
-	  // });
-	  // // hide the button once comments load
-	  // $(this).fadeOut();
-
- //  	DISQUS.reset({
-	//   reload: true,
-	//   config: function () {  
-	//     this.page.identifier = "newidentifier";  
-	//     this.page.url = "http://example.com/#!newthread";
-	//   }
-	// });
-  }
+	prev(d, event) {
+		if (this.selected > 0) {
+			this.selected--;
+			this.selectedData = this.data[this.selected];
+		}
+	}
+	next(d, event) {
+		if (this.selected < this.data.length - 1) {
+			this.selected++;
+			this.selectedData = this.data[this.selected];
+		}	
+	}
 }

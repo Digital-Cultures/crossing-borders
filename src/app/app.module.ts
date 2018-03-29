@@ -1,8 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 import { Ng2YaTableModule } from 'ng2-ya-table';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -23,9 +24,9 @@ import { PlayheadComponent } from './playhead/playhead.component';
 import { TextModalComponent } from './text-modal/text-modal.component';
 
 const appRoutes: Routes = [
-  { path: '',   component: VisulisationComponent },
-  { path: 'db',  component: DbformComponent }
- ]
+  { path: '', component: VisulisationComponent },
+  { path: 'db', component: DbformComponent }
+]
 
 @NgModule({
   declarations: [
@@ -46,10 +47,11 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({
- 
+
       apiKey: 'AIzaSyCjq8QyaUNCdB21vTLiPC5IwmjvRzD9f80'
- 
+
     }),
     Ng2YaTableModule.forRoot(),
     NgbModule.forRoot(),
