@@ -15,6 +15,7 @@ $si-shadow-opacity : 0.3;
 $si-close-font-size : 25px;
 $si-close-opacity : 0.7;
 $si-close-hover-opacity : 1;
+$backgroundcolour : #efece8;
 
 html, body {
   height: 100%;
@@ -23,7 +24,7 @@ html, body {
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #efece8;
+  background-color: $backgroundcolour;
 }
 
 
@@ -52,7 +53,7 @@ body {
 }
 
 .timeline-xAxis {
-  fill: #efece8;
+  fill: $backgroundcolour ;
 }
 
 #timeline2 .axis {

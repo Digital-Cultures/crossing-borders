@@ -1,0 +1,249 @@
+{
+   "type":"text_date_language",
+   "texts":[
+      {
+         "id":"1",
+         "name":"Boeve de Haumtone (Bevis of Hampton)",
+         "language":"Anglo-Norman",
+         "start":"1300",
+         "end":"1350",
+         "compilationPlace":"England",
+         "shelfmark":"Paris, Bibliotheque Nationale, MS nouv. acq. Fr 4532",
+         "overview":"This is the only medieval text in the manuscript. It is bound with some early modern manorial documents.",
+         "compilationDate":"1300-1350"
+      },
+      {
+         "id":"2",
+         "name":"Boeve de Haumtone (Bevis of Hampton)",
+         "language":"Anglo-Norman",
+         "start":"1250",
+         "end":"1299",
+         "compilationPlace":"England",
+         "shelfmark":"Leuven, Univ. Bibl., MS G.170 (the Firmin Didot MS)",
+         "overview":"",
+         "compilationDate":"1250-1299"
+      },
+      {
+         "id":"3",
+         "name":"Boeve de Haumtone (Bevis of Hampton)",
+         "language":"Anglo-Norman",
+         "start":"1250",
+         "end":"1299",
+         "compilationPlace":"England",
+         "shelfmark":"London, Lambeth Palace, MS 1237, Nos. 1, 2",
+         "overview":"fragments found in book binding",
+         "compilationDate":"1250-1299"
+      },
+      {
+         "id":"4",
+         "name":"Boeve de Haumtone (Bevis of Hampton)",
+         "language":"Anglo-Norman",
+         "start":"1200",
+         "end":"1250",
+         "compilationPlace":"England",
+         "shelfmark":"University of Glasgow, Hunterian Library, MS 466",
+         "overview":"a former pastedown",
+         "compilationDate":"1200-1250"
+      },
+      {
+         "id":"5",
+         "name":"Bevis of Hampton",
+         "language":"Middle English",
+         "start":"1325",
+         "end":"1235",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.5287714,
+               -0.2420235
+            ]
+         },
+         "compilationPlace":"London",
+         "shelfmark":"Edinburgh, National Library of Scotland, MS Advocates 19.2.1 (Auchinleck Manuscript) ff. 176r-201r",
+         "overview":"The manuscript features a high number of romances, including Sir Guy of Warwick and Richard Coeur de Lion, and a large number of translations from French.",
+         "compilationDate":"1330 (approx)"
+      },
+      {
+         "id":"6",
+         "name":"Bevis of Hampton",
+         "language":"Middle English",
+         "start":"1450",
+         "end":"1475",
+         "compilationPlace":"East Midlands, England",
+         "shelfmark":"Cambridge, Gonville and Caius College, MS 175/96, pp. 131-156",
+         "overview":"Features three other romances, Richard Coer de Lion, Sir Isumbras and Athelston. Other texts include a life of St Katherine, the Gast of Gy and some verses on the crucifixion.",
+         "compilationDate":"1450-1475"
+      },
+      {
+         "id":"7",
+         "name":"Bevis of Hampton",
+         "language":"Middle English",
+         "start":"1375",
+         "end":"1500",
+         "compilationPlace":"Suffolk, England",
+         "shelfmark":"London, British Library, MS Egerton 2862 (the Sutherland MS), ff. 45r-96v",
+         "overview":"Manuscript largely of romances, incuding Richard Coeur de Lion, Floris and Blancheflour and Amis and Amiloun.",
+         "compilationDate":"1375-1500"
+      },
+      {
+         "id":"8",
+         "name":"Bevis of Hampton",
+         "language":"Middle English",
+         "start":"1430",
+         "end":"1270",
+         "compilationPlace":"Dorset, England",
+         "shelfmark":"Naples, Biblioteca Nazionale, MS XIII.B.29",
+         "overview":"Five other items in the manuscript, a medical text, a life of St Alexius of Rome, Lybeaus Desconus, Sir Isumbras and Chaucer's Clerk's Tale.",
+         "compilationDate":"1430-1470"
+      },
+      {
+         "id":"9",
+         "name":"Bevis of Hampton",
+         "language":"Middle English",
+         "start":"1430",
+         "end":"1500",
+         "compilationPlace":"South East of England",
+         "shelfmark":"Cambridge, Trinity College, MS 0.2.13/IV, ff. 149r-152r",
+         "overview":"This manuscript is a post-medieval amalgam of several volumes. No other major texts appear to have formed part of the original manuscript from which the text of Bevis comes.",
+         "compilationDate":"1430-1500"
+      },
+      {
+         "id":"10",
+         "name":"Bevis of Hampton",
+         "language":"Middle English",
+         "start":"1470",
+         "end":"1480",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.5287714,
+               -0.2420235
+            ]
+         },
+         "compilationPlace":"London, England",
+         "shelfmark":"Manchester, Chetham’s Library MS 8009",
+         "overview":"Manuscript containing fourteen items, including three romances and various saints' lives.",
+         "compilationDate":"1470-1480"
+      },
+      {
+         "id":"11",
+         "name":"Bevis of Hampton",
+         "language":"Middle English",
+         "start":"1500",
+         "end":"1599",
+         "compilationPlace":"Leicestershire, England",
+         "shelfmark":"Cambridge, University Library, MS Ff.2.38, ff. 102v-134r",
+         "overview":"Large manuscript containing 43 items, including 9 romances and various religious and didactic texts.",
+         "compilationDate":"1500-1599"
+      },
+      {
+         "id":"12",
+         "name":"Bevis of Hampton",
+         "language":"Middle English",
+         "start":"1430",
+         "end":"1499",
+         "compilationPlace":"Sussex/Surrey, England",
+         "shelfmark":"Oxford, Bodleian Library, MS Eng. Poet. D.208, ff. 49r-50v",
+         "overview":"Guard book assembled from unrelated fragments in the twentieth century.",
+         "compilationDate":"1430-1499"
+      },
+      {
+         "id":"13",
+         "name":"Bevers saga",
+         "language":"Old Norse-Icelandic",
+         "start":"1300",
+         "end":"1399",
+         "compilationPlace":"Iceland",
+         "shelfmark":"Copenhagen, The Arnamagnæan Institute, AM 567 II 4to, f. 1r-v",
+         "overview":"Collected with fragments of three other Old Norse-Icelandic romances (riddarasögur) of similar date.",
+         "compilationDate":"1300-1399"
+      },
+      {
+         "id":"14",
+         "name":"Bevers saga",
+         "language":"Old Norse-Icelandic",
+         "start":"1390",
+         "end":"1410",
+         "compilationPlace":"Iceland",
+         "shelfmark":"Copenhagen, The Arnamagnæan Institute, AM 567 VII 4to",
+         "overview":"Sole text in manuscript.",
+         "compilationDate":"1400 (approx)"
+      },
+      {
+         "id":"15",
+         "name":"Bevers saga",
+         "language":"Old Norse-Icelandic",
+         "start":"1450",
+         "end":"1475",
+         "compilationPlace":"Iceland",
+         "shelfmark":"Stockholm, Royal Library, Perg. fol. nr 7",
+         "overview":"This manuscript contains a range of Old Norse-Icelandic romances (riddarasögur)",
+         "compilationDate":"1450-1475"
+      },
+      {
+         "id":"16",
+         "name":"Bevers saga",
+         "language":"Old Norse-Icelandic",
+         "start":"1390",
+         "end":"1410",
+         "compilationPlace":"Iceland",
+         "shelfmark":"Stockholm, Royal Library, Perg. 4:o nr. 6",
+         "overview":"Features other romances, including Ivens saga and Parcevals saga.",
+         "compilationDate":"1400 (approx)"
+      },
+      {
+         "id":"17",
+         "name":"Ystorya Bown de Hamtwn",
+         "language":"Middle Welsh",
+         "start":"1330",
+         "end":"1360",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               52.2753755,
+               -3.8407165
+            ]
+         },
+         "compilationPlace":"Strata Florida Abbey, Ceredigion, Wales",
+         "shelfmark":"National Library of Wales, Peniarth MS 5 (The White Book of Rhydderch vol 1), ff. 118r, 119r-152r",
+         "overview":"This manuscript and Peniarth 4, originally formed a single codex and were separated at an early point. The overall compilation includes the Four Branches of the Mabinogi, Culhwch and Olwen, The Dream of Macsen Wledig, Lludd and Llefelys, Peredur and Owain, Geraint and Enid.",
+         "compilationDate":"1330-1360"
+      },
+      {
+         "id":"18",
+         "name":"Ystorya Bown de Hamtwn",
+         "language":"Middle Welsh",
+         "start":"1382",
+         "end":"1400",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.6818078,
+               -3.9214024
+            ]
+         },
+         "compilationPlace":"Ynysforgan, Glamorgan, Wales",
+         "shelfmark":"Oxford, Jesus College, MS 111 (The Red Book of Hergest), ff. 210r-231r",
+         "overview":"The manuscript contains chronicles, romances and court poetry, including a Welsh version of Geoffrey of Monmouth’s Historia Regum Brittaniae, Owain, Gereint, the Four Branches of the Mabinogi, and Welsh translations of Matter of France material such as the Pseudo-Turpin Chronicle and the Song of Roland.",
+         "compilationDate":"1382-1400"
+      },
+      {
+         "id":"19",
+         "name":"Stair Bibuis",
+         "language":"Early Modern Irish",
+         "start":"1475",
+         "end":"1500",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               53.2510655,
+               -6.8487025
+            ]
+         },
+         "compilationPlace":"?Kilmeague, Co. Kildare",
+         "shelfmark":"Dublin, Trinity College MS 1298 (olim H. 2. 7) pp. 248-263",
+         "overview":"Occurs in 2nd part of a composite manuscript alongside other translations from English (incuding a unique translation of the Middle English Guy of Warwick and of Caxton's Recuyell of the Histories of Troie), romantic tales, chronicle material.",
+         "compilationDate":"1475-1500"
+      }
+   ]
+}

@@ -19,6 +19,9 @@ Quarter-centuries with superscript:
 '3/4'. = XX50 - XX74
 ‘4/4'. = XX75 - XX99
 
+
+The easiest way to import the excel into a mysql database is to import into google sheets and then export as a tsv file. Rename this file as a csv one then you can use mysql Workbench importer.
+
 ## Dev
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
