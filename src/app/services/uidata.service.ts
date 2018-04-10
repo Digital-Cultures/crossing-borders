@@ -7,15 +7,15 @@ import { ColorsService } from '../services/colors.service';
 export class UidataService {
 
   private rawData = [];
-  private timelineData = [];  //CREATE INTERFACE
+  public timelineData = [];  //CREATE INTERFACE
 
   private mapMarkers: any = [];
   private mapMarkersSource = new BehaviorSubject<any>([]); //CREATE INTERFACE
   currentMapMarkers = this.mapMarkersSource.asObservable();
 
 
-  private dateSource = new BehaviorSubject<number>(1300);
-  currentDate = this.dateSource.asObservable();
+  // private dateSource = new BehaviorSubject<number>(1300);
+  // currentDate = this.dateSource.asObservable();
 
   private selectedStartDateSource = new BehaviorSubject<number>(1300);
   currentStartDate = this.selectedStartDateSource.asObservable();
@@ -146,7 +146,7 @@ export class UidataService {
         break;
       }
       default: {
-        this.dateSource.next(date)
+        //this.dateSource.next(date)
         this.mapMarkersSource.next(this.mapMarkers.filter(
           mapMarker => (parseInt(mapMarker.data.start) <= date && parseInt(mapMarker.data.end) >= date) || 
           (-1 == date &&
@@ -159,7 +159,7 @@ export class UidataService {
   }
 
   setSelectedTextID(id: number) {
-    this.selectedTextID.next(id)
+    this.selectedTextID.next(id);
   }
 
   getBegining(): string {
@@ -170,8 +170,16 @@ export class UidataService {
     return this._ending;
   }
 
-  // getInfoFromID(id: number): string {
-  //   return "NAME TEST";
-  // }
+  public setCommentMArker(data: any){
+    for (var k = 0; k < this.timelineData.length; k++) {
+      console.log(this.jsondataService.getTimelinesYaxi());
+      if (this.timelineData[k].label === data[this.jsondataService.getTimelinesYaxi()]) {
+        this.timelineData[k].times.push({ "color": "rgba(255,100,100,1)", "starting_time": new Date((new Date(data.start).getTime() + new Date(data.end).getTime()) / 2), "display": "circle" });
+        //hacky way to make the graph reload (should really have it's own observable)
+        this.selectedTextID.next(-1);
+        break;
+      }
+    }
+  }
 
 }

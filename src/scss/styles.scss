@@ -28,7 +28,6 @@ body {
 }
 
 
-
 /*D3 styling (gets missed out by angular so adding it at root)*/
 
 .timeline-label {
@@ -66,6 +65,11 @@ body {
   /* Opera */
   -moz-transform: translate(0px, 40px);
   /* Firefox */
+}
+
+circle {
+  pointer-events: none;
+  r: 6;
 }
 
 .ng2-ya-table {

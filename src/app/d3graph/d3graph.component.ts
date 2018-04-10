@@ -48,10 +48,6 @@ export class D3graphComponent implements OnInit {
     let beginning = this.uidataService.getBegining();
     let ending = this.uidataService.getEnding();
 
-    // this.uidataService.currentDate.subscribe(date => {
-    //   this.date = date;
-    //   this.drawLines(this.date);
-    // })
 
     this.uidataService.currentStartDate.subscribe(startDate => {
       this.startDate = startDate;
@@ -86,7 +82,7 @@ export class D3graphComponent implements OnInit {
     this.drawGraph();
   }
 
-  drawGraph() {
+  public drawGraph() {
     if (this.onInit){
       let self = this;
       let d3 = this.d3;
@@ -128,7 +124,7 @@ export class D3graphComponent implements OnInit {
         /** Add chart click event **/
         var elements = this.parentNativeElement.querySelectorAll("[id^='timelineItem']");
         for (var e in elements) {
-          if (elements[e].id) {
+          if (elements[e].id && elements[e].tagName=='rect') {
             var timelineBar = elements[e];
             timelineBar.addEventListener('pointerdown', (e) => {
               this.open(this.displayFullDescription(e));

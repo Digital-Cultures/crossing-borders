@@ -2,8 +2,8 @@ import { Component, OnInit, Input, Injectable } from '@angular/core';
 import { NgbModal, ModalDismissReasons, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClient } from '@angular/common/http';
 import { JsondataService } from '../services/jsondata.service';
+import { UidataService } from '../services/uidata.service';
 import { DisqusModule } from 'ngx-disqus';
-
 
 
 @Component({
@@ -28,12 +28,19 @@ export class TextModalComponent implements OnInit {
 	constructor(
 		public activeModal: NgbActiveModal,
 		private http: HttpClient,
-		private jsondataService: JsondataService) {
+		private jsondataService: JsondataService,
+		private uidataService: UidataService,
+		) {
 	}
 
 	ngOnInit() {
 		this.selectedData = this.data[this.selected];
 		this.disqus_textname = this.jsondataService.getDataset()+"-"+this.data[this.selected].id;
+	}
+
+	onNewComment(event){
+		console.log(event);
+		this.uidataService.setCommentMArker(this.data[this.selected]);
 	}
 
 	prev(d, event) {

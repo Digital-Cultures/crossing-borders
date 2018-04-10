@@ -16,9 +16,6 @@ export class PlayheadComponent implements OnInit {
   constructor(
     private uidataService: UidataService
   ) {
-    this.uidataService.currentDate.subscribe(date => {
-      this.date = date;
-    })
 
     this.uidataService.currentStartDate.subscribe(startDate => {
       this.startDate = startDate;
