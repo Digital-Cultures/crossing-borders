@@ -38,6 +38,7 @@ export class JsondataService {
         this.getData().subscribe(
             resultArray => {
                 this.rawDataSource.next(resultArray);
+                this.setMarkerDataset();
             },
             error => console.log('Error :: ' + error)
         )
@@ -67,6 +68,7 @@ export class JsondataService {
 
     setTimelinesYaxis(yAxis: string) {
         this.timelinesYaxisSource.next(yAxis);
+        this.setMarkerDataset();
     }
 
 
