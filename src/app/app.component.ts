@@ -19,6 +19,7 @@ export class AppComponent {
     ngOnInit() {
 
         this.jsondataService.setDataset(this.dataSet);
+        this.jsondataService.setMarkerDataset();
     }
 
     changeData(e) {

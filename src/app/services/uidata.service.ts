@@ -170,9 +170,9 @@ export class UidataService {
     return this._ending;
   }
 
-  public setCommentMArker(data: any){
+  public setCommentMarker(data: any){
     for (var k = 0; k < this.timelineData.length; k++) {
-      console.log(this.jsondataService.getTimelinesYaxi());
+      // add to right y-axis
       if (this.timelineData[k].label === data[this.jsondataService.getTimelinesYaxi()]) {
         this.timelineData[k].times.push({ "color": "rgba(255,100,100,1)", "starting_time": new Date((new Date(data.start).getTime() + new Date(data.end).getTime()) / 2), "display": "circle" });
         //hacky way to make the graph reload (should really have it's own observable)

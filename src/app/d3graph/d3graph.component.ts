@@ -69,6 +69,27 @@ export class D3graphComponent implements OnInit {
       this.drawGraph();
     })
 
+    this.jsondataService.currentMarkerRawData.subscribe((rawMarkerData: any) => {
+      let rawData = this.jsondataService.getRawData();
+      let thisData = this.jsondataService.getDataset();
+      for (let index = 0; index < rawMarkerData.length; index++) {
+        console.log(rawMarkerData[index].clean_title+" = "+rawMarkerData[index].posts+" = "+this.jsondataService.getDataset());
+        let text:string = rawMarkerData[index].clean_title.split('-')[0];
+        // if it has a comment and is the right dataset
+        if (rawMarkerData[index].posts>0 && thisData==text)
+        {
+         let id:string = rawMarkerData[index].clean_title.split('-')[1];
+          for (let k = 0; k < rawData.length; k++) {
+           if (id == rawData[k].id ){
+            console.log("HAS a Match");
+            // add marker!!
+            this.uidataService.setCommentMarker(rawData[k])
+           }
+          }
+        }       
+      }
+    })
+
     this.jsondataService.currentTimelinesYaxis.subscribe((yAxis: string) => {
       this.timelineData = this.uidataService.setGraphData(this.jsondataService.getRawData(), yAxis);
       this.timelinesYaxis = yAxis;

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Headers, Http, Response } from '@angular/http';
+import { Headers, Http, Response, Jsonp } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject } from "rxjs";
 import 'rxjs/Rx';
 
@@ -7,26 +8,30 @@ import 'rxjs/Rx';
 export class JsondataService {
     private url: string;
 
-    // private dataset = new BehaviorSubject<string>("prophecy_of_the_six_kings"); //CREATE INTERFACE
-    //  	currentDataset = this.dataset.asObservable();
-
+    //Data to plot
     private dataSet: string;
-
     private rawDataSource = new BehaviorSubject<any>([]); //CREATE INTERFACE
     currentRawData = this.rawDataSource.asObservable();
+
+    //comment marker data
+    private rawMarkerDataSource = new BehaviorSubject<any>([]); //CREATE INTERFACE
+    currentMarkerRawData = this.rawMarkerDataSource.asObservable();
 
     private timelinesYaxisSource = new BehaviorSubject<string>('language'); //CREATE INTERFACE
     currentTimelinesYaxis = this.timelinesYaxisSource.asObservable();
     //private dataset: Observable<string>;
 
-    constructor(public http: Http) {
+    constructor(
+        public http: Http,
+        private jsonp: HttpClient
+        ) 
+    {
         this.url = window.location.protocol + '//' + window.location.host + window.location.pathname + 'data/';
     }
 
     getRawData(): any {
         return this.rawDataSource.getValue();
     }
-
     setDataset(dataset: string) {
         this.dataSet = dataset;
 
@@ -37,9 +42,23 @@ export class JsondataService {
             error => console.log('Error :: ' + error)
         )
     }
-
     getDataset():string{
         return this.dataSet;
+    }
+
+    //COMMENT 
+    getRawMarkerData(): any {
+        return this.rawMarkerDataSource.getValue();
+    }
+    setMarkerDataset() {
+        //this.markerDataSet = markerDataSet;
+
+        this.getMarkerData().subscribe(
+            resultArray => {
+                this.rawMarkerDataSource.next(resultArray);
+            },
+            error => console.log('Error :: ' + error)
+        )
     }
 
     getTimelinesYaxi(): string {
@@ -99,6 +118,30 @@ export class JsondataService {
                 })
                 .catch(this.handleError);
         }
+    }
+
+    getMarkerData(request?: any ): Observable<any> {
+        var fullUrl: string;
+
+        if (window.location.href.slice(-2) == "db") {
+
+        } else {
+            return this.http.get('php/commentMarks.php')
+                .map((res: Response) => {
+                    return res.json();
+                })
+                .catch(this.handleError);
+        }
+    }
+
+    // public getCommentCount(identifier:string) {
+    //     this.jsonp.get('php/commentMarks.php').subscribe(data => {
+    //           console.log(data);
+    //         });
+    // }
+
+    setComentCount():string{
+        return "here"
     }
 
     private handleError(error: Response) {

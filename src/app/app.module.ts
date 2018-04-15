@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpClientModule, HttpClient, HttpClientJsonpModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 import { Ng2YaTableModule } from 'ng2-ya-table';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -47,7 +47,9 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    JsonpModule,
     HttpClientModule,
+    HttpClientJsonpModule,
     AgmCoreModule.forRoot({
 
       apiKey: 'AIzaSyCjq8QyaUNCdB21vTLiPC5IwmjvRzD9f80'
