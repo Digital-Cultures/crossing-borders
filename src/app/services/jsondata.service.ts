@@ -38,7 +38,9 @@ export class JsondataService {
         this.getData().subscribe(
             resultArray => {
                 this.rawDataSource.next(resultArray);
-                this.setMarkerDataset();
+                if (window.location.href.slice(-2) != "db") {
+                    this.setMarkerDataset();
+                }
             },
             error => console.log('Error :: ' + error)
         )
@@ -84,28 +86,34 @@ export class JsondataService {
                 let sourceData: any[] = res.json().texts;
                 let data: any[] = sourceData;
 
-                data.sort(function(a, b) {
-                    //just order by one value at the moment
-                    if (request.orders.length > 0) {
-                        if (request.orders[0].dir === "asc") {
-                            return (a[request.orders[0].name] < b[request.orders[0].name]) ? -1 : (a[request.orders[0].name] > b[request.orders[0].name]) ? 1 : 0;
-                        } else {
-                            return (a[request.orders[0].name] > b[request.orders[0].name]) ? -1 : (a[request.orders[0].name] < b[request.orders[0].name]) ? 1 : 0;
+                if(request!=undefined){
+                    data.sort(function(a, b) {
+                        //just order by one value at the moment
+                        if (request.orders.length > 0) {
+                            if (request.orders[0].dir === "asc") {
+                                let asc = (a[request.orders[0].name] < b[request.orders[0].name]) ? -1 : (a[request.orders[0].name] > b[request.orders[0].name]) ? 1 : 0;
+                                return asc;
+                            } else {
+                                let desc = (a[request.orders[0].name] > b[request.orders[0].name]) ? -1 : (a[request.orders[0].name] < b[request.orders[0].name]) ? 1 : 0;
+                                return desc;
+                            }
                         }
-                    }
-                });
+                    });
+                
 
-                request.filters.forEach((filter) => {
-                    if (filter.value) {
-                        data = data.filter(function(i) {
-                            return typeof i[filter.name] == 'string' && i[filter.name].toLowerCase().indexOf(filter.value.toLowerCase()) > -1;
-                        });
-                    }
-                });
+                    request.filters.forEach((filter) => {
+                        if (filter.value) {
+                            data = data.filter(function(i) {
+                                return typeof i[filter.name] == 'string' && i[filter.name].toLowerCase().indexOf(filter.value.toLowerCase()) > -1;
+                            });
+                        }
+                    });
 
 
-                data = data.slice(request.start, parseInt(request.length) + request.start);
+                    data = data.slice(request.start, parseInt(request.length) + request.start);
+                }
                 let count = res.headers.get('x-total-count');
+                console.log(data);
                 return {
                     recordsTotal: sourceData.length,
                     recordsFiltered: sourceData.length,

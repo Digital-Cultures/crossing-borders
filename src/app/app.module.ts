@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { HttpClientModule, HttpClient, HttpClientJsonpModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
-import { Ng2YaTableModule } from 'ng2-ya-table';
+import { Ng2YaTableModule } from 'ng2-ya-table/dist';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DisqusModule } from 'ngx-disqus';
 

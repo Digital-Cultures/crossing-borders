@@ -19,7 +19,9 @@ export class AppComponent {
     ngOnInit() {
 
         this.jsondataService.setDataset(this.dataSet);
-        this.jsondataService.setMarkerDataset();
+        if (window.location.href.slice(-2) != "db") {
+            this.jsondataService.setMarkerDataset();
+        }
     }
 
     changeData(e) {
