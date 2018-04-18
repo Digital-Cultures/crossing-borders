@@ -100,6 +100,7 @@ export class D3graphComponent implements OnInit {
   ngOnInit() { 
     this.onInit = true;
     console.log("ngOnInit D3 graph");
+    this.jsondataService.setDataset(this.jsondataService.getDataset());
     this.drawGraph();
   }
 
