@@ -13,6 +13,9 @@ SELECT CONCAT('{"type":"text_date_language"
 		  '"compilationPlace":', '"', compilationPlace, '"', ',' 
 		  '"shelfmark":', '"', shelfmark, '"', ',' 
 		  '"overview":', '"', overview, '"', ',' 
+          '"adaptation":', '"', adaptation, '"', ',' 
+          '"integrated":', '"', integrated, '"', ',' 
+          '"fragment":', '"', fragment, '"', ',' 
 		  '"compilationDate":', '"', compilationDate, '"
           }'), ']}') 
           

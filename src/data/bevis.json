@@ -10,6 +10,9 @@
          "compilationPlace":"England",
          "shelfmark":"Paris, Bibliotheque Nationale, MS nouv. acq. Fr 4532",
          "overview":"This is the only medieval text in the manuscript. It is bound with some early modern manorial documents.",
+         "adaptation":"original",
+         "integrated":"no",
+         "fragment":"fragment (covers lines 1-1268 of Stimming's edition)",
          "compilationDate":"1300-1350"
       },
       {
@@ -21,6 +24,9 @@
          "compilationPlace":"England",
          "shelfmark":"Leuven, Univ. Bibl., MS G.170 (the Firmin Didot MS)",
          "overview":"",
+         "adaptation":"original",
+         "integrated":"no",
+         "fragment":"fragment (covers lines 913-3850 of Stimming's edition)",
          "compilationDate":"1250-1299"
       },
       {
@@ -32,6 +38,9 @@
          "compilationPlace":"England",
          "shelfmark":"London, Lambeth Palace, MS 1237, Nos. 1, 2",
          "overview":"fragments found in book binding",
+         "adaptation":"original",
+         "integrated":"no",
+         "fragment":"fragment (covers lines 1641-1662 and 1672-1696 of Stimming's edition)",
          "compilationDate":"1250-1299"
       },
       {
@@ -43,6 +52,9 @@
          "compilationPlace":"England",
          "shelfmark":"University of Glasgow, Hunterian Library, MS 466",
          "overview":"a former pastedown",
+         "adaptation":"original",
+         "integrated":"no",
+         "fragment":"fragment (covers lines 1003-65 of Stimming’s edition)",
          "compilationDate":"1200-1250"
       },
       {
@@ -61,6 +73,9 @@
          "compilationPlace":"London",
          "shelfmark":"Edinburgh, National Library of Scotland, MS Advocates 19.2.1 (Auchinleck Manuscript) ff. 176r-201r",
          "overview":"The manuscript features a high number of romances, including Sir Guy of Warwick and Richard Coeur de Lion, and a large number of translations from French.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"missing a leaf after f. 188, otherwise complete",
          "compilationDate":"1330 (approx)"
       },
       {
@@ -72,6 +87,9 @@
          "compilationPlace":"East Midlands, England",
          "shelfmark":"Cambridge, Gonville and Caius College, MS 175/96, pp. 131-156",
          "overview":"Features three other romances, Richard Coer de Lion, Sir Isumbras and Athelston. Other texts include a life of St Katherine, the Gast of Gy and some verses on the crucifixion.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"incomplete (approx one third of the text survives)",
          "compilationDate":"1450-1475"
       },
       {
@@ -83,6 +101,9 @@
          "compilationPlace":"Suffolk, England",
          "shelfmark":"London, British Library, MS Egerton 2862 (the Sutherland MS), ff. 45r-96v",
          "overview":"Manuscript largely of romances, incuding Richard Coeur de Lion, Floris and Blancheflour and Amis and Amiloun.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"incomplete (final leaf of the text is missing)",
          "compilationDate":"1375-1500"
       },
       {
@@ -94,6 +115,9 @@
          "compilationPlace":"Dorset, England",
          "shelfmark":"Naples, Biblioteca Nazionale, MS XIII.B.29",
          "overview":"Five other items in the manuscript, a medical text, a life of St Alexius of Rome, Lybeaus Desconus, Sir Isumbras and Chaucer's Clerk's Tale.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"1430-1470"
       },
       {
@@ -105,6 +129,9 @@
          "compilationPlace":"South East of England",
          "shelfmark":"Cambridge, Trinity College, MS 0.2.13/IV, ff. 149r-152r",
          "overview":"This manuscript is a post-medieval amalgam of several volumes. No other major texts appear to have formed part of the original manuscript from which the text of Bevis comes.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"fragment",
          "compilationDate":"1430-1500"
       },
       {
@@ -123,6 +150,9 @@
          "compilationPlace":"London, England",
          "shelfmark":"Manchester, Chetham’s Library MS 8009",
          "overview":"Manuscript containing fourteen items, including three romances and various saints' lives.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"1470-1480"
       },
       {
@@ -134,6 +164,9 @@
          "compilationPlace":"Leicestershire, England",
          "shelfmark":"Cambridge, University Library, MS Ff.2.38, ff. 102v-134r",
          "overview":"Large manuscript containing 43 items, including 9 romances and various religious and didactic texts.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"1500-1599"
       },
       {
@@ -145,6 +178,9 @@
          "compilationPlace":"Sussex/Surrey, England",
          "shelfmark":"Oxford, Bodleian Library, MS Eng. Poet. D.208, ff. 49r-50v",
          "overview":"Guard book assembled from unrelated fragments in the twentieth century.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"fragment (two leaves only)",
          "compilationDate":"1430-1499"
       },
       {
@@ -156,6 +192,9 @@
          "compilationPlace":"Iceland",
          "shelfmark":"Copenhagen, The Arnamagnæan Institute, AM 567 II 4to, f. 1r-v",
          "overview":"Collected with fragments of three other Old Norse-Icelandic romances (riddarasögur) of similar date.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"fragment (1 folio, recto and verso)",
          "compilationDate":"1300-1399"
       },
       {
@@ -167,6 +206,9 @@
          "compilationPlace":"Iceland",
          "shelfmark":"Copenhagen, The Arnamagnæan Institute, AM 567 VII 4to",
          "overview":"Sole text in manuscript.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"fragment (2 folios)",
          "compilationDate":"1400 (approx)"
       },
       {
@@ -178,6 +220,9 @@
          "compilationPlace":"Iceland",
          "shelfmark":"Stockholm, Royal Library, Perg. fol. nr 7",
          "overview":"This manuscript contains a range of Old Norse-Icelandic romances (riddarasögur)",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"largely complete",
          "compilationDate":"1450-1475"
       },
       {
@@ -189,6 +234,9 @@
          "compilationPlace":"Iceland",
          "shelfmark":"Stockholm, Royal Library, Perg. 4:o nr. 6",
          "overview":"Features other romances, including Ivens saga and Parcevals saga.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"largely complete",
          "compilationDate":"1400 (approx)"
       },
       {
@@ -207,6 +255,9 @@
          "compilationPlace":"Strata Florida Abbey, Ceredigion, Wales",
          "shelfmark":"National Library of Wales, Peniarth MS 5 (The White Book of Rhydderch vol 1), ff. 118r, 119r-152r",
          "overview":"This manuscript and Peniarth 4, originally formed a single codex and were separated at an early point. The overall compilation includes the Four Branches of the Mabinogi, Culhwch and Olwen, The Dream of Macsen Wledig, Lludd and Llefelys, Peredur and Owain, Geraint and Enid.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"1330-1360"
       },
       {
@@ -225,6 +276,9 @@
          "compilationPlace":"Ynysforgan, Glamorgan, Wales",
          "shelfmark":"Oxford, Jesus College, MS 111 (The Red Book of Hergest), ff. 210r-231r",
          "overview":"The manuscript contains chronicles, romances and court poetry, including a Welsh version of Geoffrey of Monmouth’s Historia Regum Brittaniae, Owain, Gereint, the Four Branches of the Mabinogi, and Welsh translations of Matter of France material such as the Pseudo-Turpin Chronicle and the Song of Roland.",
+         "adaptation":"Translated from the Anglo-Norman",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"1382-1400"
       },
       {
@@ -243,6 +297,9 @@
          "compilationPlace":"?Kilmeague, Co. Kildare",
          "shelfmark":"Dublin, Trinity College MS 1298 (olim H. 2. 7) pp. 248-263",
          "overview":"Occurs in 2nd part of a composite manuscript alongside other translations from English (incuding a unique translation of the Middle English Guy of Warwick and of Caxton's Recuyell of the Histories of Troie), romantic tales, chronicle material.",
+         "adaptation":"Irish prose translation from Middle English",
+         "integrated":"no",
+         "fragment":"incomplete at the end",
          "compilationDate":"1475-1500"
       }
    ]

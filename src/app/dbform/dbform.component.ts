@@ -65,7 +65,7 @@ export class DbformComponent {
             }
         },
         {
-            title: 'Date of Compilation (Start)',
+            title: 'Date of Compilation',
             name: 'compilationDate',
             sort: false,
             filter: {
@@ -73,6 +73,51 @@ export class DbformComponent {
                 controlType: 'default',
                 config: {
                     placeholder: 'Filter by date'
+                }
+            }
+        }
+        , {
+            title: 'Adaptation/ Translation',
+            name: 'adaptation',
+            sort: false,
+            filter: {
+                type: 'default',
+                controlType: 'default',
+                config: {
+                    placeholder: 'Filter'
+                }
+            }
+        }, {
+            title: 'Integrated',
+            name: 'integrated',
+            sort: false,
+            filter: {
+                type: 'default',
+                controlType: 'default',
+                config: {
+                    placeholder: 'Filter'
+                }
+            }
+        }, {
+            title: 'Fragment',
+            name: 'fragment',
+            sort: false,
+            filter: {
+                type: 'default',
+                controlType: 'default',
+                config: {
+                    placeholder: 'Filter'
+                }
+            }
+        }, {
+            title: 'Shelfmark',
+            name: 'shelfmark',
+            sort: false,
+            filter: {
+                type: 'default',
+                controlType: 'default',
+                config: {
+                    placeholder: 'Filter'
                 }
             }
         }//,

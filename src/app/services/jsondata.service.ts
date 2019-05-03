@@ -113,7 +113,7 @@ export class JsondataService {
                     data = data.slice(request.start, parseInt(request.length) + request.start);
                 }
                 let count = res.headers.get('x-total-count');
-                console.log(data);
+                //console.log(data);
                 return {
                     recordsTotal: sourceData.length,
                     recordsFiltered: sourceData.length,

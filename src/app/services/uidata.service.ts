@@ -41,7 +41,7 @@ export class UidataService {
 
     var id = this.timelineData[parseInt(idCode[1])].ids[parseInt(idCode[2])];
 
-    for (var i = 0; i < this.rawData.length - 1; i++) {
+    for (var i = 0; i < this.rawData.length ; i++) {
       if (this.rawData[i].id == id) {
         return this.rawData[i];
       }
@@ -52,7 +52,8 @@ export class UidataService {
   setGraphData(data: any[], yAxis: string): any[] {
     this.rawData = data;
     this.timelineData = [];
-    for (var i = 0; i < data.length - 1; i++) {
+    for (var i = 0; i <= data.length - 1; i++) {
+      console.log(data[i].id);
 
       var exists = false;
       var start: Date = new Date(data[i].start);
@@ -86,7 +87,7 @@ export class UidataService {
 
     this.mapMarkers = [];
 
-    for (var i = 0; i < data.length - 1; i++) {
+    for (var i = 0; i < data.length; i++) {
 
       if ('geometry' in data[i]) {
         var lat = data[i].geometry.coordinates[0];

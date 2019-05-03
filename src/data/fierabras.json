@@ -10,6 +10,9 @@
          "compilationPlace":"England",
          "shelfmark":"Leuven, Univ. Bibl., MS G.170, ff. 53-130 (the Firmin Didot MS)",
          "overview":"Followed a copy of the Anglo-Norman Boeve de Haumtone (ff. 1-52)",
+         "adaptation":"Anglo-Norman adaptation of the continental French Vulgate Fierabras ('version longue')",
+         "integrated":"no",
+         "fragment":"fragment",
          "compilationDate":"1250-1299"
       },
       {
@@ -21,6 +24,9 @@
          "compilationPlace":"East Anglia",
          "shelfmark":"Hanover, Niedersächsische Landesbibliothek, Ms IV 578, ff. 25r-100v",
          "overview":"This is a composite manuscript. A slightly earlier text of La Destruction de Rome in a different scribal hand was bound with this copy of Fierabras at an early point.",
+         "adaptation":"Anglo-Norman adaptation of the continental French Vulgate Fierabras ('version longue'), somewhat abridged.",
+         "integrated":"no",
+         "fragment":"incomplete (two folios of the MS are missing)",
          "compilationDate":"1300-1330"
       },
       {
@@ -32,6 +38,9 @@
          "compilationPlace":"Devon",
          "shelfmark":"Oxford, Bodleian Library MS Ashmole 33",
          "overview":"Sole text in the manuscript. What appears to be a draft of some material from this text appears on the manuscript's surviving parchment wrapper.",
+         "adaptation":"Middle English translation of the French Vulgate text of Fierabras.",
+         "integrated":"no",
+         "fragment":"incomplete",
          "compilationDate":"1380-1399"
       },
       {
@@ -50,6 +59,9 @@
          "compilationPlace":"Bristol",
          "shelfmark":"London, British Library MS Add. 37492 (The Fillingham Manuscript), ff. 1r-30r",
          "overview":"This manuscript also includes a copy of the Middle English Charlemagne romance, Otuel and Roland, as well as The Eremyte and the Owtelawe, The Devil's Parliament and The Myrrour of Mankind.",
+         "adaptation":"Middle English translation of the French Vulgate text of Fierabras.",
+         "integrated":"no",
+         "fragment":"incomplete",
          "compilationDate":"1450-1499"
       },
       {
@@ -61,6 +73,9 @@
          "compilationPlace":"England",
          "shelfmark":"London, British Library, MS Egerton 3028",
          "overview":"This manuscript also includes a verse epitome of Wace's Roman de Brut and La Destruction de Rome.",
+         "adaptation":"Anglo-Norman adaptation of Fierabras. Heavily abbreviated.",
+         "integrated":"La Destruction de Rome functions as a prequel to Fierabras in this manuscript arrangement.",
+         "fragment":"complete",
          "compilationDate":"1325-1349"
       },
       {
@@ -72,6 +87,9 @@
          "compilationPlace":"England",
          "shelfmark":"Princeton, University Library MS Garrett 140",
          "overview":"Sole text in the manuscript.1450 (approx)",
+         "adaptation":"English verse text translated from Anglo-Norman 'version courte' of Fierabras and La Destruction de Rome",
+         "integrated":"Combines the Fierabras narrative with material from La Destruction de Rome",
+         "fragment":"incomplete",
          "compilationDate":"1450 (approx)"
       },
       {
@@ -90,6 +108,9 @@
          "compilationPlace":"Westminster,London",
          "shelfmark":"STC 5013 / USTC 500110",
          "overview":"Stand-alone printed text",
+         "adaptation":"English prose translation of Jean Bagnyon's French prose, Rommant de Fierabras le geant (1470s)",
+         "integrated":"Jean Bagnyon's central source for this work is the story of Fierabras, with further historical material primarily derived from the Pseudo-Turpin Chronicle (possibly via Speculum Historiale of Vincent de Beauvais ) framing the text. This extra material is carried over into Caxton’s translation.",
+         "fragment":"complete",
          "compilationDate":"1 December 1485"
       },
       {
@@ -108,6 +129,9 @@
          "compilationPlace":"South West Midlands of Ireland, perhaps in one of the Franciscan friaries at Ennis, Nenagh or Limerick.",
          "shelfmark":"Dublin, Trinity College MS 667 (olim MS F. 5. 3), pp. 85-100",
          "overview":"A high proportion of the items in the book are exempla and commonplaces. Short notes on the nature of preachers (p. 82) and on masters and students (p. 146) suggest that this manuscript (or parts of it) might have played some part in the formation of Franciscan novices. There are also various sermons, canon law notes and texts reflecting Irish interests, such extracts from Gerald of Wales’ writings on Ireland (pp. 183-184). The manuscript features another lengthy text about Charlemagne, the Pseudo-Turpin Chronicle (pp. 107-130). Among the manuscript’s other more substantial contents, are Honorius Augustodunensis’s Elucidarium (pp. 1-32), the Historia Septem Sapientum (pp. 42-54), Visio Sancti Pauli (pp. 76-8), De Spiritu Guidonis (p. 133-8), the Meditationes of Pseudo-Bernard (pp. 232-50) and Étienne de Bourbon’s account of Robert the Devil (p. 253).",
+         "adaptation":"Latin prose translation of the French chanson de geste, Fierabras.",
+         "integrated":"no",
+         "fragment":"incomplete",
          "compilationDate":"1450-1459"
       },
       {
@@ -126,6 +150,9 @@
          "compilationPlace":"?Kilmeague, Co. Kildare",
          "shelfmark":"Dublin, Trinity College MS 1298, pp. 432-456",
          "overview":"Occurs in 3rd part of a composite manuscript alongside the Irish translation of Lucan's Civil War, advice to princes material and a unique translation of the Hiberno-English version of Gerald of Wales' Expugnatio Hibernica.",
+         "adaptation":"Irish prose translation from a Latin version of the narrative similar to that now preserved in Trinity College Dublin MS 667. This in turn is from the French chanson de geste.",
+         "integrated":"In Irish translation, this text opens with a short account of the finding of the True Cross, derived from a Latin account De Inventione Sanctae Crucis. This features in all copies of Stair Fortibrais where the opening of the text survives.",
+         "fragment":"incomplete",
          "compilationDate":"1475-1499"
       },
       {
@@ -144,6 +171,9 @@
          "compilationPlace":"Tory Island, Co. Donegal",
          "shelfmark":"Dublin, Royal Irish Academy MS 24 P 25 (Leabhar Chlainne Suibhne), pp. 1-24.",
          "overview":"The other contents of the manuscript are generally of a pious sort, including saints lives and devotional works. Many are translations from Latin.",
+         "adaptation":"Irish prose translation from a Latin version of the narrative similar to that now preserved in Trinity College Dublin MS 667. This in turn is from the French chanson de geste.",
+         "integrated":"In Irish translation, this text opens with a short account of the finding of the True Cross, derived from a Latin account De Inventione Sanctae Crucis. This features in all copies of Stair Fortibrais where the opening of the text survives.",
+         "fragment":"incomplete",
          "compilationDate":"1513-14"
       },
       {
@@ -162,6 +192,9 @@
          "compilationPlace":"Connacht (possibly Roscommon)",
          "shelfmark":"Dublin, Royal Irish Academy MS 23 O 48, volume 1 (Liber Flavus Fergusiorum, volume 1), ff. 1-10",
          "overview":"The other contents of the manuscript are generally of a pious sort, including saints lives and devotional works. Many are translations from Latin.",
+         "adaptation":"Irish prose translation from a Latin version of the narrative similar to that now preserved in Trinity College Dublin MS 667. This in turn is from the French chanson de geste.",
+         "integrated":"In Irish translation, this text opens with a short account of the finding of the True Cross, derived from a Latin account De Inventione Sanctae Crucis. This features in all copies of Stair Fortibrais where the opening of the text survives.",
+         "fragment":"incomplete",
          "compilationDate":"1425-1449"
       },
       {
@@ -180,6 +213,9 @@
          "compilationPlace":"Pottlerath, Co. Kilkenny",
          "shelfmark":"Oxford, Bodleian Library MS Laud Misc. 610, ff. 45r–56v",
          "overview":"A composite manuscript, made up of two books compiled for the Butlers of Ormond. Stair Fortibras occurs in the manuscript which now covers ff. 1–58 and ff. 73–122 of the MS. The other contents of the section in which Stair Fortibrais appears are largely devotional in tone, with some generalogical and legendary material. There are a number of other translated texts.",
+         "adaptation":"Irish prose translation from a Latin version of the narrative similar to that now preserved in Trinity College Dublin MS 667. This in turn is from the French chanson de geste.",
+         "integrated":"In Irish translation, this text opens with a short account of the finding of the True Cross, derived from a Latin account De Inventione Sanctae Crucis. This features in all copies of Stair Fortibrais where the opening of the text survives.",
+         "fragment":"incomplete",
          "compilationDate":"1453-4"
       },
       {
@@ -198,6 +234,9 @@
          "compilationPlace":"Offaly",
          "shelfmark":"London, British Library MS Egerton 1781, ff. 1r-18r",
          "overview":"The other contents of the mansucript are quite mixed, comprising religious works, place-name lore and secular narratives. There are a number of other translated texts.",
+         "adaptation":"Irish prose translation from a Latin version of the narrative similar to that now preserved in Trinity College Dublin MS 667. This in turn is from the French chanson de geste.",
+         "integrated":"In Irish translation, this text opens with a short account of the finding of the True Cross, derived from a Latin account De Inventione Sanctae Crucis. This features in all copies of Stair Fortibrais where the opening of the text survives.",
+         "fragment":"complete",
          "compilationDate":"1484"
       },
       {
@@ -209,6 +248,9 @@
          "compilationPlace":"Ireland",
          "shelfmark":"Dublin, Trinity College MS 1304 (olim MS H. 2. 12 no. 3)",
          "overview":"Fragments, corresponding to sections 117-136 and 206-228 of Stokes' edition. This is sometimes identified as MS 1307, since the leaves originally seem to have enclosed a seventeenth century text that goes by that shelfmark.",
+         "adaptation":"Irish prose translation from a Latin version of the narrative similar to that now preserved in Trinity College Dublin MS 667. This in turn is from the French chanson de geste.",
+         "integrated":"In Irish translation, this text opens with a short account of the finding of the True Cross, derived from a Latin account De Inventione Sanctae Crucis. This features in all copies of Stair Fortibrais where the opening of the text survives.",
+         "fragment":"fragment",
          "compilationDate":"1475"
       },
       {
@@ -220,6 +262,9 @@
          "compilationPlace":"Ireland",
          "shelfmark":"Dublin, Trinity College MS 1319 (olim. H. 2. 17), pp. 433-462",
          "overview":"The manuscript consists of fragments, collected together at a later date.",
+         "adaptation":"Irish prose translation from a Latin version of the narrative similar to that now preserved in Trinity College Dublin MS 667. This in turn is from the French chanson de geste.",
+         "integrated":"In Irish translation, this text opens with a short account of the finding of the True Cross, derived from a Latin account De Inventione Sanctae Crucis. This features in all copies of Stair Fortibrais where the opening of the text survives.",
+         "fragment":"fragment",
          "compilationDate":"unknown"
       },
       {
@@ -231,6 +276,9 @@
          "compilationPlace":"Ireland",
          "shelfmark":"Dublin, King’s Inns MS 10, ff. 1r-8v",
          "overview":"The other manuscript contents are religious works, some of them translated from Latin. A copy of the Irish translation of the Pseudo-Turpin Chronicle follows Stair Fortibrais.",
+         "adaptation":"Irish prose translation from a Latin version of the narrative similar to that now preserved in Trinity College Dublin MS 667. This in turn is from the French chanson de geste.",
+         "integrated":"In Irish translation, this text opens with a short account of the finding of the True Cross, derived from a Latin account De Inventione Sanctae Crucis. This features in all copies of Stair Fortibrais where the opening of the text survives.",
+         "fragment":"incomplete",
          "compilationDate":"1475-1499"
       }
    ]

@@ -5,7 +5,7 @@
          "id":"1",
          "name":"La Vie d'Edouard le Confesseur",
          "language":"Anglo-Norman",
-         "start":"1200",
+         "start":"1266",
          "end":"1233",
          "geometry":{
             "type":"Point",
@@ -17,6 +17,9 @@
          "compilationPlace":"Campsey, Suffolk",
          "shelfmark":"London, British Library, Additional MS. 70513, ff. 55v-85v",
          "overview":"Saints' lives (Anglo-Norman)",
+         "adaptation":"A verse Life largely based on Aelred of Rievaulx's Vita S. Edwardi",
+         "integrated":"no",
+         "fragment":"fragment (ends at line 4240)",
          "compilationDate":"ex. s.xiii/in. s.xiv"
       },
       {
@@ -35,6 +38,9 @@
          "compilationPlace":"Barking Abbey",
          "shelfmark":"Rome, Biblioteca Apostolica Vaticana, MS. Reg. Lat. 489, ff.1-35",
          "overview":"A composite manuscript; this section also contains a Latin verse Life based on Aelred's Vita (Latin)",
+         "adaptation":"A verse Life largely based on Aelred of Rievaulx's Vita S. Edwardi",
+         "integrated":"no",
+         "fragment":"fragment (comprising lines 1463-6885)",
          "compilationDate":"ex. s.xiii"
       },
       {
@@ -53,6 +59,9 @@
          "compilationPlace":"Picardy",
          "shelfmark":"Paris, Bibliotheque Nationale, fr. 1416, ff.157-181",
          "overview":"Le Roman d'Eneas and Wace's Brut (French)",
+         "adaptation":"A verse Life largely based on Aelred of Rievaulx's Vita S. Edwardi",
+         "integrated":"Incorporated into Wace's Brut",
+         "fragment":"fragment (comprising lines c.69-4482)",
          "compilationDate":"c.1292"
       },
       {
@@ -71,6 +80,9 @@
          "compilationPlace":"Paris",
          "shelfmark":"London, British Library, Egerton MS. 745, ff.91-129v",
          "overview":"Saints' lives and moral treatises (French)",
+         "adaptation":"A prose reworking of La Vie d'Edouard le Confesseur",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"c.1300-50"
       },
       {
@@ -89,6 +101,9 @@
          "compilationPlace":"London or Westminster",
          "shelfmark":"Cambridge, University Library, MS Ee.3.59 ",
          "overview":"Only this item (Anglo-Norman), with illustrations",
+         "adaptation":"A verse Life largely based on Aelred of Rievaulx's Vita S. Edwardi",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"c.1250-60"
       },
       {
@@ -107,6 +122,9 @@
          "compilationPlace":"Gloucestershire",
          "shelfmark":"Oxford, Bodleian Library, Ashmole 43 (SC 6924), ff.260-269v",
          "overview":"The South English Legendary collection of saints' lives (English)",
+         "adaptation":"A verse Life in English, based on Aelred of Rievaulx's Vita S. Edwardi (perhaps via a French translation)",
+         "integrated":"An addition to the South English Legendary",
+         "fragment":"fragment (the last item in the MS; these leaves are in a fragmentary state)",
          "compilationDate":"c.1300-30"
       },
       {
@@ -125,17 +143,23 @@
          "compilationPlace":"Gloucestershire",
          "shelfmark":"London, British Library, Cotton Julius D. IX",
          "overview":"The South English Legendary collection of saints' lives (English)",
+         "adaptation":"A verse Life in English, based on Aelred of Rievaulx's Vita S. Edwardi (perhaps via a French translation)",
+         "integrated":"An addition to the South English Legendary",
+         "fragment":"complete",
          "compilationDate":"in. s.xv"
       },
       {
          "id":"8",
          "name":"Life of Edward the Confessor",
          "language":"English",
-         "start":"1445",
-         "end":"1455",
+         "start":"1450",
+         "end":"1250",
          "compilationPlace":"unknown",
          "shelfmark":"Oxford, Bodleian Library, Bodley 779 (SC 2567), ff.273-279v",
          "overview":"The South English Legendary collection of saints' lives (English)",
+         "adaptation":"A verse Life in English, based on Aelred of Rievaulx's Vita S. Edwardi (perhaps via a French translation)",
+         "integrated":"An addition to the South English Legendary",
+         "fragment":"complete, but a shortened version of the text",
          "compilationDate":"c.1450"
       },
       {
@@ -147,6 +171,9 @@
          "compilationPlace":"unknown",
          "shelfmark":"British Library, Additional MS. 35298, ff.48-53",
          "overview":"The Gilte Legende collection of saints' lives (English)",
+         "adaptation":"A prose Life in English, ultimately based on Aelred of Rievaulx's Vita S. Edwardi (via an intermediate source?)",
+         "integrated":"Added to one manuscript of the Gilte Legende collection of saints' lives, the English version of the Golden Legend",
+         "fragment":"complete",
          "compilationDate":"ex. s. xv"
       },
       {
@@ -158,6 +185,9 @@
          "compilationPlace":"unknown",
          "shelfmark":"Oxford, Trinity College MS. 11",
          "overview":"Only this item (English)",
+         "adaptation":"A prose Life of St Edward (probably a reworking of an earlier English Life), with parallels to the SEL version in Cotton Julius D. IX",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"s.xv"
       },
       {
@@ -165,10 +195,13 @@
          "name":"Jatvaroar saga",
          "language":"Old Norse",
          "start":"1387",
-         "end":"1394",
+         "end":"1349",
          "compilationPlace":"Iceland",
          "shelfmark":"Reykjavik, Arnamagnaean Institute, GkS 1005 fol., ff.212r-213r (Flateyjarbok)",
          "overview":"Kings' sagas, romances, saints' lives, and other historical material (Old Norse)",
+         "adaptation":"A prose Life of Edward the Confessor adapted and translated from various sources, including Latin lives by Osbert of Clare and Aelred of Rievaulx",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"1387-1394"
       },
       {
@@ -187,6 +220,9 @@
          "compilationPlace":"pykkvibaer, Iceland",
          "shelfmark":"Stockholm, National Library of Sweden, Perg. fol. no. 5, ff.68v-71r",
          "overview":"Sagas of bishops (Old Norse)",
+         "adaptation":"A prose Life of Edward the Confessor adapted and translated from various sources, including Latin lives by Osbert of Clare and Aelred of Rievaulx",
+         "integrated":"no",
+         "fragment":"complete",
          "compilationDate":"c.1350-1360"
       },
       {
@@ -198,6 +234,9 @@
          "compilationPlace":"Iceland",
          "shelfmark":"Copenhagen, Arnamagnaean Institute, AM 238 fol. XVI",
          "overview":"Jatvaroar saga and Egidius saga (Old Norse)",
+         "adaptation":"A prose Life of Edward the Confessor adapted and translated from sources including Latin lives by Osbert of Clare and Aelred of Rievaulx",
+         "integrated":"no",
+         "fragment":"fragment (single leaf)",
          "compilationDate":"c.1450-1500"
       }
    ]

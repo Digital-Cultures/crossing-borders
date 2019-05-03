@@ -1,0 +1,208 @@
+{
+    "type":"text_date_language",
+    "texts":[
+       {
+          "id":"1",
+          "name":"Marwolaeth Mair ",
+          "language":"Welsh",
+          "start":"1434",
+          "end":"1466",
+          "geometry":{
+             "type":"Point",
+             "coordinates":[
+                52.2751995,
+                -3.8387688
+             ]
+          },
+          "compilationPlace":"Strata Florida (with some caveats - Huws 2000: 252-254)",
+          "shelfmark":"NLW MS. Peniarth 5, f. 38r-40r –  incomplete",
+          "overview":"Prose (religious, narrative: Mabinogi, Charlemagne tales), poetry - all Welsh",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. xiv med."
+       },
+       {
+          "id":"2",
+          "name":"Marwolaeth Mair ",
+          "language":"Welsh",
+          "start":"1345",
+          "end":"1347",
+          "geometry":{
+             "type":"Point",
+             "coordinates":[
+                52.1796253,
+                -3.9655358
+             ]
+          },
+          "compilationPlace":"Llanddewibrefi",
+          "shelfmark":"Oxford Jesus College (The Book of the Anchorite of Llanddewi Brefi) MS. 119, f. 69v-77r  – complete",
+          "overview":"religious texts, mostly translations from Latin",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"1346"
+       },
+       {
+          "id":"3",
+          "name":"Marwolaeth Mair ",
+          "language":"Welsh",
+          "start":"1475",
+          "end":"1525",
+          "compilationPlace":"Wales",
+          "shelfmark":"NLW MS. Llanstephan 27 (The Red Book of Talgarth), f. 169v-172v –  complete",
+          "overview":"Prose (relifious), poetry",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. xiv/xv "
+       },
+       {
+          "id":"4",
+          "name":"Marwolaeth Mair ",
+          "language":"Welsh",
+          "start":"1437",
+          "end":"1439",
+          "compilationPlace":"Wales",
+          "shelfmark":"NLW 5267, f. 61-67 –  complete",
+          "overview":"Prose (religious, etc.)",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"1438"
+       },
+       {
+          "id":"5",
+          "name":"Marwolaeth Mair ",
+          "language":"Welsh",
+          "start":"1475",
+          "end":"1525",
+          "compilationPlace":"Wales",
+          "shelfmark":"NLW MS. Peniarth 15,  p.1-7  – complete",
+          "overview":"Prose (religious, narrative: Greal)",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. xiv/xv  "
+       },
+       {
+          "id":"6",
+          "name":"Marwolaeth Mair ",
+          "language":"Welsh",
+          "start":"1375",
+          "end":"1425",
+          "compilationPlace":"Wales",
+          "shelfmark":"Peniarth 27, rhan iii, p. 29-42 – incomplete",
+          "overview":"Prose (religious, historical, etc.), poetry",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. xv/xvi"
+       },
+       {
+          "id":"7",
+          "name":"Marwolaeth Mair ",
+          "language":"Welsh",
+          "start":"1697",
+          "end":"1699",
+          "compilationPlace":"Wales",
+          "shelfmark":"NLW 6209, p. 118-22 –  complete",
+          "overview":"Religious texts (incl. Lifes of Mary Magdalene and Martha)",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"1698"
+       },
+       {
+          "id":"8",
+          "name":"Marwolaeth Mair ",
+          "language":"Welsh",
+          "start":"1696",
+          "end":"1697",
+          "compilationPlace":"Wales",
+          "shelfmark":"Peniarth 120, p. 181-90 –  complete",
+          "overview":"religious",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"c.1696-7"
+       },
+       {
+          "id":"9",
+          "name":"Marwolaeth Mair ",
+          "language":"Welsh",
+          "start":"1800",
+          "end":"1801",
+          "compilationPlace":"Wales",
+          "shelfmark":"Peniarth 319, p. 116-29 – complete",
+          "overview":"religious",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"c.1800"
+       },
+       {
+          "id":"10",
+          "name":"Transitus Mariae",
+          "language":"Latin",
+          "start":"1400",
+          "end":"1499",
+          "compilationPlace":"",
+          "shelfmark":"Cod. Par. Lat. 3522 (olim Thuaneus, deinde Colbertinus 4953, postea Regius C. 4496.5.5.c), BNF, f. 65v-71v",
+          "overview":"Hagiography",
+          "adaptation":"original",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. xiv"
+       },
+       {
+          "id":"11",
+          "name":"Transitus Mariae",
+          "language":"Latin",
+          "start":"1300",
+          "end":"1399",
+          "compilationPlace":"",
+          "shelfmark":"Cod. T.C. Dublin C. 2.14 (Dublin, Trinity College), f. 86-92",
+          "overview":"mostly Church Fathers and Doctors, seven of 29 texts to honour of Virgin Mary",
+          "adaptation":"original",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. xv"
+       },
+       {
+          "id":"12",
+          "name":"Transitus Mariae",
+          "language":"Latin",
+          "start":"1300",
+          "end":"1399",
+          "compilationPlace":"",
+          "shelfmark":"Cod. Par. Lat. 4974 (olim Tellerianus), BNF, f. 187r-190v",
+          "overview":"Sammelhandschrift, i.a. with pope catalogue and description of holy places in Jerusalem",
+          "adaptation":"original",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. xv"
+       },
+       {
+          "id":"13",
+          "name":"Apocryphal Gospel of Mary?",
+          "language":"Old English",
+          "start":"1100",
+          "end":"1199",
+          "geometry":{
+             "type":"Point",
+             "coordinates":[
+                51.0641923,
+                -1.3558109
+             ]
+          },
+          "compilationPlace":"Winchester? (Clayton 1998: 123)",
+          "shelfmark":"Cambridge, Corpus Christi College, 41, pp. 280-7",
+          "overview":"Originally complete copy of the Old English translation of Bede's Ecclesiastical History, masses and liturgical texts in Latin, part of the Old English Martyrology, charms, six Old English homilies (Clayton 1998: 121-2)",
+          "adaptation":"translation",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. xi"
+       }
+    ]
+ }

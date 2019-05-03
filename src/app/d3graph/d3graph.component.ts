@@ -295,7 +295,7 @@ export class D3graphComponent implements OnInit {
     var container = document.getElementsByTagName('svg');//this.parentNativeElement.querySelector(".container");
     if (container[0] != undefined) {
       container[0].addEventListener('pointermove', (e) => {
-        console.log(e.type+" dragging = "+this.dragging);
+        //console.log(e.type+" dragging = "+this.dragging);
         if (this.dragging) {
           var x = e.offsetX;
           if (this.end == "drag") {
@@ -321,7 +321,7 @@ export class D3graphComponent implements OnInit {
       document.body.addEventListener('pointerup', (e) => {
         this.dragging = false;
         this.position = -1;
-        console.log(e.type+" dragging = "+this.dragging);
+        //console.log(e.type+" dragging = "+this.dragging);
       });
 
 

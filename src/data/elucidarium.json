@@ -1,0 +1,243 @@
+{
+    "type":"text_date_language",
+    "texts":[
+       {
+          "id":"1",
+          "name":"Elucidarius",
+          "language":"Old Norse",
+          "start":"1250",
+          "end":"1299",
+          "compilationPlace":"Copied in Iceland, possibly from a Norwegian original (Firchow and Grimstad 1989: xxiii-xxvi, xxviii-xxiv). ",
+          "shelfmark":"Copenhagen, Arnamagnæan Institute, AM 674a 4to",
+          "overview":"Old Norse Elucidarius, fols. 33 leaves",
+          "adaptation":"An Old Norse translation of the popular Latin work Elucidarius, which had been composed around the turn of the twelfth century.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XII2"
+       },
+       {
+          "id":"2",
+          "name":"Elucidarius",
+          "language":"Old Norse",
+          "start":"1290",
+          "end":"1310",
+          "compilationPlace":"Copied by an Icelandic scribe living in Norway, for possible inclusion in Hauksbók, an encyclopaedia comissioned, and partly written, by the Icelandic statesman Haukr Erlendsson (d. 1334) (Firchow and Grimstad 1989: xxxix-xli).",
+          "shelfmark":"Copenhagen, Arnamagnæan Institute, AM 675 4to",
+          "overview":"Old Norse Elucidarius, 16 leaves. ",
+          "adaptation":"An Old Norse translation of the popular Latin work Elucidarius, which had been composed around the turn of the twelfth century.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"1290-1310"
+       },
+       {
+          "id":"3",
+          "name":"Elucidarius",
+          "language":"Old Norse",
+          "start":"1400",
+          "end":"1433",
+          "compilationPlace":"Copied by a Norwegian scribe for Haukr Erlendsson, who then seems to have acquired, in 675, a fuller version of the Elucidarius text.",
+          "shelfmark":"Copenhagen, Arnamagnæan Institute, AM 544 4to",
+          "overview":"Second section of the encyclopaedia Hauksbók. Two passages from the Elucidarius are on fols. 10v-11v. The manuscript otherwise contains (1r-14v): encyclopaedic information drawn from various sources, on geography, natural phenomena, and Biblical stories, (15r-19v): encyclopaedic information drawn from various sources, on philosophy and theology, (20r-21r): Völuspá, (22r-33v): Trójumanna saga, (34r): a text called 'Seven Precious Stones And Their Nature' (35v): Cisiojanus (a versified Latin enumeration for remembering the church festivals throughout the year), (36r-59r): Breta sögur, including Merlínusspá, (60r-68v): two dialogues between the soul and the body, (69r-72v:9): Hemings þáttr Áslákssonar, (72v:9-76v): Hervarar saga ok Heiðreks, (77r-89v:35): Fóstbrœðra saga, (89v:35-93r:17): Algorismus, (93r:17-101v:24): Eiríks saga rauða, (101v:25-104v:17): Skálda saga, (104v:18-105r:21): Af Upplendinga konungum, (105r:21-107v): Ragnarssona þáttr, (107v): Prognostica Temporum",
+          "adaptation":"An Old Norse translation of the popular Latin work Elucidarius, which had been composed around the turn of the twelfth century.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XIVin"
+       },
+       {
+          "id":"4",
+          "name":"Elucidarius",
+          "language":"Old Norse",
+          "start":"1450",
+          "end":"1499",
+          "compilationPlace":"Iceland",
+          "shelfmark":"Copenhagen, Arnamagnæan Institute, AM 229 fol. IV",
+          "overview":"Manuscript contains passages from Gyðinga saga (The Saga of the Jewish People) fols. 1r-2r, and passages from the Elucidarius, fol. 2v",
+          "adaptation":"An Old Norse translation of the popular Latin work Elucidarius, which had been composed around the turn of the twelfth century.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XIV2"
+       },
+       {
+          "id":"5",
+          "name":"Elucidarius",
+          "language":"Old Norse",
+          "start":"1550",
+          "end":"1599",
+          "compilationPlace":"Iceland",
+          "shelfmark":"Copenhagen, Arnamagnæan Institute, AM 685d 4to",
+          "overview":"32 leaves with texts on philosophical and religious topics. Passages from the Elucidarius on fols. 8v-10v",
+          "adaptation":"An Old Norse translation of the popular Latin work Elucidarius, which had been composed around the turn of the twelfth century.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XV2"
+       },
+       {
+          "id":"6",
+          "name":"Elucidarius",
+          "language":"Old Norse",
+          "start":"1550",
+          "end":"1599",
+          "compilationPlace":"Iceland",
+          "shelfmark":"Copenhagen, Arnamagnæan Institute, AM 685b 4to",
+          "overview":"1 leaf",
+          "adaptation":"An Old Norse translation of the popular Latin work Elucidarius, which had been composed around the turn of the twelfth century.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XV2"
+       },
+       {
+          "id":"7",
+          "name":"Elucidarius",
+          "language":"Old Norse",
+          "start":"1550",
+          "end":"1649",
+          "compilationPlace":"Iceland ",
+          "shelfmark":"Copenhagen, Arnamagnæan Institute, AM 238 fol. XVIII",
+          "overview":"4 leaves, 3 containing the Elucidarius,  a portion of a sermon on the fourth",
+          "adaptation":"An Old Norse translation of the popular Latin work Elucidarius, which had been composed around the turn of the twelfth century.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XV2- s. XVI1"
+       },
+       {
+          "id":"8",
+          "name":"Elucidarius",
+          "language":"Old Norse",
+          "start":"1375",
+          "end":"1425",
+          "compilationPlace":"Iceland",
+          "shelfmark":"Reykjavík, Stofnun Árna Magnússonar, AM 238 fol. XIX",
+          "overview":"8 lines from the Elucidarius, an independent translation, inserted into a manuscript ofBiblíu saga (Saga of the Bible)",
+          "adaptation":"An Old Norse translation of the popular Latin work Elucidarius, which had been composed around the turn of the twelfth century.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"c. 1400"
+       },
+       {
+          "id":"9",
+          "name":"Elucidarium",
+          "language":"Old English",
+          "start":"1234",
+          "end":"1266",
+          "geometry":{
+             "type":"Point",
+             "coordinates":[
+                51.2785924,
+                1.0488316
+             ]
+          },
+          "compilationPlace":"Christ Church, Canterbury, England (?)",
+          "shelfmark":"London, British Library, Cotton Vespasian D. xiv, fols. 159r-163v and 163v-165r (s. XIImed)",
+          "overview":"The translation comprises two excerpts of selected dialogical units from the second and the frst book of the Elucidarium (in that order). The selection from the second book (a condensed translation of chapters 1-6) concerns the nature of sin, and the earthly fortunes of the good and the sinful, while the later selection from the first book a condensed translation of chapters 23-25) concerns the resurrection and ascension. The two pieces, probably translated by the same translator but written here in two different hands, separated by red and green decoration. The manuscript is a collection of homiletic, hagiographic and educative material written in the vernacular Old English.",
+          "adaptation":"An Old English  translation of the popular Latin work Elucidarius, which had been composed around the turn of the twelfth century.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XIImed"
+       },
+       {
+          "id":"10",
+          "name":"The Lucydarye",
+          "language":"Middle English",
+          "start":"1522",
+          "end":"1524",
+          "geometry":{
+             "type":"Point",
+             "coordinates":[
+                51.5287718,
+                -0.2416801
+             ]
+          },
+          "compilationPlace":"London",
+          "shelfmark":"ESTC 13686, British Library Print (Br) ",
+          "overview":"The younger print version (1523?) of the Middle English Lucydarye survives in only one copy, printed by the London-based publisher Wynkyn de Worde (d. 1534). This quarto contains 12 woodcut illustrations, from four designs. It preserves a complete text. ",
+          "adaptation":"A late Middle English translation of the Second Lucidaire, a fourteenth-century adaptation and translation into French of the Latin Elucidarium. ",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"1523 (?)"
+       },
+       {
+          "id":"11",
+          "name":"The Lucydarye",
+          "language":"Middle English",
+          "start":"1502",
+          "end":"1504",
+          "geometry":{
+             "type":"Point",
+             "coordinates":[
+                51.5287718,
+                -0.2416801
+             ]
+          },
+          "compilationPlace":"London",
+          "shelfmark":"ESTC 13685.5, Folger Shakespeare Library, Washington DC",
+          "overview":"The elder print version (1502-04) of the Middle English Lucydarye survives in only one copy, printed by the London-based publisher Wynkyn de Worde (d. 1534). This quarto, which forms the basis for the younger version, is now missing four leaves.",
+          "adaptation":"A late Middle English translation of the Second Lucidaire, a fourteenth-century adaptation and translation into French of the Latin Elucidarium. ",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"1502-1504"
+       },
+       {
+          "id":"12",
+          "name":"Abbreviated Middle English Elucidarium",
+          "language":"Middle English",
+          "start":"1550",
+          "end":"1574",
+          "geometry":{
+             "type":"Point",
+             "coordinates":[
+                52.0691161,
+                -3.1271604
+             ]
+          },
+          "compilationPlace":"Archenfield, Herefordshire",
+          "shelfmark":"National Library of Wales, MS Peniarth 12 (olim Hengwrt 202), fols. 1r-11v",
+          "overview":"This Middle English translation of the Elucidarium (1475-1500) is bound into a complex composite manuscript that bears the inscription 'This is Hugh Evans's Book, 1583' ('llyfr Hugh Evans yw hwn Anno 1583'). The composite contains texts written by four hands, between around 1400 to around 1580. The ME version of the Eliucidarium - much adapted and refocussed from its Latin original - covers  fols. 1r-11v. The compilation is complex. On the blank leaves that follow the ME Elucidarium, the compilator (Hugh Evans?) has copied numerous Welsh language religious writings, beginning with a Welsh translation of the Elucidarium , the Ystoria Lucidar (not  a translation from the preceding English version) on fols. 12-38, 39-58, and 67-73. Hugh Evans has written a marginal note at the end of the ME Elucidarium that reads 'finis angli' ('the English [version] finishes') (O'Rourke 2003, 58). The compilation further contains religious instructional material written in Welsh, English, and Latin.",
+          "adaptation":"A late  fifteenth-century English translation of the  Elucidarium, and radicall adaptation of the original text. The language of the exemplar cannot be stated with certainty, but textual evidence suggests it may have been Latin (Marx 2000, 6). Of the 368 chapters in the Latin text (as per Lefèvre 1954 edition), 120 have Middle English counterparts in this version. The translation provides little evidence of archaic forms, so it might be supposed that the translation from Latin was recent to its appearance in this manuscript. The text appears dialectically to emanate from Worcestershire or more likely South Herefordshire, which suits its appearance in a manuscript containing mostly Welsh language texts. The text finishes in the middle of a sentence, with space remaining on the folio, suggesting that it was never finished (O'Rourke 2003, 56). ",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XV3/4"
+       },
+       {
+          "id":"13",
+          "name":"Lucidarie ",
+          "language":"Middle English",
+          "start":"1500",
+          "end":"1533",
+          "compilationPlace":"",
+          "shelfmark":"St John's College, Cambridge, MS G.25, fols. 1r-16r",
+          "overview":"The manuscript is a compilation of six religious materials written primarily in English, but with some Latin. ",
+          "adaptation":"A Middle English translation with numerous interpolations. Follows closely the structure of the Latin Elucidarium as far as the beginning of its second book. It contains only six questions from the second book, and omits the third altogether.  This translation is related to that in Cambridge University Library MS. Ii.vi.26, but is more careful and complete. It is likely that the two emanate from a common exemplar.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XVin"
+       },
+       {
+          "id":"14",
+          "name":"Lucistrye",
+          "language":"Middle English",
+          "start":"1500",
+          "end":"1533",
+          "compilationPlace":"",
+          "shelfmark":"Cambridge University Library MS Ii.vi.26, fols. 79v-101v",
+          "overview":"The manuscript is a compilation that contains twelve Wycliffite tracts advocating Biblical translation into English (Hanna 2005, 308).",
+          "adaptation":" This translation is related to that in Cambridge University Library MS. Ii.vi.26, but is less careful and complete. It is likely that the two emanate from a common exemplar.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"s. XVin"
+       },
+       {
+          "id":"15",
+          "name":"Ystoria Lucidar",
+          "language":"Welsh ",
+          "start":"1400",
+          "end":"1580",
+          "compilationPlace":"Wales",
+          "shelfmark":"National Library of Wales, MS Peniarth 12 (olim Hengwrt 202), fols. 12r-39r",
+          "overview":"This Welsh  translation of the Elucidarium (c. 1400 and c. 1580) is bound into a complex composite manuscript that bears the inscription 'This is Hugh Evans's Book, 1583' ('llyfr Hugh Evans yw hwn Anno 1583'). The composite contains texts written by four hands, between around 1400 to around 1580. The Welsh version of the Eliucidarium  covers  fols. 12r-73r. Its  earliest part is preserved in some quires (fols. 39r-58v) dated to around 1400, written in the hand of Hywel Fychan, known for his work on the famous Red Book of Hergest (Llyfr Coch o Hergest).  The book's ownder, Hugh Evans, has supplemented this older fragment with a text drawn F48from another Welsh translation of the Elucidarium to create a 'complete' text.The compilation is complex. On the blank leaves that follow the ME Elucidarium, the compilator (Hugh Evans?) has copied numerous religious instructional materials written in Welsh, English, and Latin.",
+          "adaptation":"A Welsh translation of the Latin Elucidarium.  The earliest part of this manuscript version is preserved in some quires (fols. 39r-58v) dated to around 1400, written in the hand of Hywel Fychan, known for his work on the famous Red Book of Hergest (Llyfr Coch o Hergest). This manuscript was bound into a compilation that in 1583 was in the ownership of a Hugh Evans, a signature on f. 79r reads'This is Hugh Evans's Book, 1583' ('llyfr Hugh Evans yw hwn Anno 1583'). It has been bound alongside an Abbreviated Middle English translation of the Elucidarium dated c. 1475-1500. Hugh Evans has supplemented his earlier manuscript fragment of the Welsh Elucidarium  by writing in the missing sections that precede and follow it, hence the sections on either side of the text dated c. 1400 were added by Hugh in around 1580.",
+          "integrated":"",
+          "fragment":"",
+          "compilationDate":"c. 1400 (fols. 39r-58v),  c. 1580 (fols. 12r-39r and 58v-73r)"
+       }
+    ]
+ }
