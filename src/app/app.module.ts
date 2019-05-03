@@ -22,10 +22,12 @@ import { DbformComponent } from './dbform/dbform.component';
 import { VisulisationComponent } from './visulisation/visulisation.component';
 import { PlayheadComponent } from './playhead/playhead.component';
 import { TextModalComponent } from './text-modal/text-modal.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   { path: '', component: VisulisationComponent },
-  { path: 'db', component: DbformComponent }
+  { path: 'db', component: DbformComponent },
+  { path: 'about', component: AboutComponent }
 ]
 
 @NgModule({
@@ -37,7 +39,8 @@ const appRoutes: Routes = [
     DbformComponent,
     VisulisationComponent,
     PlayheadComponent,
-    TextModalComponent
+    TextModalComponent,
+    AboutComponent
   ],
   imports: [
     RouterModule.forRoot(
