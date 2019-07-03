@@ -59,7 +59,7 @@ const appRoutes: Routes = [
     HttpClientJsonpModule,
     AgmCoreModule.forRoot({
 
-      apiKey: 'AIzaSyDODTcbSXffzCfhEyiL3YzWM7cU70zrI1k'
+      apiKey: ''
 
     }),
     Ng2YaTableModule.forRoot(),
