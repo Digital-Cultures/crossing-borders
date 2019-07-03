@@ -26,8 +26,37 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: $backgroundcolour;
 }
+.main_container{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  margin: 2px solid;
+  text-align: center;
+ 
+}
+.navbar{
+  position: fixed;
+  top:0px;
+  width: 100%;
+  z-index: 4;
+}
+.logo{
+        height: 24px;
+        /*float: right;*/
+        right:10px;
+        margin:8px;
+    /*background-color: pink;
+    border-color: pink;
+    border:5px solid;*/
+    /*margin:5px; */
 
-
+  }
+.logo_holder{
+    position: absolute;
+    right:0px; 
+    height: 100%;
+    vertical-align: center;
+}
 /*D3 styling (gets missed out by angular so adding it at root)*/
 
 .timeline-label {

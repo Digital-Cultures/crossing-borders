@@ -23,11 +23,14 @@ import { VisulisationComponent } from './visulisation/visulisation.component';
 import { PlayheadComponent } from './playhead/playhead.component';
 import { TextModalComponent } from './text-modal/text-modal.component';
 import { AboutComponent } from './about/about.component';
+import { TextsComponent } from './texts/texts.component';
 
 const appRoutes: Routes = [
-  { path: '', component: VisulisationComponent },
+  { path: 'vis', component: VisulisationComponent },
   { path: 'db', component: DbformComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
+  { path: 'texts', component: TextsComponent },
+  { path: '**', redirectTo: 'about' }
 ]
 
 @NgModule({
@@ -40,7 +43,8 @@ const appRoutes: Routes = [
     VisulisationComponent,
     PlayheadComponent,
     TextModalComponent,
-    AboutComponent
+    AboutComponent,
+    TextsComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -55,7 +59,7 @@ const appRoutes: Routes = [
     HttpClientJsonpModule,
     AgmCoreModule.forRoot({
 
-      apiKey: ''
+      apiKey: 'AIzaSyDODTcbSXffzCfhEyiL3YzWM7cU70zrI1k'
 
     }),
     Ng2YaTableModule.forRoot(),

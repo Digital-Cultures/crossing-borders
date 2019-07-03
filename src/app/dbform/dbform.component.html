@@ -1,4 +1,41 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark" >
+    <div class="navbar-nav">
+    	<a class="nav-item nav-link" routerLink="/about" routerLinkActive="inactive">About</a>
+    	<a  class="nav-item nav-link" routerLink="/db" routerLinkActive="active">Database</a>
+    	        <a  class="nav-item nav-link" routerLink="/texts" routerLinkActive="inactive">Texts</a>
 
+    	<a class="nav-item nav-link" routerLink="/vis" routerLinkActive="inactive">Visualisation</a>
+    </div>
+       <div class ="logo_holder">
+            <img class="logo" src="assets/logos/ncl.png"/>
+        	<img class="logo" src="assets/logos/white.png"/>
+        </div>
+</nav>
+
+<!-- TODO restyle -->
+<!-- <nav> -->
+
+	<div class="form-group book-selector">
+	  <select (change)="changeData($event)" class="form-control" id="sel1">
+	    <option value="prophecy_of_the_six_kings">Six Kings</option>
+	    <option value="life_of_st_edward">Life of St Edward</option>
+	    <option value="pseudo_turpin">Pseudo Turpin</option>
+	    <option value="bevis">Bevis</option>
+		<option value="fierabras">Fierabras</option>
+		<option value="roman_alexandre">Roman d'Alexandre</option>
+		<option value="elucidarium">Elucidarius</option>
+		<option value="marwolaeth_mair">Marwolaeth Mair</option>
+		<option value="proffwydoliaeth_merdin">Proffwydoliaeth Merdin</option>
+	  </select>
+	</div>
+
+	<!-- <div class="menuItem">
+		<a href="#" >Visualisation</a>
+		<a routerLink="/db" routerLinkActive="active">Database</a>
+	</div> -->
+    
+<!-- </nav>
+ --> 
  <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">

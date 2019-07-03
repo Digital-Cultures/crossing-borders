@@ -1,9 +1,15 @@
 ng2-ya-table {
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	display: block;
 }
 
 table.ng2-ya-table .sorting_asc::after {
 	content: "\f160";
     font: normal normal normal 14px/1 FontAwesome;
+}
+
+.book-selector{
+	margin-left:50px;
+	margin-top:50px;
+	width:20%;
 }
