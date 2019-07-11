@@ -1,51 +1,58 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark" >
-    <div class="navbar-nav">
-    	<a class="nav-item nav-link" routerLink="/about" routerLinkActive="inactive">About</a>
-    	<a  class="nav-item nav-link" routerLink="/db" routerLinkActive="inactive">Database</a>
-        <a  class="nav-item nav-link" routerLink="/texts" routerLinkActive="active">Texts</a>
-    	<a class="nav-item nav-link" href="#" >Visualisation</a>
-    </div>
-    <div class ="logo_holder">
-        <img class="logo" src="assets/logos/ncl.png"/>
-        <img class="logo" src="assets/logos/white.png"/>
-        <img class="logo" src="assets/logos/humboldt-logo.png"/>
-    </div>
+	<div class="navbar-nav">
+		<a class="nav-item nav-link" routerLink="/about" routerLinkActive="inactive">About</a>
+		<a  class="nav-item nav-link" routerLink="/db" routerLinkActive="inactive">Database</a>
+		<a  class="nav-item nav-link" routerLink="/texts" routerLinkActive="active">Texts</a>
+		<a class="nav-item nav-link" href="#" >Visualisation</a>
+	</div>
+	<div class ="logo_holder">
+		<img class="logo" src="assets/logos/ncl.png"/>
+		<img class="logo" src="assets/logos/white.png"/>
+		<img class="logo" src="assets/logos/humboldt-logo.png"/>
+	</div>
 </nav>
 
 <img style ="width:100%; position:fixed" src="/assets/map.jpg" alt="map of medieval europe"/>
 
 
 <div class="main_container">
-	<section class="content" >
+	<div class="content" >
 
 
-        <h1>Texts</h1>
+        <!-- <h1>Texts</h1>
 
         <p>The encyclopaedic entries for each text need to trace this history of movement, identifying notable stages of transmission/ translation. It should also make a claim for significance – why have we selected this text as a case study? These will be co-authored.
-        </p>
-        <div class="form-group book-selector">
-	  <select (change)="changeData($event)" class="form-control" id="sel1">
-	    <option value="prophecy_of_the_six_kings">Six Kings</option>
-	    <option value="life_of_st_edward">Life of St Edward</option>
-	    <option value="pseudo_turpin">Pseudo Turpin</option>
-	    <option value="bevis">Bevis</option>
-		<option value="fierabras">Fierabras</option>
-		<option value="roman_alexandre">Roman d'Alexandre</option>
-		<option value="elucidarium">Elucidarius</option>
-		<option value="marwolaeth_mair">Marwolaeth Mair</option>
-		<option value="proffwydoliaeth_merdin">Proffwydoliaeth Merdin</option>
-	  </select>
-	</div>
+        </p> -->
 
-		<h3>{{currentText.title}}</h3>
-		<h3>Circulation</h3>
-		<p>{{currentText.circulation}}</p>
-		<h3>Languages</h3>
-		<p>{{currentText.languages}}</p>
-		<h3 >Significance</h3>
-		<p [innerHTML]="currentText.significance"></p>
-       
-    </section>
+
+        <div id="info_box">
+        	<div class="form-group book-selector">
+        		<select  (change)="changeData($event)" class="form-control" id="sel1">
+        			<option value="choose">Select a text</option>
+        			<option value="prophecy_of_the_six_kings">Six Kings</option>
+        			<option value="life_of_st_edward">Life of St Edward</option>
+        			<!-- <option value="pseudo_turpin">Pseudo Turpin</option> -->
+        			<option value="bevis">Bevis</option>
+        			<option value="fierabras">Fierabras</option>
+        			<option value="roman_alexandre">Roman d'Alexandre</option>
+        			<option value="elucidarium">Elucidarium</option>
+        			<option value="marwolaeth_mair">Marwolaeth Mair</option>
+        			<option value="proffwydoliaeth_merdin">Proffwydoliaeth Merdin</option>
+        		</select>
+        	</div>
+
+        	
+        	
+        	<h3 *ngIf="currentText.title!='The texts of Crossing Borders'">Circulation</h3>
+        	<p *ngIf="currentText.title!='The texts of Crossing Borders'">{{currentText.circulation}}</p>
+        	<h3 *ngIf="currentText.title!='The texts of Crossing Borders'">Languages</h3>
+        	<p *ngIf="currentText.title!='The texts of Crossing Borders'">{{currentText.languages}}</p>
+        </div>
+     	<h3 style="font-size: 1.5em"><strong>{{currentText.title}}</strong></h3>
+     	<h3 *ngIf="currentText.title!='The texts of Crossing Borders'"><i>according to</i> {{currentText.author}}</h3>
+        <p style="" [innerHTML]="currentText.significance"></p>
+
+    </div>
 
 
 </div>

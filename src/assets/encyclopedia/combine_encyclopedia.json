@@ -1,0 +1,58 @@
+"texts": {
+		"bevis": {
+			"title": "Bevis of Hampton: Translation and Transmission",
+			"author": "Aisling Byrne, University of Reading",
+			"circulation": "England, Norway, Iceland, Wales, Ireland, France (and elsewhere)",
+			"languages": "Anglo-Norman, Old Norse-Icelandic, Middle Welsh, Middle English, Early Modern Irish (and non-insular languages)",
+			"significance": 
+		},
+		"prophecy_of_the_six_kings": {
+			"title": "Prophecy of the Six Kings: Translation and Transmission",
+			"author": "Victoria Flood, University of Birmingham",
+			"circulation": "England, France, Wales, Scotland",
+			"languages": "Anglo-Norman, English, Welsh, Latin",
+			"significance": "test"
+		},
+		"life_of_st_edward": {
+			"title": "Life of Edward the Confessor: Translation and Transmission",
+			"author": "Eleanor Parker, University of Oxford",
+			"circulation": "England, Iceland, France (and elsewhere)",
+			"languages": "Latin, Anglo-Norman, Middle English, Old Norse-Icelandic (and non-insular languages)",
+			"significance": ""
+		},
+		"fierabras": {
+			"title": "Fierabras: Translation and Transmission",
+			"author": "Aisling Byrne, University of Reading",
+			"circulation": "England, Ireland, France (and elsewhere)",
+			"languages": "Latin, Anglo-Norman, Middle English, Early Modern Irish (and non-insular languages)",
+			"significance": ""
+		},
+		"proffwydoliaeth_merdin": {
+			"title": "Prophecies of Merlin: Translation and Transmission",
+			"author": "Victoria Flood, University of Birmingham",
+			"circulation": "France, Iceland-Norway, Wales, England",
+			"languages": "Anglo-Norman, Continental French, Old Norse-Icelandic, Middle & Early Modern Welsh, Middle English",
+			"significance": ""
+		},
+		"Elucidarium": {
+			"title": "Elucidarium: Translation and Transmission",
+			"author": "Dale Kedwards, Háskóli Íslands and Elena Parina, Philipps-Universität Marburg",
+			"circulation": "France, England, Wales, Iceland (and non-Insular)",
+			"languages": "Latin, Insular French, Old French, Old English, Middle English, Welsh, Old Norse-Icelandic (and non-Insular)",
+			"significance": ""
+		},
+		"virgin_mary": {
+			"title": "Assumption of the Virgin Mary: Translation and Transmission",
+			"author": "Elena Parina, Philipps-Universität Marburg",
+			"circulation": "Wales, England, Ireland, Iceland (and elsewhere)",
+			"languages": "Middle Welsh, Early Modern Welsh, Old English, Middle English, Early Modern Irish, Old Norse-Icelandic, Latin (and non-insular languages)",
+			"significance": ""
+		},
+		"alexander": {
+			"title": "Alexander: Translation and Transmission",
+			"author": "Venetia Bridges, Durham University and Emily Wingfield, University of Birmingham",
+			"circulation": "France, England, Scotland (and non-insular)",
+			"languages": "Continental French, Middle English, Middle Scots, Latin",
+			"significance": ""
+		}
+	}
