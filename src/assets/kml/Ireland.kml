@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ireland.kml</name>
+	<Schema name="ne_50m_admin_0_map_units" id="S_ne_50m_admin_0_map_units_SIISSIISSSISSISSISSSSSSSSSSSSSSIIIIDIDIIISSISSSSSSSSIISSSIISSSSIIIIIDDDISSSSSSSSSSSSSSSSSSSSSS">
+		<SimpleField type="string" name="featurecla"><displayName>&lt;b&gt;featurecla&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="scalerank"><displayName>&lt;b&gt;scalerank&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="LABELRANK"><displayName>&lt;b&gt;LABELRANK&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SOVEREIGNT"><displayName>&lt;b&gt;SOVEREIGNT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SOV_A3"><displayName>&lt;b&gt;SOV_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ADM0_DIF"><displayName>&lt;b&gt;ADM0_DIF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="LEVEL"><displayName>&lt;b&gt;LEVEL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="TYPE"><displayName>&lt;b&gt;TYPE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ADMIN"><displayName>&lt;b&gt;ADMIN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ADM0_A3"><displayName>&lt;b&gt;ADM0_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="GEOU_DIF"><displayName>&lt;b&gt;GEOU_DIF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="GEOUNIT"><displayName>&lt;b&gt;GEOUNIT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="GU_A3"><displayName>&lt;b&gt;GU_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="SU_DIF"><displayName>&lt;b&gt;SU_DIF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SUBUNIT"><displayName>&lt;b&gt;SUBUNIT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SU_A3"><displayName>&lt;b&gt;SU_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="BRK_DIFF"><displayName>&lt;b&gt;BRK_DIFF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME"><displayName>&lt;b&gt;NAME&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_LONG"><displayName>&lt;b&gt;NAME_LONG&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="BRK_A3"><displayName>&lt;b&gt;BRK_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="BRK_NAME"><displayName>&lt;b&gt;BRK_NAME&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="BRK_GROUP"><displayName>&lt;b&gt;BRK_GROUP&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ABBREV"><displayName>&lt;b&gt;ABBREV&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="POSTAL"><displayName>&lt;b&gt;POSTAL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="FORMAL_EN"><displayName>&lt;b&gt;FORMAL_EN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="FORMAL_FR"><displayName>&lt;b&gt;FORMAL_FR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_CIAWF"><displayName>&lt;b&gt;NAME_CIAWF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NOTE_ADM0"><displayName>&lt;b&gt;NOTE_ADM0&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NOTE_BRK"><displayName>&lt;b&gt;NOTE_BRK&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_SORT"><displayName>&lt;b&gt;NAME_SORT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_ALT"><displayName>&lt;b&gt;NAME_ALT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="MAPCOLOR7"><displayName>&lt;b&gt;MAPCOLOR7&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="MAPCOLOR8"><displayName>&lt;b&gt;MAPCOLOR8&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="MAPCOLOR9"><displayName>&lt;b&gt;MAPCOLOR9&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="MAPCOLOR13"><displayName>&lt;b&gt;MAPCOLOR13&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="POP_EST"><displayName>&lt;b&gt;POP_EST&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="POP_RANK"><displayName>&lt;b&gt;POP_RANK&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="GDP_MD_EST"><displayName>&lt;b&gt;GDP_MD_EST&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="POP_YEAR"><displayName>&lt;b&gt;POP_YEAR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="LASTCENSUS"><displayName>&lt;b&gt;LASTCENSUS&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="GDP_YEAR"><displayName>&lt;b&gt;GDP_YEAR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ECONOMY"><displayName>&lt;b&gt;ECONOMY&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="INCOME_GRP"><displayName>&lt;b&gt;INCOME_GRP&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="WIKIPEDIA"><displayName>&lt;b&gt;WIKIPEDIA&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="FIPS_10_"><displayName>&lt;b&gt;FIPS_10_&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ISO_A2"><displayName>&lt;b&gt;ISO_A2&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ISO_A3"><displayName>&lt;b&gt;ISO_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ISO_A3_EH"><displayName>&lt;b&gt;ISO_A3_EH&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ISO_N3"><displayName>&lt;b&gt;ISO_N3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="UN_A3"><displayName>&lt;b&gt;UN_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="WB_A2"><displayName>&lt;b&gt;WB_A2&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="WB_A3"><displayName>&lt;b&gt;WB_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="WOE_ID"><displayName>&lt;b&gt;WOE_ID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="WOE_ID_EH"><displayName>&lt;b&gt;WOE_ID_EH&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="WOE_NOTE"><displayName>&lt;b&gt;WOE_NOTE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ADM0_A3_IS"><displayName>&lt;b&gt;ADM0_A3_IS&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ADM0_A3_US"><displayName>&lt;b&gt;ADM0_A3_US&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ADM0_A3_UN"><displayName>&lt;b&gt;ADM0_A3_UN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ADM0_A3_WB"><displayName>&lt;b&gt;ADM0_A3_WB&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="CONTINENT"><displayName>&lt;b&gt;CONTINENT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="REGION_UN"><displayName>&lt;b&gt;REGION_UN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SUBREGION"><displayName>&lt;b&gt;SUBREGION&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="REGION_WB"><displayName>&lt;b&gt;REGION_WB&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="NAME_LEN"><displayName>&lt;b&gt;NAME_LEN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="LONG_LEN"><displayName>&lt;b&gt;LONG_LEN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ABBREV_LEN"><displayName>&lt;b&gt;ABBREV_LEN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="TINY"><displayName>&lt;b&gt;TINY&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="HOMEPART"><displayName>&lt;b&gt;HOMEPART&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="MIN_ZOOM"><displayName>&lt;b&gt;MIN_ZOOM&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="MIN_LABEL"><displayName>&lt;b&gt;MIN_LABEL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="MAX_LABEL"><displayName>&lt;b&gt;MAX_LABEL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="NE_ID"><displayName>&lt;b&gt;NE_ID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="WIKIDATAID"><displayName>&lt;b&gt;WIKIDATAID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_AR"><displayName>&lt;b&gt;NAME_AR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_BN"><displayName>&lt;b&gt;NAME_BN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_DE"><displayName>&lt;b&gt;NAME_DE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_EN"><displayName>&lt;b&gt;NAME_EN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_ES"><displayName>&lt;b&gt;NAME_ES&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_FR"><displayName>&lt;b&gt;NAME_FR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_EL"><displayName>&lt;b&gt;NAME_EL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_HI"><displayName>&lt;b&gt;NAME_HI&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_HU"><displayName>&lt;b&gt;NAME_HU&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_ID"><displayName>&lt;b&gt;NAME_ID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_IT"><displayName>&lt;b&gt;NAME_IT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_JA"><displayName>&lt;b&gt;NAME_JA&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_KO"><displayName>&lt;b&gt;NAME_KO&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_NL"><displayName>&lt;b&gt;NAME_NL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_PL"><displayName>&lt;b&gt;NAME_PL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_PT"><displayName>&lt;b&gt;NAME_PT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_RU"><displayName>&lt;b&gt;NAME_RU&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_SV"><displayName>&lt;b&gt;NAME_SV&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_TR"><displayName>&lt;b&gt;NAME_TR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_VI"><displayName>&lt;b&gt;NAME_VI&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_ZH"><displayName>&lt;b&gt;NAME_ZH&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="falseColor">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>featurecla</b></td><td>$[ne_50m_admin_0_map_units/featurecla]</td></tr>
+  <tr><td><b>scalerank</b></td><td>$[ne_50m_admin_0_map_units/scalerank]</td></tr>
+  <tr><td><b>LABELRANK</b></td><td>$[ne_50m_admin_0_map_units/LABELRANK]</td></tr>
+  <tr><td><b>SOVEREIGNT</b></td><td>$[ne_50m_admin_0_map_units/SOVEREIGNT]</td></tr>
+  <tr><td><b>SOV_A3</b></td><td>$[ne_50m_admin_0_map_units/SOV_A3]</td></tr>
+  <tr><td><b>ADM0_DIF</b></td><td>$[ne_50m_admin_0_map_units/ADM0_DIF]</td></tr>
+  <tr><td><b>LEVEL</b></td><td>$[ne_50m_admin_0_map_units/LEVEL]</td></tr>
+  <tr><td><b>TYPE</b></td><td>$[ne_50m_admin_0_map_units/TYPE]</td></tr>
+  <tr><td><b>ADMIN</b></td><td>$[ne_50m_admin_0_map_units/ADMIN]</td></tr>
+  <tr><td><b>ADM0_A3</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3]</td></tr>
+  <tr><td><b>GEOU_DIF</b></td><td>$[ne_50m_admin_0_map_units/GEOU_DIF]</td></tr>
+  <tr><td><b>GEOUNIT</b></td><td>$[ne_50m_admin_0_map_units/GEOUNIT]</td></tr>
+  <tr><td><b>GU_A3</b></td><td>$[ne_50m_admin_0_map_units/GU_A3]</td></tr>
+  <tr><td><b>SU_DIF</b></td><td>$[ne_50m_admin_0_map_units/SU_DIF]</td></tr>
+  <tr><td><b>SUBUNIT</b></td><td>$[ne_50m_admin_0_map_units/SUBUNIT]</td></tr>
+  <tr><td><b>SU_A3</b></td><td>$[ne_50m_admin_0_map_units/SU_A3]</td></tr>
+  <tr><td><b>BRK_DIFF</b></td><td>$[ne_50m_admin_0_map_units/BRK_DIFF]</td></tr>
+  <tr><td><b>NAME</b></td><td>$[ne_50m_admin_0_map_units/NAME]</td></tr>
+  <tr><td><b>NAME_LONG</b></td><td>$[ne_50m_admin_0_map_units/NAME_LONG]</td></tr>
+  <tr><td><b>BRK_A3</b></td><td>$[ne_50m_admin_0_map_units/BRK_A3]</td></tr>
+  <tr><td><b>BRK_NAME</b></td><td>$[ne_50m_admin_0_map_units/BRK_NAME]</td></tr>
+  <tr><td><b>BRK_GROUP</b></td><td>$[ne_50m_admin_0_map_units/BRK_GROUP]</td></tr>
+  <tr><td><b>ABBREV</b></td><td>$[ne_50m_admin_0_map_units/ABBREV]</td></tr>
+  <tr><td><b>POSTAL</b></td><td>$[ne_50m_admin_0_map_units/POSTAL]</td></tr>
+  <tr><td><b>FORMAL_EN</b></td><td>$[ne_50m_admin_0_map_units/FORMAL_EN]</td></tr>
+  <tr><td><b>FORMAL_FR</b></td><td>$[ne_50m_admin_0_map_units/FORMAL_FR]</td></tr>
+  <tr><td><b>NAME_CIAWF</b></td><td>$[ne_50m_admin_0_map_units/NAME_CIAWF]</td></tr>
+  <tr><td><b>NOTE_ADM0</b></td><td>$[ne_50m_admin_0_map_units/NOTE_ADM0]</td></tr>
+  <tr><td><b>NOTE_BRK</b></td><td>$[ne_50m_admin_0_map_units/NOTE_BRK]</td></tr>
+  <tr><td><b>NAME_SORT</b></td><td>$[ne_50m_admin_0_map_units/NAME_SORT]</td></tr>
+  <tr><td><b>NAME_ALT</b></td><td>$[ne_50m_admin_0_map_units/NAME_ALT]</td></tr>
+  <tr><td><b>MAPCOLOR7</b></td><td>$[ne_50m_admin_0_map_units/MAPCOLOR7]</td></tr>
+  <tr><td><b>MAPCOLOR8</b></td><td>$[ne_50m_admin_0_map_units/MAPCOLOR8]</td></tr>
+  <tr><td><b>MAPCOLOR9</b></td><td>$[ne_50m_admin_0_map_units/MAPCOLOR9]</td></tr>
+  <tr><td><b>MAPCOLOR13</b></td><td>$[ne_50m_admin_0_map_units/MAPCOLOR13]</td></tr>
+  <tr><td><b>POP_EST</b></td><td>$[ne_50m_admin_0_map_units/POP_EST]</td></tr>
+  <tr><td><b>POP_RANK</b></td><td>$[ne_50m_admin_0_map_units/POP_RANK]</td></tr>
+  <tr><td><b>GDP_MD_EST</b></td><td>$[ne_50m_admin_0_map_units/GDP_MD_EST]</td></tr>
+  <tr><td><b>POP_YEAR</b></td><td>$[ne_50m_admin_0_map_units/POP_YEAR]</td></tr>
+  <tr><td><b>LASTCENSUS</b></td><td>$[ne_50m_admin_0_map_units/LASTCENSUS]</td></tr>
+  <tr><td><b>GDP_YEAR</b></td><td>$[ne_50m_admin_0_map_units/GDP_YEAR]</td></tr>
+  <tr><td><b>ECONOMY</b></td><td>$[ne_50m_admin_0_map_units/ECONOMY]</td></tr>
+  <tr><td><b>INCOME_GRP</b></td><td>$[ne_50m_admin_0_map_units/INCOME_GRP]</td></tr>
+  <tr><td><b>WIKIPEDIA</b></td><td>$[ne_50m_admin_0_map_units/WIKIPEDIA]</td></tr>
+  <tr><td><b>FIPS_10_</b></td><td>$[ne_50m_admin_0_map_units/FIPS_10_]</td></tr>
+  <tr><td><b>ISO_A2</b></td><td>$[ne_50m_admin_0_map_units/ISO_A2]</td></tr>
+  <tr><td><b>ISO_A3</b></td><td>$[ne_50m_admin_0_map_units/ISO_A3]</td></tr>
+  <tr><td><b>ISO_A3_EH</b></td><td>$[ne_50m_admin_0_map_units/ISO_A3_EH]</td></tr>
+  <tr><td><b>ISO_N3</b></td><td>$[ne_50m_admin_0_map_units/ISO_N3]</td></tr>
+  <tr><td><b>UN_A3</b></td><td>$[ne_50m_admin_0_map_units/UN_A3]</td></tr>
+  <tr><td><b>WB_A2</b></td><td>$[ne_50m_admin_0_map_units/WB_A2]</td></tr>
+  <tr><td><b>WB_A3</b></td><td>$[ne_50m_admin_0_map_units/WB_A3]</td></tr>
+  <tr><td><b>WOE_ID</b></td><td>$[ne_50m_admin_0_map_units/WOE_ID]</td></tr>
+  <tr><td><b>WOE_ID_EH</b></td><td>$[ne_50m_admin_0_map_units/WOE_ID_EH]</td></tr>
+  <tr><td><b>WOE_NOTE</b></td><td>$[ne_50m_admin_0_map_units/WOE_NOTE]</td></tr>
+  <tr><td><b>ADM0_A3_IS</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3_IS]</td></tr>
+  <tr><td><b>ADM0_A3_US</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3_US]</td></tr>
+  <tr><td><b>ADM0_A3_UN</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3_UN]</td></tr>
+  <tr><td><b>ADM0_A3_WB</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3_WB]</td></tr>
+  <tr><td><b>CONTINENT</b></td><td>$[ne_50m_admin_0_map_units/CONTINENT]</td></tr>
+  <tr><td><b>REGION_UN</b></td><td>$[ne_50m_admin_0_map_units/REGION_UN]</td></tr>
+  <tr><td><b>SUBREGION</b></td><td>$[ne_50m_admin_0_map_units/SUBREGION]</td></tr>
+  <tr><td><b>REGION_WB</b></td><td>$[ne_50m_admin_0_map_units/REGION_WB]</td></tr>
+  <tr><td><b>NAME_LEN</b></td><td>$[ne_50m_admin_0_map_units/NAME_LEN]</td></tr>
+  <tr><td><b>LONG_LEN</b></td><td>$[ne_50m_admin_0_map_units/LONG_LEN]</td></tr>
+  <tr><td><b>ABBREV_LEN</b></td><td>$[ne_50m_admin_0_map_units/ABBREV_LEN]</td></tr>
+  <tr><td><b>TINY</b></td><td>$[ne_50m_admin_0_map_units/TINY]</td></tr>
+  <tr><td><b>HOMEPART</b></td><td>$[ne_50m_admin_0_map_units/HOMEPART]</td></tr>
+  <tr><td><b>MIN_ZOOM</b></td><td>$[ne_50m_admin_0_map_units/MIN_ZOOM]</td></tr>
+  <tr><td><b>MIN_LABEL</b></td><td>$[ne_50m_admin_0_map_units/MIN_LABEL]</td></tr>
+  <tr><td><b>MAX_LABEL</b></td><td>$[ne_50m_admin_0_map_units/MAX_LABEL]</td></tr>
+  <tr><td><b>NE_ID</b></td><td>$[ne_50m_admin_0_map_units/NE_ID]</td></tr>
+  <tr><td><b>WIKIDATAID</b></td><td>$[ne_50m_admin_0_map_units/WIKIDATAID]</td></tr>
+  <tr><td><b>NAME_AR</b></td><td>$[ne_50m_admin_0_map_units/NAME_AR]</td></tr>
+  <tr><td><b>NAME_BN</b></td><td>$[ne_50m_admin_0_map_units/NAME_BN]</td></tr>
+  <tr><td><b>NAME_DE</b></td><td>$[ne_50m_admin_0_map_units/NAME_DE]</td></tr>
+  <tr><td><b>NAME_EN</b></td><td>$[ne_50m_admin_0_map_units/NAME_EN]</td></tr>
+  <tr><td><b>NAME_ES</b></td><td>$[ne_50m_admin_0_map_units/NAME_ES]</td></tr>
+  <tr><td><b>NAME_FR</b></td><td>$[ne_50m_admin_0_map_units/NAME_FR]</td></tr>
+  <tr><td><b>NAME_EL</b></td><td>$[ne_50m_admin_0_map_units/NAME_EL]</td></tr>
+  <tr><td><b>NAME_HI</b></td><td>$[ne_50m_admin_0_map_units/NAME_HI]</td></tr>
+  <tr><td><b>NAME_HU</b></td><td>$[ne_50m_admin_0_map_units/NAME_HU]</td></tr>
+  <tr><td><b>NAME_ID</b></td><td>$[ne_50m_admin_0_map_units/NAME_ID]</td></tr>
+  <tr><td><b>NAME_IT</b></td><td>$[ne_50m_admin_0_map_units/NAME_IT]</td></tr>
+  <tr><td><b>NAME_JA</b></td><td>$[ne_50m_admin_0_map_units/NAME_JA]</td></tr>
+  <tr><td><b>NAME_KO</b></td><td>$[ne_50m_admin_0_map_units/NAME_KO]</td></tr>
+  <tr><td><b>NAME_NL</b></td><td>$[ne_50m_admin_0_map_units/NAME_NL]</td></tr>
+  <tr><td><b>NAME_PL</b></td><td>$[ne_50m_admin_0_map_units/NAME_PL]</td></tr>
+  <tr><td><b>NAME_PT</b></td><td>$[ne_50m_admin_0_map_units/NAME_PT]</td></tr>
+  <tr><td><b>NAME_RU</b></td><td>$[ne_50m_admin_0_map_units/NAME_RU]</td></tr>
+  <tr><td><b>NAME_SV</b></td><td>$[ne_50m_admin_0_map_units/NAME_SV]</td></tr>
+  <tr><td><b>NAME_TR</b></td><td>$[ne_50m_admin_0_map_units/NAME_TR]</td></tr>
+  <tr><td><b>NAME_VI</b></td><td>$[ne_50m_admin_0_map_units/NAME_VI]</td></tr>
+  <tr><td><b>NAME_ZH</b></td><td>$[ne_50m_admin_0_map_units/NAME_ZH]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Ireland</name>
+		<styleUrl>#falseColor</styleUrl>
+		<Style id="inline">
+			<IconStyle>
+				<colorMode>random</colorMode>
+			</IconStyle>
+			<LineStyle>
+				<colorMode>random</colorMode>
+			</LineStyle>
+			<PolyStyle>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_ne_50m_admin_0_map_units_SIISSIISSSISSISSISSSSSSSSSSSSSSIIIIDIDIIISSISSSSSSSSIISSSIISSSSIIIIIDDDISSSSSSSSSSSSSSSSSSSSSS">
+				<SimpleData name="featurecla">Admin-0 map unit</SimpleData>
+				<SimpleData name="scalerank">4</SimpleData>
+				<SimpleData name="LABELRANK">3</SimpleData>
+				<SimpleData name="SOVEREIGNT">Ireland</SimpleData>
+				<SimpleData name="SOV_A3">IRL</SimpleData>
+				<SimpleData name="ADM0_DIF">0</SimpleData>
+				<SimpleData name="LEVEL">2</SimpleData>
+				<SimpleData name="TYPE">Sovereign country</SimpleData>
+				<SimpleData name="ADMIN">Ireland</SimpleData>
+				<SimpleData name="ADM0_A3">IRL</SimpleData>
+				<SimpleData name="GEOU_DIF">0</SimpleData>
+				<SimpleData name="GEOUNIT">Ireland</SimpleData>
+				<SimpleData name="GU_A3">IRL</SimpleData>
+				<SimpleData name="SU_DIF">0</SimpleData>
+				<SimpleData name="SUBUNIT">Ireland</SimpleData>
+				<SimpleData name="SU_A3">IRL</SimpleData>
+				<SimpleData name="BRK_DIFF">0</SimpleData>
+				<SimpleData name="NAME">Ireland</SimpleData>
+				<SimpleData name="NAME_LONG">Ireland</SimpleData>
+				<SimpleData name="BRK_A3">IRL</SimpleData>
+				<SimpleData name="BRK_NAME">Ireland</SimpleData>
+				<SimpleData name="BRK_GROUP"></SimpleData>
+				<SimpleData name="ABBREV">Ire.</SimpleData>
+				<SimpleData name="POSTAL">IRL</SimpleData>
+				<SimpleData name="FORMAL_EN">Ireland</SimpleData>
+				<SimpleData name="FORMAL_FR"></SimpleData>
+				<SimpleData name="NAME_CIAWF">Ireland</SimpleData>
+				<SimpleData name="NOTE_ADM0"></SimpleData>
+				<SimpleData name="NOTE_BRK"></SimpleData>
+				<SimpleData name="NAME_SORT">Ireland</SimpleData>
+				<SimpleData name="NAME_ALT"></SimpleData>
+				<SimpleData name="MAPCOLOR7">2</SimpleData>
+				<SimpleData name="MAPCOLOR8">3</SimpleData>
+				<SimpleData name="MAPCOLOR9">2</SimpleData>
+				<SimpleData name="MAPCOLOR13">2</SimpleData>
+				<SimpleData name="POP_EST">5.0111e+06</SimpleData>
+				<SimpleData name="POP_RANK">13</SimpleData>
+				<SimpleData name="GDP_MD_EST">322000</SimpleData>
+				<SimpleData name="POP_YEAR">2017</SimpleData>
+				<SimpleData name="LASTCENSUS">2011</SimpleData>
+				<SimpleData name="GDP_YEAR">2016</SimpleData>
+				<SimpleData name="ECONOMY">2. Developed region: nonG7</SimpleData>
+				<SimpleData name="INCOME_GRP">1. High income: OECD</SimpleData>
+				<SimpleData name="WIKIPEDIA">-99</SimpleData>
+				<SimpleData name="FIPS_10_">EI</SimpleData>
+				<SimpleData name="ISO_A2">IE</SimpleData>
+				<SimpleData name="ISO_A3">IRL</SimpleData>
+				<SimpleData name="ISO_A3_EH">IRL</SimpleData>
+				<SimpleData name="ISO_N3">372</SimpleData>
+				<SimpleData name="UN_A3">372</SimpleData>
+				<SimpleData name="WB_A2">IE</SimpleData>
+				<SimpleData name="WB_A3">IRL</SimpleData>
+				<SimpleData name="WOE_ID">23424803</SimpleData>
+				<SimpleData name="WOE_ID_EH">23424803</SimpleData>
+				<SimpleData name="WOE_NOTE">Exact WOE match as country</SimpleData>
+				<SimpleData name="ADM0_A3_IS">IRL</SimpleData>
+				<SimpleData name="ADM0_A3_US">IRL</SimpleData>
+				<SimpleData name="ADM0_A3_UN">-99</SimpleData>
+				<SimpleData name="ADM0_A3_WB">-99</SimpleData>
+				<SimpleData name="CONTINENT">Europe</SimpleData>
+				<SimpleData name="REGION_UN">Europe</SimpleData>
+				<SimpleData name="SUBREGION">Northern Europe</SimpleData>
+				<SimpleData name="REGION_WB">Europe &amp; Central Asia</SimpleData>
+				<SimpleData name="NAME_LEN">7</SimpleData>
+				<SimpleData name="LONG_LEN">7</SimpleData>
+				<SimpleData name="ABBREV_LEN">4</SimpleData>
+				<SimpleData name="TINY">-99</SimpleData>
+				<SimpleData name="HOMEPART">1</SimpleData>
+				<SimpleData name="MIN_ZOOM">0</SimpleData>
+				<SimpleData name="MIN_LABEL">3</SimpleData>
+				<SimpleData name="MAX_LABEL">8</SimpleData>
+				<SimpleData name="NE_ID">1159320877</SimpleData>
+				<SimpleData name="WIKIDATAID">Q27</SimpleData>
+				<SimpleData name="NAME_AR">جمهورية أيرلندا</SimpleData>
+				<SimpleData name="NAME_BN">প্রজাতন্ত্রী আয়ারল্যান্ড</SimpleData>
+				<SimpleData name="NAME_DE">Irland</SimpleData>
+				<SimpleData name="NAME_EN">Ireland</SimpleData>
+				<SimpleData name="NAME_ES">Irlanda</SimpleData>
+				<SimpleData name="NAME_FR">Irlande</SimpleData>
+				<SimpleData name="NAME_EL">Δημοκρατία της Ιρλανδίας</SimpleData>
+				<SimpleData name="NAME_HI">आयरलैण्ड</SimpleData>
+				<SimpleData name="NAME_HU">Írország</SimpleData>
+				<SimpleData name="NAME_ID">Republik Irlandia</SimpleData>
+				<SimpleData name="NAME_IT">Irlanda</SimpleData>
+				<SimpleData name="NAME_JA">アイルランド</SimpleData>
+				<SimpleData name="NAME_KO">아일랜드</SimpleData>
+				<SimpleData name="NAME_NL">Ierland</SimpleData>
+				<SimpleData name="NAME_PL">Irlandia</SimpleData>
+				<SimpleData name="NAME_PT">República da Irlanda</SimpleData>
+				<SimpleData name="NAME_RU">Ирландия</SimpleData>
+				<SimpleData name="NAME_SV">Irland</SimpleData>
+				<SimpleData name="NAME_TR">İrlanda</SimpleData>
+				<SimpleData name="NAME_VI">Cộng hòa Ireland</SimpleData>
+				<SimpleData name="NAME_ZH">爱尔兰共和国</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<MultiGeometry>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-9.95615234374997,53.98720703124999,0 -9.996386718749982,54.00361328124997,0 -10.13974609374998,54.00522460937498,0 -10.1810546875,54.016845703125,0 -10.26572265624998,53.97768554687501,0 -10.06249999999999,53.95971679687499,0 -10.02651367187499,53.92055664062499,0 -9.952441406249982,53.8845703125,0 -9.948193359374976,53.91313476562497,0 -9.95615234374997,53.98720703124999,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-7.172851562499998,55.13701171875,0 -7.056396484374994,55.17832031249998,0 -6.961669921874993,55.23789062499999,0 -7.060253906249974,55.26762695312497,0 -7.155322265624998,55.30517578125,0 -7.24667968749997,55.35302734374999,0 -7.308789062499974,55.36582031249996,0 -7.365966796875005,55.36020507812496,0 -7.3017578125,55.29877929687499,0 -7.458300781249985,55.281787109375,0 -7.517871093749998,55.24794921874999,0 -7.531445312499992,55.19384765624998,0 -7.501953125000005,55.14472656249999,0 -7.483935546874991,55.09028320312498,0 -7.47841796875,55.04697265624997,0 -7.584374999999996,54.99399414062498,0 -7.658740234374985,54.97094726562499,0 -7.589843750000005,55.02504882812499,0 -7.634277343749998,55.05498046874999,0 -7.585693359375005,55.08422851562501,0 -7.556640625000009,55.12221679687498,0 -7.57001953124999,55.17138671874999,0 -7.61337890624997,55.19965820312499,0 -7.629785156249995,55.24399414062498,0 -7.667089843749968,55.25649414062498,0 -7.762548828124977,55.24833984374997,0 -7.750537109374989,55.18579101562502,0 -7.803173828124974,55.20004882812498,0 -7.958593749999983,55.19189453125001,0 -8.006103515625004,55.1953125,0 -8.137695312500007,55.15991210937499,0 -8.274609374999988,55.14628906249997,0 -8.304687499999995,55.10820312499997,0 -8.325781249999975,55.0564453125,0 -8.393261718749979,55.02041015624998,0 -8.411718749999984,54.96508789062499,0 -8.377294921874984,54.889453125,0 -8.470996093749996,54.83154296875001,0 -8.527685546874974,54.80947265625001,0 -8.538281249999988,54.78295898437501,0 -8.650292968749993,54.760888671875,0 -8.715185546874984,54.73203124999999,0 -8.763916015625007,54.68120117187499,0 -8.456542968750004,54.60927734375001,0 -8.133447265625,54.64082031249997,0 -8.19296874999997,54.58012695312498,0 -8.230371093749989,54.507275390625,0 -8.286523437499991,54.48486328124999,0 -8.415234374999979,54.46108398437501,0 -8.470996093749996,54.441943359375,0 -8.554443359374996,54.40356445312501,0 -8.623144531249984,54.34687499999997,0 -8.568457031249981,54.30361328124998,0 -8.545556640624998,54.24121093750001,0 -8.588037109375,54.23110351562499,0 -8.746777343749992,54.2634765625,0 -9.002441406249993,54.28798828125001,0 -9.034277343749977,54.28178710937501,0 -9.102099609374985,54.22553710937498,0 -9.145898437499994,54.20961914062499,0 -9.315527343749981,54.2986328125,0 -9.562304687499983,54.30854492187497,0 -9.717138671874972,54.30043945312499,0 -9.824560546874967,54.26889648437498,0 -9.935937499999989,54.26811523437501,0 -9.995947265624972,54.27602539062498,0 -10.056396484375,54.25781250000001,0 -10.08969726562499,54.21582031249999,0 -10.09267578124999,54.15576171875002,0 -9.977099609374982,54.18710937499997,0 -9.943603515625005,54.14160156249999,0 -9.934472656249991,54.07524414062497,0 -9.856445312499995,54.09536132812501,0 -9.848486328124979,54.048291015625,0 -9.856347656249989,54.00429687499998,0 -9.896240234374996,53.93759765624996,0 -9.914062499999996,53.86372070312497,0 -9.747509765624978,53.89101562499999,0 -9.578857421874998,53.87983398437498,0 -9.590527343749983,53.84116210937497,0 -9.578222656249975,53.805419921875,0 -9.745068359374972,53.78149414062499,0 -9.901611328124996,53.72719726562502,0 -9.912304687499978,53.69511718749999,0 -9.909716796874983,53.65761718749999,0 -9.855859374999996,53.63310546874997,0 -9.720654296874988,53.60449218750001,0 -9.878271484374984,53.59042968749998,0 -10.0013671875,53.56142578124999,0 -10.06171874999998,53.567822265625,0 -10.11699218749999,53.54853515625,0 -10.10624999999998,53.50932617187497,0 -10.05439453124999,53.47832031249999,0 -10.093994140625,53.44560546874999,0 -10.09125976562499,53.412841796875,0 -10.00390625000001,53.39702148437497,0 -9.899023437499983,53.40727539062498,0 -9.795410156250004,53.394970703125,0 -9.875781249999998,53.342724609375,0 -9.825390624999983,53.32036132812497,0 -9.774072265624987,53.31884765625001,0 -9.700585937499998,53.33447265624998,0 -9.625976562499991,53.33447265624998,0 -9.601757812499979,53.32304687499997,0 -9.581738281249992,53.27197265625001,0 -9.555175781250004,53.25205078124999,0 -9.514208984374983,53.238232421875,0 -9.470751953124996,53.23486328124999,0 -9.140332031249979,53.25048828125,0 -9.033544921874967,53.23574218750001,0 -8.930126953124981,53.20708007812498,0 -8.997167968749977,53.16206054687499,0 -9.027441406249977,53.15317382812499,0 -9.061132812499986,53.15307617187499,0 -9.137597656249996,53.12924804687498,0 -9.241894531249981,53.12485351562496,0 -9.299218750000001,53.09755859374998,0 -9.461962890624985,52.94726562500002,0 -9.41572265624999,52.928759765625,0 -9.393652343749983,52.896240234375,0 -9.464892578124982,52.823193359375,0 -9.514990234374975,52.78115234374999,0 -9.739599609374984,52.64819335937501,0 -9.916601562499988,52.56972656249999,0 -9.764355468749992,52.57998046875,0 -9.619531249999998,52.62275390625,0 -9.59135742187498,52.64365234374997,0 -9.561035156249996,52.653955078125,0 -9.463476562499986,52.62690429687498,0 -9.394238281249983,52.61708984374998,0 -9.175390624999981,52.634912109375,0 -9.097900390625002,52.66826171874999,0 -8.990283203124994,52.755419921875,0 -8.923291015624981,52.71230468749999,0 -8.783447265625002,52.67963867187498,0 -9.056152343749989,52.621142578125,0 -9.331249999999979,52.57875976562498,0 -9.586328125000001,52.55917968749996,0 -9.632226562499993,52.546923828125,0 -9.761132812499994,52.46635742187501,0 -9.838476562499984,52.44267578124999,0 -9.906054687499996,52.40371093750001,0 -9.853222656249978,52.37548828124999,0 -9.841064453125,52.29145507812498,0 -9.772119140624994,52.25009765624998,0 -9.937304687499982,52.23764648437496,0 -9.993115234374981,52.25932617187498,0 -10.06176757812501,52.27592773437498,0 -10.132080078125,52.28208007812499,0 -10.21093749999999,52.2716796875,0 -10.35668945312501,52.20693359374999,0 -10.3826171875,52.16909179687499,0 -10.39023437499997,52.134912109375,0 -10.24951171874999,52.12573242187499,0 -9.955810546875007,52.136669921875,0 -9.90966796875,52.12294921874998,0 -9.946044921874989,52.07983398437501,0 -10.04404296874997,52.04458007812499,0 -10.14584960937497,52.02001953125,0 -10.231591796875,51.97451171874998,0 -10.37871093749999,51.86874999999998,0 -10.341064453125,51.79892578124999,0 -10.24174804687499,51.812451171875,0 -10.21171874999999,51.78359375,0 -10.084228515625,51.77099609374999,0 -9.598828124999983,51.87441406249999,0 -9.749511718749993,51.824267578125,0 -9.802880859374987,51.78012695312498,0 -9.849707031249981,51.76611328124998,0 -9.926416015624987,51.73071289062501,0 -10.06943359374998,51.65556640624997,0 -10.120751953125,51.60068359374996,0 -10.00991210937499,51.61113281249998,0 -9.899023437499983,51.64707031249996,0 -9.579833984375004,51.6892578125,0 -9.524902343750004,51.681103515625,0 -9.542382812500001,51.66445312500002,0 -9.710351562499994,51.6037109375,0 -9.835351562499994,51.483349609375,0 -9.737304687499989,51.47373046874997,0 -9.534863281249974,51.52216796874999,0 -9.462890625000007,51.52905273437499,0 -9.390576171874976,51.51928710937501,0 -9.323876953125003,51.49721679687501,0 -9.296484374999977,51.49824218749998,0 -8.813427734374981,51.584912109375,0 -8.734472656249983,51.63618164062497,0 -8.588281249999996,51.65136718750001,0 -8.477832031249996,51.70703125,0 -8.407812499999981,51.712060546875,0 -8.349121093750007,51.739306640625,0 -8.335595703124996,51.79296874999999,0 -8.347363281249988,51.84770507812497,0 -8.371630859374983,51.87626953125,0 -8.409179687499993,51.88876953124996,0 -8.290234374999981,51.89067382812499,0 -8.254296875,51.87832031249998,0 -8.222460937499996,51.85400390624998,0 -8.14501953125,51.813525390625,0 -8.057812499999986,51.82558593749999,0 -7.952490234374972,51.865771484375,0 -7.872167968749981,51.935302734375,0 -7.837988281249979,51.94799804687501,0 -7.664550781249996,51.97973632812499,0 -7.624902343749986,51.99311523437497,0 -7.589843750000005,52.01855468749999,0 -7.563183593749989,52.06162109374996,0 -7.527294921874992,52.09887695312501,0 -7.44086914062499,52.12270507812498,0 -7.216210937499998,52.144970703125,0 -7.081787109375004,52.13930664062498,0 -7.003271484374975,52.16591796874999,0 -6.96577148437499,52.24951171874998,0 -6.914648437499986,52.16855468749997,0 -6.890234374999982,52.159228515625,0 -6.859716796874986,52.17856445312498,0 -6.782226562500007,52.21049804687497,0 -6.697314453124987,52.21352539062498,0 -6.561083984374991,52.18881835937499,0 -6.437939453124977,52.20268554687501,0 -6.32499999999999,52.24667968749999,0 -6.463183593749998,52.34536132812498,0 -6.399951171874998,52.36694335937499,0 -6.345410156249985,52.40200195312499,0 -6.217236328124991,52.54311523437498,0 -6.199218749999997,52.66347656249999,0 -6.169335937499985,52.73813476562499,0 -6.13066406249998,52.80727539062501,0 -6.071484374999974,52.865625,0 -6.027392578124983,52.92709960937496,0 -6.045019531249971,53.09116210937497,0 -6.072265625000006,53.16630859374997,0 -6.134716796874993,53.301220703125,0 -6.151660156249994,53.36640624999997,0 -6.129101562499974,53.390869140625,0 -6.138769531249986,53.460302734375,0 -6.130957031249979,53.49892578124998,0 -6.141845703124993,53.57753906249999,0 -6.194873046874985,53.640869140625,0 -6.229003906250004,53.74570312499996,0 -6.270117187499973,53.84023437500001,0 -6.32158203124998,53.88217773437497,0 -6.347607421874992,53.94130859374997,0 -6.345166015624988,53.98720703124999,0 -6.307617187499998,54.01103515624999,0 -6.230664062499976,54.00361328124997,0 -6.156933593749989,54.01723632812499,0 -6.175732421874976,54.05351562499997,0 -6.218017578125004,54.08872070312496,0 -6.303662109374992,54.09487304687498,0 -6.363671874999994,54.07709960937498,0 -6.402587890624996,54.06064453124997,0 -6.440283203124975,54.06362304687499,0 -6.54814453124998,54.05727539062501,0 -6.649804687499987,54.05864257812497,0 -6.664208984374998,54.084765625,0 -6.64687499999999,54.163427734375,0 -6.669531249999975,54.18471679687499,0 -6.766601562499995,54.19560546874998,0 -6.802587890624978,54.21435546875001,0 -6.858349609374974,54.26865234374998,0 -6.869238281249967,54.29404296874998,0 -6.877246093749987,54.32910156250001,0 -6.936132812499974,54.37431640624998,0 -7.007714843749994,54.40668945312498,0 -7.049707031250003,54.408251953125,0 -7.133496093749986,54.35537109374999,0 -7.202587890624981,54.301806640625,0 -7.17807617187497,54.27490234375001,0 -7.155468749999986,54.239501953125,0 -7.193066406249979,54.21411132812501,0 -7.306738281249975,54.15600585937501,0 -7.324511718749993,54.13344726562498,0 -7.355175781249979,54.12124023437499,0 -7.409423828124993,54.13730468749998,0 -7.544433593750006,54.13359375,0 -7.60654296874997,54.14384765624997,0 -7.678759765624994,54.186669921875,0 -7.85493164062498,54.21528320312497,0 -7.88447265624999,54.28378906249996,0 -7.918457031249999,54.29658203124998,0 -8.118261718749977,54.41425781249999,0 -8.144824218749987,54.45351562499999,0 -8.118945312499983,54.47695312500002,0 -8.044335937499998,54.51245117187499,0 -7.793798828124983,54.57124023437498,0 -7.754394531250009,54.594921875,0 -7.746289062499983,54.61582031249997,0 -7.819824218749996,54.639697265625,0 -7.886132812500001,54.66606445312497,0 -7.908740234374985,54.68334960937501,0 -7.91059570312499,54.69833984374996,0 -7.872949218749994,54.71787109374996,0 -7.797265624999996,54.719287109375,0 -7.73749999999999,54.71044921874998,0 -7.68999023437499,54.72802734375001,0 -7.606445312500004,54.745703125,0 -7.550390624999967,54.76796874999997,0 -7.502197265625002,54.82543945312499,0 -7.451269531249971,54.87709960937499,0 -7.445996093749976,54.90512695312499,0 -7.401416015624993,55.00332031249999,0 -7.376904296874982,55.02768554687497,0 -7.218652343750003,55.0919921875,0 -7.172851562499998,55.13701171875,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

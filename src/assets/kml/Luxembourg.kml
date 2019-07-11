@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Luxembourg.kml</name>
+	<Schema name="ne_50m_admin_0_map_units" id="S_ne_50m_admin_0_map_units_SIISSIISSSISSISSISSSSSSSSSSSSSSIIIIDIDIIISSISSSSSSSSIISSSIISSSSIIIIIDDDISSSSSSSSSSSSSSSSSSSSSS">
+		<SimpleField type="string" name="featurecla"><displayName>&lt;b&gt;featurecla&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="scalerank"><displayName>&lt;b&gt;scalerank&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="LABELRANK"><displayName>&lt;b&gt;LABELRANK&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SOVEREIGNT"><displayName>&lt;b&gt;SOVEREIGNT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SOV_A3"><displayName>&lt;b&gt;SOV_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ADM0_DIF"><displayName>&lt;b&gt;ADM0_DIF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="LEVEL"><displayName>&lt;b&gt;LEVEL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="TYPE"><displayName>&lt;b&gt;TYPE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ADMIN"><displayName>&lt;b&gt;ADMIN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ADM0_A3"><displayName>&lt;b&gt;ADM0_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="GEOU_DIF"><displayName>&lt;b&gt;GEOU_DIF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="GEOUNIT"><displayName>&lt;b&gt;GEOUNIT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="GU_A3"><displayName>&lt;b&gt;GU_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="SU_DIF"><displayName>&lt;b&gt;SU_DIF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SUBUNIT"><displayName>&lt;b&gt;SUBUNIT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SU_A3"><displayName>&lt;b&gt;SU_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="BRK_DIFF"><displayName>&lt;b&gt;BRK_DIFF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME"><displayName>&lt;b&gt;NAME&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_LONG"><displayName>&lt;b&gt;NAME_LONG&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="BRK_A3"><displayName>&lt;b&gt;BRK_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="BRK_NAME"><displayName>&lt;b&gt;BRK_NAME&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="BRK_GROUP"><displayName>&lt;b&gt;BRK_GROUP&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ABBREV"><displayName>&lt;b&gt;ABBREV&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="POSTAL"><displayName>&lt;b&gt;POSTAL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="FORMAL_EN"><displayName>&lt;b&gt;FORMAL_EN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="FORMAL_FR"><displayName>&lt;b&gt;FORMAL_FR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_CIAWF"><displayName>&lt;b&gt;NAME_CIAWF&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NOTE_ADM0"><displayName>&lt;b&gt;NOTE_ADM0&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NOTE_BRK"><displayName>&lt;b&gt;NOTE_BRK&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_SORT"><displayName>&lt;b&gt;NAME_SORT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_ALT"><displayName>&lt;b&gt;NAME_ALT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="MAPCOLOR7"><displayName>&lt;b&gt;MAPCOLOR7&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="MAPCOLOR8"><displayName>&lt;b&gt;MAPCOLOR8&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="MAPCOLOR9"><displayName>&lt;b&gt;MAPCOLOR9&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="MAPCOLOR13"><displayName>&lt;b&gt;MAPCOLOR13&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="POP_EST"><displayName>&lt;b&gt;POP_EST&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="POP_RANK"><displayName>&lt;b&gt;POP_RANK&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="GDP_MD_EST"><displayName>&lt;b&gt;GDP_MD_EST&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="POP_YEAR"><displayName>&lt;b&gt;POP_YEAR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="LASTCENSUS"><displayName>&lt;b&gt;LASTCENSUS&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="GDP_YEAR"><displayName>&lt;b&gt;GDP_YEAR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ECONOMY"><displayName>&lt;b&gt;ECONOMY&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="INCOME_GRP"><displayName>&lt;b&gt;INCOME_GRP&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="WIKIPEDIA"><displayName>&lt;b&gt;WIKIPEDIA&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="FIPS_10_"><displayName>&lt;b&gt;FIPS_10_&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ISO_A2"><displayName>&lt;b&gt;ISO_A2&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ISO_A3"><displayName>&lt;b&gt;ISO_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ISO_A3_EH"><displayName>&lt;b&gt;ISO_A3_EH&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ISO_N3"><displayName>&lt;b&gt;ISO_N3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="UN_A3"><displayName>&lt;b&gt;UN_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="WB_A2"><displayName>&lt;b&gt;WB_A2&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="WB_A3"><displayName>&lt;b&gt;WB_A3&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="WOE_ID"><displayName>&lt;b&gt;WOE_ID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="WOE_ID_EH"><displayName>&lt;b&gt;WOE_ID_EH&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="WOE_NOTE"><displayName>&lt;b&gt;WOE_NOTE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ADM0_A3_IS"><displayName>&lt;b&gt;ADM0_A3_IS&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="ADM0_A3_US"><displayName>&lt;b&gt;ADM0_A3_US&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ADM0_A3_UN"><displayName>&lt;b&gt;ADM0_A3_UN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ADM0_A3_WB"><displayName>&lt;b&gt;ADM0_A3_WB&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="CONTINENT"><displayName>&lt;b&gt;CONTINENT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="REGION_UN"><displayName>&lt;b&gt;REGION_UN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="SUBREGION"><displayName>&lt;b&gt;SUBREGION&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="REGION_WB"><displayName>&lt;b&gt;REGION_WB&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="NAME_LEN"><displayName>&lt;b&gt;NAME_LEN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="LONG_LEN"><displayName>&lt;b&gt;LONG_LEN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ABBREV_LEN"><displayName>&lt;b&gt;ABBREV_LEN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="TINY"><displayName>&lt;b&gt;TINY&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="HOMEPART"><displayName>&lt;b&gt;HOMEPART&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="MIN_ZOOM"><displayName>&lt;b&gt;MIN_ZOOM&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="MIN_LABEL"><displayName>&lt;b&gt;MIN_LABEL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="MAX_LABEL"><displayName>&lt;b&gt;MAX_LABEL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="NE_ID"><displayName>&lt;b&gt;NE_ID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="WIKIDATAID"><displayName>&lt;b&gt;WIKIDATAID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_AR"><displayName>&lt;b&gt;NAME_AR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_BN"><displayName>&lt;b&gt;NAME_BN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_DE"><displayName>&lt;b&gt;NAME_DE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_EN"><displayName>&lt;b&gt;NAME_EN&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_ES"><displayName>&lt;b&gt;NAME_ES&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_FR"><displayName>&lt;b&gt;NAME_FR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_EL"><displayName>&lt;b&gt;NAME_EL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_HI"><displayName>&lt;b&gt;NAME_HI&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_HU"><displayName>&lt;b&gt;NAME_HU&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_ID"><displayName>&lt;b&gt;NAME_ID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_IT"><displayName>&lt;b&gt;NAME_IT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_JA"><displayName>&lt;b&gt;NAME_JA&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_KO"><displayName>&lt;b&gt;NAME_KO&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_NL"><displayName>&lt;b&gt;NAME_NL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_PL"><displayName>&lt;b&gt;NAME_PL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_PT"><displayName>&lt;b&gt;NAME_PT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_RU"><displayName>&lt;b&gt;NAME_RU&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_SV"><displayName>&lt;b&gt;NAME_SV&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_TR"><displayName>&lt;b&gt;NAME_TR&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_VI"><displayName>&lt;b&gt;NAME_VI&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME_ZH"><displayName>&lt;b&gt;NAME_ZH&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="falseColor">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>featurecla</b></td><td>$[ne_50m_admin_0_map_units/featurecla]</td></tr>
+  <tr><td><b>scalerank</b></td><td>$[ne_50m_admin_0_map_units/scalerank]</td></tr>
+  <tr><td><b>LABELRANK</b></td><td>$[ne_50m_admin_0_map_units/LABELRANK]</td></tr>
+  <tr><td><b>SOVEREIGNT</b></td><td>$[ne_50m_admin_0_map_units/SOVEREIGNT]</td></tr>
+  <tr><td><b>SOV_A3</b></td><td>$[ne_50m_admin_0_map_units/SOV_A3]</td></tr>
+  <tr><td><b>ADM0_DIF</b></td><td>$[ne_50m_admin_0_map_units/ADM0_DIF]</td></tr>
+  <tr><td><b>LEVEL</b></td><td>$[ne_50m_admin_0_map_units/LEVEL]</td></tr>
+  <tr><td><b>TYPE</b></td><td>$[ne_50m_admin_0_map_units/TYPE]</td></tr>
+  <tr><td><b>ADMIN</b></td><td>$[ne_50m_admin_0_map_units/ADMIN]</td></tr>
+  <tr><td><b>ADM0_A3</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3]</td></tr>
+  <tr><td><b>GEOU_DIF</b></td><td>$[ne_50m_admin_0_map_units/GEOU_DIF]</td></tr>
+  <tr><td><b>GEOUNIT</b></td><td>$[ne_50m_admin_0_map_units/GEOUNIT]</td></tr>
+  <tr><td><b>GU_A3</b></td><td>$[ne_50m_admin_0_map_units/GU_A3]</td></tr>
+  <tr><td><b>SU_DIF</b></td><td>$[ne_50m_admin_0_map_units/SU_DIF]</td></tr>
+  <tr><td><b>SUBUNIT</b></td><td>$[ne_50m_admin_0_map_units/SUBUNIT]</td></tr>
+  <tr><td><b>SU_A3</b></td><td>$[ne_50m_admin_0_map_units/SU_A3]</td></tr>
+  <tr><td><b>BRK_DIFF</b></td><td>$[ne_50m_admin_0_map_units/BRK_DIFF]</td></tr>
+  <tr><td><b>NAME</b></td><td>$[ne_50m_admin_0_map_units/NAME]</td></tr>
+  <tr><td><b>NAME_LONG</b></td><td>$[ne_50m_admin_0_map_units/NAME_LONG]</td></tr>
+  <tr><td><b>BRK_A3</b></td><td>$[ne_50m_admin_0_map_units/BRK_A3]</td></tr>
+  <tr><td><b>BRK_NAME</b></td><td>$[ne_50m_admin_0_map_units/BRK_NAME]</td></tr>
+  <tr><td><b>BRK_GROUP</b></td><td>$[ne_50m_admin_0_map_units/BRK_GROUP]</td></tr>
+  <tr><td><b>ABBREV</b></td><td>$[ne_50m_admin_0_map_units/ABBREV]</td></tr>
+  <tr><td><b>POSTAL</b></td><td>$[ne_50m_admin_0_map_units/POSTAL]</td></tr>
+  <tr><td><b>FORMAL_EN</b></td><td>$[ne_50m_admin_0_map_units/FORMAL_EN]</td></tr>
+  <tr><td><b>FORMAL_FR</b></td><td>$[ne_50m_admin_0_map_units/FORMAL_FR]</td></tr>
+  <tr><td><b>NAME_CIAWF</b></td><td>$[ne_50m_admin_0_map_units/NAME_CIAWF]</td></tr>
+  <tr><td><b>NOTE_ADM0</b></td><td>$[ne_50m_admin_0_map_units/NOTE_ADM0]</td></tr>
+  <tr><td><b>NOTE_BRK</b></td><td>$[ne_50m_admin_0_map_units/NOTE_BRK]</td></tr>
+  <tr><td><b>NAME_SORT</b></td><td>$[ne_50m_admin_0_map_units/NAME_SORT]</td></tr>
+  <tr><td><b>NAME_ALT</b></td><td>$[ne_50m_admin_0_map_units/NAME_ALT]</td></tr>
+  <tr><td><b>MAPCOLOR7</b></td><td>$[ne_50m_admin_0_map_units/MAPCOLOR7]</td></tr>
+  <tr><td><b>MAPCOLOR8</b></td><td>$[ne_50m_admin_0_map_units/MAPCOLOR8]</td></tr>
+  <tr><td><b>MAPCOLOR9</b></td><td>$[ne_50m_admin_0_map_units/MAPCOLOR9]</td></tr>
+  <tr><td><b>MAPCOLOR13</b></td><td>$[ne_50m_admin_0_map_units/MAPCOLOR13]</td></tr>
+  <tr><td><b>POP_EST</b></td><td>$[ne_50m_admin_0_map_units/POP_EST]</td></tr>
+  <tr><td><b>POP_RANK</b></td><td>$[ne_50m_admin_0_map_units/POP_RANK]</td></tr>
+  <tr><td><b>GDP_MD_EST</b></td><td>$[ne_50m_admin_0_map_units/GDP_MD_EST]</td></tr>
+  <tr><td><b>POP_YEAR</b></td><td>$[ne_50m_admin_0_map_units/POP_YEAR]</td></tr>
+  <tr><td><b>LASTCENSUS</b></td><td>$[ne_50m_admin_0_map_units/LASTCENSUS]</td></tr>
+  <tr><td><b>GDP_YEAR</b></td><td>$[ne_50m_admin_0_map_units/GDP_YEAR]</td></tr>
+  <tr><td><b>ECONOMY</b></td><td>$[ne_50m_admin_0_map_units/ECONOMY]</td></tr>
+  <tr><td><b>INCOME_GRP</b></td><td>$[ne_50m_admin_0_map_units/INCOME_GRP]</td></tr>
+  <tr><td><b>WIKIPEDIA</b></td><td>$[ne_50m_admin_0_map_units/WIKIPEDIA]</td></tr>
+  <tr><td><b>FIPS_10_</b></td><td>$[ne_50m_admin_0_map_units/FIPS_10_]</td></tr>
+  <tr><td><b>ISO_A2</b></td><td>$[ne_50m_admin_0_map_units/ISO_A2]</td></tr>
+  <tr><td><b>ISO_A3</b></td><td>$[ne_50m_admin_0_map_units/ISO_A3]</td></tr>
+  <tr><td><b>ISO_A3_EH</b></td><td>$[ne_50m_admin_0_map_units/ISO_A3_EH]</td></tr>
+  <tr><td><b>ISO_N3</b></td><td>$[ne_50m_admin_0_map_units/ISO_N3]</td></tr>
+  <tr><td><b>UN_A3</b></td><td>$[ne_50m_admin_0_map_units/UN_A3]</td></tr>
+  <tr><td><b>WB_A2</b></td><td>$[ne_50m_admin_0_map_units/WB_A2]</td></tr>
+  <tr><td><b>WB_A3</b></td><td>$[ne_50m_admin_0_map_units/WB_A3]</td></tr>
+  <tr><td><b>WOE_ID</b></td><td>$[ne_50m_admin_0_map_units/WOE_ID]</td></tr>
+  <tr><td><b>WOE_ID_EH</b></td><td>$[ne_50m_admin_0_map_units/WOE_ID_EH]</td></tr>
+  <tr><td><b>WOE_NOTE</b></td><td>$[ne_50m_admin_0_map_units/WOE_NOTE]</td></tr>
+  <tr><td><b>ADM0_A3_IS</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3_IS]</td></tr>
+  <tr><td><b>ADM0_A3_US</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3_US]</td></tr>
+  <tr><td><b>ADM0_A3_UN</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3_UN]</td></tr>
+  <tr><td><b>ADM0_A3_WB</b></td><td>$[ne_50m_admin_0_map_units/ADM0_A3_WB]</td></tr>
+  <tr><td><b>CONTINENT</b></td><td>$[ne_50m_admin_0_map_units/CONTINENT]</td></tr>
+  <tr><td><b>REGION_UN</b></td><td>$[ne_50m_admin_0_map_units/REGION_UN]</td></tr>
+  <tr><td><b>SUBREGION</b></td><td>$[ne_50m_admin_0_map_units/SUBREGION]</td></tr>
+  <tr><td><b>REGION_WB</b></td><td>$[ne_50m_admin_0_map_units/REGION_WB]</td></tr>
+  <tr><td><b>NAME_LEN</b></td><td>$[ne_50m_admin_0_map_units/NAME_LEN]</td></tr>
+  <tr><td><b>LONG_LEN</b></td><td>$[ne_50m_admin_0_map_units/LONG_LEN]</td></tr>
+  <tr><td><b>ABBREV_LEN</b></td><td>$[ne_50m_admin_0_map_units/ABBREV_LEN]</td></tr>
+  <tr><td><b>TINY</b></td><td>$[ne_50m_admin_0_map_units/TINY]</td></tr>
+  <tr><td><b>HOMEPART</b></td><td>$[ne_50m_admin_0_map_units/HOMEPART]</td></tr>
+  <tr><td><b>MIN_ZOOM</b></td><td>$[ne_50m_admin_0_map_units/MIN_ZOOM]</td></tr>
+  <tr><td><b>MIN_LABEL</b></td><td>$[ne_50m_admin_0_map_units/MIN_LABEL]</td></tr>
+  <tr><td><b>MAX_LABEL</b></td><td>$[ne_50m_admin_0_map_units/MAX_LABEL]</td></tr>
+  <tr><td><b>NE_ID</b></td><td>$[ne_50m_admin_0_map_units/NE_ID]</td></tr>
+  <tr><td><b>WIKIDATAID</b></td><td>$[ne_50m_admin_0_map_units/WIKIDATAID]</td></tr>
+  <tr><td><b>NAME_AR</b></td><td>$[ne_50m_admin_0_map_units/NAME_AR]</td></tr>
+  <tr><td><b>NAME_BN</b></td><td>$[ne_50m_admin_0_map_units/NAME_BN]</td></tr>
+  <tr><td><b>NAME_DE</b></td><td>$[ne_50m_admin_0_map_units/NAME_DE]</td></tr>
+  <tr><td><b>NAME_EN</b></td><td>$[ne_50m_admin_0_map_units/NAME_EN]</td></tr>
+  <tr><td><b>NAME_ES</b></td><td>$[ne_50m_admin_0_map_units/NAME_ES]</td></tr>
+  <tr><td><b>NAME_FR</b></td><td>$[ne_50m_admin_0_map_units/NAME_FR]</td></tr>
+  <tr><td><b>NAME_EL</b></td><td>$[ne_50m_admin_0_map_units/NAME_EL]</td></tr>
+  <tr><td><b>NAME_HI</b></td><td>$[ne_50m_admin_0_map_units/NAME_HI]</td></tr>
+  <tr><td><b>NAME_HU</b></td><td>$[ne_50m_admin_0_map_units/NAME_HU]</td></tr>
+  <tr><td><b>NAME_ID</b></td><td>$[ne_50m_admin_0_map_units/NAME_ID]</td></tr>
+  <tr><td><b>NAME_IT</b></td><td>$[ne_50m_admin_0_map_units/NAME_IT]</td></tr>
+  <tr><td><b>NAME_JA</b></td><td>$[ne_50m_admin_0_map_units/NAME_JA]</td></tr>
+  <tr><td><b>NAME_KO</b></td><td>$[ne_50m_admin_0_map_units/NAME_KO]</td></tr>
+  <tr><td><b>NAME_NL</b></td><td>$[ne_50m_admin_0_map_units/NAME_NL]</td></tr>
+  <tr><td><b>NAME_PL</b></td><td>$[ne_50m_admin_0_map_units/NAME_PL]</td></tr>
+  <tr><td><b>NAME_PT</b></td><td>$[ne_50m_admin_0_map_units/NAME_PT]</td></tr>
+  <tr><td><b>NAME_RU</b></td><td>$[ne_50m_admin_0_map_units/NAME_RU]</td></tr>
+  <tr><td><b>NAME_SV</b></td><td>$[ne_50m_admin_0_map_units/NAME_SV]</td></tr>
+  <tr><td><b>NAME_TR</b></td><td>$[ne_50m_admin_0_map_units/NAME_TR]</td></tr>
+  <tr><td><b>NAME_VI</b></td><td>$[ne_50m_admin_0_map_units/NAME_VI]</td></tr>
+  <tr><td><b>NAME_ZH</b></td><td>$[ne_50m_admin_0_map_units/NAME_ZH]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Luxembourg</name>
+		<styleUrl>#falseColor</styleUrl>
+		<Style id="inline">
+			<IconStyle>
+				<colorMode>random</colorMode>
+			</IconStyle>
+			<LineStyle>
+				<colorMode>random</colorMode>
+			</LineStyle>
+			<PolyStyle>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_ne_50m_admin_0_map_units_SIISSIISSSISSISSISSSSSSSSSSSSSSIIIIDIDIIISSISSSSSSSSIISSSIISSSSIIIIIDDDISSSSSSSSSSSSSSSSSSSSSS">
+				<SimpleData name="featurecla">Admin-0 map unit</SimpleData>
+				<SimpleData name="scalerank">1</SimpleData>
+				<SimpleData name="LABELRANK">6</SimpleData>
+				<SimpleData name="SOVEREIGNT">Luxembourg</SimpleData>
+				<SimpleData name="SOV_A3">LUX</SimpleData>
+				<SimpleData name="ADM0_DIF">0</SimpleData>
+				<SimpleData name="LEVEL">2</SimpleData>
+				<SimpleData name="TYPE">Sovereign country</SimpleData>
+				<SimpleData name="ADMIN">Luxembourg</SimpleData>
+				<SimpleData name="ADM0_A3">LUX</SimpleData>
+				<SimpleData name="GEOU_DIF">0</SimpleData>
+				<SimpleData name="GEOUNIT">Luxembourg</SimpleData>
+				<SimpleData name="GU_A3">LUX</SimpleData>
+				<SimpleData name="SU_DIF">0</SimpleData>
+				<SimpleData name="SUBUNIT">Luxembourg</SimpleData>
+				<SimpleData name="SU_A3">LUX</SimpleData>
+				<SimpleData name="BRK_DIFF">0</SimpleData>
+				<SimpleData name="NAME">Luxembourg</SimpleData>
+				<SimpleData name="NAME_LONG">Luxembourg</SimpleData>
+				<SimpleData name="BRK_A3">LUX</SimpleData>
+				<SimpleData name="BRK_NAME">Luxembourg</SimpleData>
+				<SimpleData name="BRK_GROUP"></SimpleData>
+				<SimpleData name="ABBREV">Lux.</SimpleData>
+				<SimpleData name="POSTAL">L</SimpleData>
+				<SimpleData name="FORMAL_EN">Grand Duchy of Luxembourg</SimpleData>
+				<SimpleData name="FORMAL_FR"></SimpleData>
+				<SimpleData name="NAME_CIAWF">Luxembourg</SimpleData>
+				<SimpleData name="NOTE_ADM0"></SimpleData>
+				<SimpleData name="NOTE_BRK"></SimpleData>
+				<SimpleData name="NAME_SORT">Luxembourg</SimpleData>
+				<SimpleData name="NAME_ALT"></SimpleData>
+				<SimpleData name="MAPCOLOR7">1</SimpleData>
+				<SimpleData name="MAPCOLOR8">7</SimpleData>
+				<SimpleData name="MAPCOLOR9">3</SimpleData>
+				<SimpleData name="MAPCOLOR13">7</SimpleData>
+				<SimpleData name="POP_EST">594130</SimpleData>
+				<SimpleData name="POP_RANK">11</SimpleData>
+				<SimpleData name="GDP_MD_EST">58740</SimpleData>
+				<SimpleData name="POP_YEAR">2017</SimpleData>
+				<SimpleData name="LASTCENSUS">2011</SimpleData>
+				<SimpleData name="GDP_YEAR">2016</SimpleData>
+				<SimpleData name="ECONOMY">2. Developed region: nonG7</SimpleData>
+				<SimpleData name="INCOME_GRP">1. High income: OECD</SimpleData>
+				<SimpleData name="WIKIPEDIA">-99</SimpleData>
+				<SimpleData name="FIPS_10_">LU</SimpleData>
+				<SimpleData name="ISO_A2">LU</SimpleData>
+				<SimpleData name="ISO_A3">LUX</SimpleData>
+				<SimpleData name="ISO_A3_EH">LUX</SimpleData>
+				<SimpleData name="ISO_N3">442</SimpleData>
+				<SimpleData name="UN_A3">442</SimpleData>
+				<SimpleData name="WB_A2">LU</SimpleData>
+				<SimpleData name="WB_A3">LUX</SimpleData>
+				<SimpleData name="WOE_ID">23424881</SimpleData>
+				<SimpleData name="WOE_ID_EH">23424881</SimpleData>
+				<SimpleData name="WOE_NOTE">Exact WOE match as country</SimpleData>
+				<SimpleData name="ADM0_A3_IS">LUX</SimpleData>
+				<SimpleData name="ADM0_A3_US">LUX</SimpleData>
+				<SimpleData name="ADM0_A3_UN">-99</SimpleData>
+				<SimpleData name="ADM0_A3_WB">-99</SimpleData>
+				<SimpleData name="CONTINENT">Europe</SimpleData>
+				<SimpleData name="REGION_UN">Europe</SimpleData>
+				<SimpleData name="SUBREGION">Western Europe</SimpleData>
+				<SimpleData name="REGION_WB">Europe &amp; Central Asia</SimpleData>
+				<SimpleData name="NAME_LEN">10</SimpleData>
+				<SimpleData name="LONG_LEN">10</SimpleData>
+				<SimpleData name="ABBREV_LEN">4</SimpleData>
+				<SimpleData name="TINY">5</SimpleData>
+				<SimpleData name="HOMEPART">1</SimpleData>
+				<SimpleData name="MIN_ZOOM">0</SimpleData>
+				<SimpleData name="MIN_LABEL">5.7</SimpleData>
+				<SimpleData name="MAX_LABEL">10</SimpleData>
+				<SimpleData name="NE_ID">1159321031</SimpleData>
+				<SimpleData name="WIKIDATAID">Q32</SimpleData>
+				<SimpleData name="NAME_AR">لوكسمبورغ</SimpleData>
+				<SimpleData name="NAME_BN">লুক্সেমবুর্গ</SimpleData>
+				<SimpleData name="NAME_DE">Luxemburg</SimpleData>
+				<SimpleData name="NAME_EN">Luxembourg</SimpleData>
+				<SimpleData name="NAME_ES">Luxemburgo</SimpleData>
+				<SimpleData name="NAME_FR">Luxembourg</SimpleData>
+				<SimpleData name="NAME_EL">Λουξεμβούργο</SimpleData>
+				<SimpleData name="NAME_HI">लक्ज़मबर्ग</SimpleData>
+				<SimpleData name="NAME_HU">Luxemburg</SimpleData>
+				<SimpleData name="NAME_ID">Luksemburg</SimpleData>
+				<SimpleData name="NAME_IT">Lussemburgo</SimpleData>
+				<SimpleData name="NAME_JA">ルクセンブルク</SimpleData>
+				<SimpleData name="NAME_KO">룩셈부르크</SimpleData>
+				<SimpleData name="NAME_NL">Luxemburg</SimpleData>
+				<SimpleData name="NAME_PL">Luksemburg</SimpleData>
+				<SimpleData name="NAME_PT">Luxemburgo</SimpleData>
+				<SimpleData name="NAME_RU">Люксембург</SimpleData>
+				<SimpleData name="NAME_SV">Luxemburg</SimpleData>
+				<SimpleData name="NAME_TR">Lüksemburg</SimpleData>
+				<SimpleData name="NAME_VI">Luxembourg</SimpleData>
+				<SimpleData name="NAME_ZH">卢森堡</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						6.110058593749992,50.12377929687502,0 6.089062500000018,50.15458984375,0 6.054785156249989,50.15429687500001,0 5.97626953125002,50.16718749999996,0 5.866894531250013,50.0828125,0 5.817382812499998,50.0126953125,0 5.788085937499985,49.96123046874997,0 5.744042968750018,49.91962890624997,0 5.735253906250026,49.87563476562499,0 5.740820312500001,49.85717773437499,0 5.725781250000028,49.83334960937498,0 5.725000000000016,49.80830078124999,0 5.787988281250018,49.75888671874998,0 5.803710937499997,49.732177734375,0 5.880371093750001,49.64477539062499,0 5.856542968749996,49.612841796875,0 5.83759765625,49.57832031249998,0 5.815429687499987,49.55380859374997,0 5.789746093750017,49.53828125,0 5.823437500000006,49.50507812499997,0 5.901367187500015,49.48974609375001,0 5.92890625000003,49.47753906249999,0 5.959472656250009,49.45463867187499,0 6.011425781250028,49.44545898437501,0 6.074121093750011,49.45463867187499,0 6.119921875000016,49.48520507812497,0 6.181054687500014,49.49892578124995,0 6.242187500000012,49.4943359375,0 6.27734375000002,49.47753906249999,0 6.344335937500012,49.45273437499996,0 6.348437500000008,49.5126953125,0 6.378320312500021,49.59960937500001,0 6.406738281250015,49.64497070312497,0 6.444628906250007,49.68203124999997,0 6.484765625000031,49.70781249999998,0 6.493749999999996,49.75439453125,0 6.487304687500002,49.79848632812495,0 6.440917968749997,49.80532226562501,0 6.324609375000003,49.83789062499999,0 6.256054687500026,49.87216796874997,0 6.204882812500019,49.91513671874998,0 6.138183593750006,49.97431640624997,0 6.109765625000012,50.03437499999998,0 6.108300781250033,50.09423828125001,0 6.116503906250026,50.12099609375001,0 6.110058593749992,50.12377929687502,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

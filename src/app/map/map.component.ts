@@ -13,7 +13,7 @@ import { JsondataService } from '../services/jsondata.service';
 import { ColorsService } from '../services/colors.service';
 import { UidataService } from '../services/uidata.service';
 import { TextModalComponent } from '../text-modal/text-modal.component';
-
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-map',
@@ -24,12 +24,34 @@ import { TextModalComponent } from '../text-modal/text-modal.component';
 export class MapComponent implements OnInit {
   mapData = [];
   public markers$: Observable<any>;
+  public json$: Observable<any>;
+
+  private countryGeoJson:  { [country: string]: any; } = { };;   
 
   titleMap: string = 'Google Maps Addeed Successfully';
   lat: number = 53;
   lng: number = 0.1278;
   zoom: number = 6;
 
+  geoJsonObject: any = {};
+  countriesLoaded = [];
+
+  clicked(clickEvent) {
+      console.log(clickEvent);
+    }
+  
+  styleFunc(feature) {
+    //console.log(feature.getProperty('color'));
+    return ({
+      clickable: true,
+      fillOpacity: feature.getProperty('opacity'),
+      fillColor: feature.getProperty('color'),
+      strokeColor: feature.getProperty('color'),
+      strokeOpacity: 0.1,
+      strokeWeight: 2
+    });
+  }
+  
   styles = [
     {
       "featureType": "all",
@@ -48,7 +70,7 @@ export class MapComponent implements OnInit {
           "visibility": "on"
         },
         {
-          "color": "#7e99ab"
+          "color": "#222222"
         },
         {
           "lightness": 0
@@ -61,12 +83,77 @@ export class MapComponent implements OnInit {
     private jsondataService: JsondataService,
     private colorsService: ColorsService,
     private uidataService: UidataService,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private http: Http
   ) {
     this.uidataService.currentMapMarkers.subscribe(markers => {
       this.markers$ = markers;
-    })
+    });
+
+    this.uidataService.currentMapCountries.subscribe(countries => {
+      this.json$ = countries;
+      //clear data
+      this.geoJsonObject = {};
+      this.countriesLoaded = [];
+
+      this.json$.forEach( (element) => {
+          this.addCountry(element);
+      });
+
+    });
+
+    //this.getJSON("scotland").subscribe(data => this.addGeoJson(data), error => console.log(error));
   }
+
+  private addCountry(element){
+    if (this.countryGeoJson[element.country] != undefined){
+      if (this.countriesLoaded.indexOf(element.country) < 0){
+        let temp = this.countriesLoaded.indexOf(element.country);
+        this.addGeoJson(this.countryGeoJson[element.country],element.country);
+        this.countriesLoaded.push(element.country)
+      } else {
+        //increase the colour of the polygon
+        for (let key in this.geoJsonObject.features) {
+          if (this.geoJsonObject.features[key].properties.nameCB==element.country){
+            this.geoJsonObject.features[key].properties.opacity += 0.1;
+            if (this.geoJsonObject.features[key].properties.opacity>1){
+              this.geoJsonObject.features[key].properties.opacity = 1;
+            }
+          }
+        }
+
+      }
+    }else{
+      this.getGeoJSON(element.country).subscribe(data => this.storeGeoJson(data, element.country), error => console.log(error));
+    }
+  }
+  
+  private addGeoJson(data, countryName){
+    for (let key in data.features) {
+      data.features[key].properties.color = "blue";
+      data.features[key].properties.opacity = 0.1;
+      data.features[key].properties.nameCB = countryName;
+    }
+    if (this.geoJsonObject.hasOwnProperty('features')){
+        this.geoJsonObject = { 
+          "type" : "FeatureCollection",
+          "features": this.geoJsonObject.features.concat(data.features)
+      }
+    //  console.log(this.geoJsonObject);
+    }else{
+      //its the first json to be added
+      this.geoJsonObject = data;
+    }  
+  }
+
+  private storeGeoJson(data, country){
+    this.countryGeoJson[country]=data;
+    this.addGeoJson(data, country)
+  }
+  
+  public getGeoJSON(contry: string): Observable<any> {
+    return this.http.get("./assets/geoJson/"+contry+".json").map((res:any) => res.json());
+}
 
   ngOnInit() {
     this.jsondataService.currentRawData.subscribe((data) => {
@@ -92,6 +179,10 @@ export class MapComponent implements OnInit {
   outMarker(label: string, i: number) {
     console.log(label);
     this.uidataService.setSelectedTextID(-1);
+  }
+
+  clickedCountry(clickEvent) {
+    console.log(clickEvent.feature.getProperty('nameCB'));
   }
 
   open(data: any) {

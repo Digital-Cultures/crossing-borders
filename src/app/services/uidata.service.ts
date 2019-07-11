@@ -13,6 +13,9 @@ export class UidataService {
   private mapMarkersSource = new BehaviorSubject<any>([]); //CREATE INTERFACE
   currentMapMarkers = this.mapMarkersSource.asObservable();
 
+  private mapCountries: any = [];
+  private mapCountriesSource = new BehaviorSubject<any>([]); //CREATE INTERFACE
+  currentMapCountries = this.mapCountriesSource.asObservable();
 
   // private dateSource = new BehaviorSubject<number>(1300);
   // currentDate = this.dateSource.asObservable();
@@ -53,7 +56,7 @@ export class UidataService {
     this.rawData = data;
     this.timelineData = [];
     for (var i = 0; i <= data.length - 1; i++) {
-      console.log(data[i].id);
+
 
       var exists = false;
       var start: Date = new Date(data[i].start);
@@ -86,6 +89,8 @@ export class UidataService {
   setMapData(data: any[], yAxis: string): Observable<any> {
 
     this.mapMarkers = [];
+    this.mapCountries = [];
+    var countries = ["england", "scotland", "france","wales","denmark","germany","greenland","iceland","ireland","italy","luxembourg","netherlands","norway","portugal","spain","sweden","switzerland"];
 
     for (var i = 0; i < data.length; i++) {
 
@@ -101,6 +106,21 @@ export class UidataService {
           id: data[i].id,
           icon: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i][yAxis])
         });
+      } else if ('compilationPlace' in data[i]){
+        console.log('compilationPlace: ' + data[i].compilationPlace)
+        for (var j = 0; j < countries.length; j++){
+          if (data[i].compilationPlace.toLowerCase().indexOf(countries[j]) > -1) {
+            
+            this.mapCountries.push({
+              label: data[i].name,
+              data: data[i],
+              id: data[i].id,
+              country: countries[j]
+              //place: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i][yAxis])
+            })
+            break;
+          }
+        }
       }
     }
     return this.mapMarkers;
@@ -125,6 +145,12 @@ export class UidataService {
               parseInt(mapMarker.data.end) >= this.selectedStartDateSource.getValue()) 
           ));
 
+        this.mapCountriesSource.next(this.mapCountries.filter(
+          mapCountry => (
+            parseInt(mapCountry.data.start) <= this.selectedEndDateSource.getValue() && 
+            parseInt(mapCountry.data.end) >= this.selectedStartDateSource.getValue()) 
+        ));
+          
         break;
       }
       case "end": {
@@ -144,6 +170,12 @@ export class UidataService {
             parseInt(mapMarker.data.end) >= this.selectedStartDateSource.getValue()) 
           ));
 
+        this.mapCountriesSource.next(this.mapCountries.filter(
+            mapCountry => (
+              parseInt(mapCountry.data.start) <= this.selectedEndDateSource.getValue() && 
+              parseInt(mapCountry.data.end) >= this.selectedStartDateSource.getValue()) 
+          ));
+
         break;
       }
       default: {
@@ -154,6 +186,13 @@ export class UidataService {
               parseInt(mapMarker.data.start) <= this.selectedEndDateSource.getValue() &&
               parseInt(mapMarker.data.end) >= this.selectedStartDateSource.getValue())
           ));
+
+          this.mapCountriesSource.next(this.mapCountries.filter(
+            mapCountry => (parseInt(mapCountry.data.start) <= date && parseInt(mapCountry.data.end) >= date) || 
+            (-1 == date &&
+                parseInt(mapCountry.data.start) <= this.selectedEndDateSource.getValue() &&
+                parseInt(mapCountry.data.end) >= this.selectedStartDateSource.getValue())
+            ));
         break;
       } 
     }    

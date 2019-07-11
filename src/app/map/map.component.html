@@ -7,4 +7,9 @@
           (mouseOut)="outMarker(m.id, i)"
           [iconUrl]="m.icon">
     </agm-marker>
+    <agm-data-layer 
+      [geoJson]="geoJsonObject" 
+      (layerClick)="clickedCountry($event)"
+      [style]="styleFunc">
+    </agm-data-layer>
   </agm-map>
