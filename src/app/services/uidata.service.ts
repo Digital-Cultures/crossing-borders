@@ -17,6 +17,9 @@ export class UidataService {
   private mapCountriesSource = new BehaviorSubject<any>([]); //CREATE INTERFACE
   currentMapCountries = this.mapCountriesSource.asObservable();
 
+  private selectedCountries: any = [];
+  
+
   // private dateSource = new BehaviorSubject<number>(1300);
   // currentDate = this.dateSource.asObservable();
 
@@ -35,7 +38,15 @@ export class UidataService {
   constructor(
     private colorsService: ColorsService,
     private jsondataService: JsondataService
-  ) { }
+  ) { 
+
+    this.currentMapCountries.subscribe(countries => {
+      this.selectedCountries = [];
+      countries.forEach( (element) => {
+          this.selectedCountries.push(element);
+      });
+    });
+  }
 
   getItemFromChart(elementId: string): any {
     var idCode = elementId.split("_");
@@ -115,7 +126,8 @@ export class UidataService {
               label: data[i].name,
               data: data[i],
               id: data[i].id,
-              country: countries[j]
+              country: countries[j],
+              color: this.colorsService.getColorByLabel(data[i][yAxis])
               //place: window.location.protocol + '//' + window.location.host + window.location.pathname + this.colorsService.getMarkerByLabel(data[i][yAxis])
             })
             break;
@@ -208,6 +220,16 @@ export class UidataService {
 
   getEnding(): string {
     return this._ending;
+  }
+
+  public getDataByCountryAndDate(country: string){
+    var data = [];
+    for (var i = 0; i < this.selectedCountries.length ; i++) {
+      if (this.selectedCountries[i].country == country) {
+        data.push(this.selectedCountries[i].data);
+      }
+    }
+    return data;
   }
 
   public setCommentMarker(data: any){

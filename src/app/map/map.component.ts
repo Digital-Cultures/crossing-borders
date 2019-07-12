@@ -46,9 +46,9 @@ export class MapComponent implements OnInit {
       clickable: true,
       fillOpacity: feature.getProperty('opacity'),
       fillColor: feature.getProperty('color'),
-      strokeColor: feature.getProperty('color'),
-      strokeOpacity: 0.1,
-      strokeWeight: 2
+      strokeColor: '#444444',//feature.getProperty('color'),
+      strokeOpacity: 1,
+      strokeWeight: 10
     });
   }
   
@@ -109,7 +109,7 @@ export class MapComponent implements OnInit {
     if (this.countryGeoJson[element.country] != undefined){
       if (this.countriesLoaded.indexOf(element.country) < 0){
         let temp = this.countriesLoaded.indexOf(element.country);
-        this.addGeoJson(this.countryGeoJson[element.country],element.country);
+        this.addGeoJson(this.countryGeoJson[element.country],element);
         this.countriesLoaded.push(element.country)
       } else {
         //increase the colour of the polygon
@@ -124,15 +124,16 @@ export class MapComponent implements OnInit {
 
       }
     }else{
-      this.getGeoJSON(element.country).subscribe(data => this.storeGeoJson(data, element.country), error => console.log(error));
+      this.getGeoJSON(element.country).subscribe(data => this.storeGeoJson(data, element), error => console.log(error));
     }
   }
   
-  private addGeoJson(data, countryName){
+  private addGeoJson(data, element){
     for (let key in data.features) {
-      data.features[key].properties.color = "blue";
+      // make opaque 
+      data.features[key].properties.color = element.color.replace(/[^,]+(?=\))/, '1');
       data.features[key].properties.opacity = 0.1;
-      data.features[key].properties.nameCB = countryName;
+      data.features[key].properties.nameCB = element.country;
     }
     if (this.geoJsonObject.hasOwnProperty('features')){
         this.geoJsonObject = { 
@@ -146,9 +147,9 @@ export class MapComponent implements OnInit {
     }  
   }
 
-  private storeGeoJson(data, country){
-    this.countryGeoJson[country]=data;
-    this.addGeoJson(data, country)
+  private storeGeoJson(data, element){
+    this.countryGeoJson[element.country]=data;
+    this.addGeoJson(data, element);
   }
   
   public getGeoJSON(contry: string): Observable<any> {
@@ -183,11 +184,14 @@ export class MapComponent implements OnInit {
 
   clickedCountry(clickEvent) {
     console.log(clickEvent.feature.getProperty('nameCB'));
+    var stack = this.uidataService.getDataByCountryAndDate(clickEvent.feature.getProperty('nameCB'))
+    this.open(stack);
   }
 
   open(data: any) {
+    console.log(data);
     const modalRef = this.modalService.open(TextModalComponent);
-    modalRef.componentInstance.data = [data];
+    modalRef.componentInstance.data = data;
   }
 
 }

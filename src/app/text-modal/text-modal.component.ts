@@ -31,6 +31,7 @@ export class TextModalComponent implements OnInit {
 	}
 
 	ngOnInit() {
+		console.log(this.selected)
 		this.selectedData = this.data[this.selected];
 		this.disqus_textname = this.jsondataService.getDataset()+"-"+this.data[this.selected].id;
 		//this.jsondataService.getCommentCount(this.disqus_textname);
