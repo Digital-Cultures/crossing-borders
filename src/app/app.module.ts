@@ -20,11 +20,13 @@ import { ColorsService } from './services/colors.service';
 
 import { DbformComponent } from './dbform/dbform.component';
 import { VisulisationComponent } from './visulisation/visulisation.component';
+import { HomepageComponent } from './homepage/homepage.component';
 import { PlayheadComponent } from './playhead/playhead.component';
 import { TextModalComponent } from './text-modal/text-modal.component';
 
 const appRoutes: Routes = [
-  { path: '', component: VisulisationComponent },
+  { path: '', component: HomepageComponent },
+  { path: 'vis', component: VisulisationComponent },
   { path: 'db', component: DbformComponent }
 ]
 
@@ -35,6 +37,7 @@ const appRoutes: Routes = [
     MapComponent,
     TextModalComponent,
     DbformComponent,
+    HomepageComponent,
     VisulisationComponent,
     PlayheadComponent,
     TextModalComponent

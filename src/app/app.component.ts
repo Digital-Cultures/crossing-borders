@@ -55,7 +55,7 @@ export class AppComponent {
                 this.title = '<i><b>Prophecies of Merlin</b></i> (ORIGINAL: ENGLAND, LATIN, c. 1136)';
                 break;
             default:
-              // code block
+
           }
     }
 }

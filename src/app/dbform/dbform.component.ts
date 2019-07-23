@@ -63,20 +63,7 @@ export class DbformComponent {
                     placeholder: 'Filter by language'
                 }
             }
-        },
-        {
-            title: 'Date of Compilation',
-            name: 'compilationDate',
-            sort: false,
-            filter: {
-                type: 'default',
-                controlType: 'default',
-                config: {
-                    placeholder: 'Filter by date'
-                }
-            }
-        }
-        , {
+        },{
             title: 'Adaptation/ Translation',
             name: 'adaptation',
             sort: false,
@@ -88,8 +75,8 @@ export class DbformComponent {
                 }
             }
         }, {
-            title: 'Integrated',
-            name: 'integrated',
+            title: 'Shelfmark',
+            name: 'shelfmark',
             sort: false,
             filter: {
                 type: 'default',
@@ -98,7 +85,32 @@ export class DbformComponent {
                     placeholder: 'Filter'
                 }
             }
-        }, {
+        }, 
+        {
+            title: 'Date of Manuscript Compilation',
+            name: 'compilationDate',
+            sort: false,
+            filter: {
+                type: 'default',
+                controlType: 'default',
+                config: {
+                    placeholder: 'Filter by date'
+                }
+            }
+        }, 
+        {
+            title: 'Place of Manuscript Compilation',
+            name: 'compilationPlace',
+            sort: false,
+            filter: {
+                type: 'default',
+                controlType: 'default',
+                config: {
+                    placeholder: 'Filter by date'
+                }
+            }
+        }
+        , {
             title: 'Fragment',
             name: 'fragment',
             sort: false,
@@ -110,8 +122,8 @@ export class DbformComponent {
                 }
             }
         }, {
-            title: 'Shelfmark',
-            name: 'shelfmark',
+            title: 'Integrated',
+            name: 'integrated',
             sort: false,
             filter: {
                 type: 'default',

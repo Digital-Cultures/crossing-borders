@@ -1,0 +1,9 @@
+ng2-ya-table {
+	margin-top: 50px;
+	display: block;
+}
+
+table.ng2-ya-table .sorting_asc::after {
+	content: "\f160";
+    font: normal normal normal 14px/1 FontAwesome;
+}
