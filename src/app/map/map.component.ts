@@ -30,8 +30,8 @@ export class MapComponent implements OnInit {
 
   titleMap: string = 'Google Maps Addeed Successfully';
   lat: number = 53;
-  lng: number = 0.1278;
-  zoom: number = 6;
+  lng: number = -2;
+  zoom: number = 4;
 
   geoJsonObject: any = {};
   countriesLoaded = [];
