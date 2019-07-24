@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisulisationComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    document.getElementsByClassName("menuSelect")[0]['style'].display = "block";
+    document.getElementsByClassName("menuTitle")[0]['style'].display = "block";
+   }
 
   ngOnInit() {
   }

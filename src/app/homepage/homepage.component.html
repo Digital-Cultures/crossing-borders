@@ -1,9 +1,99 @@
 
- <div class="container-fluid">
+ <div class="container-fluid infoPage">
   <div class="row">
-    <div class="col-md-12">
-      <ng2-ya-table [options]="options" [columns]="columns" [datasource]="datasource" [paging]="paging">
-      </ng2-ya-table>
+    <div class="col-md-12 ">
+
+        <div class="main_container">
+            <section class="content" >
+          
+                  <h1 style="text-align: right; color: #f7f4e2"><span style="font-size: 62pt">Crossing Borders</span> <br>
+                    <span style="font-size: 22pt; color:orange">in the Insular Middle Ages</span></h1>
+
+                  
+                      <figure>
+                          <img style ="width:15%; padding-right:1%;padding-bottom:1%;float:left" src="/assets/a.png" alt="map of medieval europe"/>  
+                      </figure>
+                      <p >
+                      lot of text needs to go here. We need a front page for the site, explaining our principles of selection: material that has crossed linguistic and geographical materials, excluding originals and variants in originallanguage that have travelled; noting that early print has not been included, and giving dates.
+                      Front page would also include bibliography, which details short form titles and abbreviations used. The bibliography will be populated by scholars cited (in short form) in the discursive entries. We also need to credit contributors on this page.
+                      The encyclopaedic entries for each text need to trace this history of movement, identifying notable stages of transmission/ translation. It should also make a claim for significance – why have we selected this text as a case study? These will be co-authored.
+                  </p>
+              </section>
+              <img style ="width:60%" src="/assets/map2.jpg" alt="map of medieval europe"/>
+              <section class="content">
+                  <h2>Contributors</h2>
+                  <table style="width:100%; margin-bottom: 5%">
+                      <tr>
+                          <th>Dr Victoria Flood</th>
+                          <th>Birmingham University</th> 
+                          <th><a href="https://www.birmingham.ac.uk/staff/profiles/english/flood-victoria.aspx">home page</a></th>
+                      </tr>
+                      <tr>
+                          <th>Dr Aisling Byrne</th>
+                          <th>Reading University</th> 
+                          <th><a href="https://www.reading.ac.uk/english-literature/aboutus/Staff/a-byrne.aspx">home page</a></th>
+                      </tr>
+                      <tr>
+                          <th>Dr Tom Schofield</th>
+                          <th>Newcastle University</th> 
+                          <th><a href="https://www.ncl.ac.uk/sacs/staff/profile/tomschofield.html">home page</a></th>
+                      </tr>
+                      <tr>
+                        <th>Daniel Foster-Smith</th>
+                        <th>Newcastle University</th> 
+                        <th><a href="https://www.ncl.ac.uk/sacs/staff/profile/danielfoster-smith.html">home page</a></th>
+                    </tr>
+                  </table>
+          
+                  <!-- <img src="a.png"/> -->
+                  <p>We need a front page for the site, explaining our principles of selection: material that has crossed linguistic and geographical materials, excluding originals and variants in original language that have travelled; noting that early print has not been included, and giving dates.
+                      Front page would also include bibliography, which details short form titles and abbreviations used. The bibliography will be populated by scholars cited (in short form) in the discursive entries. We also need to credit contributors on this page.
+                      The encyclopaedic entries for each text need to trace this history of movement, identifying notable stages of transmission/ translation. It should also make a claim for significance – why have we selected this text as a case study? These will be co-authored.
+                  </p>
+            </section>
+            <section class="contentText">
+        
+        
+                <div id="info_box">
+                    <div class="form-group book-selector">
+                        <select (change)="changeData($event)" class="form-control" id="sel1">
+                            <option value="proffwydoliaeth_merdin">---ROMANCE & PROPHECY---</option>
+                            <option value="proffwydoliaeth_merdin" selected>Prophecies of Merlin</option>
+                            <option value="pseudo_turpin">Pseudo-Turpin Chronicle</option>
+                            <option value="fierabras">Fierabras</option>
+                            <option value="roman_alexandre">Alexander</option>
+                            <option value="bevis">Bevis of Hampton</option>
+                            <option value="prophecy_of_the_six_kings">Prophecy of the Six Kings</option>
+                            <option value="marwolaeth_mair">---HAGIOGRAPHY & RELIGIOUS WORKS---</option>
+                            <option value="marwolaeth_mair">Assumption of the Virgin Mary</option>
+                            <option value="elucidarium">Elucidarium</option>
+                            <option value="life_of_st_edward">Life of St Edward</option>
+                          </select>
+                    </div>
+        
+                    <h3 *ngIf="currentText.title!='The texts of Crossing Borders'">Circulation</h3>
+                    <p *ngIf="currentText.title!='The texts of Crossing Borders'">{{currentText.circulation}}</p>
+                    <h3 *ngIf="currentText.title!='The texts of Crossing Borders'">Languages</h3>
+                    <p *ngIf="currentText.title!='The texts of Crossing Borders'">{{currentText.languages}}</p>
+                    <div *ngIf="currentText.title!='The texts of Crossing Borders'">
+                        <p><a routerLink="/vis" routerLinkActive="active">View the visualisation of {{currentText.title}} </a></p>
+                        <p><a routerLink="/db" routerLinkActive="active">View the database entry for {{currentText.title}} </a></p>
+                    </div>
+                </div>
+
+                 <h3 *ngIf="currentText.title!='The texts of Crossing Borders'" style="font-size: 1.5em"><strong>{{currentText.title}}</strong></h3>
+                 <h3 *ngIf="currentText.title!='The texts of Crossing Borders'"><i>according to</i> {{currentText.author}}</h3>
+                <p style="" [innerHTML]="currentText.significance"></p>
+        
+            </section>
+          
+          
+            <div>
+                <img class="logo" src="assets/logos/ncl.png"/>
+                <img class="logo" src="assets/logos/white.png"/>
+                <img class="logo" src="assets/logos/humboldt-logo.png"/>
+            </div>
+          </div>
     </div>
   </div>
 </div>

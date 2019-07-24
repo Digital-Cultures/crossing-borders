@@ -1,6 +1,5 @@
 <nav>
-
-	<div class="form-group">
+	<div class="form-group menuSelect">
 	  <select (change)="changeData($event)" class="form-control" id="sel1">
 		<option value="proffwydoliaeth_merdin">---ROMANCE & PROPHECY---</option>
 		<option value="proffwydoliaeth_merdin" selected>Prophecies of Merlin</option>
@@ -16,15 +15,14 @@
 	  </select>
 	</div>
 
-	<div class="menuTitle">
-		<p [innerHTML]="title"></p>
+	<div class="menuTitle" [innerHTML]="title" >
 	</div>
 
 	<div class="menuItem">
-		<a routerLink="/vis" routerLinkActive="active">Visualisation</a>
-		<a routerLink="/db" routerLinkActive="active">Database</a>
+		<a routerLink="/" routerLinkActive="active">About</a>
+		<a routerLink="/vis" routerLinkActive="inactive">Visualisation</a>
+		<a routerLink="/db" routerLinkActive="inactive">Database</a>
 	</div>
-    
 </nav>
 
 <router-outlet></router-outlet>

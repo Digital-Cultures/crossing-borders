@@ -12,7 +12,6 @@ export class AppComponent {
     private dataSet: string = 'proffwydoliaeth_merdin';
 
     constructor(
-        private uidataService: UidataService,
         private jsondataService: JsondataService
     ) { }
 
@@ -25,7 +24,7 @@ export class AppComponent {
     }
 
     changeData(e) {
-        this.jsondataService.setDataset(e.target.value);
+       
         switch(e.target.value) {
             case 'prophecy_of_the_six_kings':
              this.title = '<i><b>Prophecy of the Six Kings</b></i> (ORIGINAL: ENGLAND, ANGLO-NORMAN, c. 1310s-20s)';
@@ -56,6 +55,7 @@ export class AppComponent {
                 break;
             default:
 
-          }
+        }
+        this.jsondataService.setDataset(e.target.value);
     }
 }

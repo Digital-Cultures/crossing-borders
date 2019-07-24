@@ -34,6 +34,7 @@ export class JsondataService {
     }
     setDataset(dataset: string) {
         this.dataSet = dataset;
+        console.log(dataset);
 
         this.getData().subscribe(
             resultArray => {

@@ -12,8 +12,11 @@ import { JsondataService } from '../services/jsondata.service';
 export class DbformComponent {
 
     constructor(private jsondataService: JsondataService) {
+        document.getElementsByClassName("menuSelect")[0]['style'].display = "block";
+        document.getElementsByClassName("menuTitle")[0]['style'].display = "block";
 
         this.jsondataService.currentRawData.subscribe((rawData: any) => {
+           
             this.datasource = (request: DataSourceRequest): Observable<DataSourceResultOfUser> => {
                 let data = this.jsondataService.getData(request);
                 return data;

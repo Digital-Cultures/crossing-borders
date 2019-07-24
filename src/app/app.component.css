@@ -1,5 +1,5 @@
 nav {
-	position: fixed;
+	position: absolute;
     z-index: 3;
     display: inline-flex;
     width: 98%;
@@ -23,14 +23,15 @@ select {
 }
 .menuTitle{
 	margin: auto;
-    position: fixed;
+    position: absolute;
     left: 220px;
-    right: 220px;
+	right: 280px;
+	top: 12px;
     text-align: -webkit-center;	
 }
 .menuItem {
 	position: inherit;
     top: 10px;
 	right: 5px;
-	width: 220px;
+	width: 280px;
 }
