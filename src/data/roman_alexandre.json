@@ -1,180 +1,82 @@
 {
-    "type":"text_date_language",
-    "texts":[
-       {
-          "id":"1",
-          "name":"Roman d'Alexandre",
-          "language":"Old French",
-          "start":"1338",
-          "end":"1346",
-          "compilationPlace":"",
-          "shelfmark":"Oxford, Bodleian Library, MS Bodley 264",
-          "overview":"Roman d'Alexandre; Alexander and Dindimus (Alexander Fragment B) in Middle English verse (fols 209r-215v); Marco Polo’s Li Livres du Graunt Caam, in French prose (fols 218r-71v)",
-          "adaptation":"Original text",
-          "integrated":"No",
-          "fragment":"Complete",
-          "compilationDate":"A colophon (fol. 208r) reveals that the main text was completed on 18 December 1338 and the illumination completed in 1345 by the Flemish illuminator, Jehan de Grise, and members of his workshop. Anglo-Norman rubrics were subsequently added to the manuscript, perhaps in England, as well asthe two further texts."
-       },
-       {
-          "id":"2",
-          "name":"Roman d'Alexandre",
-          "language":"Older Scots",
-          "start":"1487",
-          "end":"1489",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                56.3390345,
-                -2.8324416
-             ]
-          },
-          "compilationPlace":" Fife/East Lothian",
-          "shelfmark":"Edinburgh, National Library of Scotland, MS Advocates' 19.2.2 (2)",
-          "overview":"This manuscript originally contained John Barbour's Bruce and Hary's Wallace - the two texts have since been separated",
-          "adaptation":"Adaptation (parts of the Scots text show influence of the French romance): VI.516-26; VIII.480; XI.341-4",
-          "integrated":"Yes: The Wallace (Hary)",
-          "fragment":"Complete",
-          "compilationDate":"1488"
-       },
-       {
-          "id":"3",
-          "name":"Roman d'Alexandre",
-          "language":"Older Scots",
-          "start":"1579",
-          "end":"1581",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                55.9411289,
-                -3.3454205
-             ]
-          },
-          "compilationPlace":"Edinburgh",
-          "shelfmark":"Survives uniquely in a printed edition of c. 1580 by the Edinburgh printer, Alexander Arbuthnot (STC 321.5). Only copy said to be owned by Earl of Dalhousie but actual whereabouts currently uncertain.",
-          "overview":"Print contains only the Octosyllabic Alexander",
-          "adaptation":"Translation and adaptation into octosyllabic couplets of two episodes within the Roman d'Alexandre: Le Fuerre de Gadres and Les Voeux du Paon",
-          "integrated":"The two translations are combined to form the one Scots romance: The Buik of Alexander.",
-          "fragment":"Complete",
-          "compilationDate":"c. 1580"
-       },
-       {
-          "id":"4",
-          "name":"Roman d'Alexandre",
-          "language":"Older Scots",
-          "start":"1550",
-          "end":"1600",
-          "compilationPlace":"Uncertain, but perhaps connected to seat of the Campbell of Glenorchy family ",
-          "shelfmark":"London, British Library, Additional MS 40732",
-          "overview":"Contains only BKA",
-          "adaptation":"Translation and Adaptation of part of the Roman d'Alexandre by Sir Gilbert Hay to form his (decasyllabic) Buik of King Alexander the Conquerour",
-          "integrated":"Yes: Sir Gilbert Hay's Buik of King Alexander the Conquerour",
-          "fragment":"Almost complete (acephalous in both surviving witnesses)",
-          "compilationDate":"s.xvi2"
-       },
-       {
-          "id":"5",
-          "name":"Kyng Alisaunder",
-          "language":"Middle English",
-          "start":"1275",
-          "end":"1400",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                51.5287714,
-                -0.2420235
-             ]
-          },
-          "compilationPlace":"London?",
-          "shelfmark":"s. xv 1/4",
-          "overview":"? Shropshire",
-          "adaptation":"Middle English verse translation of Anglo-Norman romance: adaptive",
-          "integrated":"London, Lincoln's Inn, MS 150, fols. 28r-90r",
-          "fragment":"All Middle English: Lybeaus Desconus; Merlyn; Kyng Alisaunder; Seege of Troy;  Piers Plowman (A text)",
-          "compilationDate":"Late 13th century/1400"
-       },
-       {
-          "id":"6",
-          "name":"Kyng Alisaunder",
-          "language":"Middle English",
-          "start":"1275",
-          "end":"1400",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                51.5287714,
-                -0.2420235
-             ]
-          },
-          "compilationPlace":"London?",
-          "shelfmark":"1331-40",
-          "overview":"? London",
-          "adaptation":"Middle English verse translation of Anglo-Norman romance: adaptive",
-          "integrated":"National Library of Scotland, MS Advocates 19.2.1, fols. 278r-279r (plus fragments)",
-          "fragment":"Large collection of English verse, particularly romances: small amount of Anglo-Norman",
-          "compilationDate":"Late 13th century/1400"
-       },
-       {
-          "id":"7",
-          "name":"Kyng Alisaunder",
-          "language":"Middle English",
-          "start":"1275",
-          "end":"1400",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                51.5287714,
-                -0.2420235
-             ]
-          },
-          "compilationPlace":"London?",
-          "shelfmark":"c.1400",
-          "overview":"? London",
-          "adaptation":"Middle English verse translation of Anglo-Norman romance: adaptive",
-          "integrated":"Oxford, Bodleian Library MS. Laud Misc. 622, fols.27v-64r",
-          "fragment":"English verse, including material from South English Legendary, Life of St Alexis, Siege of Jerusalem ",
-          "compilationDate":"Late 13th century/1400"
-       },
-       {
-          "id":"8",
-          "name":"Alexandreis",
-          "language":"Latin",
-          "start":"1170",
-          "end":"1180",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                49.2535458,
-                4.0200693
-             ]
-          },
-          "compilationPlace":"Reims",
-          "shelfmark":"early 13th century",
-          "overview":"England: Oxford?",
-          "adaptation":"Not applicable",
-          "integrated":"Cambridge, Corpus Christi College, MS 406",
-          "fragment":"Latin poetry of the later 12th century, including Joseph of Exeter's Ylias, John of Hauville's Architrenius, Seneca, Tragedies",
-          "compilationDate":"1170s"
-       },
-       {
-          "id":"9",
-          "name":"Roman d'Alexandre",
-          "language":"French",
-          "start":"1180",
-          "end":"1190",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                48.8588377,
-                2.2770208
-             ]
-          },
-          "compilationPlace":"Paris",
-          "shelfmark":"1338-44 c.1400",
-          "overview":"Tours and London",
-          "adaptation":"Not applicable",
-          "integrated":"Oxford, Bodleian Library MS Bodley 264, fols. 3r-208r",
-          "fragment":"Roman d'Alexandre, Alexander and Dindimus (Alexander Fragment B: English), Li Livres du Graunt Caam (French prose)",
-          "compilationDate":"1180s"
-       }
-    ]
- }
+   "type":"text_date_language",
+   "texts":[
+      {
+         "id":"1",
+         "name":"Roman d'Alexandre (c. 1185)",
+         "language":"Old French ",
+         "start":"1338",
+         "end":"1345",
+         "compilationPlace":"Flanders & England",
+         "shelfmark":"Oxford, Bodleian Library, MS Bodley 264, ff. 3r-208r",
+         "overview":"",
+         "adaptation":"Original text",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"c. 1338-45"
+      },
+      {
+         "id":"2",
+         "name":"Buik of King Alexander the Conquerour (c. 1460)",
+         "language":"Older Scots",
+         "start":"1550",
+         "end":"1599",
+         "compilationPlace":"Scotland: ?Aberdeenshire",
+         "shelfmark":"Edinburgh, National Records of Scotland, MS GD 112/71/9",
+         "overview":"",
+         "adaptation":"Adaptive Older Scots decasyllabic verse translation of Old French Roman d'Alexandre and related material (e.g. Historia de Preliis)",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"s. XVI <sup>2</sup>"
+      },
+      {
+         "id":"3",
+         "name":"Buik of King Alexander the Conquerour (c. 1460)",
+         "language":"Older Scots",
+         "start":"1550",
+         "end":"1599",
+         "compilationPlace":"Scotland: ?Aberdeenshire",
+         "shelfmark":"London, British Library, MS Additional 40732",
+         "overview":"",
+         "adaptation":"Adaptive Older Scots decasyllabic verse translation of Old French Roman d'Alexandre and related material (e.g. Historia de Preliis)",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"s. XVI <sup>2</sup>"
+      },
+      {
+         "id":"4",
+         "name":"Kyng Alisaunder (c. 1400)",
+         "language":"Middle English",
+         "start":"1400",
+         "end":"1424",
+         "compilationPlace":"England/ March: Shropshire",
+         "shelfmark":"London, Lincoln's Inn, MS 150, ff. 28r-90r",
+         "overview":"",
+         "adaptation":"Adaptive Middle English verse translation of Old French Roman d'Alexandre.",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"s. XV <sup>1/4</sup>"
+      },
+      {
+         "id":"5",
+         "name":"Kyng Alisaunder (c. 1400)",
+         "language":"Middle English",
+         "start":"1390",
+         "end":"1410",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.5287714,
+               -0.2420232
+            ]
+         },
+         "compilationPlace":"England: London",
+         "shelfmark":"Oxford, Bodleian Library, MS Laud Misc. 622, ff. 27v-64r",
+         "overview":"",
+         "adaptation":"Adaptive Middle English verse translation from Old French Roman d'Alexander.",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"c. 1400"
+      }
+   ]
+}

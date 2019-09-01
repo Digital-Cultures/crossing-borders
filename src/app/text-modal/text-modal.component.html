@@ -12,7 +12,7 @@
 		<p>{{selectedData.compilationPlace}}</p>
 		<p>{{selectedData.overview}}</p>
 		<em><b>Shelf Mark: </b> {{selectedData.shelfmark}}</em>
-		<disqus style="padding:15px" [identifier]="disqus_textname" [url]="'http://example.com/hello-world/#!'+disqus_textname"
+		<disqus style="padding:15px; display: none;" [identifier]="disqus_textname" [url]="'http://example.com/hello-world/#!'+disqus_textname"
 		 [title]="disqus_textname" (newComment)="onNewComment($event)"></disqus>
 	</div>
 </div>

@@ -20,6 +20,7 @@ import { ColorsService } from './services/colors.service';
 
 import { DbformComponent } from './dbform/dbform.component';
 import { VisulisationComponent } from './visulisation/visulisation.component';
+import { TextspageComponent } from './texts/texts.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PlayheadComponent } from './playhead/playhead.component';
 import { TextModalComponent } from './text-modal/text-modal.component';
@@ -27,6 +28,7 @@ import { TextModalComponent } from './text-modal/text-modal.component';
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'vis', component: VisulisationComponent },
+  { path: 'texts', component: TextspageComponent },
   { path: 'db', component: DbformComponent }
 ]
 
@@ -39,6 +41,7 @@ const appRoutes: Routes = [
     DbformComponent,
     HomepageComponent,
     VisulisationComponent,
+    TextspageComponent,
     PlayheadComponent,
     TextModalComponent
   ],

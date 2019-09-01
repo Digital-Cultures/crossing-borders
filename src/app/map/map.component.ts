@@ -25,6 +25,7 @@ export class MapComponent implements OnInit {
   mapData = [];
   public markers$: Observable<any>;
   public json$: Observable<any>;
+  private agmCoreModule: AgmCoreModule;
 
   private countryGeoJson:  { [country: string]: any; } = { };;   
 
@@ -32,6 +33,7 @@ export class MapComponent implements OnInit {
   lat: number = 53;
   lng: number = -2;
   zoom: number = 4;
+  lineWidth: any = 10;
 
   geoJsonObject: any = {};
   countriesLoaded = [];
@@ -39,16 +41,34 @@ export class MapComponent implements OnInit {
   clicked(clickEvent) {
       console.log(clickEvent);
     }
+
+  zoomChange(event){
+    console.log(event);
+    if (event<5){
+      this.lineWidth = 6;
+    }else if (event>7){
+      this.lineWidth = 15;
+    }else{
+      this.lineWidth = 10;
+    }
+
+    //clear data
+    this.geoJsonObject = {};
+    this.countriesLoaded = [];
+
+    this.json$.forEach( (element) => {
+        this.addCountry(element);
+    });
+  }
   
   styleFunc(feature) {
-    //console.log(feature.getProperty('color'));
     return ({
       clickable: true,
       fillOpacity: feature.getProperty('opacity'),
       fillColor: feature.getProperty('color'),
       strokeColor: '#444444',//feature.getProperty('color'),
       strokeOpacity: 1,
-      strokeWeight: 10
+      strokeWeight: feature.getProperty('lineWeight')
     });
   }
   
@@ -105,6 +125,7 @@ export class MapComponent implements OnInit {
     //this.getJSON("scotland").subscribe(data => this.addGeoJson(data), error => console.log(error));
   }
 
+
   private addCountry(element){
     if (this.countryGeoJson[element.country] != undefined){
       if (this.countriesLoaded.indexOf(element.country) < 0){
@@ -116,12 +137,12 @@ export class MapComponent implements OnInit {
         for (let key in this.geoJsonObject.features) {
           if (this.geoJsonObject.features[key].properties.nameCB==element.country){
             this.geoJsonObject.features[key].properties.opacity += 0.1;
+            this.geoJsonObject.features[key].properties.lineWeight = this.lineWidth;
             if (this.geoJsonObject.features[key].properties.opacity>1){
               this.geoJsonObject.features[key].properties.opacity = 1;
             }
           }
         }
-
       }
     }else{
       this.getGeoJSON(element.country).subscribe(data => this.storeGeoJson(data, element), error => console.log(error));
@@ -169,7 +190,7 @@ export class MapComponent implements OnInit {
   }
 
   clickedMarker(data: any, i: number) {
-    this.open(data);
+    this.open([data]);
   }
 
   overMarker(id: string, i: number) {

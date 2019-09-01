@@ -1,28 +1,29 @@
 <nav>
-	<div class="form-group menuSelect">
-	  <select (change)="changeData($event)" class="form-control" id="sel1">
-		<option value="proffwydoliaeth_merdin">---ROMANCE & PROPHECY---</option>
-		<option value="proffwydoliaeth_merdin" selected>Prophecies of Merlin</option>
-		<option value="pseudo_turpin">Pseudo-Turpin Chronicle</option>
-		<option value="fierabras">Fierabras</option>
-		<option value="roman_alexandre">Alexander</option>
-		<option value="bevis">Bevis of Hampton</option>
-		<option value="prophecy_of_the_six_kings">Prophecy of the Six Kings</option>
-		<option value="marwolaeth_mair">---HAGIOGRAPHY & RELIGIOUS WORKS---</option>
-		<option value="marwolaeth_mair">Assumption of the Virgin Mary</option>
-		<option value="elucidarium">Elucidarium</option>
-	    <option value="life_of_st_edward">Life of St Edward</option>
-	  </select>
+	<div class="menuItem">
+		<a routerLink="/" routerLinkActive="active">About</a>
+		<a routerLink="/db" routerLinkActive="inactive">Database</a>
+		<a routerLink="/texts" routerLinkActive="inactive">Texts</a>
+		<a routerLink="/vis" routerLinkActive="inactive">Visualisation</a>
 	</div>
 
 	<div class="menuTitle" [innerHTML]="title" >
 	</div>
 
-	<div class="menuItem">
-		<a routerLink="/" routerLinkActive="active">About</a>
-		<a routerLink="/vis" routerLinkActive="inactive">Visualisation</a>
-		<a routerLink="/db" routerLinkActive="inactive">Database</a>
+	<div class="form-group menuSelect">
+		<select (change)="changeData($event)" class="form-control" id="sel1">
+		  <option value="roman_alexandre">---ROMANCE & PROPHECY---</option>
+		  <option value="roman_alexandre" selected>Alexander Romances</option>
+		  <option value="bevis">Bevis of Hampton</option>
+		  <option value="fierabras">Fierabras</option>
+		  <option value="proffwydoliaeth_merdin">Prophecies of Merlin</option>
+		  <option value="prophecy_of_the_six_kings">Prophecy of the Six Kings</option>
+		  <option value="marwolaeth_mair">---HAGIOGRAPHY & RELIGIOUS WORKS---</option>
+		  <option value="marwolaeth_mair">Assumption of the Virgin Mary</option>
+		  <option value="elucidarium">Elucidarium</option>
+		  <option value="life_of_st_edward">Life of St Edward</option>
+		</select>
 	</div>
+
 </nav>
 
 <router-outlet></router-outlet>

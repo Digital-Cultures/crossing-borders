@@ -60,6 +60,7 @@ export class D3graphComponent implements OnInit {
     })
 
     this.uidataService.currentTextID.subscribe(selectedID => {
+      console.log(selectedID);
       this.selectedID = selectedID;
       this.hilightBar(this.selectedID);
     })

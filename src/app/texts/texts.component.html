@@ -1,0 +1,47 @@
+
+ <div class="container-fluid infoPage">
+  <div class="row">
+    <div class="col-md-12 ">
+
+        <div class="main_container">
+            <section class="content">
+                <figure>
+                    <img style ="width:70px; padding-right:7px; padding-bottom:1%;float:left" src="assets/t.png" alt="map of medieval europe"/>  
+                </figure>
+                <p style ="text-align: left">
+                    he texts selected for Crossing Borders speak to broader cultural and political connections across the Insular world, but they also point to further-reaching lines of transmission across Europe, and in some cases Mediterranean and North Africa. The insular contexts, as illuminated by the database, are explored in the short articles below, alongside the possibilities for further research both within and beyond the Insular region. 
+                </p>
+            </section>
+
+            <section class="contentText content" style="border-top: 1px solid #FFF;">
+                <div class="form-group book-selector">         
+                </div>
+
+                <div id="info_box">
+                    <h3 *ngIf="currentText.title!='The texts of Crossing Borders'">Circulation</h3>
+                    <p *ngIf="currentText.title!='The texts of Crossing Borders'">{{currentText.circulation}}</p>
+                    <h3 *ngIf="currentText.title!='The texts of Crossing Borders'">Languages</h3>
+                    <p *ngIf="currentText.title!='The texts of Crossing Borders'">{{currentText.languages}}</p>
+                    <div *ngIf="currentText.title!='The texts of Crossing Borders'">
+                        <p><a routerLink="/vis" routerLinkActive="active" style="font-size: 1.25em">View the visualisation of {{currentText.title}} </a></p>
+                        <p><a routerLink="/db" routerLinkActive="active" style="font-size: 1.25em">View the database entry for {{currentText.title}} </a></p>
+                    </div>
+                </div>
+
+                 <h3 *ngIf="currentText.title!='The texts of Crossing Borders'" ><strong>{{currentText.title}}</strong><br/>
+                 <i style="font-size: 0.8em">by {{currentText.author}}</i></h3>
+                <p style="" [innerHTML]="currentText.significance"></p>
+        
+            </section>
+          
+            <div>
+                <img class="logo" src="assets/logos/ncl.png"/>
+                <img class="logo" src="assets/logos/white.png"/>
+                <img class="logo" src="assets/logos/humboldt-logo.png"/>
+                <img class="logo" src="assets/logos/Birmingham_logo.png"/>
+                <img class="logo" style="height: 50px;" src="assets/logos/AvH_Logo_n7_b_Fîrderlogo_rgb.jpg"/>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>

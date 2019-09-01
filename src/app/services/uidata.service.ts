@@ -23,7 +23,7 @@ export class UidataService {
   // private dateSource = new BehaviorSubject<number>(1300);
   // currentDate = this.dateSource.asObservable();
 
-  private selectedStartDateSource = new BehaviorSubject<number>(1300);
+  private selectedStartDateSource = new BehaviorSubject<number>(1338);
   currentStartDate = this.selectedStartDateSource.asObservable();
 
   private selectedEndDateSource = new BehaviorSubject<number>(1500);

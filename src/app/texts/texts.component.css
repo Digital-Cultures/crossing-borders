@@ -1,12 +1,20 @@
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Spectral', serif;
 	padding-top:5%;
 	padding-bottom:2%;
 }
-
+h3{
+	color: #ffc34d;
+	font-size: 2.75rem;
+}
 p {
 	font-family: 'Spectral', serif;
 }
+.subtitle {
+	font-size: 1.2em;
+	text-transform: capitalize;
+}
+
 .main_container{
 	text-align:center;
 	margin: 0 auto;
@@ -14,12 +22,14 @@ p {
 	position: absolute;
 	color: white;
 	top:35%;
-	background-color:rgba(80,80,80,0.8);
+	background-color:rgba(80,80,80,1);
 	border-top:45px solid;
 	border-bottom:45px solid;
 	border-color:rgba(255,255,255,0.3);
 
 }
+
+
 .content{
 	text-align:center;
 	margin: 0 auto;
@@ -63,10 +73,27 @@ table.ng2-ya-table .sorting_asc::after {
   color:orange;
 }
 
+a {
+	color:orange;
+}
+
+a:hover {
+	color:rgb(192, 125, 0);
+}
+
 #info_box{
 	width:30%;
 	text-align: left;
 	float: left;
 	padding-right: 5%;
 	font-size: 12pt;
+}
+
+hr {
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	width:100% !important;
+}
+
+.footnote{
+	font-size: 14px;
 }

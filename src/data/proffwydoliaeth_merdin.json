@@ -1,285 +1,670 @@
 {
-    "type":"text_date_language",
-    "texts":[
-       {
-          "id":"1",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1334",
-          "end":"1366",
-          "compilationPlace":"Wales",
-          "shelfmark":"Aberystwyth, NLW, Peniarth 16. iii, fol. 25",
-          "overview":"In fragmentary volume of multiple dates and hands including triads and saints' lives, but copied alongside Breudwyt Macsen",
-          "adaptation":"Welsh prose translation of PM.",
-          "integrated":"No.",
-          "fragment":"Complete text",
-          "compilationDate":"s. XIII med"
-       },
-       {
-          "id":"2",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1450",
-          "end":"1474",
-          "compilationPlace":"Wales",
-          "shelfmark":"Aberystwyth, NLW, Peniarth 14b, p. 136",
-          "overview":"Prose (religious, including saints' lives and Visio Pauli, which follows the Prophecies); Peredur ",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"No, but Visio Pauli possibly intended as companion text.",
-          "fragment":"Extract, presented as complete text. From Omen to line 199.",
-          "compilationDate":"s. XIV 2/4"
-       },
-       {
-          "id":"3",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1500",
-          "end":"1599",
-          "compilationPlace":"Wales",
-          "shelfmark":"Aberystwyth, NLW, Peniarth 47 ii, p. 1",
-          "overview":"Proffwydoliaeth Merdin Emreis, followed by Profwdoliaeth yr Eryr. Preceded by Ystoria Dared.",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"No",
-          "fragment":"Complete text",
-          "compilationDate":"?s. XV"
-       },
-       {
-          "id":"4",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1425",
-          "end":"1456",
-          "compilationPlace":"Wales",
-          "shelfmark":"Aberystwyth, NLW, Peniarth 50, p. 103",
-          "overview":"Collection of English, Welsh and Latin prophecies",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"No, but appears in sequence of translated English prophecies, including Six Kings, which may share a prologue.",
-          "fragment":"?Complete text.",
-          "compilationDate":"1425-1456"
-       },
-       {
-          "id":"5",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"?Early Modern Welsh",
-          "start":"1538",
-          "end":"1540",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                53.2265189,
-                -4.1296162
-             ]
-          },
-          "compilationPlace":"?Bangor",
-          "shelfmark":"Aberystwyth, NLW, Peniarth 179 i, p. 71",
-          "overview":"Collection of pedigrees and recipes",
-          "adaptation":"Welsh prose translation of opening of PM (Omen of the Dragons)",
-          "integrated":"No",
-          "fragment":"Fragment.",
-          "compilationDate":"c. 1539-40"
-       },
-       {
-          "id":"6",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"?Early Modern Welsh",
-          "start":"1574",
-          "end":"1575",
-          "compilationPlace":"Wales",
-          "shelfmark":"Aberystwyth, NLW, Peniarth 58, p. 77",
-          "overview":"Collection of English and Welsh prophecies",
-          "adaptation":"Welsh prose translation of PM ",
-          "integrated":"No",
-          "fragment":"?Complete text.",
-          "compilationDate":"c. 1575"
-       },
-       {
-          "id":"7",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1450",
-          "end":"1461",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                52.857104,
-                -3.057766
-             ]
-          },
-          "compilationPlace":"Oswestry",
-          "shelfmark":"Aberystwyth, NLW, Peniarth 26, pp. 1-10",
-          "overview":"Collection of English, Welsh and Latin prophecies",
-          "adaptation":"Welsh prose translation of PM ",
-          "integrated":"No",
-          "fragment":"Fragment, from line 96.",
-          "compilationDate":"c.1450-61"
-       },
-       {
-          "id":"8",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1300",
-          "end":"1399",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                52.907942,
-                -4.4007472
-             ]
-          },
-          "compilationPlace":"Gwynedd",
-          "shelfmark":"Aberystwyth, NLW, MS 5266 (Brut Dingestow)",
-          "overview":"Brut y brenhinedd",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
-          "fragment":"Complete",
-          "compilationDate":"s. XIII"
-       },
-       {
-          "id":"9",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1400",
-          "end":"1499",
-          "compilationPlace":"Wales",
-          "shelfmark":"Aberystwyth, NLW, Mostyn MS 116",
-          "overview":"Dares; Brut y brenhinedd; Brut y Tywysogion",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
-          "fragment":"Complete",
-          "compilationDate":"s. XIV "
-       },
-       {
-          "id":"10",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1400",
-          "end":"1433",
-          "compilationPlace":"Wales",
-          "shelfmark":"London, British Library, Additional MS 19709",
-          "overview":"Dares; Brut y brenhinedd",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
-          "fragment":"Complete",
-          "compilationDate":"s. XIV in"
-       },
-       {
-          "id":"11",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1382",
-          "end":"1410",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                51.6818078,
-                -3.921381
-             ]
-          },
-          "compilationPlace":"Ynysforgan, Swansea",
-          "shelfmark":"Jesus College, Oxford, MS 111 (Red Book of Hergest)",
-          "overview":"Brutiau; medical texts; prophecies; Mabinogi; poetry; triads",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
-          "fragment":"Complete",
-          "compilationDate":"c. 1382-1410"
-       },
-       {
-          "id":"12",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1567",
-          "end":"1599",
-          "compilationPlace":"Wales",
-          "shelfmark":"Aberystwyth, NLW, Peniarth 23",
-          "overview":"Brut y brenhinedd",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
-          "fragment":"Complete",
-          "compilationDate":"s. XV ex"
-       },
-       {
-          "id":"13",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1400",
-          "end":"1450",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                52.9885247,
-                -3.1880388
-             ]
-          },
-          "compilationPlace":"?Valle Crucis",
-          "shelfmark":"London, British Library, Cotton Cleopatra MS Bv",
-          "overview":"Dares; Brut y brenhinedd; Brut y Saeson; Laws",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
-          "fragment":"Complete",
-          "compilationDate":"s. XIV 1 and s. XIV med"
-       },
-       {
-          "id":"14",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"Middle Welsh",
-          "start":"1400",
-          "end":"1433",
-          "compilationPlace":"Wales",
-          "shelfmark":"Cardiff City Library, MS 1. 363 (Hafod MS 2)",
-          "overview":"Brut y brehhinedd; Bonedd y Saint",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"As part of the Brut y Brenhinedd",
-          "fragment":"Complete",
-          "compilationDate":"s. XIV in"
-       },
-       {
-          "id":"15",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"?Early Modern Welsh",
-          "start":"1650",
-          "end":"1674",
-          "compilationPlace":"Wales",
-          "shelfmark":"Aberystwyth, National Library of Wales, Llanstephan MS 163, p. 131",
-          "overview":"Poetry by Guto'r Glyn, Dafydd ap Gwilym, Dafydd ap Edmund and others",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"No",
-          "fragment":"Incomplete - unfinished. ",
-          "compilationDate":"s. XVI 3/4"
-       },
-       {
-          "id":"16",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"?Early Modern Welsh",
-          "start":"1667",
-          "end":"1699",
-          "geometry":{
-             "type":"Point",
-             "coordinates":[
-                52.3266667,
-                -3.9998817
-             ]
-          },
-          "compilationPlace":"?Powys",
-          "shelfmark":"Aberystwyth, NLW, Peniarth 137, pp. 46-78",
-          "overview":"Genealogy, poetry and prophecy. This may contain a prophecy ascribed to Thomas of Erceldoune, which reappears as an English language prophecy ascribed to 'Thomas Ashadowne' in Mostyn 133.",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"No",
-          "fragment":"Incomplete - fragment missing from the beginning, prior to appearance of the lion of justice.",
-          "compilationDate":"s. XVI ex"
-       },
-       {
-          "id":"17",
-          "name":"Proffwydoliaeth Merdin",
-          "language":"?Early Modern Welsh",
-          "start":"1700",
-          "end":"1733",
-          "compilationPlace":"?Fleet Prison",
-          "shelfmark":"Aberystwyth, National Library of Wales, Mostyn MS 133 (now NLW 3041B), p. 119",
-          "overview":"Collection of prophecies, English, and both translations from English and Welsh originals.",
-          "adaptation":"Welsh prose translation of PM",
-          "integrated":"No",
-          "fragment":"Complete",
-          "compilationDate":"s. XVII in"
-       }
-    ]
- }
+   "type":"text_date_language",
+   "texts":[
+      {
+         "id":"1",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1250",
+         "end":"1299",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 16. iii, ff. 25r-41v",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin, including translation of commentary",
+         "integrated":"No.",
+         "fragment":"",
+         "compilationDate":"s. XIII <sup>2</sup>"
+      },
+      {
+         "id":"2",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1300",
+         "end":"1350",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 14b, pp. 136-51",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin, to line 199 (Omen of the dragons only)",
+         "integrated":"No.",
+         "fragment":"",
+         "compilationDate":"s. XIV <sup>1</sup>"
+      },
+      {
+         "id":"3",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1400",
+         "end":"1449",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 47 ii, pp. 1-11",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"s. XV <sup>1</sup>"
+      },
+      {
+         "id":"4",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1445",
+         "end":"1446",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 50, pp. 103-114",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"No ",
+         "fragment":"",
+         "compilationDate":"c. 1445-1456"
+      },
+      {
+         "id":"5",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1450",
+         "end":"1461",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               52.857104,
+               -3.057766
+            ]
+         },
+         "compilationPlace":"March: Oswestry",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 26 pp. 1-10",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin, from line 96.",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"c. 1450-61"
+      },
+      {
+         "id":"6",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1450",
+         "end":"1499",
+         "compilationPlace":"Wales",
+         "shelfmark":"London, British Library, MS Additional 19710, pp. 7-30 ",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"s. XV <sup>2</sup>"
+      },
+      {
+         "id":"7",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Early Modern Welsh",
+         "start":"1538",
+         "end":"1539",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               53.2265189,
+               -4.1296162
+            ]
+         },
+         "compilationPlace":"Wales: ?Bangor",
+         "shelfmark":"Aberystwyth, National Library of Wales,  MS Peniarth 179 i, p. 71",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin. Fragment from Omen of the Dragons.",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"c. 1538/39"
+      },
+      {
+         "id":"8",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Early Modern Welsh",
+         "start":"1574",
+         "end":"1576",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 58, pp. 77-112",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"c. 1575"
+      },
+      {
+         "id":"9",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Early Modern Welsh",
+         "start":"1566",
+         "end":"1599",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               52.3266667,
+               -3.9998817
+            ]
+         },
+         "compilationPlace":"Wales: ?Powys",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 137, pp. 46-78",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin. Fragment missing from the beginning, prior to appearance of the lion of justice.",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"s. XVI <sup>ex</sup>"
+      },
+      {
+         "id":"10",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Early Modern Welsh",
+         "start":"1575",
+         "end":"1599",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Llanstephan 163, pp. 131-46",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin (unfinished)",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"s. XVI <sup>3/4</sup>"
+      },
+      {
+         "id":"11",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1250",
+         "end":"1299",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               52.907942,
+               -4.4007472
+            ]
+         },
+         "compilationPlace":"Wales: Gwynedd",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS 5266 (Brut Dingestow)",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIII <sup>2</sup>"
+      },
+      {
+         "id":"12",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1382",
+         "end":"1410",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.6818078,
+               -3.921381
+            ]
+         },
+         "compilationPlace":"Wales: Ynysforgan, Swansea",
+         "shelfmark":"Oxford, Jesus College, MS 111 (Red Book of Hergest)",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"c. 1382-1410"
+      },
+      {
+         "id":"13",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1450",
+         "end":"1499",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 23",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XV <sup>2</sup>"
+      },
+      {
+         "id":"14",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1300",
+         "end":"1350",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               52.9885247,
+               -3.1880388
+            ]
+         },
+         "compilationPlace":"Wales: ?Valle Crucis",
+         "shelfmark":"London, British Library, MS Cotton Cleopatra B v",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIV <sup>1</sup>"
+      },
+      {
+         "id":"15",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1300",
+         "end":"1350",
+         "compilationPlace":"Wales",
+         "shelfmark":"Cardiff, Cardiff City Library, MS 1.363 (Hafod MS 2)",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIV <sup>1</sup>"
+      },
+      {
+         "id":"16",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1300",
+         "end":"1350",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 45",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIV <sup>1</sup>"
+      },
+      {
+         "id":"17",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1333",
+         "end":"1365",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 46",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIV <sup>med</sup>"
+      },
+      {
+         "id":"18",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1350",
+         "end":"1399",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS 3035 (Mostyn 116)",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIV <sup>2</sup>"
+      },
+      {
+         "id":"19",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1300",
+         "end":"1400",
+         "compilationPlace":"Wales",
+         "shelfmark":"Aberystwyth, National Library of Wales, MS Peniarth 19",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIV/XV"
+      },
+      {
+         "id":"20",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1300",
+         "end":"1350",
+         "compilationPlace":"Wales",
+         "shelfmark":"Abersytwyth, National Library of Wales, MS 3036 (Mostyn 117)",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIV <sup>1</sup>"
+      },
+      {
+         "id":"21",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1333",
+         "end":"1365",
+         "compilationPlace":"Wales",
+         "shelfmark":"Cardiff, Cardiff City Library, MS 1.362 (Hafod MS 1)",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIV <sup>med</sup>"
+      },
+      {
+         "id":"22",
+         "name":"Proffwydoliaeth Merdin (c. 1250)",
+         "language":"Middle Welsh",
+         "start":"1350",
+         "end":"1399",
+         "compilationPlace":"Wales",
+         "shelfmark":"London, British Library, MS Additional 19709",
+         "overview":"",
+         "adaptation":"Welsh prose translation from Latin, as far as line 181.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Brut y brenhinedd)",
+         "fragment":"",
+         "compilationDate":"s. XIV <sup>2</sup>"
+      },
+      {
+         "id":"23",
+         "name":"Merlínusspá (c. 1200)",
+         "language":"Old Norse-Icelandic",
+         "start":"1300",
+         "end":"1324",
+         "compilationPlace":"Norway",
+         "shelfmark":"Copenhagen, University of Copenhagen, Arnamagnaean MS 544 4to",
+         "overview":"",
+         "adaptation":"Old Norce-Icelandic translation in verse (both skaldic and eddic) from Latin.",
+         "integrated":"As part of translation of Historia Regum Britanniae (Breta sögur) ",
+         "fragment":"",
+         "compilationDate":"c. XIV <sup>1/4</sup>"
+      },
+      {
+         "id":"24",
+         "name":"La Prophetia Merlini (s. XII <sup>ex</sup>)",
+         "language":"Anglo-Norman",
+         "start":"1100",
+         "end":"1199",
+         "compilationPlace":"England",
+         "shelfmark":"London, British Library, MS Additional 48212",
+         "overview":"",
+         "adaptation":"Fragment of Anglo-Norman translation of the prophecies, in octosyllabic rhymed couplets",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"s. XII"
+      },
+      {
+         "id":"25",
+         "name":"La Prophetia Merlini (s. XII <sup>ex</sup> - XIII <sup>in</sup>)",
+         "language":"Anglo-Norman",
+         "start":"1166",
+         "end":"1233",
+         "compilationPlace":"England",
+         "shelfmark":"Durham, Durham Cathedral Library, MS C. iv. 27",
+         "overview":"",
+         "adaptation":"Anglo-Norman decasyllabic verse",
+         "integrated":"Addition to Wace's Brut.",
+         "fragment":"",
+         "compilationDate":"s. XII ex - XIII <sup>in</sup>"
+      },
+      {
+         "id":"26",
+         "name":"La Prophetia Merlini (s. XIII)",
+         "language":"Anglo-Norman",
+         "start":"1250",
+         "end":"1299",
+         "compilationPlace":"England",
+         "shelfmark":"Lincoln, Lincoln Cathedral Library, MS 104",
+         "overview":"",
+         "adaptation":"Anglo-Norman alexandrine verse translation from the Latin.",
+         "integrated":"Addition to Wace's Brut.",
+         "fragment":"",
+         "compilationDate":"s. XIII <sup>2</sup>"
+      },
+      {
+         "id":"27",
+         "name":"La Prophetia Merlini (s. XIII)",
+         "language":"Anglo-Norman",
+         "start":"1266",
+         "end":"1299",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.2795591,
+               1.0630589
+            ]
+         },
+         "compilationPlace":"England: ?Canterbury",
+         "shelfmark":"London, British Library, MS Additional 45103, ff. 86r-97r",
+         "overview":"",
+         "adaptation":"Anglo-Norman alexandrine verse translation from the Latin.",
+         "integrated":"Addition to Wace's Brut.",
+         "fragment":"",
+         "compilationDate":"s. XIII <sup>ex</sup>"
+      },
+      {
+         "id":"28",
+         "name":"La Prophetia Merlini (s. XIII)",
+         "language":"Anglo-Norman",
+         "start":"1250",
+         "end":"1299",
+         "compilationPlace":"England",
+         "shelfmark":"Cologny-Genève, Biblioteca Bodmeriana, MS 67",
+         "overview":"",
+         "adaptation":"Anglo-Norman decasyllabic verse translation from the Latin.",
+         "integrated":"Addition to Wace's Brut (fragment)",
+         "fragment":"",
+         "compilationDate":"s. XIII <sup>2</sup>"
+      },
+      {
+         "id":"29",
+         "name":"La Prophetia Merlini (s. XIII)",
+         "language":"Anglo-Norman",
+         "start":"1233",
+         "end":"1265",
+         "compilationPlace":"England",
+         "shelfmark":"London, British Library, MS Harley 1605",
+         "overview":"",
+         "adaptation":"Anglo-Norman alexandrine verse translation from the Latin.",
+         "integrated":"Included in an anonymous Anglo-Norman translation of the Historia. ",
+         "fragment":"",
+         "compilationDate":"s. XIII <sup>med</sup>"
+      },
+      {
+         "id":"30",
+         "name":"La Prophetia Merlini (s. XIII)",
+         "language":"Anglo-Norman",
+         "start":"1266",
+         "end":"1299",
+         "compilationPlace":"England",
+         "shelfmark":"Oxford, Bodleian Library, MS Hatton 67, ff. 18r-25r",
+         "overview":"",
+         "adaptation":"Anglo-Norman decasyllabic verse translation from the Latin.",
+         "integrated":"No (historical intro added).",
+         "fragment":"",
+         "compilationDate":"s. XIII <sup>ex</sup>"
+      },
+      {
+         "id":"31",
+         "name":"La Prophetia Merlini (s. XIII) ",
+         "language":"Anglo-Norman",
+         "start":"1250",
+         "end":"1299",
+         "compilationPlace":"England",
+         "shelfmark":"Cambridge, Fitzwilliam Museum, MS 302, ff. 90v-99r",
+         "overview":"",
+         "adaptation":"Anglo-Norman decasyllabic verse translation from the Latin.",
+         "integrated":"No",
+         "fragment":"",
+         "compilationDate":"s. XIII <sup>2</sup>"
+      },
+      {
+         "id":"32",
+         "name":"La Prophetia Merlini (c. 1301)",
+         "language":"Anglo-Norman or Continental French",
+         "start":"1300",
+         "end":"1302",
+         "compilationPlace":"?England/ Normandy",
+         "shelfmark":"Paris, Bibliothèque nationale de France, MS Nouvelles acquisitions français 4166  (Didot-Perceval)",
+         "overview":"",
+         "adaptation":"Adaptive French prose translation from Latin.",
+         "integrated":"Inserted in Robert de Boron's Merlin.",
+         "fragment":"",
+         "compilationDate":"c. 1301"
+      },
+      {
+         "id":"33",
+         "name":"La Prophetia Merlini (s. XIII)",
+         "language":"Continental French",
+         "start":"1200",
+         "end":"1299",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               49.6543964,
+               2.5339527
+            ]
+         },
+         "compilationPlace":"France: ?Picardy",
+         "shelfmark":"Paris, Bibliothèque nationale de France, MS français 17177",
+         "overview":"",
+         "adaptation":"French prose translation from Latin, with commentary.",
+         "integrated":"Integrated in Estoire des Bretons",
+         "fragment":"",
+         "compilationDate":"s. XIII"
+      },
+      {
+         "id":"34",
+         "name":"La Prophetia Merlini (c. 1444-45)",
+         "language":"Continental French",
+         "start":"1444",
+         "end":"1467",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               47.4907499,
+               3.6120153
+            ]
+         },
+         "compilationPlace":"France: Burgundy",
+         "shelfmark":"Bruxelles, Bibliothèque royale de Belgique, MS 10415-10416",
+         "overview":"",
+         "adaptation":"Frence prose translation from Latin.",
+         "integrated":"Integrated in Jean Wauquelin's Roman de Brut",
+         "fragment":"",
+         "compilationDate":"c. 1444-1467"
+      },
+      {
+         "id":"35",
+         "name":"La Prophetia Merlini (c. 1444-45)",
+         "language":"Continental French",
+         "start":"1455",
+         "end":"1465",
+         "compilationPlace":"France: Hainaut",
+         "shelfmark":"London, British Library, MS Lansdowne 214",
+         "overview":"",
+         "adaptation":"Frence prose translation from Latin.",
+         "integrated":"Integrated in Jean Wauquelin's Roman de Brut",
+         "fragment":"",
+         "compilationDate":"c. 1460"
+      },
+      {
+         "id":"36",
+         "name":"La Prophetia Merlini (s. XV <sup>1/4</sup>)",
+         "language":"Continental French",
+         "start":"1400",
+         "end":"1424",
+         "compilationPlace":"France",
+         "shelfmark":"Paris, Bibliothèque nationale de France, MS français 2806",
+         "overview":"",
+         "adaptation":"French prose translation from Latin, with commentary.",
+         "integrated":"Integrated in Chronique des Bretons",
+         "fragment":"",
+         "compilationDate":"s. XV <sup>1/4</sup>"
+      },
+      {
+         "id":"37",
+         "name":"La Prophetia Merlini (s. XV <sup>1/4</sup>)",
+         "language":"Continental French",
+         "start":"1400",
+         "end":"1449",
+         "compilationPlace":"France",
+         "shelfmark":"Paris, Bibliothèque nationale de France, MS français 5621",
+         "overview":"",
+         "adaptation":"French prose translation from Latin, with commentary.",
+         "integrated":"Integrated in Chronique des Bretons",
+         "fragment":"",
+         "compilationDate":"s. XV <sup>1</sup>"
+      },
+      {
+         "id":"38",
+         "name":"La Prophetia Merlini (s. XV <sup>1/4</sup>)",
+         "language":"Continental French",
+         "start":"1451",
+         "end":"1475",
+         "compilationPlace":"France",
+         "shelfmark":"Paris, Bibliothèque nationale de France, MS Français 16939",
+         "overview":"",
+         "adaptation":"French prose translation from Latin, with commentary.",
+         "integrated":"Integrated in Chronique des Bretons",
+         "fragment":"",
+         "compilationDate":"s. XV <sup>3/4</sup>"
+      },
+      {
+         "id":"39",
+         "name":"La Prophetia Merlini (s. XV <sup>1/4</sup>)",
+         "language":"Continental French",
+         "start":"1400",
+         "end":"1499",
+         "compilationPlace":"France",
+         "shelfmark":"Vatican City, Biblioteca Apostolica Vaticana, MS Regius Latinus 871",
+         "overview":"",
+         "adaptation":"French prose translation from Latin, with commentary.",
+         "integrated":"Integrated in Chronique des Bretons",
+         "fragment":"",
+         "compilationDate":"s. XV"
+      },
+      {
+         "id":"40",
+         "name":"La Prophetia Merlini (c. 1445)",
+         "language":"Continental French",
+         "start":"1474",
+         "end":"1476",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.2607605,
+               3.1519341
+            ]
+         },
+         "compilationPlace":"Flanders: Bruges",
+         "shelfmark":"London, British Library, MS Royal 15.E.IV",
+         "overview":"",
+         "adaptation":"French prose translation from Latin",
+         "integrated":"Integrated in Jehan de Wavrin's Recueil des croniques",
+         "fragment":"",
+         "compilationDate":"c. 1475"
+      },
+      {
+         "id":"41",
+         "name":"La Prophetia Merlini (c. 1445)",
+         "language":"Continental French",
+         "start":"1465",
+         "end":"1475",
+         "compilationPlace":"Flanders",
+         "shelfmark":"Paris, Bibliothèque nationale de France, MS 74-86",
+         "overview":"",
+         "adaptation":"French prose translation from Latin",
+         "integrated":"Integrated in Jehan de Wavrin's Recueil des croniques",
+         "fragment":"",
+         "compilationDate":"c. 1470"
+      },
+      {
+         "id":"42",
+         "name":"Prophecies of Merlin (s. XV <sup>2</sup>)",
+         "language":"Middle English",
+         "start":"1450",
+         "end":"1499",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               51.7720512,
+               -1.5155997
+            ]
+         },
+         "compilationPlace":"England: ?Oxfordshire",
+         "shelfmark":"Pennsylvania, Pattee Library, Pennsylvania State University, MS V-3",
+         "overview":"",
+         "adaptation":"Adaptive English prose translation of 37 of Geoffrey's prophecies, with commentary, either from Geoffrey's Latin or a later chronicle adaptation. ",
+         "integrated":"Integrated with additional final prophecy from the Six Kings. ",
+         "fragment":"",
+         "compilationDate":"s. XV <sup>2</sup>"
+      }
+   ]
+}

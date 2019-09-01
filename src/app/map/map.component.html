@@ -1,4 +1,9 @@
-  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [styles]="styles">
+  <agm-map 
+  [latitude]="lat" 
+  [longitude]="lng" 
+  [zoom]="zoom" 
+  [styles]="styles"
+  (zoomChange)="zoomChange($event)">
     <agm-marker *ngFor="let m of markers$; let i = index" 
     			[latitude]="m.lat" 
     			[longitude]="m.lng"

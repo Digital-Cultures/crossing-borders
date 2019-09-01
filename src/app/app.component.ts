@@ -8,8 +8,8 @@ import { JsondataService } from './services/jsondata.service';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title: string = '<i><b>Prophecies of Merlin</b></i> (ORIGINAL: ENGLAND, LATIN, c. 1136)';
-    private dataSet: string = 'proffwydoliaeth_merdin';
+    title: string = '<i><b>Alexander Romances</b></i> (ORIGINAL: FRANCE, FRENCH, LATE TWELFTH CENTURY)';
+    private dataSet: string = 'roman_alexandre';
 
     constructor(
         private jsondataService: JsondataService
@@ -42,7 +42,7 @@ export class AppComponent {
                 this.title = '<i><b>Fierabras</b></i> (ORIGINAL: FRANCE, FRENCH, c. 1170)';
                 break;
             case 'roman_alexandre':
-                this.title = '<i><b>Alexander</b></i> (ORIGINAL: FRANCE, FRENCH, LATE TWELFTH CENTURY)';
+                this.title = '<i><b>Alexander Romances</b></i> (ORIGINAL: FRANCE, FRENCH, LATE TWELFTH CENTURY)';
                 break;
             case 'elucidarium':
                 this.title = '<i><b>Elucidarium</b></i> (ORIGINAL: ENGLAND/GERMANY, LATIN, c. 1098)';

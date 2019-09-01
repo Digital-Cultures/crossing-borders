@@ -16,10 +16,16 @@ export class DbformComponent {
         document.getElementsByClassName("menuTitle")[0]['style'].display = "block";
 
         this.jsondataService.currentRawData.subscribe((rawData: any) => {
-           
+           console.log("Changed data");
             this.datasource = (request: DataSourceRequest): Observable<DataSourceResultOfUser> => {
                 let data = this.jsondataService.getData(request);
                 return data;
+            }
+
+            this.paging = {
+                itemsPerPage: 20,
+                itemsPerPageOptions: [5, 10, 25, 50, 100],
+                maxSize: 5
             }
         })
     }
@@ -67,7 +73,7 @@ export class DbformComponent {
                 }
             }
         },{
-            title: 'Adaptation/ Translation',
+            title: 'Adaptation/Translation?',
             name: 'adaptation',
             sort: false,
             filter: {
@@ -113,19 +119,20 @@ export class DbformComponent {
                 }
             }
         }
+        // , {
+        //     title: 'Fragment?',
+        //     name: 'fragment',
+        //     sort: false,
+        //     filter: {
+        //         type: 'default',
+        //         controlType: 'default',
+        //         config: {
+        //             placeholder: 'Filter'
+        //         }
+        //     }
+        // }
         , {
-            title: 'Fragment',
-            name: 'fragment',
-            sort: false,
-            filter: {
-                type: 'default',
-                controlType: 'default',
-                config: {
-                    placeholder: 'Filter'
-                }
-            }
-        }, {
-            title: 'Integrated',
+            title: 'Integrated?',
             name: 'integrated',
             sort: false,
             filter: {
